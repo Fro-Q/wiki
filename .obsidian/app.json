@@ -15,5 +15,7 @@
   },
   "showLineNumber": true,
   "rightToLeft": false,
-  "autoPairMarkdown": true
+  "autoPairMarkdown": true,
+  "useTab": false,
+  "tabSize": 2
 }

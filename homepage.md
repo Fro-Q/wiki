@@ -73,12 +73,12 @@ dv.table(["Name", "Status"],
 ## DB
 
 ```dataviewjs
-var topics = dv.pages(`"db"`)
+var topics = dv.pages(`"notes"`)
 	.flatMap(p => p.topic)
 	.filter((t, i, arr) => arr.indexOf(t) === i)
 
 function getPages(t) {
-	return dv.pages(`"db"`)
+	return dv.pages(`"notes"`)
 		.filter(p => p.topic.includes(t))
 		.map(p => getTitle(p))
 }

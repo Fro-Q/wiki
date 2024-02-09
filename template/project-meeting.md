@@ -1,12 +1,12 @@
 ---
-tags: ["project", "meeting"]
-type: "meeting_standup"
+tags: 
+  - meeting
 date: <% tp.file.creation_date("YYYY-MM-DD") %>
+time: <% tp.file.creation_date("HH:mm") %>
 project: "<% tp.file.folder() %>"
-sum: ""
 ---
 
-> [!quote]
+# [title:: ]
 
 ## 📚 Pre-read
 

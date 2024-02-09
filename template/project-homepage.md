@@ -1,5 +1,6 @@
 ---
-tags: ["project", "homepage"]
+tags: 
+  - homepage
 project: "<% tp.file.folder() %>"
 status: "working"
 ---

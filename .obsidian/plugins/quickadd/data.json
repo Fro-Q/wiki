@@ -27,25 +27,71 @@
       },
       "openFile": true,
       "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
+      "fileExistsMode": "Nothing",
+      "setFileExistsBehavior": true
+    },
+    {
+      "id": "2fbcc1be-8df2-4d51-bb53-d71a59599a33",
+      "name": "project_meeting",
+      "type": "Template",
+      "command": false,
+      "templatePath": "template/project-meeting.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "m_{{DATE:YYYY_MM_DD_HHmm}}"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "project/"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": true
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Nothing",
+      "setFileExistsBehavior": true
+    },
+    {
+      "id": "83453091-d36c-49ae-893d-a4d0dd708ea0",
+      "name": "project_meeting (copy)",
+      "type": "Template",
+      "command": false,
+      "templatePath": "template/project-meeting.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "m_{{DATE:YYYY_MM_DD_HHmm}}"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "project/"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": true
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Nothing",
       "setFileExistsBehavior": true
     }
   ],
-  "macros": [
-    {
-      "name": "re",
-      "id": "06491629-2eaa-4815-bbbd-c67bed182d78",
-      "commands": [
-        {
-          "name": "project_record",
-          "type": "Choice",
-          "id": "5d029da5-7b0a-48d8-b4bd-7b8602c563eb",
-          "choiceId": "4e634744-c703-4b40-bfa8-47dd653ff7fa"
-        }
-      ],
-      "runOnStartup": false
-    }
-  ],
+  "macros": [],
   "inputPrompt": "multi-line",
   "devMode": false,
   "templateFolderPath": "template",
