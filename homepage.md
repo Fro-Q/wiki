@@ -41,11 +41,18 @@ function getTopic(p) {
 	return ["None"]
 }
 
+function generateCheckbox(p) {
+	if (p.dealed == "true") {
+		return dv.el('input', 'ok', {attr: { alt: "Nice!" } })
+	}
+	return dv.el('input', 'ok', {attr: {type: "checkbox", disabled: "true"}})
+}
+
 dv.table(["Title", "Topics Related", "Dealed"],
 	pages.map(p => [
 		getTitle(p),
 		getTopic(p),
-		p.dealed?"🟩Ya🟩":"🟥Na🟥",
+		dv.el('input', '', {attr: {type: "checkbox"}})
 	])
 )
 
