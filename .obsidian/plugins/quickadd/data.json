@@ -8,7 +8,7 @@
       "templatePath": "template/project-record.md",
       "fileNameFormat": {
         "enabled": true,
-        "format": "record_{{DATE:YYYY_MM_DD_HHmm}}"
+        "format": "r_{{DATE:YYYY_MM_DD_HHmm}}"
       },
       "folder": {
         "enabled": true,
@@ -62,13 +62,13 @@
     },
     {
       "id": "83453091-d36c-49ae-893d-a4d0dd708ea0",
-      "name": "project_meeting (copy)",
+      "name": "project_doc",
       "type": "Template",
       "command": false,
-      "templatePath": "template/project-meeting.md",
+      "templatePath": "template/project-doc.md",
       "fileNameFormat": {
         "enabled": true,
-        "format": "m_{{DATE:YYYY_MM_DD_HHmm}}"
+        "format": "d_{{DATE:YYYY_MM_DD_HHmm}}"
       },
       "folder": {
         "enabled": true,
@@ -89,6 +89,94 @@
       "openFileInMode": "default",
       "fileExistsMode": "Nothing",
       "setFileExistsBehavior": true
+    },
+    {
+      "id": "2850fe3c-6436-45e8-aa04-420dcff23e42",
+      "name": "project_tasks",
+      "type": "Template",
+      "command": false,
+      "templatePath": "template/project-tasks.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "t_{{DATE:YYYY_MM_DD_HHmm}}"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "project/"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": true
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Nothing",
+      "setFileExistsBehavior": true
+    },
+    {
+      "id": "afac96e3-9cf9-4c25-96c0-aa0a26664fca",
+      "name": "note",
+      "type": "Template",
+      "command": false,
+      "templatePath": "template/note.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "{{value}}"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "notes"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Nothing",
+      "setFileExistsBehavior": true
+    },
+    {
+      "id": "e52f4b77-c2bf-4803-ada2-312e68488f53",
+      "name": "concept",
+      "type": "Template",
+      "command": false,
+      "templatePath": "",
+      "fileNameFormat": {
+        "enabled": false,
+        "format": ""
+      },
+      "folder": {
+        "enabled": false,
+        "folders": [],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": false
     }
   ],
   "macros": [],
