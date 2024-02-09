@@ -1,0 +1,206 @@
+{
+  "main": {
+    "id": "338e7a718165fdce",
+    "type": "split",
+    "children": [
+      {
+        "id": "66e320dc6fe71f76",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "724f3d4a2602202a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "51bb0ed07e260dae",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "bcccfb29fe599d94",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "0cafcb4768d1ffd0",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "d2cdc6effe307d47",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "1d6beb24c02f1271",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
+      },
+      {
+        "id": "01b0ce34187baf41",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      },
+      {
+        "id": "ef4440b16feb08aa",
+        "type": "leaf",
+        "state": {
+          "type": "all-properties",
+          "state": {
+            "sortOrder": "frequency"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "a1380977c6e5e5f6",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "4892f17e97268c27",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "acf8c06616f8217e",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "92f08ae813312549",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {}
+        }
+      },
+      {
+        "id": "936cb60efc28c999",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {}
+        }
+      },
+      {
+        "id": "b0e284abe3ffa83a",
+        "type": "leaf",
+        "state": {
+          "type": "advanced-tables-toolbar",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 4
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "zk-prefixer:Create new unique note": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "random-note:Open random note": false,
+      "audio-recorder:Start/stop recording": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "b0e284abe3ffa83a",
+  "lastOpenFiles": [
+    "虚拟现实在数字城市中的应用方向、特点及发展趋势.md",
+    "test2.md",
+    "未命名.md",
+    "contents/未命名.md",
+    "编程&开发/Python/Django/Django 概述.md",
+    "编程&开发/Python/Django/Django 4.2 LTS 安装 & 虚拟环境搭建.md",
+    "编程&开发/Python/Django",
+    "编程&开发/Python/计算机二级Python/Python-基本运算符.md",
+    "遥感/概念与基础/地球资源的电磁遥感.png",
+    "Prompt/What is Prompt?.html",
+    "编程&开发/Python/计算机二级Python/Python-字符串基本操作.md",
+    "遥感/概念与基础/图像空间分辨率.md",
+    "遥感/概念与基础/遥感的概念与基础.md",
+    "编程&开发/Python/计算机二级Python/Python-基本数据类型.md",
+    "编程&开发/Python/计算机二级Python/Python-函数.md",
+    "编程&开发/Frontend/Vue/Vue-模版语法.md",
+    "编程&开发/Frontend/ECMAScript/ES-intro.md",
+    "编程&开发/Python/计算机二级Python/Python-input()函数.md",
+    "编程&开发/Python/计算机二级Python/Python-循环结构.md",
+    "遥感/概念与基础/电磁遥感的过程.png",
+    "Git/GitHub Token.md",
+    "遥感/概念与基础/大气对光谱响应模式的影响.md",
+    "遥感/概念与基础/能量与地物的相互作用.md",
+    "编程&开发/Frontend/HTML&CSS&JS.md",
+    "遥感/概念与基础/数字图像数据的基本特性.png",
+    "遥感/概念与基础/几何因素度对光谱响应模式的影响.md",
+    "遥感/概念与基础/不同地物的光谱反射率曲线.png",
+    "Git/Git 常用命令.md",
+    "遥感/概念与基础/遥感中的波动理论和粒子理论.md",
+    "遥感/概念与基础/遥感数据获取的过程.md",
+    "编程&开发/Python/计算机二级Python/考试大纲.md",
+    "编程&开发/Python/计算机二级Python/Python-print()函数.md",
+    "遥感/概念与基础/大气传输的光谱特征.png",
+    "遥感/概念与基础/太阳、物体和图像间的角度关系.png",
+    "due/给酥肉准备的礼物们/银杏叶玫瑰花.mp4",
+    "计量地理学实验/Pics of 计量地理学实验/Pasted image 20230320235630.png",
+    "计量地理学实验/Pics of 计量地理学实验/Pasted image 20230321000848.png",
+    "计量地理学实验/Pics of 计量地理学实验/Pasted image 20230320235646.png",
+    "计量地理学实验/Pics of 计量地理学实验/Pasted image 20230321000941.png"
+  ]
+}

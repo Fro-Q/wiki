@@ -1,0 +1,321 @@
+{
+  "main": {
+    "id": "0c6df51be113f498",
+    "type": "split",
+    "children": [
+      {
+        "id": "4d0687459640f9e9",
+        "type": "leaf",
+        "dimension": 4.236669101533966,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Untitled.md",
+            "mode": "source"
+          }
+        },
+        "group": "e4b00683d0e228b9"
+      },
+      {
+        "id": "b6dce6808aacb567",
+        "type": "leaf",
+        "dimension": 4.236669101533966,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Untitled.md",
+            "mode": "source"
+          }
+        },
+        "group": "e4b00683d0e228b9"
+      },
+      {
+        "id": "ef7bb154f7ab356a",
+        "type": "leaf",
+        "dimension": 4.236669101533966,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Untitled.md",
+            "mode": "source"
+          }
+        },
+        "group": "e4b00683d0e228b9"
+      },
+      {
+        "id": "4988b6aa4b044894",
+        "type": "leaf",
+        "dimension": 4.236669101533966,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Untitled.md",
+            "mode": "source"
+          }
+        },
+        "group": "e4b00683d0e228b9"
+      },
+      {
+        "id": "cc8133669ae14069",
+        "type": "leaf",
+        "dimension": 4.236669101533966,
+        "state": {
+          "type": "empty",
+          "state": {}
+        },
+        "group": "5397425a15ba1c4c"
+      },
+      {
+        "id": "2c9b12a1d5337834",
+        "type": "leaf",
+        "dimension": 4.236669101533966,
+        "state": {
+          "type": "empty",
+          "state": {}
+        },
+        "group": "5397425a15ba1c4c"
+      },
+      {
+        "id": "b3f3cd96c142e407",
+        "type": "leaf",
+        "dimension": 4.236669101533966,
+        "state": {
+          "type": "empty",
+          "state": {}
+        },
+        "group": "5397425a15ba1c4c"
+      },
+      {
+        "id": "fad2f3ae190ee65e",
+        "type": "leaf",
+        "dimension": 4.236669101533966,
+        "state": {
+          "type": "empty",
+          "state": {}
+        },
+        "group": "5397425a15ba1c4c"
+      },
+      {
+        "id": "89824813309d44e1",
+        "type": "leaf",
+        "dimension": 4.236669101533966,
+        "state": {
+          "type": "empty",
+          "state": {}
+        },
+        "group": "c9d7f4dc850bc1cf"
+      },
+      {
+        "id": "da429c75643ff39f",
+        "type": "leaf",
+        "dimension": 4.236669101533966,
+        "state": {
+          "type": "empty",
+          "state": {}
+        },
+        "group": "c9d7f4dc850bc1cf"
+      },
+      {
+        "id": "42e747a82781d384",
+        "type": "leaf",
+        "dimension": 4.236669101533966,
+        "state": {
+          "type": "empty",
+          "state": {}
+        },
+        "group": "c9d7f4dc850bc1cf"
+      },
+      {
+        "id": "a1065ffc467833c7",
+        "type": "leaf",
+        "dimension": 4.236669101533966,
+        "state": {
+          "type": "empty",
+          "state": {}
+        },
+        "group": "c9d7f4dc850bc1cf"
+      },
+      {
+        "id": "03aec306fb79cb06",
+        "type": "leaf",
+        "dimension": 4.236669101533966,
+        "state": {
+          "type": "empty",
+          "state": {}
+        },
+        "group": "c9d7f4dc850bc1cf"
+      },
+      {
+        "id": "26df94d0c64e6686",
+        "type": "leaf",
+        "dimension": 4.236669101533966,
+        "state": {
+          "type": "empty",
+          "state": {}
+        },
+        "group": "c9d7f4dc850bc1cf"
+      },
+      {
+        "id": "6659ca17fad3351f",
+        "type": "leaf",
+        "dimension": 4.236669101533966,
+        "state": {
+          "type": "empty",
+          "state": {}
+        },
+        "group": "c9d7f4dc850bc1cf"
+      },
+      {
+        "id": "888433e4d463b4dc",
+        "type": "leaf",
+        "dimension": 4.236669101533966,
+        "state": {
+          "type": "empty",
+          "state": {}
+        },
+        "group": "c9d7f4dc850bc1cf"
+      },
+      {
+        "id": "628d58dfc47f6250",
+        "type": "leaf",
+        "dimension": 4.382761139517896,
+        "state": {
+          "type": "empty",
+          "state": {}
+        },
+        "group": "1c5d5defd3f73634"
+      },
+      {
+        "id": "283e42f249a15159",
+        "type": "leaf",
+        "dimension": 4.382761139517896,
+        "state": {
+          "type": "empty",
+          "state": {}
+        },
+        "group": "1c5d5defd3f73634"
+      },
+      {
+        "id": "2ac0c70d08194836",
+        "type": "leaf",
+        "dimension": 4.382761139517896,
+        "state": {
+          "type": "empty",
+          "state": {}
+        },
+        "group": "1c5d5defd3f73634"
+      },
+      {
+        "id": "585f2d48fc45a522",
+        "type": "leaf",
+        "dimension": 4.382761139517896,
+        "state": {
+          "type": "empty",
+          "state": {}
+        },
+        "group": "1c5d5defd3f73634"
+      },
+      {
+        "id": "dd2232b62d043456",
+        "type": "leaf",
+        "dimension": 4.382761139517896,
+        "state": {
+          "type": "empty",
+          "state": {}
+        },
+        "group": "2964c7b8ec43df8a"
+      },
+      {
+        "id": "07e07658abae2334",
+        "type": "leaf",
+        "dimension": 4.382761139517896,
+        "state": {
+          "type": "empty",
+          "state": {}
+        },
+        "group": "2964c7b8ec43df8a"
+      },
+      {
+        "id": "6b5bb5bd1453c59e",
+        "type": "leaf",
+        "dimension": 4.382761139517896,
+        "state": {
+          "type": "empty",
+          "state": {}
+        },
+        "group": "2964c7b8ec43df8a"
+      },
+      {
+        "id": "ec38a2c9eb0cdb54",
+        "type": "leaf",
+        "dimension": 1.5339663988312637,
+        "state": {
+          "type": "empty",
+          "state": {}
+        },
+        "group": "2964c7b8ec43df8a"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fb566da59810834b",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "751633cd218a4ced",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "39746f089e40709f",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "tag:#haveagoodday",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "e67e2717cb86c3e4",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "210de7e5116a8f4c",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Untitled.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "active": "4988b6aa4b044894",
+  "lastOpenFiles": [
+    "Untitled.md",
+    "Untitled 1.md",
+    "diary.md"
+  ]
+}

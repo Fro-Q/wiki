@@ -1,0 +1,5 @@
+{
+  "folder": "timestamp",
+  "format": "\\t\\sYYYY_MM_DD_HHmm",
+  "template": "template/timestamp"
+}
