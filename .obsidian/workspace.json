@@ -206,7 +206,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       },
       {
         "id": "24473a813a64069f",
@@ -271,18 +271,19 @@
   },
   "active": "1f9590ca84b66cbe",
   "lastOpenFiles": [
-    "concepts/@thiessenpolygon.md",
+    "template/timestamp.md",
+    "template/project-tasks.md",
+    "template/project-record.md",
+    "template/project-meeting.md",
+    "template/project-homepage.md",
+    "template/project-doc.md",
+    "template/note.md",
+    "template/diary.md",
+    "project/drought/doc-2402061041.md",
     "notes/thiessenpolygon.md",
+    "concepts/@thiessenpolygon.md",
     "homepage.md",
     "concepts",
-    "template/diary.md",
-    "template/note.md",
-    "template/project-doc.md",
-    "template/project-homepage.md",
-    "template/project-meeting.md",
-    "template/project-record.md",
-    "template/project-tasks.md",
-    "template/timestamp.md",
     "project/drought/record_2024_02_09_2343.md",
     "timestamp/ts2024_01_17_0956.md",
     "project/drought/record-2402041533.md",

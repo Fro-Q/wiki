@@ -1,8 +1,7 @@
 ---
-tag:
+tags:
   - note
-topic:
-  - 
+topic: 
 finished: false
 ---
 
