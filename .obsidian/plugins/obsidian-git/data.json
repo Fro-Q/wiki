@@ -13,7 +13,7 @@
   "showStatusBar": true,
   "updateSubmodules": false,
   "syncMethod": "merge",
-  "customMessageOnAutoBackup": true,
+  "customMessageOnAutoBackup": false,
   "autoBackupAfterFileChange": true,
   "treeStructure": false,
   "refreshSourceControl": true,
@@ -52,5 +52,5 @@
     "lastShownAuthorDisplay": "first name",
     "lastShownDateTimeFormatOptions": "natural language"
   },
-  "autoCommitMessage": "vault backup: {{date}}"
+  "autoCommitMessage": "vault backup: {{date}}\nnum of changes: {{numFiles}}"
 }

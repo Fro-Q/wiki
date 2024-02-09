@@ -14,7 +14,7 @@ function getTitle(p) {
 dv.table(["Title", "Mentioned"],
 	pages.map(p => [
 		getTitle(p),
-		p.file.outlinks,
+		p.file.outlinks[0]?p.file.outlinks:"None",
 	])
 )
 ```
@@ -42,8 +42,8 @@ function getTopic(p) {
 }
 
 function generateCheckbox(p) {
-	if (p.dealed == "true") {
-		return dv.el('input', 'ok', {attr: { alt: "Nice!" } })
+	if (p.dealed) {
+		return dv.el('input', 'ok', {attr: { type: "checkbox", disabled: "true", checked: true } })
 	}
 	return dv.el('input', 'ok', {attr: {type: "checkbox", disabled: "true"}})
 }
@@ -52,10 +52,9 @@ dv.table(["Title", "Topics Related", "Dealed"],
 	pages.map(p => [
 		getTitle(p),
 		getTopic(p),
-		dv.el('input', '', {attr: {type: "checkbox"}})
+		generateCheckbox(p),
 	])
 )
-
 ```
 
 ## Project

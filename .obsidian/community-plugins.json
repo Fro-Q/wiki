@@ -13,5 +13,6 @@
   "dataview",
   "templater-obsidian",
   "obsidian-git",
-  "nldates-obsidian"
+  "nldates-obsidian",
+  "quickadd"
 ]
