@@ -32,23 +32,23 @@
     "followMovement": "inactive",
     "authorDisplay": "hide",
     "showCommitHash": false,
-    "dateTimeFormatOptions": "hide",
+    "dateTimeFormatOptions": "natural language",
     "dateTimeFormatCustomString": "YYYY-MM-DD HH:mm",
     "dateTimeTimezone": "viewer-local",
-    "coloringMaxAge": "3d",
+    "coloringMaxAge": "1d",
     "colorNew": {
-      "r": 255,
-      "g": 150,
-      "b": 150
-    },
-    "colorOld": {
       "r": 120,
       "g": 160,
       "b": 255
     },
+    "colorOld": {
+      "r": 255,
+      "g": 150,
+      "b": 150
+    },
     "textColorCss": "var(--text-muted)",
     "ignoreWhitespace": false,
-    "gutterSpacingFallbackLength": 0,
+    "gutterSpacingFallbackLength": 6,
     "lastShownAuthorDisplay": "first name",
     "lastShownDateTimeFormatOptions": "natural language"
   },

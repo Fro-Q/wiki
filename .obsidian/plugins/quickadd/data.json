@@ -1,6 +1,51 @@
 {
-  "choices": [],
-  "macros": [],
+  "choices": [
+    {
+      "id": "4e634744-c703-4b40-bfa8-47dd653ff7fa",
+      "name": "project_record",
+      "type": "Template",
+      "command": false,
+      "templatePath": "template/project-record.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "record_{{DATE:YYYY_MM_DD_HHmm}}"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "project/"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": true
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": true
+    }
+  ],
+  "macros": [
+    {
+      "name": "re",
+      "id": "06491629-2eaa-4815-bbbd-c67bed182d78",
+      "commands": [
+        {
+          "name": "project_record",
+          "type": "Choice",
+          "id": "5d029da5-7b0a-48d8-b4bd-7b8602c563eb",
+          "choiceId": "4e634744-c703-4b40-bfa8-47dd653ff7fa"
+        }
+      ],
+      "runOnStartup": false
+    }
+  ],
   "inputPrompt": "multi-line",
   "devMode": false,
   "templateFolderPath": "template",

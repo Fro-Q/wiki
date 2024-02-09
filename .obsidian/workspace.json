@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "template/project-meeting-standup.md",
+                "file": "project/drought/record-240131.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -47,7 +47,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9cdc29596148c519",
+            "id": "400aa4924092117f",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -113,14 +113,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "template/project-meeting-standup.md",
+                "file": "project/drought/record-240131.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -130,20 +130,9 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "template/project-meeting-standup.md",
+                "file": "project/drought/record-240131.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "02958acb7e8ac5f8",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -153,7 +142,18 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "template/project-meeting-standup.md"
+                "file": "project/drought/record-240131.md"
+              }
+            }
+          },
+          {
+            "id": "2f701d064aebfd65",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
               }
             }
           },
@@ -175,12 +175,12 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "template/project-meeting-standup.md"
+                "file": "project/drought/record-240131.md"
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       },
       {
         "id": "24473a813a64069f",
@@ -192,7 +192,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "template/project-meeting-standup.md",
+                "file": "project/drought/record-240131.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -239,11 +239,17 @@
       "audio-recorder:开始/结束录音": false,
       "random-note:开始漫游笔记": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "workspaces:管理工作区布局": false
     }
   },
-  "active": "1f9590ca84b66cbe",
+  "active": "400aa4924092117f",
   "lastOpenFiles": [
+    "project/drought/record_2024_02_09_2320.md",
+    "project/drought/record-240131.md",
+    "project/drought/record_2024_02_09_2319.md",
+    "project/drought/record_2024_02_09_2318.md",
+    "template/project-meeting-standup.md",
     "homepage.md",
     "timestamp/ts2024_01_17_0956.md",
     "timestamp/ts2024_01_17_0952.md",
@@ -270,12 +276,7 @@
     "d2024-01-17/ok.md",
     "d2024-01-17",
     "project/drought/record-240203.md",
-    "project/drought/record-2401290913.md",
-    "project/drought/record-240131.md",
-    "project/drought/record-2401300529.md",
-    "project/drought/record-2402041533.md",
     "file-name.png",
-    "project/drought/doc-2402061041.md",
     "setting/js/daily_diary.js",
     "setting/js",
     "setting",
