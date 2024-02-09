@@ -8,14 +8,28 @@ finished: false
 ---
 
 ```dataviewjs
-var page = dv.current()
+var thisPage = dv.current()
 
-dv.table(["Title", "Topics Related", "Dealed"],
+function getTitle(p) {
+  if (p.title) {
+    return `[${p.title}](${p.file.name})`
+  }
+  return `[[${p.file.name}]]`
+}
+
+function getInlinkNotes(thisLink) {
+  let allNotes = dv.pages(`"notes"`)
+    .filter(n => n.file.outlinks.includes(thisLink))
+
+  return allNotes.map(n => getTitle(n))
+}
+
+dv.table(["Note Related", "Topics Related", "Dealed"],
   [
     [
-      page.title,
-      page.file.inlinks,
-      page.dealed?dv.el('input', 'ok', {attr: { type: "checkbox", disabled: "true", checked: true } }):dv.el('input', 'ok', {attr: {type: "checkbox", disabled: "true"}}),
+      getInlinkNotes(thisPage.file.link),
+      thisPage.topic,
+      thisPage.finished
     ]
   ]
 )
