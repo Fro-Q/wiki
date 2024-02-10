@@ -32,9 +32,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f10a8c3fce5cf1f1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "test_page_2.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +111,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 262.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "b87e94253deaa70c",
@@ -114,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "test_page.md",
+                "file": "test_page_2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "test_page.md",
+                "file": "test_page_2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -143,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "test_page.md"
+                "file": "test_page_2.md"
               }
             }
           },
@@ -176,7 +190,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "test_page.md"
+                "file": "test_page_2.md"
               }
             }
           }
@@ -193,7 +207,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "test_page.md",
+                "file": "test_page_2.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -234,7 +248,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 380.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -252,10 +267,11 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "11eca8c68a537712",
+  "active": "f10a8c3fce5cf1f1",
   "lastOpenFiles": [
-    "homepage.md",
     "test_page.md",
+    "test_page_2.md",
+    "homepage.md",
     "notes/create_thiessen_polygon.md",
     "global_file_format_spec.md",
     "timestamp/ts_2024_01_17_0956.md",
@@ -279,7 +295,6 @@
     "template/concept.md",
     "template/diary.md",
     "template/note.md",
-    "template/project-meeting.md",
     "topics",
     "concepts",
     "db/test",
