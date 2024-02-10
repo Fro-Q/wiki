@@ -194,5 +194,6 @@
   "accent-color@@accent-color-light-lightness-default": 0,
   "accent-color@@accent-color-for-dark-theme": "accent-color-green-dark",
   "font@@font-highlight-size": 1,
-  "font@@font-highlight-weight": 400
+  "font@@font-highlight-weight": 400,
+  "inline-elements@@embed-alt-position": "embed-alt-right"
 }

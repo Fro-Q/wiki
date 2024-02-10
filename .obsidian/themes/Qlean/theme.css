@@ -200,7 +200,6 @@ body.theme-light {
   --text-muted: hsla(0, 0%, 60%, 1) !important;
   --code-bg-color: #dedede;
   --inline-bg-color: hsla(0, 0%, 90%, 1);
-  --codeblock-border-color: #888;
   --background-primary: hsla(0, 0%, 96%, 1);
   --background-secondary: hsl(0, 0%, 92%);
   --background-modifier-active-hover: #d9d9d9;
@@ -266,7 +265,6 @@ body.theme-dark {
   --text-muted: #999 !important;
   --code-bg-color: #181818;
   --inline-bg-color: rgba(255, 255, 255, 0.1);
-  --codeblock-border-color: #888;
   --background-primary: #111;
   --background-secondary: #151515;
   --background-modifier-active-hover: #272727;
@@ -758,7 +756,7 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout:ho
   height: 0;
 }
 
-body.embed-alt :is(.markdown-source-view, .markdown-rendered) .media-embed img:after {
+body.embed-alt :is(.markdown-source-view, .markdown-rendered) .media-embed:after {
   content: attr(alt);
   font-family: var(--font-default);
   font-size: 0.8em;
@@ -769,16 +767,11 @@ body.embed-alt :is(.markdown-source-view, .markdown-rendered) .media-embed img:a
   text-align: end;
   margin-top: 0.5em;
 }
-body.embed-alt.embed-alt-left :is(.markdown-source-view, .markdown-rendered) .media-embed img:after {
+body.embed-alt.embed-alt-left :is(.markdown-source-view, .markdown-rendered) .media-embed:after {
   text-align: start;
 }
-body.embed-alt.embed-alt-middle :is(.markdown-source-view, .markdown-rendered) .media-embed img:after {
+body.embed-alt.embed-alt-middle :is(.markdown-source-view, .markdown-rendered) .media-embed:after {
   text-align: center;
-}
-
-.markdown-source-view .cm-line .cm-inline-code,
-.markdown-source-view .HyperMD-codeblock {
-  color: var(--code-color);
 }
 
 .markdown-source-view .cm-line .cm-inline-code,
@@ -787,17 +780,16 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view, .markdown-rendered) .
   font-family: var(--font-monospace);
   font-size: var(--font-monospace-size);
   font-weight: var(--font-monospace-weight);
-  color: auto;
+  color: var(--code-color);
   background-color: var(--inline-bg-color);
-  padding: 0 0.2em;
 }
 
 .markdown-rendered pre {
-  border-width: 2px;
-  border-style: solid;
-  border-color: var(--divider-color);
+  border: none;
   border-radius: 4px;
   background-color: var(--code-bg-color);
+  position: relative;
+  margin: 16px auto;
 }
 .markdown-rendered pre[class^=language-] {
   padding: 40px 20px 20px;
@@ -808,12 +800,15 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view, .markdown-rendered) .
   font-weight: 900;
   color: auto;
   position: absolute;
-  top: 5px;
-  right: auto;
-  bottom: auto;
-  left: -7.35em;
+  right: -3.5rem;
+  height: 1.5rem;
+  bottom: 0;
+  width: 16rem;
+  background-image: linear-gradient(90deg, var(--code-bg-color) 31%, var(--text-normal) 31%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
   content: attr(class);
-  letter-spacing: 0.4em;
 }
 .markdown-rendered pre .copy-code-button {
   color: transparent;

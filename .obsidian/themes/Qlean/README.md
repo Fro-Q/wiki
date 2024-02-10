@@ -18,9 +18,12 @@ An Obsidian theme offers a clean and clutter-free interface for enhanced focus a
 8. Changed the default highlight style. Feel free to change it back if you like the older one.
 9. Callouts' dog-ear is disabled by default.
 9. Darker code block background color in Dark mode.
-10.
+
 
 #### bug fix
+
+1. Alt text of images now correctly displayed.
+2. Inlince code doesn't have a "wings" anymore.
 
 ### Version 0.1.6(12/22/2023)
 
