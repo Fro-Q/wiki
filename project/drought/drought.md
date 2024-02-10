@@ -9,7 +9,7 @@ status: "working"
 ```dataviewjs
 var pages = dv.pages(`"project/${dv.current().file.name}" and #record`)
 
-dv.list([pages])
+dv.list([pages.file.link])
 ```
 
 ```data
