@@ -43,7 +43,15 @@ body {
   --font-highlight-weight: bold;
   --font-underlined-weight: normal;
   --font-source-view-weight: normal;
+  --font-strong-style: normal;
   --font-em-style: italic;
+  --font-highlight-style: normal;
+  --h1-align: center;
+  --h2-align: left;
+  --h3-align: left;
+  --h4-align: left;
+  --h5-align: left;
+  --h6-align: left;
   --tag-radius: 1em;
   --blockquote-border-thickness: 2px;
   --callout-dogs-ear-size: 30px;
@@ -328,295 +336,404 @@ body.colorful-headers.header-color-gradient {
   --h6-color: var(--color-gradient-h6);
 }
 
-[data-mode=source] :is(p, li),
-[data-mode=preview] .cm-line {
-  font-family: var(--font-text);
-  font-size: var(--font-text-size);
-  font-weight: var(--font-text-weight);
+.markdown-rendered p,
+.markdown-source-view .cm-line {
+  font-family: var(--font-default);
+  font-size: 1em;
+  font-weight: normal;
   color: var(--text-normal);
   line-height: 1.75;
 }
 
-.markdown-preview-view h1,
-.is-live-preview .cm-line.HyperMD-header-1 {
+.markdown-rendered h1,
+.markdown-source-view .cm-line.HyperMD-header-1 {
   font-family: var(--font-header);
-  font-size: var(--font-h1-size) !important;
+  font-size: var(--font-h1-size);
   font-weight: var(--font-h1-weight);
   color: var(--h1-color);
-  padding: 0;
-}
-
-body.header-hovering-underline :is(.markdown-preview-view h1, .is-live-preview .cm-line.HyperMD-header-1):hover {
-  -webkit-text-decoration: underline solid var(--h1-color) 5px;
-  text-decoration: underline solid var(--h1-color) 5px;
+  -webkit-text-decoration: underline solid transparent 5px;
+          text-decoration: underline solid transparent 5px;
   text-underline-offset: 8px;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+  text-align: var(--h1-align);
 }
 
-body.header-indicator :is(.markdown-preview-view h1, .is-live-preview .cm-line.HyperMD-header-1):before {
+body.header-hovering-underline :is(.markdown-rendered h1, .markdown-source-view .cm-line.HyperMD-header-1):hover {
+  text-decoration-color: var(--h1-color);
+}
+
+body.header-indicator :is(.markdown-rendered h1, .markdown-source-view .cm-line.HyperMD-header-1):before {
   content: "H1";
 }
-body.header-indicator .is-live-preview .cm-line .collapse-indicator {
-  margin-right: calc(var(--font-text-size) * 1);
+body.header-indicator :is(.markdown-rendered h1, .markdown-source-view .cm-line.HyperMD-header-1):has(.is-collapsed):before {
+  color: var(--text-normal);
+}
+body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-1 .collapse-indicator {
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-1 .collapse-indicator svg {
+  opacity: 0 !important;
+}
+body.header-indicator .markdown-rendered h1 .collapse-indicator {
+  transform: translate(1.2rem, -1.8rem);
+  cursor: pointer;
+}
+body.header-indicator .markdown-rendered h1 .collapse-indicator svg {
+  opacity: 0 !important;
 }
 
-.markdown-preview-view h2,
-.is-live-preview .cm-line.HyperMD-header-2 {
+.markdown-rendered h2,
+.markdown-source-view .cm-line.HyperMD-header-2 {
   font-family: var(--font-header);
-  font-size: var(--font-h2-size) !important;
+  font-size: var(--font-h2-size);
   font-weight: var(--font-h2-weight);
   color: var(--h2-color);
-  padding: 0;
-}
-
-body.header-hovering-underline :is(.markdown-preview-view h2, .is-live-preview .cm-line.HyperMD-header-2):hover {
-  -webkit-text-decoration: underline solid var(--h2-color) 5px;
-  text-decoration: underline solid var(--h2-color) 5px;
+  -webkit-text-decoration: underline solid transparent 5px;
+          text-decoration: underline solid transparent 5px;
   text-underline-offset: 8px;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+  text-align: var(--h2-align);
 }
 
-body.header-indicator :is(.markdown-preview-view h2, .is-live-preview .cm-line.HyperMD-header-2):before {
+body.header-hovering-underline :is(.markdown-rendered h2, .markdown-source-view .cm-line.HyperMD-header-2):hover {
+  text-decoration-color: var(--h2-color);
+}
+
+body.header-indicator :is(.markdown-rendered h2, .markdown-source-view .cm-line.HyperMD-header-2):before {
   content: "H2";
 }
-body.header-indicator .is-live-preview .cm-line .collapse-indicator {
-  margin-right: calc(var(--font-text-size) * 1);
+body.header-indicator :is(.markdown-rendered h2, .markdown-source-view .cm-line.HyperMD-header-2):has(.is-collapsed):before {
+  color: var(--text-normal);
+}
+body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-2 .collapse-indicator {
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-2 .collapse-indicator svg {
+  opacity: 0 !important;
+}
+body.header-indicator .markdown-rendered h2 .collapse-indicator {
+  transform: translate(1.2rem, -1.8rem);
+  cursor: pointer;
+}
+body.header-indicator .markdown-rendered h2 .collapse-indicator svg {
+  opacity: 0 !important;
 }
 
-.markdown-preview-view h3,
-.is-live-preview .cm-line.HyperMD-header-3 {
+.markdown-rendered h3,
+.markdown-source-view .cm-line.HyperMD-header-3 {
   font-family: var(--font-header);
-  font-size: var(--font-h3-size) !important;
+  font-size: var(--font-h3-size);
   font-weight: var(--font-h3-weight);
   color: var(--h3-color);
-  padding: 0;
-}
-
-body.header-hovering-underline :is(.markdown-preview-view h3, .is-live-preview .cm-line.HyperMD-header-3):hover {
-  -webkit-text-decoration: underline solid var(--h3-color) 5px;
-  text-decoration: underline solid var(--h3-color) 5px;
+  -webkit-text-decoration: underline solid transparent 5px;
+          text-decoration: underline solid transparent 5px;
   text-underline-offset: 8px;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+  text-align: var(--h3-align);
 }
 
-body.header-indicator :is(.markdown-preview-view h3, .is-live-preview .cm-line.HyperMD-header-3):before {
+body.header-hovering-underline :is(.markdown-rendered h3, .markdown-source-view .cm-line.HyperMD-header-3):hover {
+  text-decoration-color: var(--h3-color);
+}
+
+body.header-indicator :is(.markdown-rendered h3, .markdown-source-view .cm-line.HyperMD-header-3):before {
   content: "H3";
 }
-body.header-indicator .is-live-preview .cm-line .collapse-indicator {
-  margin-right: calc(var(--font-text-size) * 1);
+body.header-indicator :is(.markdown-rendered h3, .markdown-source-view .cm-line.HyperMD-header-3):has(.is-collapsed):before {
+  color: var(--text-normal);
+}
+body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-3 .collapse-indicator {
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-3 .collapse-indicator svg {
+  opacity: 0 !important;
+}
+body.header-indicator .markdown-rendered h3 .collapse-indicator {
+  transform: translate(1.2rem, -1.8rem);
+  cursor: pointer;
+}
+body.header-indicator .markdown-rendered h3 .collapse-indicator svg {
+  opacity: 0 !important;
 }
 
-.markdown-preview-view h4,
-.is-live-preview .cm-line.HyperMD-header-4 {
+.markdown-rendered h4,
+.markdown-source-view .cm-line.HyperMD-header-4 {
   font-family: var(--font-header);
-  font-size: var(--font-h4-size) !important;
+  font-size: var(--font-h4-size);
   font-weight: var(--font-h4-weight);
   color: var(--h4-color);
-  padding: 0;
-}
-
-body.header-hovering-underline :is(.markdown-preview-view h4, .is-live-preview .cm-line.HyperMD-header-4):hover {
-  -webkit-text-decoration: underline solid var(--h4-color) 5px;
-  text-decoration: underline solid var(--h4-color) 5px;
+  -webkit-text-decoration: underline solid transparent 5px;
+          text-decoration: underline solid transparent 5px;
   text-underline-offset: 8px;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+  text-align: var(--h4-align);
 }
 
-body.header-indicator :is(.markdown-preview-view h4, .is-live-preview .cm-line.HyperMD-header-4):before {
+body.header-hovering-underline :is(.markdown-rendered h4, .markdown-source-view .cm-line.HyperMD-header-4):hover {
+  text-decoration-color: var(--h4-color);
+}
+
+body.header-indicator :is(.markdown-rendered h4, .markdown-source-view .cm-line.HyperMD-header-4):before {
   content: "H4";
 }
-body.header-indicator .is-live-preview .cm-line .collapse-indicator {
-  margin-right: calc(var(--font-text-size) * 1);
+body.header-indicator :is(.markdown-rendered h4, .markdown-source-view .cm-line.HyperMD-header-4):has(.is-collapsed):before {
+  color: var(--text-normal);
+}
+body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-4 .collapse-indicator {
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-4 .collapse-indicator svg {
+  opacity: 0 !important;
+}
+body.header-indicator .markdown-rendered h4 .collapse-indicator {
+  transform: translate(1.2rem, -1.8rem);
+  cursor: pointer;
+}
+body.header-indicator .markdown-rendered h4 .collapse-indicator svg {
+  opacity: 0 !important;
 }
 
-.markdown-preview-view h5,
-.is-live-preview .cm-line.HyperMD-header-5 {
+.markdown-rendered h5,
+.markdown-source-view .cm-line.HyperMD-header-5 {
   font-family: var(--font-header);
-  font-size: var(--font-h5-size) !important;
+  font-size: var(--font-h5-size);
   font-weight: var(--font-h5-weight);
   color: var(--h5-color);
-  padding: 0;
-}
-
-body.header-hovering-underline :is(.markdown-preview-view h5, .is-live-preview .cm-line.HyperMD-header-5):hover {
-  -webkit-text-decoration: underline solid var(--h5-color) 5px;
-  text-decoration: underline solid var(--h5-color) 5px;
+  -webkit-text-decoration: underline solid transparent 5px;
+          text-decoration: underline solid transparent 5px;
   text-underline-offset: 8px;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+  text-align: var(--h5-align);
 }
 
-body.header-indicator :is(.markdown-preview-view h5, .is-live-preview .cm-line.HyperMD-header-5):before {
+body.header-hovering-underline :is(.markdown-rendered h5, .markdown-source-view .cm-line.HyperMD-header-5):hover {
+  text-decoration-color: var(--h5-color);
+}
+
+body.header-indicator :is(.markdown-rendered h5, .markdown-source-view .cm-line.HyperMD-header-5):before {
   content: "H5";
 }
-body.header-indicator .is-live-preview .cm-line .collapse-indicator {
-  margin-right: calc(var(--font-text-size) * 1);
+body.header-indicator :is(.markdown-rendered h5, .markdown-source-view .cm-line.HyperMD-header-5):has(.is-collapsed):before {
+  color: var(--text-normal);
+}
+body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-5 .collapse-indicator {
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-5 .collapse-indicator svg {
+  opacity: 0 !important;
+}
+body.header-indicator .markdown-rendered h5 .collapse-indicator {
+  transform: translate(1.2rem, -1.8rem);
+  cursor: pointer;
+}
+body.header-indicator .markdown-rendered h5 .collapse-indicator svg {
+  opacity: 0 !important;
 }
 
-.markdown-preview-view h6,
-.is-live-preview .cm-line.HyperMD-header-6 {
+.markdown-rendered h6,
+.markdown-source-view .cm-line.HyperMD-header-6 {
   font-family: var(--font-header);
-  font-size: var(--font-h6-size) !important;
+  font-size: var(--font-h6-size);
   font-weight: var(--font-h6-weight);
   color: var(--h6-color);
-  padding: 0;
-}
-
-body.header-hovering-underline :is(.markdown-preview-view h6, .is-live-preview .cm-line.HyperMD-header-6):hover {
-  -webkit-text-decoration: underline solid var(--h6-color) 5px;
-  text-decoration: underline solid var(--h6-color) 5px;
+  -webkit-text-decoration: underline solid transparent 5px;
+          text-decoration: underline solid transparent 5px;
   text-underline-offset: 8px;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+  text-align: var(--h6-align);
 }
 
-body.header-indicator :is(.markdown-preview-view h6, .is-live-preview .cm-line.HyperMD-header-6):before {
+body.header-hovering-underline :is(.markdown-rendered h6, .markdown-source-view .cm-line.HyperMD-header-6):hover {
+  text-decoration-color: var(--h6-color);
+}
+
+body.header-indicator :is(.markdown-rendered h6, .markdown-source-view .cm-line.HyperMD-header-6):before {
   content: "H6";
 }
-body.header-indicator .is-live-preview .cm-line .collapse-indicator {
-  margin-right: calc(var(--font-text-size) * 1);
+body.header-indicator :is(.markdown-rendered h6, .markdown-source-view .cm-line.HyperMD-header-6):has(.is-collapsed):before {
+  color: var(--text-normal);
+}
+body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-6 .collapse-indicator {
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-6 .collapse-indicator svg {
+  opacity: 0 !important;
+}
+body.header-indicator .markdown-rendered h6 .collapse-indicator {
+  transform: translate(1.2rem, -1.8rem);
+  cursor: pointer;
+}
+body.header-indicator .markdown-rendered h6 .collapse-indicator svg {
+  opacity: 0 !important;
 }
 
-.markdown-preview-view :is(h1, h2, h3, h4, h5, h6):before,
-.is-live-preview .cm-line.HyperMD-header:before {
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6):before,
+.markdown-source-view .cm-line.HyperMD-header:before {
   font-family: var(--font-monospace);
   font-size: 14px;
   font-weight: normal;
-  color: var(--text-normal);
-  content: "";
-  opacity: 0.4;
+  color: var(--text-muted);
   position: relative;
   width: 20px;
   margin: 0 5px 0 0;
+  transition: all 0.3s ease-in-out;
 }
 
-.markdown-preview-view strong,
-.is-live-preview .cm-line .cm-strong,
-.is-live-preview strong {
+.markdown-rendered strong,
+.markdown-source-view .cm-line .cm-strong,
+.markdown-source-view strong {
   font-family: var(--font-text);
   font-size: var(--font-strong-size);
   font-weight: var(--font-strong-weight);
   color: var(--font-strong-color);
   -webkit-text-decoration: var(--font-strong-decoration-line) var(--font-strong-decoration-style) var(--font-strong-decoration-color) var(--font-strong-decoration-width);
-  text-decoration: var(--font-strong-decoration-line) var(--font-strong-decoration-style) var(--font-strong-decoration-color) var(--font-strong-decoration-width);
+          text-decoration: var(--font-strong-decoration-line) var(--font-strong-decoration-style) var(--font-strong-decoration-color) var(--font-strong-decoration-width);
   text-underline-offset: var(--font-strong-decoration-offset);
+  font-style: var(--font-strong-style);
 }
 
-.markdown-preview-view em,
-.is-live-preview .cm-line .cm-em,
-.is-live-preview em {
+.markdown-rendered em,
+.markdown-source-view .cm-line .cm-em,
+.markdown-source-view em {
   font-family: var(--font-text);
   font-size: var(--font-em-size);
   font-weight: var(--font-em-weight);
   color: var(--font-em-color);
   -webkit-text-decoration: var(--font-em-decoration-line) var(--font-em-decoration-style) var(--font-em-decoration-color) var(--font-em-decoration-width);
-  text-decoration: var(--font-em-decoration-line) var(--font-em-decoration-style) var(--font-em-decoration-color) var(--font-em-decoration-width);
+          text-decoration: var(--font-em-decoration-line) var(--font-em-decoration-style) var(--font-em-decoration-color) var(--font-em-decoration-width);
   text-underline-offset: var(--font-em-decoration-offset);
   font-style: var(--font-em-style);
 }
 
-.markdown-preview-view mark,
-.is-live-preview .cm-line .cm-highlight,
-.is-live-preview mark {
+.markdown-rendered mark,
+.markdown-source-view .cm-line .cm-highlight,
+.markdown-source-view mark {
   font-family: var(--font-text);
   font-size: var(--font-highlight-size);
   font-weight: var(--font-highlight-weight);
   color: var(--font-highlight-color);
   -webkit-text-decoration: var(--font-highlight-decoration-line) var(--font-highlight-decoration-style) var(--font-highlight-decoration-color) var(--font-highlight-decoration-width);
-  text-decoration: var(--font-highlight-decoration-line) var(--font-highlight-decoration-style) var(--font-highlight-decoration-color) var(--font-highlight-decoration-width);
+          text-decoration: var(--font-highlight-decoration-line) var(--font-highlight-decoration-style) var(--font-highlight-decoration-color) var(--font-highlight-decoration-width);
   text-underline-offset: var(--font-highlight-decoration-offset);
   background-color: var(--font-highlight-bg-color);
+  font-style: var(--font-highlight-style);
 }
 
-:is(.markdown-preview-view, .is-live-preview .cm-line, .is-live-preview) u {
+:is(.markdown-rendered, .markdown-source-view .cm-line, .markdown-source-view) u {
   font-family: var(--font-text);
   font-size: var(--font-underlined-size);
   font-weight: var(--font-underlined-weight);
   color: var(--font-underlined-color);
   -webkit-text-decoration: var(--font-underlined-decoration-line) var(--font-underlined-decoration-style) var(--font-underlined-decoration-color) var(--font-underlined-decoration-width);
-  text-decoration: var(--font-underlined-decoration-line) var(--font-underlined-decoration-style) var(--font-underlined-decoration-color) var(--font-underlined-decoration-width);
+          text-decoration: var(--font-underlined-decoration-line) var(--font-underlined-decoration-style) var(--font-underlined-decoration-color) var(--font-underlined-decoration-width);
   text-underline-offset: var(--font-underlined-decoration-offset);
 }
 
-:is(.markdown-preview-view, .is-live-preview) .inline-title {
+:is(.markdown-rendered, .markdown-source-view) .inline-title {
   font-family: var(--font-inline-title);
   font-size: var(--font-inline-title-size);
   font-weight: var(--font-inline-title-weight);
   color: var(--text-normal);
 }
 
-.is-live-preview .HyperMD-task-line:is([data-task=x], [data-task=X]),
-.markdown-preview-view .task-list-item:is([data-task=x], [data-task=X]) {
+.markdown-source-view .HyperMD-task-line:is([data-task=x], [data-task=X]),
+.markdown-rendered .task-list-item:is([data-task=x], [data-task=X]) {
   text-decoration: none !important;
 }
-.is-live-preview .HyperMD-task-line:is([data-task="-"]) [class^=cm-list], .is-live-preview .HyperMD-task-line:is([data-task="-"]),
-.markdown-preview-view .task-list-item:is([data-task="-"]) [class^=cm-list],
-.markdown-preview-view .task-list-item:is([data-task="-"]) {
+.markdown-source-view .HyperMD-task-line:is([data-task="-"]) [class^=cm-list], .markdown-source-view .HyperMD-task-line:is([data-task="-"]),
+.markdown-rendered .task-list-item:is([data-task="-"]) [class^=cm-list],
+.markdown-rendered .task-list-item:is([data-task="-"]) {
   color: var(--checklist-delete-decoration-color);
 }
 
-.is-live-preview .HyperMD-task-line .task-list-item-checkbox,
-.markdown-preview-view .task-list-item > p .task-list-item-checkbox,
-.markdown-preview-view .task-list-item > .task-list-item-checkbox {
+.markdown-source-view .HyperMD-task-line .task-list-item-checkbox,
+.markdown-rendered .task-list-item > p .task-list-item-checkbox,
+.markdown-rendered .task-list-item > .task-list-item-checkbox {
   transition: all 0.2s ease-in-out;
 }
-body.circle-checkbox .is-live-preview .HyperMD-task-line .task-list-item-checkbox,
-body.circle-checkbox .markdown-preview-view .task-list-item > p .task-list-item-checkbox,
-body.circle-checkbox .markdown-preview-view .task-list-item > .task-list-item-checkbox {
+body.circle-checkbox .markdown-source-view .HyperMD-task-line .task-list-item-checkbox,
+body.circle-checkbox .markdown-rendered .task-list-item > p .task-list-item-checkbox,
+body.circle-checkbox .markdown-rendered .task-list-item > .task-list-item-checkbox {
   border-radius: 50%;
 }
-.is-live-preview .HyperMD-task-line .task-list-item-checkbox:checked,
-.markdown-preview-view .task-list-item > p .task-list-item-checkbox:checked,
-.markdown-preview-view .task-list-item > .task-list-item-checkbox:checked {
+.markdown-source-view .HyperMD-task-line .task-list-item-checkbox:checked,
+.markdown-rendered .task-list-item > p .task-list-item-checkbox:checked,
+.markdown-rendered .task-list-item > .task-list-item-checkbox:checked {
   border-color: var(--color-done);
   background-color: var(--color-done);
 }
-.is-live-preview .HyperMD-task-line .task-list-item-checkbox:checked:hover,
-.markdown-preview-view .task-list-item > p .task-list-item-checkbox:checked:hover,
-.markdown-preview-view .task-list-item > .task-list-item-checkbox:checked:hover {
+.markdown-source-view .HyperMD-task-line .task-list-item-checkbox:checked:hover,
+.markdown-rendered .task-list-item > p .task-list-item-checkbox:checked:hover,
+.markdown-rendered .task-list-item > .task-list-item-checkbox:checked:hover {
   border-color: var(--checkbox-border-color);
   background-color: var(--checkbox-color-hover);
 }
-.is-live-preview .HyperMD-task-line .task-list-item-checkbox:checked:after,
-.markdown-preview-view .task-list-item > p .task-list-item-checkbox:checked:after,
-.markdown-preview-view .task-list-item > .task-list-item-checkbox:checked:after {
+.markdown-source-view .HyperMD-task-line .task-list-item-checkbox:checked:after,
+.markdown-rendered .task-list-item > p .task-list-item-checkbox:checked:after,
+.markdown-rendered .task-list-item > .task-list-item-checkbox:checked:after {
   -webkit-mask-position: center center;
   mask-position: center center;
 }
 
-.is-live-preview .HyperMD-task-line[data-task=" "] .task-list-item-checkbox:hover, .markdown-preview-view .task-list-item:not(.is-checked) > p .task-list-item-checkbox:hover, .markdown-preview-view .task-list-item:not(.is-checked) > .task-list-item-checkbox:hover {
+.markdown-source-view .HyperMD-task-line[data-task=" "] .task-list-item-checkbox:hover, .markdown-rendered .task-list-item:not(.is-checked) > p .task-list-item-checkbox:hover, .markdown-rendered .task-list-item:not(.is-checked) > .task-list-item-checkbox:hover {
   border-color: var(--color-done);
 }
-.is-live-preview .HyperMD-task-line[data-task="-"] .task-list-item-checkbox, .markdown-preview-view .task-list-item[data-task="-"] > p .task-list-item-checkbox, .markdown-preview-view .task-list-item[data-task="-"] > .task-list-item-checkbox {
+.markdown-source-view .HyperMD-task-line[data-task="-"] .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="-"] > p .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="-"] > .task-list-item-checkbox {
   border-color: var(--color-error);
   background-color: var(--color-error);
 }
-.is-live-preview .HyperMD-task-line[data-task="-"] .task-list-item-checkbox:after, .markdown-preview-view .task-list-item[data-task="-"] > p .task-list-item-checkbox:after, .markdown-preview-view .task-list-item[data-task="-"] > .task-list-item-checkbox:after {
+.markdown-source-view .HyperMD-task-line[data-task="-"] .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="-"] > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="-"] > .task-list-item-checkbox:after {
   -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 1 10 h 22 v 4 H 1 z" fill="black"/></svg>');
   mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 1 10 h 22 v 4 H 1 z" fill="black"/></svg>');
 }
-.is-live-preview .HyperMD-task-line[data-task="!"] .task-list-item-checkbox, .markdown-preview-view .task-list-item[data-task="!"] > p .task-list-item-checkbox, .markdown-preview-view .task-list-item[data-task="!"] > .task-list-item-checkbox {
+.markdown-source-view .HyperMD-task-line[data-task="!"] .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="!"] > p .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="!"] > .task-list-item-checkbox {
   border-color: var(--color-warning);
   background-color: var(--color-warning);
 }
-.is-live-preview .HyperMD-task-line[data-task="!"] .task-list-item-checkbox:after, .markdown-preview-view .task-list-item[data-task="!"] > p .task-list-item-checkbox:after, .markdown-preview-view .task-list-item[data-task="!"] > .task-list-item-checkbox:after {
+.markdown-source-view .HyperMD-task-line[data-task="!"] .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="!"] > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="!"] > .task-list-item-checkbox:after {
   -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 1 v 16 h 2 v -16 h -2 v 1 M 11 21 h 2 v 2 h -2 v -2 h 1" stroke="black" stroke-width="2" stroke-linejoin="round" /></svg>');
   mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 1 v 16 h 2 v -16 h -2 v 1 M 11 21 h 2 v 2 h -2 v -2 h 1" stroke="black" stroke-width="2" stroke-linejoin="round" /></svg>');
 }
-.is-live-preview .HyperMD-task-line[data-task="?"] .task-list-item-checkbox, .markdown-preview-view .task-list-item[data-task="?"] > p .task-list-item-checkbox, .markdown-preview-view .task-list-item[data-task="?"] > .task-list-item-checkbox {
+.markdown-source-view .HyperMD-task-line[data-task="?"] .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="?"] > p .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="?"] > .task-list-item-checkbox {
   border-color: var(--color-ques);
   background-color: var(--color-ques);
 }
-.is-live-preview .HyperMD-task-line[data-task="?"] .task-list-item-checkbox:after, .markdown-preview-view .task-list-item[data-task="?"] > p .task-list-item-checkbox:after, .markdown-preview-view .task-list-item[data-task="?"] > .task-list-item-checkbox:after {
+.markdown-source-view .HyperMD-task-line[data-task="?"] .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="?"] > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="?"] > .task-list-item-checkbox:after {
   -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="6.5 2 11 19" fill="none"><path d="M9.09009 9.00003 C9.32519 8.33169 9.78924 7.76813 10.4 7.40916 C11.0108 7.05019 12.079 6.94542 12.7773 7.06519C13.9093 7.25935 14.9767 8.25497 14.9748 9.49073C14.9748 11.9908 12 11.2974 12 14 M12 17 H 12.01" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" /></svg>');
   mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 1 v 16 h 2 v -16 h -2 v 1 M 11 21 h 2 v 2 h -2 v -2 h 1" stroke="black" stroke-width="2" stroke-linejoin="round" /></svg>');
 }
-.is-live-preview .HyperMD-task-line:is([data-task=i], [data-task=I]) .task-list-item-checkbox, .markdown-preview-view .task-list-item:is([data-task=i], [data-task=I]) > p .task-list-item-checkbox, .markdown-preview-view .task-list-item:is([data-task=i], [data-task=I]) > .task-list-item-checkbox {
+.markdown-source-view .HyperMD-task-line:is([data-task=i], [data-task=I]) .task-list-item-checkbox, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > p .task-list-item-checkbox, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > .task-list-item-checkbox {
   border-color: var(--color-info);
   background-color: var(--color-info);
 }
-.is-live-preview .HyperMD-task-line:is([data-task=i], [data-task=I]) .task-list-item-checkbox:after, .markdown-preview-view .task-list-item:is([data-task=i], [data-task=I]) > p .task-list-item-checkbox:after, .markdown-preview-view .task-list-item:is([data-task=i], [data-task=I]) > .task-list-item-checkbox:after {
+.markdown-source-view .HyperMD-task-line:is([data-task=i], [data-task=I]) .task-list-item-checkbox:after, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > .task-list-item-checkbox:after {
   -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 7 v 14 h -4 v 2 h 10 v -2 h -4 v -14 h -6 v 2 h 6 M 11 3 v -2 h 2 v 2 h -2 v -1 " stroke="black" fill="black" stroke-width="2" stroke-linejoin="round" /></svg>');
   mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 7 v 14 h -4 v 2 h 10 v -2 h -4 v -14 h -6 v 2 h 6 M 11 3 v -2 h 2 v 2 h -2 v -1 " stroke="black" fill="black" stroke-width="2" stroke-linejoin="round" /></svg>');
 }
 
-:is(.markdown-preview-view, .is-live-preview) .callout {
+:is(.markdown-rendered, .markdown-source-view) .callout {
   position: relative;
 }
 
-body.callout-dogs-ear :is(.markdown-preview-view, .is-live-preview) .callout:after {
+body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout:after {
   content: "";
   position: absolute;
   top: auto;
@@ -631,12 +748,12 @@ body.callout-dogs-ear :is(.markdown-preview-view, .is-live-preview) .callout:aft
   transition: all 0.2s ease-in-out;
   box-shadow: -2px 2px 4px 2px rgba(0, 0, 0, 0.2);
 }
-body.callout-dogs-ear :is(.markdown-preview-view, .is-live-preview) .callout:hover:after {
+body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout:hover:after {
   width: 0;
   height: 0;
 }
 
-body.embed-alt :is(.is-live-preview, .markdown-preview-view) .markdown-embed:after {
+body.embed-alt :is(.markdown-source-view, .markdown-rendered) .markdown-embed:after {
   content: attr(alt);
   font-family: var(--font-default);
   font-size: 0.8em;
@@ -647,21 +764,21 @@ body.embed-alt :is(.is-live-preview, .markdown-preview-view) .markdown-embed:aft
   text-align: end;
   margin-top: 0.5em;
 }
-body.embed-alt.embed-alt-left :is(.is-live-preview, .markdown-preview-view) .markdown-embed:after {
+body.embed-alt.embed-alt-left :is(.markdown-source-view, .markdown-rendered) .markdown-embed:after {
   text-align: start;
 }
-body.embed-alt.embed-alt-middle :is(.is-live-preview, .markdown-preview-view) .markdown-embed:after {
+body.embed-alt.embed-alt-middle :is(.markdown-source-view, .markdown-rendered) .markdown-embed:after {
   text-align: center;
 }
 
-.is-live-preview .cm-line .cm-inline-code,
-.is-live-preview .HyperMD-codeblock {
+.markdown-source-view .cm-line .cm-inline-code,
+.markdown-source-view .HyperMD-codeblock {
   color: var(--code-color);
 }
 
-.is-live-preview .cm-line .cm-inline-code,
-.is-live-preview .HyperMD-codeblock,
-.markdown-preview-view code {
+.markdown-source-view .cm-line .cm-inline-code,
+.markdown-source-view .HyperMD-codeblock,
+.markdown-rendered code {
   font-family: var(--font-monospace);
   font-size: var(--font-monospace-size);
   font-weight: var(--font-monospace-weight);
@@ -670,17 +787,17 @@ body.embed-alt.embed-alt-middle :is(.is-live-preview, .markdown-preview-view) .m
   padding: 0 0.2em;
 }
 
-.markdown-preview-view pre {
+.markdown-rendered pre {
   border-width: 2px;
   border-style: solid;
   border-color: var(--divider-color);
   border-radius: 4px;
   background-color: var(--code-bg-color);
 }
-.markdown-preview-view pre[class^=language-] {
+.markdown-rendered pre[class^=language-] {
   padding: 40px 20px 20px;
 }
-.markdown-preview-view pre[class^=language-]:before {
+.markdown-rendered pre[class^=language-]:before {
   font-family: Lato sans-serif;
   font-size: 1em;
   font-weight: 900;
@@ -693,10 +810,10 @@ body.embed-alt.embed-alt-middle :is(.is-live-preview, .markdown-preview-view) .m
   content: attr(class);
   letter-spacing: 0.4em;
 }
-.markdown-preview-view pre .copy-code-button {
+.markdown-rendered pre .copy-code-button {
   color: transparent;
 }
-.markdown-preview-view pre .copy-code-button:before {
+.markdown-rendered pre .copy-code-button:before {
   font-family: Lato sans-serif;
   font-size: 1em;
   font-weight: 400;
@@ -712,7 +829,7 @@ body.embed-alt.embed-alt-middle :is(.is-live-preview, .markdown-preview-view) .m
   transform: translate(-50%, -50%);
   transition: all 0.2s ease-in-out;
 }
-.markdown-preview-view pre .copy-code-button:active:before {
+.markdown-rendered pre .copy-code-button:active:before {
   font-family: "Material Icons Outlined";
   font-size: 1.5em;
   font-weight: 100;
@@ -720,28 +837,28 @@ body.embed-alt.embed-alt-middle :is(.is-live-preview, .markdown-preview-view) .m
   content: "done";
 }
 
-.is-live-preview div.HyperMD-codeblock-bg {
+.markdown-source-view div.HyperMD-codeblock-bg {
   border-width: 0 2px;
   border-style: solid;
   border-color: var(--divider-color);
   border-radius: auto;
   background-color: var(--code-bg-color);
 }
-.is-live-preview div.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg {
+.markdown-source-view div.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg {
   border-width: 2px 2px 0;
   border-style: solid;
   border-color: var(--divider-color);
   border-radius: 4px 4px 0 0;
 }
-.is-live-preview div.HyperMD-codeblock-bg.HyperMD-codeblock-end-bg {
+.markdown-source-view div.HyperMD-codeblock-bg.HyperMD-codeblock-end-bg {
   border-width: 0 2px 2px;
   border-style: solid;
   border-color: var(--divider-color);
   border-radius: 0 0 4px 4px;
 }
 
-.markdown-preview-view a.tag,
-.is-live-preview .cm-line .cm-hashtag,
+.markdown-rendered a.tag,
+.markdown-source-view .cm-line .cm-hashtag,
 .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill {
   font-family: var(--font-tag);
   font-size: var(--font-tag-size);
@@ -751,45 +868,45 @@ body.embed-alt.embed-alt-middle :is(.is-live-preview, .markdown-preview-view) .m
   border-width: 2px;
 }
 
-.metadata-container .metadata-property[data-property-key=tags] .metadata-property-value .multi-select-pill-content, .is-live-preview .cm-line .cm-hashtag.cm-hashtag-begin {
+.metadata-container .metadata-property[data-property-key=tags] .metadata-property-value .multi-select-pill-content, .markdown-source-view .cm-line .cm-hashtag.cm-hashtag-begin {
   border-radius: var(--tag-radius) 0 0 var(--tag-radius);
 }
 
-.metadata-container .metadata-property[data-property-key=tags] .metadata-property-value .multi-select-pill-remove-button, .is-live-preview .cm-line .cm-hashtag.cm-hashtag-end {
+.metadata-container .metadata-property[data-property-key=tags] .metadata-property-value .multi-select-pill-remove-button, .markdown-source-view .cm-line .cm-hashtag.cm-hashtag-end {
   border-radius: 0 var(--tag-radius) var(--tag-radius) 0;
 }
 
-body.tag-fill .markdown-preview-view a.tag, body.tag-fill .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill {
+body.tag-fill .markdown-rendered a.tag, body.tag-fill .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill {
   border-color: var(--color-accent-o40);
   background-color: var(--color-accent-o30);
   color: var(--text-normal);
 }
-body.tag-fill .markdown-preview-view a.tag:hover, body.tag-fill .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill:hover {
+body.tag-fill .markdown-rendered a.tag:hover, body.tag-fill .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill:hover {
   border-color: var(--color-accent-o80);
   background-color: var(--color-accent-o60);
   color: var(--text-strong);
   box-shadow: inset 1px 1px 3px 1px var(--switch-inset-shadow-color);
   text-shadow: 2px 2px 0 var(--switch-inset-shadow-color);
 }
-body.tag-fill .is-live-preview .cm-line .cm-hashtag:is(.cm-hashtag-begin, .cm-hashtag-end) {
+body.tag-fill .markdown-source-view .cm-line .cm-hashtag:is(.cm-hashtag-begin, .cm-hashtag-end) {
   border-color: var(--color-accent-o40);
   background-color: var(--color-accent-o30);
   color: var(--text-normal);
 }
 
-body.tag-outline .markdown-preview-view a.tag, body.tag-outline .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill {
+body.tag-outline .markdown-rendered a.tag, body.tag-outline .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill {
   border-color: var(--color-accent-o50);
   background-color: transparent;
   color: var(--text-normal);
 }
-body.tag-outline .markdown-preview-view a.tag:hover, body.tag-outline .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill:hover {
+body.tag-outline .markdown-rendered a.tag:hover, body.tag-outline .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill:hover {
   border-color: var(--color-accent-o80);
   background-color: var(--color-accent-o30);
   color: var(--text-normal);
   box-shadow: inset 1px 1px 3px 1px var(--switch-inset-shadow-color);
   text-shadow: 2px 2px 0 var(--switch-inset-shadow-color);
 }
-body.tag-outline .is-live-preview .cm-line .cm-hashtag:is(.cm-hashtag-begin, .cm-hashtag-end) {
+body.tag-outline .markdown-source-view .cm-line .cm-hashtag:is(.cm-hashtag-begin, .cm-hashtag-end) {
   border-color: var(--color-accent-o50);
   background-color: transparent;
   color: var(--text-normal);
@@ -869,7 +986,7 @@ body:not(.is-focused) .workspace .workspace-tabs .workspace-tab-header-container
   background-color: var(--background-primary);
 }
 
-.is-live-preview .cm-hmd-internal-link:has(.is-unresolved):hover, .is-live-preview .is-unresolved:hover {
+.markdown-source-view .cm-hmd-internal-link:has(.is-unresolved):hover, .markdown-source-view .is-unresolved:hover {
   -webkit-text-decoration: var(--link-unresolved-decoration-line) var(--link-unresolved-decoration-style) var(--link-unresolved-decoration-color) var(--link-unresolved-decoration-width);
   text-decoration: var(--link-unresolved-decoration-line) var(--link-unresolved-decoration-style) var(--link-unresolved-decoration-color) var(--link-unresolved-decoration-width);
   text-underline-offset: var(--link-unresolved-decoration-offset);
@@ -1256,13 +1373,13 @@ button[aria-label="Restore default"] {
   border-top: 1px solid var(--background-modifier-border);
 }
 
-:is(.markdown-preview-view, .is-live-preview) table {
+:is(.markdown-rendered, .markdown-source-view) table {
   width: 100%;
 }
-:is(.markdown-preview-view, .is-live-preview) table thead tr {
+:is(.markdown-rendered, .markdown-source-view) table thead tr {
   background-color: var(--tab-bg-color);
 }
-:is(.markdown-preview-view, .is-live-preview) table thead tr:hover {
+:is(.markdown-rendered, .markdown-source-view) table thead tr:hover {
   background-color: var(--tab-hover-bg-color);
 }
 
@@ -1277,7 +1394,7 @@ body.fade-out-inactive-lines .cm-line.cm-active {
   opacity: 1;
 }
 
-.theme-dark .markdown-source-view:not(.is-live-preview) {
+.theme-dark .markdown-source-view:not(.markdown-source-view) {
   --color-text: var(--text-normal);
   --color-header: var(--color-accent-ln10);
   --color-strong: var(--color-accent-ln5);
@@ -1286,7 +1403,7 @@ body.fade-out-inactive-lines .cm-line.cm-active {
   --color-inline-code: rgb(87, 222, 107);
   --color-quote-format: rgb(116, 152, 93);
 }
-.theme-light .markdown-source-view:not(.is-live-preview) {
+.theme-light .markdown-source-view:not(.markdown-source-view) {
   --color-text: var(--text-normal);
   --color-header: var(--color-accent-ln10);
   --color-strong: var(--color-accent-ln5);
@@ -1295,63 +1412,63 @@ body.fade-out-inactive-lines .cm-line.cm-active {
   --color-inline-code: rgb(51, 139, 64);
   --color-quote-format: rgb(116, 152, 93);
 }
-.markdown-source-view:not(.is-live-preview) .cm-line {
+.markdown-source-view:not(.markdown-source-view) .cm-line {
   font-family: var(--font-source-view);
   font-size: var(--font-text-size);
   font-weight: var(--font-source-view-weight);
   color: var(--color-text);
 }
-.markdown-source-view:not(.is-live-preview) .cm-line.cm-active {
+.markdown-source-view:not(.markdown-source-view) .cm-line.cm-active {
   background-color: var(--background-modifier-border);
 }
-.markdown-source-view:not(.is-live-preview) .inline-title {
+.markdown-source-view:not(.markdown-source-view) .inline-title {
   font-family: var(--font-source-view);
   font-size: var(--font-inline-title-size);
   font-weight: var(--font-source-view-weight);
   color: var(--color-text);
 }
-.markdown-source-view:not(.is-live-preview) .cm-header {
+.markdown-source-view:not(.markdown-source-view) .cm-header {
   color: var(--color-header);
 }
-.markdown-source-view:not(.is-live-preview) :is(.cm-link, .cm-hmd-internal-link) {
+.markdown-source-view:not(.markdown-source-view) :is(.cm-link, .cm-hmd-internal-link) {
   color: var(--color-link);
 }
-.markdown-source-view:not(.is-live-preview) :is(.cm-link, .cm-hmd-internal-link):hover {
+.markdown-source-view:not(.markdown-source-view) :is(.cm-link, .cm-hmd-internal-link):hover {
   text-decoration: none;
   color: var(--color-link);
 }
-.markdown-source-view:not(.is-live-preview) :is(.cm-url):not(.cm-formatting-link-string) {
+.markdown-source-view:not(.markdown-source-view) :is(.cm-url):not(.cm-formatting-link-string) {
   color: var(--color-text);
   -webkit-text-decoration: underline solid 2px var(--color-text);
   text-decoration: underline solid 2px var(--color-text);
   text-underline-offset: 4px;
 }
-.markdown-source-view:not(.is-live-preview) .cm-formatting-link {
+.markdown-source-view:not(.markdown-source-view) .cm-formatting-link {
   color: var(--color-text);
 }
-.markdown-source-view:not(.is-live-preview) .cm-highlight {
+.markdown-source-view:not(.markdown-source-view) .cm-highlight {
   background-color: transparent;
 }
-.markdown-source-view:not(.is-live-preview) .cm-strong {
+.markdown-source-view:not(.markdown-source-view) .cm-strong {
   color: var(--color-strong);
 }
-.markdown-source-view:not(.is-live-preview) .cm-formatting.cm-formatting-list {
+.markdown-source-view:not(.markdown-source-view) .cm-formatting.cm-formatting-list {
   color: var(--color-list-bullet);
 }
-.markdown-source-view:not(.is-live-preview) .cm-formatting.cm-formatting-link-string {
+.markdown-source-view:not(.markdown-source-view) .cm-formatting.cm-formatting-link-string {
   color: var(--color-text);
 }
-.markdown-source-view:not(.is-live-preview) .cm-inline-code {
+.markdown-source-view:not(.markdown-source-view) .cm-inline-code {
   color: var(--color-inline-code);
   white-space: nowrap;
 }
-.markdown-source-view:not(.is-live-preview) .cm-hashtag {
+.markdown-source-view:not(.markdown-source-view) .cm-hashtag {
   color: var(--color-text);
   font-size: var(--font-text-size);
   padding: 0;
   background: transparent;
 }
-.markdown-source-view:not(.is-live-preview) .cm-formatting-quote {
+.markdown-source-view:not(.markdown-source-view) .cm-formatting-quote {
   color: var(--color-quote-format);
 }
 

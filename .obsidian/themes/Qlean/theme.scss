@@ -1,9 +1,11 @@
-@mixin font($font-family, $font-size, $font-weight, $color) {
+@mixin font($font-family: var(--font-default), $font-size: 1em, $font-weight: normal, $color: var(--text-normal)) {
   font-family: $font-family;
   font-size: $font-size;
   font-weight: $font-weight;
   color: $color;
 }
+
+
 
 body {
   // font
@@ -51,7 +53,18 @@ body {
   --font-highlight-weight: bold;
   --font-underlined-weight: normal;
   --font-source-view-weight: normal;
+  --font-strong-style: normal;
   --font-em-style: italic;
+  --font-highlight-style: normal;
+
+  // header
+  --h1-align: center;
+  --h2-align: left;
+  --h3-align: left;
+  --h4-align: left;
+  --h5-align: left;
+  --h6-align: left;
+
   // tag
   --tag-radius: 1em;
 
@@ -365,93 +378,121 @@ body {
   }
 }
 
-[data-mode="source"] :is(p, li),
-[data-mode="preview"] .cm-line {
-  @include font(var(--font-text), var(--font-text-size), var(--font-text-weight), var(--text-normal));
+// paragraphs basic
+.markdown-rendered p,
+.markdown-source-view .cm-line {
+  @include font();
   line-height: 1.75;
 }
 
+// headers
 @for $i from 1 through 6 {
 
-  .markdown-preview-view h#{$i},
-  .is-live-preview .cm-line.HyperMD-header-#{$i} {
-    @include font(var(--font-header), var(--font-h#{$i}-size) !important, var(--font-h#{$i}-weight), var(--h#{$i}-color));
-    padding: 0;
-  }
-
-  body.header-hovering-underline :is(.markdown-preview-view h#{$i}, .is-live-preview .cm-line.HyperMD-header-#{$i}):hover {
-    -webkit-text-decoration: underline solid var(--h#{$i}-color) 5px;
-    text-decoration: underline solid var(--h#{$i}-color) 5px;
+  .markdown-rendered h#{$i},
+  .markdown-source-view .cm-line.HyperMD-header-#{$i} {
+    @include font(var(--font-header), var(--font-h#{$i}-size), var(--font-h#{$i}-weight), var(--h#{$i}-color));
+    text-decoration: underline solid transparent 5px;
     text-underline-offset: 8px;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+    text-align: var(--h#{$i}-align);
   }
 
+  // if header-hovering-underline is enabled:
+  body.header-hovering-underline :is(.markdown-rendered h#{$i}, .markdown-source-view .cm-line.HyperMD-header-#{$i}):hover {
+    text-decoration-color: var(--h#{$i}-color);
+  }
+
+  // if header-indicator is enabled:
   body.header-indicator {
-    & :is(.markdown-preview-view h#{$i}, .is-live-preview .cm-line.HyperMD-header-#{$i}):before {
+    & :is(.markdown-rendered h#{$i}, .markdown-source-view .cm-line.HyperMD-header-#{$i}):before {
       content: "H#{$i}";
     }
 
-    & .is-live-preview .cm-line .collapse-indicator {
-      margin-right: calc(var(--font-text-size) * 1);
+    & :is(.markdown-rendered h#{$i}, .markdown-source-view .cm-line.HyperMD-header-#{$i}):has(.is-collapsed):before {
+      color: var(--text-normal);
+    }
+
+    & .markdown-source-view .cm-line.cm-line.HyperMD-header-#{$i} .collapse-indicator {
+      // margin-right: calc(var(--font-text-size) * 1);
+      top: 0.5rem;
+      right: 0.5rem;
+      cursor: pointer;
+
+      & svg {
+        opacity: 0 !important;
+      }
+    }
+
+    & .markdown-rendered h#{$i} .collapse-indicator {
+
+      transform: translate(1.2rem, -1.8rem);
+      cursor: pointer;
+
+      & svg {
+        opacity: 0 !important;
+      }
     }
   }
 }
 
-.markdown-preview-view :is(h1, h2, h3, h4, h5, h6):before,
-.is-live-preview .cm-line.HyperMD-header:before {
-  @include font(var(--font-monospace), 14px, normal, var(--text-normal));
-  content: "";
-  opacity: 0.4;
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6):before,
+.markdown-source-view .cm-line.HyperMD-header:before {
+  @include font($font-family: var(--font-monospace), $font-size: 14px, $color: var(--text-muted));
   position: relative;
   width: 20px;
   margin: 0 5px 0 0;
+  transition: all 0.3s ease-in-out;
 }
 
-
-.markdown-preview-view strong,
-.is-live-preview .cm-line .cm-strong,
-.is-live-preview strong {
+// strong
+.markdown-rendered strong,
+.markdown-source-view .cm-line .cm-strong,
+.markdown-source-view strong {
   @include font(var(--font-text), var(--font-strong-size), var(--font-strong-weight), var(--font-strong-color));
-  -webkit-text-decoration: var(--font-strong-decoration-line) var(--font-strong-decoration-style) var(--font-strong-decoration-color) var(--font-strong-decoration-width);
   text-decoration: var(--font-strong-decoration-line) var(--font-strong-decoration-style) var(--font-strong-decoration-color) var(--font-strong-decoration-width);
   text-underline-offset: var(--font-strong-decoration-offset);
+  font-style: var(--font-strong-style);
 }
 
-.markdown-preview-view em,
-.is-live-preview .cm-line .cm-em,
-.is-live-preview em {
+// em
+.markdown-rendered em,
+.markdown-source-view .cm-line .cm-em,
+.markdown-source-view em {
   @include font(var(--font-text), var(--font-em-size), var(--font-em-weight), var(--font-em-color));
-  -webkit-text-decoration: var(--font-em-decoration-line) var(--font-em-decoration-style) var(--font-em-decoration-color) var(--font-em-decoration-width);
   text-decoration: var(--font-em-decoration-line) var(--font-em-decoration-style) var(--font-em-decoration-color) var(--font-em-decoration-width);
   text-underline-offset: var(--font-em-decoration-offset);
   font-style: var(--font-em-style);
 }
 
-.markdown-preview-view mark,
-.is-live-preview .cm-line .cm-highlight,
-.is-live-preview mark {
+// highlight(mark)
+.markdown-rendered mark,
+.markdown-source-view .cm-line .cm-highlight,
+.markdown-source-view mark {
   @include font(var(--font-text), var(--font-highlight-size), var(--font-highlight-weight), var(--font-highlight-color));
-  -webkit-text-decoration: var(--font-highlight-decoration-line) var(--font-highlight-decoration-style) var(--font-highlight-decoration-color) var(--font-highlight-decoration-width);
   text-decoration: var(--font-highlight-decoration-line) var(--font-highlight-decoration-style) var(--font-highlight-decoration-color) var(--font-highlight-decoration-width);
   text-underline-offset: var(--font-highlight-decoration-offset);
   background-color: var(--font-highlight-bg-color);
+  font-style: var(--font-highlight-style);
 }
 
-:is(.markdown-preview-view, .is-live-preview .cm-line, .is-live-preview) u {
+// underlined
+:is(.markdown-rendered, .markdown-source-view .cm-line, .markdown-source-view) u {
   @include font(var(--font-text), var(--font-underlined-size), var(--font-underlined-weight), var(--font-underlined-color));
-  -webkit-text-decoration: var(--font-underlined-decoration-line) var(--font-underlined-decoration-style) var(--font-underlined-decoration-color) var(--font-underlined-decoration-width);
   text-decoration: var(--font-underlined-decoration-line) var(--font-underlined-decoration-style) var(--font-underlined-decoration-color) var(--font-underlined-decoration-width);
   text-underline-offset: var(--font-underlined-decoration-offset);
 }
 
-:is(.markdown-preview-view, .is-live-preview) .inline-title {
+// inline code
+:is(.markdown-rendered, .markdown-source-view) .inline-title {
   @include font(var(--font-inline-title), var(--font-inline-title-size), var(--font-inline-title-weight), var(--text-normal));
 }
 
 // Styles the task list items in the Qlean theme for Obsidian.
 // Sets the text decoration to none for completed tasks, and adds a border color and background color for incomplete tasks.
 // Adds different icons for different task states, such as a checkmark for completed tasks and a question mark for tasks with a question mark in the task list.
-.is-live-preview .HyperMD-task-line,
-.markdown-preview-view .task-list-item {
+.markdown-source-view .HyperMD-task-line,
+.markdown-rendered .task-list-item {
   &:is([data-task=x], [data-task=X]) {
     text-decoration: none !important;
   }
@@ -462,9 +503,9 @@ body {
   }
 }
 
-.is-live-preview .HyperMD-task-line .task-list-item-checkbox,
-.markdown-preview-view .task-list-item > p .task-list-item-checkbox,
-.markdown-preview-view .task-list-item > .task-list-item-checkbox {
+.markdown-source-view .HyperMD-task-line .task-list-item-checkbox,
+.markdown-rendered .task-list-item > p .task-list-item-checkbox,
+.markdown-rendered .task-list-item > .task-list-item-checkbox {
   transition: all 0.2s ease-in-out;
 
   body.circle-checkbox & {
@@ -489,17 +530,17 @@ body {
 
 .task-list-item-checkbox {
 
-  .is-live-preview .HyperMD-task-line[data-task=" "] &,
-  .markdown-preview-view .task-list-item:not(.is-checked) > p &,
-  .markdown-preview-view .task-list-item:not(.is-checked) > & {
+  .markdown-source-view .HyperMD-task-line[data-task=" "] &,
+  .markdown-rendered .task-list-item:not(.is-checked) > p &,
+  .markdown-rendered .task-list-item:not(.is-checked) > & {
     &:hover {
       border-color: var(--color-done);
     }
   }
 
-  .is-live-preview .HyperMD-task-line[data-task="-"] &,
-  .markdown-preview-view .task-list-item[data-task="-"] > p &,
-  .markdown-preview-view .task-list-item[data-task="-"] > & {
+  .markdown-source-view .HyperMD-task-line[data-task="-"] &,
+  .markdown-rendered .task-list-item[data-task="-"] > p &,
+  .markdown-rendered .task-list-item[data-task="-"] > & {
     border-color: var(--color-error);
     background-color: var(--color-error);
 
@@ -509,9 +550,9 @@ body {
     }
   }
 
-  .is-live-preview .HyperMD-task-line[data-task="!"] &,
-  .markdown-preview-view .task-list-item[data-task="!"] > p &,
-  .markdown-preview-view .task-list-item[data-task="!"] > & {
+  .markdown-source-view .HyperMD-task-line[data-task="!"] &,
+  .markdown-rendered .task-list-item[data-task="!"] > p &,
+  .markdown-rendered .task-list-item[data-task="!"] > & {
     border-color: var(--color-warning);
     background-color: var(--color-warning);
 
@@ -521,9 +562,9 @@ body {
     }
   }
 
-  .is-live-preview .HyperMD-task-line[data-task="?"] &,
-  .markdown-preview-view .task-list-item[data-task="?"] > p &,
-  .markdown-preview-view .task-list-item[data-task="?"] > & {
+  .markdown-source-view .HyperMD-task-line[data-task="?"] &,
+  .markdown-rendered .task-list-item[data-task="?"] > p &,
+  .markdown-rendered .task-list-item[data-task="?"] > & {
     border-color: var(--color-ques);
     background-color: var(--color-ques);
 
@@ -533,9 +574,9 @@ body {
     }
   }
 
-  .is-live-preview .HyperMD-task-line:is([data-task=i], [data-task=I]) &,
-  .markdown-preview-view .task-list-item:is([data-task=i], [data-task=I]) > p &,
-  .markdown-preview-view .task-list-item:is([data-task=i], [data-task=I]) > & {
+  .markdown-source-view .HyperMD-task-line:is([data-task=i], [data-task=I]) &,
+  .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > p &,
+  .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > & {
     border-color: var(--color-info);
     background-color: var(--color-info);
 
@@ -547,11 +588,11 @@ body {
 
 }
 
-:is(.markdown-preview-view, .is-live-preview) .callout {
+:is(.markdown-rendered, .markdown-source-view) .callout {
   position: relative;
 }
 
-body.callout-dogs-ear :is(.markdown-preview-view, .is-live-preview) .callout {
+body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
   &:after {
     content: "";
     position: absolute;
@@ -575,7 +616,7 @@ body.callout-dogs-ear :is(.markdown-preview-view, .is-live-preview) .callout {
 }
 
 
-:is(.is-live-preview, .markdown-preview-view) .markdown-embed:after {
+:is(.markdown-source-view, .markdown-rendered) .markdown-embed:after {
   body.embed-alt & {
     content: attr(alt);
     @include font(var(--font-default), 0.8em, 100, var(--text-muted));
@@ -594,14 +635,14 @@ body.callout-dogs-ear :is(.markdown-preview-view, .is-live-preview) .callout {
   }
 }
 
-.is-live-preview .cm-line .cm-inline-code,
-.is-live-preview .HyperMD-codeblock {
+.markdown-source-view .cm-line .cm-inline-code,
+.markdown-source-view .HyperMD-codeblock {
   color: var(--code-color);
 }
 
-.is-live-preview .cm-line .cm-inline-code,
-.is-live-preview .HyperMD-codeblock,
-.markdown-preview-view code {
+.markdown-source-view .cm-line .cm-inline-code,
+.markdown-source-view .HyperMD-codeblock,
+.markdown-rendered code {
   font-family: var(--font-monospace);
   font-size: var(--font-monospace-size);
   font-weight: var(--font-monospace-weight);
@@ -610,7 +651,7 @@ body.callout-dogs-ear :is(.markdown-preview-view, .is-live-preview) .callout {
   padding: 0 0.2em;
 }
 
-.markdown-preview-view pre {
+.markdown-rendered pre {
   border-width: 2px;
   border-style: solid;
   border-color: var(--divider-color);
@@ -656,7 +697,7 @@ body.callout-dogs-ear :is(.markdown-preview-view, .is-live-preview) .callout {
   }
 }
 
-.is-live-preview div.HyperMD-codeblock-bg {
+.markdown-source-view div.HyperMD-codeblock-bg {
   border-width: 0 2px;
   border-style: solid;
   border-color: var(--divider-color);
@@ -678,8 +719,8 @@ body.callout-dogs-ear :is(.markdown-preview-view, .is-live-preview) .callout {
   }
 }
 
-.markdown-preview-view a.tag,
-.is-live-preview .cm-line .cm-hashtag,
+.markdown-rendered a.tag,
+.markdown-source-view .cm-line .cm-hashtag,
 .metadata-container .metadata-property[data-property-key="tags"] .multi-select-pill {
   @include font(var(--font-tag), var(--font-tag-size), var(--font-tag-weight), auto);
   transition: all 0.2s ease-in-out;
@@ -694,7 +735,7 @@ body.callout-dogs-ear :is(.markdown-preview-view, .is-live-preview) .callout {
   border-radius: 0 var(--tag-radius) var(--tag-radius) 0;
 }
 
-.is-live-preview .cm-line .cm-hashtag {
+.markdown-source-view .cm-line .cm-hashtag {
   &.cm-hashtag-end {
     @extend %tag-end;
   }
@@ -716,7 +757,7 @@ body.callout-dogs-ear :is(.markdown-preview-view, .is-live-preview) .callout {
 
 body.tag-fill {
 
-  & .markdown-preview-view a.tag,
+  & .markdown-rendered a.tag,
   & .metadata-container .metadata-property[data-property-key="tags"] .multi-select-pill {
     border-color: var(--color-accent-o40);
     background-color: var(--color-accent-o30);
@@ -731,7 +772,7 @@ body.tag-fill {
     }
   }
 
-  & .is-live-preview .cm-line .cm-hashtag:is(.cm-hashtag-begin, .cm-hashtag-end) {
+  & .markdown-source-view .cm-line .cm-hashtag:is(.cm-hashtag-begin, .cm-hashtag-end) {
     border-color: var(--color-accent-o40);
     background-color: var(--color-accent-o30);
     color: var(--text-normal);
@@ -741,7 +782,7 @@ body.tag-fill {
 
 body.tag-outline {
 
-  & .markdown-preview-view a.tag,
+  & .markdown-rendered a.tag,
   & .metadata-container .metadata-property[data-property-key="tags"] .multi-select-pill {
     border-color: var(--color-accent-o50);
     background-color: transparent;
@@ -756,7 +797,7 @@ body.tag-outline {
     }
   }
 
-  & .is-live-preview .cm-line .cm-hashtag:is(.cm-hashtag-begin, .cm-hashtag-end) {
+  & .markdown-source-view .cm-line .cm-hashtag:is(.cm-hashtag-begin, .cm-hashtag-end) {
     border-color: var(--color-accent-o50);
     background-color: transparent;
     color: var(--text-normal);
@@ -885,7 +926,7 @@ body.tag-outline {
   }
 }
 
-.is-live-preview {
+.markdown-source-view {
 
   & .cm-hmd-internal-link:has(.is-unresolved),
   & .is-unresolved {
@@ -1339,7 +1380,7 @@ button[aria-label="Restore default"] {
   }
 }
 
-:is(.markdown-preview-view, .is-live-preview) {
+:is(.markdown-rendered, .markdown-source-view) {
   & table {
     width: 100%;
 
@@ -1368,7 +1409,7 @@ body.fade-out-inactive-lines {
   }
 }
 
-.markdown-source-view:not(.is-live-preview) {
+.markdown-source-view:not(.markdown-source-view) {
   .theme-dark & {
     --color-text: var(--text-normal);
     --color-header: var(--color-accent-ln10);

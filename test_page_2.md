@@ -28,7 +28,7 @@ links:
 
 ### Header with `code` , $\LaTeX$
 
-### Header with **strong**, *italit*, ==highlight==
+### Header with **strong**, *italic*, ==highlight==
 
 ### Header with <u>underline</u>, ~~strikethrough~~
 
@@ -36,7 +36,7 @@ Test paragraph. **Test** *paragraph*. <u>Test paragraph</u>. ~~Test paragraph~~.
 $$
 \LaTeX
 $$
-Test paragraph. ==Test paragraph==. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. 
+Test paragraph. ==Test paragraph==. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. <strong>Test</strong> paragraph. Test paragraph. Test paragraph. Test paragraph. 
 
 ```text
 Text Code.
@@ -55,7 +55,7 @@ dv.table(["Name", "Status"],  // long line long line long line long line
 
 Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. 
 
-> Quote block. Quote block. Quote block. Quote block. Quote block. Quote block. Quote block. Quote block. Quote block. Quote block. Quote block. Quote block. 
+> Quote block. Quote block. Quote block. Quote block. `Quote` block. Quote block. **Quote** block. *Quote* <u>block</u>. ==Quote== ~~block~~. Quote block. Quote block. Quote block. 
 > 
 > Quote block. Quote block. Quote block. Quote block. 
 > > Nested Quote. Nested Quote. Nested Quote. Nested Quote. Nested Quote. Nested Quote. 

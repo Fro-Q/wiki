@@ -8,12 +8,13 @@ An Obsidian theme offers a clean and clutter-free interface for enhanced focus a
 
 #### new
 
+1. Smoothing header hovering.
+2. If "Header Indicator" is enabled, headers' level indicator now takes the collapse indicator's job. You can now collapse headers by clicking on the level indicator, And it will give you a clear visual feedback.
+
 #### change
 
-Change:
-1. Headings' `font-weight` is set to `normal` by default.
+1. Headers' `font-weight` is set to `normal` by default.
 2. Paragraphs' `line-height` is set to `1.75`.
-3.
 
 #### bug fix
 
