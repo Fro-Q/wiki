@@ -32,6 +32,29 @@ links:
 
 ### Header with <u>underline</u>, ~~strikethrough~~
 
+- dawdawd
+    - dawdaw
+        - dswdwd
+- dawdaw
+    - dawdawd
+- dawdawdawd
+
+1. dawdawd
+    1. dawdaw
+2. dwadawd
+    1. dawdwd
+3. dwadwadawd
+    1. dawdwa
+    2. awdawd
+
+- [!] dawdawd
+    - [x] dawddaw
+    - [?] dawdw
+        - [i] dawdwd
+    - [-] dwadw
+- [ ] dwadwa
+- [ ] dwawd
+
 Test paragraph. **Test** *paragraph*. <u>Test paragraph</u>. ~~Test paragraph~~. Test paragraph. `Test` $\LaTeX$ . 
 $$
 \LaTeX
@@ -92,3 +115,4 @@ this is (dataview:: ok).
 #ok 
 
 ## #ok in Header
+

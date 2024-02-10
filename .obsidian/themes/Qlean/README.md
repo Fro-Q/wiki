@@ -6,33 +6,33 @@ An Obsidian theme offers a clean and clutter-free interface for enhanced focus a
 
 ### Version 0.1.8(02/10/2024)
 
-#### new
+#### new & change
 
 1. Smoothing header hovering.
-2. If "Header Indicator" is enabled, headers' level indicator now takes the collapse indicator's job. You can now collapse headers by clicking on the level indicator, And it will give you a clear visual feedback.
-
-#### change
-
-1. Headers' `font-weight` is set to `normal` by default.
-2. Paragraphs' `line-height` is set to `1.75`.
+2. Headers' `font-weight` is set to `normal` by default.
+3. Paragraphs' `line-height` is set to `1.75`.
+4. If "Header Indicator" is enabled, headers' level indicator now takes the collapse indicator's job. You can now collapse headers by clicking on the level indicator, And it will give you a clear visual feedback.
+5. Add header alignment options. `h1` has a default alignment of `center`.
+6. Checked task(`- [x]`) now has a `line-through` style just like the default theme.
+7.
 
 #### bug fix
 
 ### Version 0.1.6(12/22/2023)
+
+#### new & change
+
+1. Ative tab color in dark mode is no longer dazzling.
+2. Side dock color now is the same as main content area color.
 
 #### bug fix
 
 1. Side dock correctly hide in Zen mode.
 2. "tags" in "property" work the same as inline `#tag`(apologize for bringing this bug back after fixing it in 0.1.3).
 
-#### change
-
-1. Ative tab color in dark mode is no longer dazzling.
-2. Side dock color now is the same as main content area color.
-
 ### Version 0.1.5(10/20/2023)
 
-#### new
+#### new & change
 
 1. All embeds have their alts displayed and position options are available.
 
@@ -45,7 +45,7 @@ An Obsidian theme offers a clean and clutter-free interface for enhanced focus a
 
 ### Version 0.1.4(10/19/2023)
 
-#### change
+#### new & change
 
 1. Border instead of background to indicate the active file in file tree.
 2. Changed default font value.
@@ -58,7 +58,7 @@ An Obsidian theme offers a clean and clutter-free interface for enhanced focus a
 
 ### Version 0.1.3(09/14/2023)
 
-#### change
+#### new & change
 
 1. Tags in "Property" looks the same as that out of “Property".
 
@@ -70,20 +70,16 @@ An Obsidian theme offers a clean and clutter-free interface for enhanced focus a
 
 ### Version 0.1.2(09/07/2023)
 
-#### new
+#### new & change
 
 1. Pictures now have their alts displayed. Position options will be released soon.
-
-
-#### change
-
-1. Removed sidebar and topbar borders in Zen.
+2. Removed sidebar and topbar borders in Zen.
 
 ---
 
 ### Version 0.1.1(09/06/2023)
 
-#### change
+#### new & change
 
 1. Background color of active file in file tree is no longer dark(changed to accent color).
 2. Selected text color now works as accent color.

@@ -488,14 +488,9 @@ body {
   @include font(var(--font-inline-title), var(--font-inline-title-size), var(--font-inline-title-weight), var(--text-normal));
 }
 
-// Styles the task list items in the Qlean theme for Obsidian.
-// Sets the text decoration to none for completed tasks, and adds a border color and background color for incomplete tasks.
-// Adds different icons for different task states, such as a checkmark for completed tasks and a question mark for tasks with a question mark in the task list.
+// deleted task(with a `-` in the task list)
 .markdown-source-view .HyperMD-task-line,
 .markdown-rendered .task-list-item {
-  &:is([data-task=x], [data-task=X]) {
-    text-decoration: none !important;
-  }
 
   &:is([data-task="-"]) [class^=cm-list],
   &:is([data-task="-"]) {
@@ -503,10 +498,11 @@ body {
   }
 }
 
+// task list
 .markdown-source-view .HyperMD-task-line .task-list-item-checkbox,
 .markdown-rendered .task-list-item > p .task-list-item-checkbox,
 .markdown-rendered .task-list-item > .task-list-item-checkbox {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   body.circle-checkbox & {
     border-radius: 50%;
