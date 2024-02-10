@@ -179,6 +179,36 @@
       "openFileInMode": "default",
       "fileExistsMode": "Nothing",
       "setFileExistsBehavior": true
+    },
+    {
+      "id": "f8d46d6a-57ab-4bd5-8167-08c3a4336b41",
+      "name": "topic",
+      "type": "Template",
+      "command": false,
+      "templatePath": "template/topic.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "@{{value}}"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "topics"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Nothing",
+      "setFileExistsBehavior": true
     }
   ],
   "macros": [],

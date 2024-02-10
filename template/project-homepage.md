@@ -1,5 +1,5 @@
 ---
-tags: 
+tags:
   - homepage
 project: "<% tp.file.folder() %>"
 status: "working"
@@ -13,7 +13,7 @@ status: "working"
 table
 dateformat(date, "DD") as date,
 sum
-from !#homepage and #record  
+from !#homepage and #record
 where contains(file.folder, project)
 and split(file.folder, "/")[-1] = <% tp.file.folder() %>
 ```
@@ -25,7 +25,7 @@ table
 dateformat(date, "DD") as date,
 split(type, "_")[1] as type,
 sum
-from !#homepage and #doc 
+from !#homepage and #doc
 where contains(file.folder, project)
 and split(file.folder, "/")[-1] = <% tp.file.folder() %>
 ```
@@ -34,7 +34,7 @@ and split(file.folder, "/")[-1] = <% tp.file.folder() %>
 
 ```dataview
 task
-from !#homepage and #tasks 
+from !#homepage and #tasks
 where contains(file.folder, project)
 and split(file.folder, "/")[-1] = <% tp.file.folder() %>
 group by file.name
@@ -47,7 +47,7 @@ table
 dateformat(date, "DD") as date,
 split(type, "_")[1] as type,
 sum
-from !#homepage and #meeting 
+from !#homepage and #meeting
 where contains(file.folder, project)
 and split(file.folder, "/")[-1] = <% tp.file.folder() %>
 ```

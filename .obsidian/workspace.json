@@ -4,55 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e2112758f2e3a59d",
+        "id": "d4f02b4c0b0df585",
         "type": "tabs",
         "children": [
           {
-            "id": "1f9590ca84b66cbe",
+            "id": "993f0ff61202139b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "concepts/@thiessenpolygon.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b8a556d4321fc2a2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/create_thiessen_polygon.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cec6ca09502324f9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "project/drought/record_2024_02_09_2343.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d1cd94b9d524ea31",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "timestamp/ts2024_01_17_0956.md",
+                "file": "homepage.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -139,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "concepts/@thiessenpolygon.md",
+                "file": "homepage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "concepts/@thiessenpolygon.md",
+                "file": "homepage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -168,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "concepts/@thiessenpolygon.md"
+                "file": "homepage.md"
               }
             }
           },
@@ -201,7 +162,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "concepts/@thiessenpolygon.md"
+                "file": "homepage.md"
               }
             }
           }
@@ -218,7 +179,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "concepts/@thiessenpolygon.md",
+                "file": "homepage.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -246,8 +207,17 @@
                 }
               }
             }
+          },
+          {
+            "id": "e8f86d33dd808783",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -269,35 +239,36 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "1f9590ca84b66cbe",
+  "active": "993f0ff61202139b",
   "lastOpenFiles": [
-    "template/concept.md",
-    "concepts/@thiessenpolygon.md",
+    "global_file_format_spec.md",
+    "notes/thiessen_polygon_features.md",
     "notes/create_thiessen_polygon.md",
-    "project/drought/record_2024_02_09_2343.md",
-    "project/drought/doc-2402061041.md",
-    "template/note.md",
-    "notes/dawdawd.md",
     "homepage.md",
+    "concepts/@thiessenpolygon.md",
+    "template/concept.md",
+    "notes/dawdawd.md",
+    "topics/@spatialanalysis.md",
+    "topics/@gis.md",
+    "template/topic.md",
+    "template/diary.md",
+    "template/note.md",
+    "timestamp/ts2024_01_17_0956.md",
+    "project/drought/record_2024_02_09_2343.md",
+    "topics",
+    "project/drought/doc-2402061041.md",
     "template/timestamp.md",
     "template/project-tasks.md",
     "template/project-record.md",
     "template/project-meeting.md",
     "template/project-homepage.md",
     "template/project-doc.md",
-    "template/diary.md",
     "concepts",
-    "timestamp/ts2024_01_17_0956.md",
     "project/drought/record-2402041533.md",
     "project/drought/record-2401300529.md",
     "project/drought/record-2401290913.md",
     "project/drought/record-2401310923.md",
     "project/drought/drought.md",
-    "template/project-meeting-standup.md",
-    "template/project-meeting-brainstorm.md",
-    "project/drought/record-240203.md",
-    "project/drought/record_2024_02_09_2320.md",
-    "project/drought/record_2024_02_09_2319.md",
     "db/test",
     "notes",
     "project/test",
@@ -308,7 +279,6 @@
     "setting/js",
     "setting",
     "project/drought/未命名.canvas",
-    "Recording 20240129105011.webm",
     "Pasted image 20231229063614 1.png",
     "Pasted image 20231229063650 1.png",
     "Pasted image 20231229063627 1.png",

@@ -4,7 +4,10 @@ tags:
 topic:
 ---
 
+# [title:: ]
+
 ```dataviewjs
+// query current page
 var thisPage = dv.current()
 
 function getTitle(p) {
@@ -14,26 +17,27 @@ function getTitle(p) {
   return `[[${p.file.name}]]`
 }
 
+// get all notes that link to this page
 function getInlinkNotes(thisLink) {
-  let allNotes = dv.pages(`"notes"`)
-    .filter(n => n.file.outlinks.includes(thisLink))
+  let pages = dv.pages(`"notes"`)
+    .filter(p => p.file.outlinks.includes(thisLink))
 
-  return allNotes
+  return pages
 }
 
-function generateCheckbox(p) {
-	if (p.finished) {
-		return dv.el('input', 'ok', {attr: { type: "checkbox", disabled: "true", checked: true } })
+function generateCheckbox(page) {
+	if (page.finished) {
+		return dv.el('input', '', {attr: { type: "checkbox", disabled: "true", checked: true } })
 	}
-	return dv.el('input', 'ok', {attr: {type: "checkbox", disabled: "true"}})
+	return dv.el('input', '', {attr: {type: "checkbox", disabled: "true"}})
 }
 
 
 dv.table(["Note Related", "Topics Related", "Finished"],
-  getInlinkNotes(thisPage.file.link).map(n => [
-    getTitle(n),
-    n.file.outlinks,
-    generateCheckbox(n),
+  getInlinkNotes(thisPage.file.link).map(p => [
+    getTitle(p),
+    p.file.outlinks,
+    generateCheckbox(p),
   ])
 )
 ```

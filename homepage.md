@@ -73,13 +73,38 @@ dv.table(["Name", "Status"],
 ## DB
 
 ```dataviewjs
-var topics = dv.pages(`"notes"`)
-	.flatMap(p => p.topic)
-	.filter((t, i, arr) => arr.indexOf(t) === i)
+// var pages = dv.pages(`"notes"`)
+// 	.flatMap(p => p.file.outlinks)
+
+// function getPages(t) {
+// 	return dv.pages(`"notes"`)
+// 		.filter(p => p.file.outlinks.includes(t))
+// 		.map(p => getTitle(p))
+// }
+
+// function getTitle(p) {
+// 	if (p.title) {
+// 		return `[[${p.file.name}]]: ${p.title}`
+// 	}
+// 	return `[[${p.file.name}]]`
+// }
+
+// dv.table(["Topic", "Pages"],
+// 	pages.map(t => [
+// 		t,
+// 		getPages(t),
+// 	])
+// )
+
+// query for all concepts that appears in the notes. The way concepts are linked to notes is by the outlinks of the note page.
+// Deal with the case that a concept is linked to multiple notes. A concept only appears once in the table.
+var pages = dv.pages(`"notes"`)
+	.flatMap(p => p.file.outlinks)
+	.filter((value, index, self) => self.indexOf(value) === index)
 
 function getPages(t) {
 	return dv.pages(`"notes"`)
-		.filter(p => p.topic.includes(t))
+		.filter(p => p.file.outlinks.includes(t))
 		.map(p => getTitle(p))
 }
 
@@ -90,10 +115,11 @@ function getTitle(p) {
 	return `[[${p.file.name}]]`
 }
 
-dv.table(["Topic", "Pages"],
-	topics.map(t => [
-		`[[${t}]]`,
+dv.table(["Concept", "Pages"],
+	pages.map(t => [
+		t,
 		getPages(t),
 	])
 )
+
 ```

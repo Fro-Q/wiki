@@ -4,8 +4,12 @@ tags:
 topic:
   - GIS
   - Spatial Analysis
-links: "[[@thiessenpolygon]]"
+links:
+  - "[[@gis]]"
+  - "[[@spatialanalysis]]"
 ---
+
+# [title:: Thiessen Polygon]
 
 ```dataviewjs
 var thisPage = dv.current()
@@ -32,7 +36,7 @@ function generateCheckbox(p) {
 }
 
 
-dv.table(["Note Related", "Topics Related", "Finished"],
+dv.table(["Notes Related", "Concepts Related", "Finished"],
   getInlinkNotes(thisPage.file.link).map(n => [
     getTitle(n),
     n.file.outlinks,
