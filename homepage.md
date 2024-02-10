@@ -6,14 +6,15 @@ var pages = dv.pages(`"diary"`)
 
 function getTitle(p) {
 	if (p.title) {
-		return `[[${p.file.name}]]: ${p.title}`
+		return `[${p.title}](${p.file.name})`
 	}
 	return `[[${p.file.name}]]`
 }
 
-dv.table(["Title", "Mentioned"],
+dv.table(["Title", "Time", "Mentioned"],
 	pages.map(p => [
 		getTitle(p),
+		`${p.file.ctime.year}-${p.file.ctime.month}-${p.file.ctime.day} ${p.file.ctime.hour}:${p.file.ctime.minute}`,
 		p.file.outlinks[0]?p.file.outlinks:"None",
 	])
 )
@@ -27,7 +28,7 @@ var pages = dv.pages(`"timestamp"`)
 
 function getTitle(p) {
 	if (p.title) {
-		return `[[${p.file.name}]]: ${p.title}`
+		return `[${p.title}](${p.file.name})`
 	}
 	return `[[${p.file.name}]]`
 }
@@ -48,9 +49,10 @@ function generateCheckbox(p) {
 	return dv.el('input', 'ok', {attr: {type: "checkbox", disabled: "true"}})
 }
 
-dv.table(["Title", "Topics Related", "Dealed"],
+dv.table(["Title", "Time", "Topics Related", "Dealed"],
 	pages.map(p => [
 		getTitle(p),
+		`${p.file.ctime.year}-${p.file.ctime.month}-${p.file.ctime.day} ${p.file.ctime.hour}:${p.file.ctime.minute}`,
 		getTopic(p),
 		generateCheckbox(p),
 	])
@@ -73,34 +75,8 @@ dv.table(["Name", "Status"],
 ## DB
 
 ```dataviewjs
-// var pages = dv.pages(`"notes"`)
-// 	.flatMap(p => p.file.outlinks)
-
-// function getPages(t) {
-// 	return dv.pages(`"notes"`)
-// 		.filter(p => p.file.outlinks.includes(t))
-// 		.map(p => getTitle(p))
-// }
-
-// function getTitle(p) {
-// 	if (p.title) {
-// 		return `[[${p.file.name}]]: ${p.title}`
-// 	}
-// 	return `[[${p.file.name}]]`
-// }
-
-// dv.table(["Topic", "Pages"],
-// 	pages.map(t => [
-// 		t,
-// 		getPages(t),
-// 	])
-// )
-
-// query for all concepts that appears in the notes. The way concepts are linked to notes is by the outlinks of the note page.
-// Deal with the case that a concept is linked to multiple notes. A concept only appears once in the table.
-var pages = dv.pages(`"notes"`)
+var concepts = dv.pages(`"notes"`)
 	.flatMap(p => p.file.outlinks)
-	.filter((value, index, self) => self.indexOf(value) === index)
 
 function getPages(t) {
 	return dv.pages(`"notes"`)
@@ -110,16 +86,34 @@ function getPages(t) {
 
 function getTitle(p) {
 	if (p.title) {
-		return `[[${p.file.name}]]: ${p.title}`
+		return `[${p.title}](${p.file.name})`
 	}
 	return `[[${p.file.name}]]`
 }
 
+function unique(arr) {
+	// remove duplicate concepts
+	// new array to store the unique concepts
+	var newArr = [];
+	// store the appeared topics. if a topic has appeared, skip it.
+	var appearedTopicsTiel = [];
+	for (var i = 0; i < arr.length; i++) {
+		if (appearedTopicsTiel.includes(arr[i].toString())) {
+			continue;
+		}
+		appearedTopicsTiel.push(arr[i].toString());
+		newArr.push(arr[i]);
+	}
+	return newArr;
+}
+
+concepts = unique(concepts)
+
 dv.table(["Concept", "Pages"],
-	pages.map(t => [
+	concepts.map(t => [
 		t,
 		getPages(t),
 	])
 )
-
 ```
+

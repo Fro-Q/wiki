@@ -6,17 +6,13 @@ status: "working"
 
 ## Records
 
-```dataview
-table
-dateformat(date, "DD") as date,
-sum
-from !#homepage and #record  
-where contains(file.folder, project)
-and split(file.folder, "/")[-1] = drought
-sort date
+```dataviewjs
+var pages = dv.pages(`"project/${dv.current()}" and #record`)
+
+dv.list([])
 ```
 
-```dataviewjs
+```data
 var pages = dv.pages(`"project/drought" and -#homepage`)
 	.sort(p => -p.file.ctime);
 

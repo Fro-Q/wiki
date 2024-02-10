@@ -4,17 +4,36 @@
     "type": "split",
     "children": [
       {
-        "id": "d4f02b4c0b0df585",
+        "id": "17077f12528e7c80",
         "type": "tabs",
         "children": [
           {
-            "id": "993f0ff61202139b",
+            "id": "d8b4762360e8b168",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "homepage.md",
+                "file": "project/drought/drought.md",
                 "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "1ad6a6c078edac5d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fc6496eca848ea20",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "project/drought/drought.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
@@ -84,7 +103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 261.5
+    "width": 200
   },
   "right": {
     "id": "b87e94253deaa70c",
@@ -100,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "homepage.md",
+                "file": "project/drought/drought.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +136,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "homepage.md",
+                "file": "project/drought/drought.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -129,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "homepage.md"
+                "file": "project/drought/drought.md"
               }
             }
           },
@@ -162,7 +181,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "homepage.md"
+                "file": "project/drought/drought.md"
               }
             }
           }
@@ -179,7 +198,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "homepage.md",
+                "file": "project/drought/drought.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -221,7 +240,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -239,12 +259,14 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "993f0ff61202139b",
+  "active": "fc6496eca848ea20",
   "lastOpenFiles": [
+    "project/drought/doc-2402061041.md",
+    "project/drought/drought.md",
+    "homepage.md",
     "global_file_format_spec.md",
     "notes/thiessen_polygon_features.md",
     "notes/create_thiessen_polygon.md",
-    "homepage.md",
     "concepts/@thiessenpolygon.md",
     "template/concept.md",
     "notes/dawdawd.md",
@@ -256,7 +278,6 @@
     "timestamp/ts2024_01_17_0956.md",
     "project/drought/record_2024_02_09_2343.md",
     "topics",
-    "project/drought/doc-2402061041.md",
     "template/timestamp.md",
     "template/project-tasks.md",
     "template/project-record.md",
@@ -268,7 +289,6 @@
     "project/drought/record-2401300529.md",
     "project/drought/record-2401290913.md",
     "project/drought/record-2401310923.md",
-    "project/drought/drought.md",
     "db/test",
     "notes",
     "project/test",
