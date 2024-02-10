@@ -6,6 +6,7 @@
     "sub": "multitext",
     "topic": "multitext",
     "course": "multitext",
-    "project": "multitext"
+    "project": "multitext",
+    "list_test": "multitext"
   }
 }
