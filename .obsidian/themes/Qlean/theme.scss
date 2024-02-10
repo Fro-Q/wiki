@@ -6,7 +6,7 @@
 }
 
 body {
-  // font setting
+  // font
   --font-default: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
   --font-monospace-default: iawriter-mono, Nitti, Menlo, Courier, monospace;
   --font-monospace: var(--font-monospace-default);
@@ -17,7 +17,7 @@ body {
   --font-file-tree: var(--font-default);
   --font-source-view: var(--font-monospace);
   --font-interface-override: "";
-  --font-h1-size: 2em;
+  --font-h1-size: 2.0em;
   --font-h2-size: 1.8em;
   --font-h3-size: 1.6em;
   --font-h4-size: 1.4em;
@@ -34,7 +34,7 @@ body {
   --font-highlight-size: 1.5em;
   --font-underlined-size: 1em;
   --font-source-view-size: 1em;
-  --font-h1-weight: 900;
+  --font-h1-weight: normal;
   --font-h2-weight: var(--font-h1-weight);
   --font-h3-weight: var(--font-h1-weight);
   --font-h4-weight: var(--font-h1-weight);
@@ -46,15 +46,15 @@ body {
   --font-monospace-weight: normal;
   --font-file-tree-weight: normal;
   --font-vault-name-weight: normal;
-  --font-inline-title-weight: var(--font-h1-weight);
-  --font-strong-weight: 900;
+  --font-inline-title-weight: 900 --font-strong-weight: 900;
   --font-em-weight: normal;
   --font-highlight-weight: bold;
   --font-underlined-weight: normal;
   --font-source-view-weight: normal;
   --font-em-style: italic;
-  // some element style
+  // tag
   --tag-radius: 1em;
+
   --blockquote-border-thickness: 2px;
   --callout-dogs-ear-size: 30px;
   --tab-curve: 6px;
@@ -365,10 +365,10 @@ body {
   }
 }
 
-.markdown-preview-view :is(p, li),
-.is-live-preview .cm-line {
+[data-mode="source"] :is(p, li),
+[data-mode="preview"] .cm-line {
   @include font(var(--font-text), var(--font-text-size), var(--font-text-weight), var(--text-normal));
-  line-height: 2;
+  line-height: 1.75;
 }
 
 @for $i from 1 through 6 {
