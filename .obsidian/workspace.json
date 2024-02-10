@@ -254,6 +254,7 @@
   },
   "active": "11eca8c68a537712",
   "lastOpenFiles": [
+    "notes/create_thiessen_polygon.md",
     "test_page.md",
     "homepage.md",
     "global_file_format_spec.md",
@@ -269,7 +270,6 @@
     "project/drought/r_2024_01_29_0913.md",
     "template/project-doc.md",
     "notes/thiessen_polygon_features.md",
-    "notes/create_thiessen_polygon.md",
     "concepts/@thiessenpolygon.md",
     "topics/@spatialanalysis.md",
     "topics/@gis.md",

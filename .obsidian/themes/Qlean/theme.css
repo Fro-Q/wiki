@@ -2147,7 +2147,7 @@ settings:
     default: 30
   -
     id: embed-style
-    title: Embed Style  
+    title: Embed Style
     type: heading
     level: 1
     collapsed: true
@@ -2249,7 +2249,7 @@ settings:
     default: true
   -
 */
-/* 
+/*
 @settings
 name: Focus Mode
 id: focus-mode
