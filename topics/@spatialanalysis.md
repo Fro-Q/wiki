@@ -3,12 +3,11 @@ tags:
   - topic
 ---
 
-# [title:: ]
+# [title:: Spatial Analysis]
 
 ```dataviewjs
-// Get all pages in the "concepts" folder and have "topic" equal to this page's title
 var pages = dv.pages(`"concepts"`)
-  .filter(p => p.topic.includes(dv.current().title))
+  .filter(p => p.file.outlinks.includes(dv.current().file.link))
   .sort(p => -p.file.ctime);
 
 function getTitle(p) {

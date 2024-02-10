@@ -1,6 +1,8 @@
 ---
 tags:
   - note
+date: 2024-02-10
+time: 12:22
 finished: false
 ---
 

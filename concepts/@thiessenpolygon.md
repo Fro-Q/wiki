@@ -36,11 +36,11 @@ function generateCheckbox(p) {
 }
 
 
-dv.table(["Notes Related", "Concepts Related", "Finished"],
+dv.table(["Notes Related", "Finished", "Concepts Related"],
   getInlinkNotes(thisPage.file.link).map(n => [
     getTitle(n),
-    n.file.outlinks,
     generateCheckbox(n),
+    n.file.outlinks,
   ])
 )
 ```

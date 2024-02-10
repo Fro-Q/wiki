@@ -1,10 +1,12 @@
 ---
 tags:
   - note
+date: 2024-02-10
+time: 00:37
 finished: false
 ---
 
-# [title:: Create Thiessen Polygon]
+# [title::Create Thiessen Polygon]
 
 创建 [@Thiessen Polygon](@thiessenpolygon.md)：
 - 从左到右、从上到下扫描所有点；
