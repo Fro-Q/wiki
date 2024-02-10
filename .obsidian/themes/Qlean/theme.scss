@@ -12,58 +12,150 @@ body {
   --font-default: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
   --font-monospace-default: iawriter-mono, Nitti, Menlo, Courier, monospace;
   --font-monospace: var(--font-monospace-default);
-  --font-header: var(--font-default);
   --font-text: var(--font-default);
-  --font-inline-title: var(--font-header);
   --font-tag: var(--font-monospace);
   --font-file-tree: var(--font-default);
   --font-source-view: var(--font-monospace);
   --font-interface-override: "";
-  --font-h1-size: 2.0em;
-  --font-h2-size: 1.8em;
-  --font-h3-size: 1.6em;
-  --font-h4-size: 1.4em;
-  --font-h5-size: 1.2em;
-  --font-h6-size: 1.1em;
+
   --font-tag-size: 0.8em;
   --font-latex-size: 1em;
   --font-monospace-size: 0.95em;
   --font-file-tree-size: 0.95em;
   --font-vault-name-size: 1.25em;
-  --font-inline-title-size: 2em;
-  --font-strong-size: 1em;
-  --font-em-size: 1em;
-  --font-highlight-size: 1.5em;
-  --font-underlined-size: 1em;
   --font-source-view-size: 1em;
-  --font-h1-weight: normal;
-  --font-h2-weight: var(--font-h1-weight);
-  --font-h3-weight: var(--font-h1-weight);
-  --font-h4-weight: var(--font-h1-weight);
-  --font-h5-weight: var(--font-h1-weight);
-  --font-h6-weight: var(--font-h1-weight);
+
   --font-text-weight: normal;
   --font-tag-weight: normal;
   --font-latex-weight: normal;
   --font-monospace-weight: normal;
   --font-file-tree-weight: normal;
   --font-vault-name-weight: normal;
-  --font-inline-title-weight: 900 --font-strong-weight: 900;
-  --font-em-weight: normal;
-  --font-highlight-weight: bold;
-  --font-underlined-weight: normal;
   --font-source-view-weight: normal;
-  --font-strong-style: normal;
-  --font-em-style: italic;
-  --font-highlight-style: normal;
+
+
+
+
 
   // header
+  --font-header: var(--font-default);
+
+  --font-h1-size: 2.0em;
+  --font-h2-size: 1.8em;
+  --font-h3-size: 1.6em;
+  --font-h4-size: 1.4em;
+  --font-h5-size: 1.2em;
+  --font-h6-size: 1.1em;
+
+  --font-h1-weight: normal;
+  --font-h2-weight: var(--font-h1-weight);
+  --font-h3-weight: var(--font-h1-weight);
+  --font-h4-weight: var(--font-h1-weight);
+  --font-h5-weight: var(--font-h1-weight);
+  --font-h6-weight: var(--font-h1-weight);
+
+  --h1-color: var(--color-default-h1);
+  --h2-color: var(--color-default-h2);
+  --h3-color: var(--color-default-h3);
+  --h4-color: var(--color-default-h4);
+  --h5-color: var(--color-default-h5);
+  --h6-color: var(--color-default-h6);
+
+  --color-default-h1: var(--text-normal);
+  --color-default-h2: var(--text-normal);
+  --color-default-h3: var(--text-normal);
+  --color-default-h4: var(--text-normal);
+  --color-default-h5: var(--text-normal);
+  --color-default-h6: var(--text-normal);
+  --color-accent-h1: hsl(var(--color-h), var(--color-s), var(--color-l));
+  --color-accent-h2: hsl(var(--color-h), var(--color-s), var(--color-l));
+  --color-accent-h3: hsl(var(--color-h), var(--color-s), var(--color-l));
+  --color-accent-h4: hsl(var(--color-h), var(--color-s), var(--color-l));
+  --color-accent-h5: hsl(var(--color-h), var(--color-s), var(--color-l));
+  --color-accent-h6: hsl(var(--color-h), var(--color-s), var(--color-l));
+  --color-gradient-h1: hsl(var(--color-h), var(--color-s), var(--color-l));
+  --color-gradient-h2: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 3%));
+  --color-gradient-h3: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 6%));
+  --color-gradient-h4: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 9%));
+  --color-gradient-h5: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 12%));
+  --color-gradient-h6: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 15%));
+
   --h1-align: center;
   --h2-align: left;
   --h3-align: left;
   --h4-align: left;
   --h5-align: left;
   --h6-align: left;
+
+  // strong
+  --font-strong-size: 1em;
+  --font-strong-weight: 900;
+  --font-strong-style: normal;
+  --font-strong-color: var(--text-strong);
+
+  --font-strong-decoration-line: none;
+  --font-strong-decoration-width: 1px;
+  --font-strong-decoration-style: solid;
+  --font-strong-decoration-color: var(--font-strong-color);
+  --font-strong-decoration-offset: 2px;
+
+  // em
+  --font-em-size: 1em;
+  --font-em-weight: normal;
+  --font-em-style: italic;
+  --font-em-color: var(--text-normal);
+
+  --font-em-decoration-line: none;
+  --font-em-decoration-width: 1px;
+  --font-em-decoration-style: solid;
+  --font-em-decoration-color: var(--font-em-color);
+  --font-em-decoration-offset: 2px;
+
+  // highlight
+  --font-highlight-size: 1em;
+  --font-highlight-weight: normal;
+  --font-highlight-style: normal;
+  --font-highlight-color: var(--background-primary);
+  --font-highlight-bg-color: var(--color-accent);
+
+  --font-highlight-decoration-width: 2px;
+  --font-highlight-decoration-style: solid;
+  --font-highlight-decoration-line: none;
+  --font-highlight-decoration-color: var(--text-normal);
+  --font-highlight-decoration-offset: 3px;
+
+  // underlined
+  --font-underlined-size: 1em;
+  --font-underlined-weight: normal;
+  --font-underlined-color: var(--text-normal);
+
+  --font-underlined-decoration-line: underline;
+  --font-underlined-decoration-width: 1px;
+  --font-underlined-decoration-style: solid;
+  --font-underlined-decoration-color: var(--font-underlined-color);
+  --font-underlined-decoration-offset: 2px;
+
+  // inline title
+  --font-inline-title: var(--font-header);
+  --font-inline-title-size: 2em;
+  --font-inline-title-weight: 900;
+
+  // task list
+  --checkbox-checked-color: hsla(var(--color-h), var(--color-s), var(--color-l));
+  --checkbox-border-color: var(--color-base-70);
+  --checkbox-color-hover: hsla(0, 0%, 73%, 0.5);
+  --checkbox-unchecked-color-hover: hsla(var(--color-h), var(--color-s), calc(var(--color-l)), 0.5);
+
+  --checklist-decoration-color: var(--text-normal);
+  --checklist-decoration-line: none;
+
+  --checklist-done-decoration-color: var(--text-muted);
+  --checklist-done-decoration-line: none;
+
+  --checklist-delete-decoration-color: var(--background-modifier-error);
+  --checklist-delete-decoration-line: line-through;
+
+  // callout
 
   // tag
   --tag-radius: 1em;
@@ -101,13 +193,7 @@ body {
   --color-purple-l: 60%;
   --color-purple-main: hsl(var(--color-purple-h), var(--color-purple-s), var(--color-purple-l));
   // element color
-  --checkbox-checked-color: hsla(var(--color-h), var(--color-s), var(--color-l));
-  --checkbox-border-color: var(--color-base-70);
-  --checkbox-color-hover: hsla(0, 0%, 73%, 0.5);
-  --checkbox-unchecked-color-hover: hsla(var(--color-h), var(--color-s), calc(var(--color-l)), 0.5);
-  --checklist-decoration-color: var(--text-normal);
-  --checklist-done-decoration-color: var(--text-muted);
-  --checklist-delete-decoration-color: var(--background-modifier-error);
+
   // custom accent color
   --accent-color-light-hue-default: 254;
   --accent-color-light-saturation-default: 80%;
@@ -128,37 +214,11 @@ body {
   --color-accent-o50: hsla(var(--color-h), var(--color-s), var(--color-l), 0.5);
   --color-accent-o40: hsla(var(--color-h), var(--color-s), var(--color-l), 0.4);
   --color-accent-o30: hsla(var(--color-h), var(--color-s), var(--color-l), 0.3);
-  --color-default-h1: var(--text-normal);
-  --color-default-h2: var(--text-normal);
-  --color-default-h3: var(--text-normal);
-  --color-default-h4: var(--text-normal);
-  --color-default-h5: var(--text-normal);
-  --color-default-h6: var(--text-normal);
-  --color-accent-h1: hsl(var(--color-h), var(--color-s), var(--color-l));
-  --color-accent-h2: hsl(var(--color-h), var(--color-s), var(--color-l));
-  --color-accent-h3: hsl(var(--color-h), var(--color-s), var(--color-l));
-  --color-accent-h4: hsl(var(--color-h), var(--color-s), var(--color-l));
-  --color-accent-h5: hsl(var(--color-h), var(--color-s), var(--color-l));
-  --color-accent-h6: hsl(var(--color-h), var(--color-s), var(--color-l));
-  --color-gradient-h1: hsl(var(--color-h), var(--color-s), var(--color-l));
-  --color-gradient-h2: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 3%));
-  --color-gradient-h3: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 6%));
-  --color-gradient-h4: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 9%));
-  --color-gradient-h5: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 12%));
-  --color-gradient-h6: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 15%));
+
   // element color
-  --text-selection: hsla(var(--color-h), var(--color-s), var(--color-l), 0.3) !important;
-  --h1-color: var(--color-default-h1);
-  --h2-color: var(--color-default-h2);
-  --h3-color: var(--color-default-h3);
-  --h4-color: var(--color-default-h4);
-  --h5-color: var(--color-default-h5);
-  --h6-color: var(--color-default-h6);
-  --font-strong-color: var(--text-strong);
-  --font-em-color: var(--text-normal);
-  --font-highlight-color: var(--text-normal);
-  --font-highlight-bg-color: transparent;
-  --font-underlined-color: var(--text-normal);
+  --text-selection: hsla(var(--color-h), var(--color-s), var(--color-l), 0.15) !important;
+
+
   --link-unresolved-color: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 20%));
   --link-unresolved-color-hover: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 10%));
   --link-external-color: var(--color-accent-ln5);
@@ -167,26 +227,9 @@ body {
   --link-color-hover: var(--color-accent);
   --font-inline-tile-color: var(--text-normal);
   // decoration
-  --font-strong-decoration-line: none;
-  --font-strong-decoration-width: 1px;
-  --font-strong-decoration-style: solid;
-  --font-strong-decoration-color: var(--font-strong-color);
-  --font-strong-decoration-offset: 2px;
-  --font-em-decoration-line: none;
-  --font-em-decoration-width: 1px;
-  --font-em-decoration-style: solid;
-  --font-em-decoration-color: var(--font-em-color);
-  --font-em-decoration-offset: 2px;
-  --font-underlined-decoration-line: underline;
-  --font-underlined-decoration-width: 1px;
-  --font-underlined-decoration-style: solid;
-  --font-underlined-decoration-color: var(--font-underlined-color);
-  --font-underlined-decoration-offset: 2px;
-  --font-highlight-decoration-width: 5px;
-  --font-highlight-decoration-style: solid;
-  --font-highlight-decoration-line: underline;
-  --font-highlight-decoration-color: var(--text-normal);
-  --font-highlight-decoration-offset: 3px;
+
+
+
   --link-decoration-line: underline;
   --link-decoration-width: auto;
   --link-decoration-style: solid;
@@ -198,9 +241,7 @@ body {
   --link-unresolved-decoration-color: hsla(var(--link-unresolved-color), 0.3);
   --link-unresolved-decoration-offset: 2px;
   --link-unresolved-decoration-color-hover: hsla(var(--link-unresolved-color-hover), 0.3);
-  --checklist-decoration-line: none;
-  --checklist-done-decoration-line: none;
-  --checklist-delete-decoration-line: line-through;
+
   // other
   --color-error: var(--background-modifier-error);
   --color-done: hsl(120, 100%, 40%);
@@ -295,8 +336,8 @@ body {
     --text-muted: hsla(0, 0%, 40%, 1) !important;
     --code-bg-color: #323232;
     --codebloc-border-color: #888;
-    --background-primary: #232222;
-    --background-secondary: #171514;
+    --background-primary: #1a1a1a;
+    --background-secondary: #151515;
     --background-modifier-active-hover: #272727;
     --background-modifier-border-focus: #272727;
     --background-modifier-border-focus: var(--color-base-40);
@@ -474,6 +515,9 @@ body {
   text-underline-offset: var(--font-highlight-decoration-offset);
   background-color: var(--font-highlight-bg-color);
   font-style: var(--font-highlight-style);
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin: 0 2px;
 }
 
 // underlined
@@ -483,12 +527,12 @@ body {
   text-underline-offset: var(--font-underlined-decoration-offset);
 }
 
-// inline code
+// inline title
 :is(.markdown-rendered, .markdown-source-view) .inline-title {
   @include font(var(--font-inline-title), var(--font-inline-title-size), var(--font-inline-title-weight), var(--text-normal));
 }
 
-// deleted task(with a `-` in the task list)
+// canceled task
 .markdown-source-view .HyperMD-task-line,
 .markdown-rendered .task-list-item {
 
@@ -504,6 +548,7 @@ body {
 .markdown-rendered .task-list-item > .task-list-item-checkbox {
   transition: all 0.3s ease-in-out;
 
+  // if circle-checkbox is enabled
   body.circle-checkbox & {
     border-radius: 50%;
   }
@@ -526,6 +571,7 @@ body {
 
 .task-list-item-checkbox {
 
+  // empty checkbox
   .markdown-source-view .HyperMD-task-line[data-task=" "] &,
   .markdown-rendered .task-list-item:not(.is-checked) > p &,
   .markdown-rendered .task-list-item:not(.is-checked) > & {
@@ -534,6 +580,7 @@ body {
     }
   }
 
+  // canceled task
   .markdown-source-view .HyperMD-task-line[data-task="-"] &,
   .markdown-rendered .task-list-item[data-task="-"] > p &,
   .markdown-rendered .task-list-item[data-task="-"] > & {
@@ -546,6 +593,7 @@ body {
     }
   }
 
+  // important task
   .markdown-source-view .HyperMD-task-line[data-task="!"] &,
   .markdown-rendered .task-list-item[data-task="!"] > p &,
   .markdown-rendered .task-list-item[data-task="!"] > & {
@@ -558,6 +606,7 @@ body {
     }
   }
 
+  // question task
   .markdown-source-view .HyperMD-task-line[data-task="?"] &,
   .markdown-rendered .task-list-item[data-task="?"] > p &,
   .markdown-rendered .task-list-item[data-task="?"] > & {
@@ -570,6 +619,7 @@ body {
     }
   }
 
+  // info task
   .markdown-source-view .HyperMD-task-line:is([data-task=i], [data-task=I]) &,
   .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > p &,
   .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > & {
@@ -581,11 +631,14 @@ body {
       mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 7 v 14 h -4 v 2 h 10 v -2 h -4 v -14 h -6 v 2 h 6 M 11 3 v -2 h 2 v 2 h -2 v -1 " stroke="black" fill="black" stroke-width="2" stroke-linejoin="round" /></svg>');
     }
   }
-
 }
 
+// callout
 :is(.markdown-rendered, .markdown-source-view) .callout {
   position: relative;
+  margin: 16px auto;
+  padding: 20px 30px;
+  border-radius: 4px;
 }
 
 body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
@@ -2060,7 +2113,7 @@ settings:
     title: Weight
     description: Uasually makes difference at 100, 400, 700, 900 though depends on the font.
     type: variable-number-slider
-    default: 600
+    default: 400
     min: 100
     max: 900
     step: 100
@@ -2073,7 +2126,7 @@ settings:
     max: 2
     step: 0.1
     format: em
-    default: 1.5
+    default: 1
   -
     id: font-highlight-bg-color
     title: Background
@@ -2331,7 +2384,7 @@ settings:
     id: callout-dogs-ear
     title: Dog's Ear
     type: class-toggle
-    default: true
+    default: false
   -
     id: callout-dogs-ear-size
     title: Dog's Ear Size(em)

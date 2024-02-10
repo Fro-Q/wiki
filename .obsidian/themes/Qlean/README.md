@@ -14,7 +14,9 @@ An Obsidian theme offers a clean and clutter-free interface for enhanced focus a
 4. If "Header Indicator" is enabled, headers' level indicator now takes the collapse indicator's job. You can now collapse headers by clicking on the level indicator, And it will give you a clear visual feedback.
 5. Add header alignment options. `h1` has a default alignment of `center`.
 6. Checked task(`- [x]`) now has a `line-through` style just like the default theme.
-7.
+7. Changed the default highlight style. Feel free to change it back if you like the older one.
+8. Callouts' dog-ear is disabled by default.
+9.
 
 #### bug fix
 

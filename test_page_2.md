@@ -91,10 +91,11 @@ Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. 
 > [!tip] Callout Title
 > Callout. 
 > 
+> > Quote in Callout.
+> 
 > > [!error]
 > > Nested Callout.
-> 
-> > Quote in Callout.
+
 
 [test_page_2](test_page_2.md)
 

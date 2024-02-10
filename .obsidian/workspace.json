@@ -230,7 +230,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.6855622119161037,
+                  "scale": 0.8008450962368846,
                   "close": true
                 }
               }
@@ -248,8 +248,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -269,8 +268,8 @@
   },
   "active": "f10a8c3fce5cf1f1",
   "lastOpenFiles": [
-    "test_page.md",
     "test_page_2.md",
+    "test_page.md",
     "homepage.md",
     "notes/create_thiessen_polygon.md",
     "global_file_format_spec.md",

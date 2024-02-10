@@ -170,8 +170,6 @@
   "focus-mode@@fade-out-inactive-lines": false,
   "font@@font-highlight-decoration-offset": 3,
   "font@@font-highlight-decoration-width": 5,
-  "font@@font-highlight-size": 1.2,
-  "font@@font-highlight-weight": 600,
   "font@@header-hovering-underline": true,
   "font@@header-indicator": true,
   "font@@font-strong-weight": 900,
@@ -194,5 +192,7 @@
   "accent-color@@accent-color-light-hue-default": 0,
   "accent-color@@accent-color-light-saturation-default": 0,
   "accent-color@@accent-color-light-lightness-default": 0,
-  "accent-color@@accent-color-for-dark-theme": "accent-color-green-dark"
+  "accent-color@@accent-color-for-dark-theme": "accent-color-green-dark",
+  "font@@font-highlight-size": 1,
+  "font@@font-highlight-weight": 400
 }
