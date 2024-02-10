@@ -155,14 +155,16 @@
       "name": "concept",
       "type": "Template",
       "command": false,
-      "templatePath": "",
+      "templatePath": "template/concept.md",
       "fileNameFormat": {
-        "enabled": false,
-        "format": ""
+        "enabled": true,
+        "format": "@{{value}}"
       },
       "folder": {
-        "enabled": false,
-        "folders": [],
+        "enabled": true,
+        "folders": [
+          "concepts"
+        ],
         "chooseWhenCreatingNote": false,
         "createInSameFolderAsActiveFile": false,
         "chooseFromSubfolders": false
@@ -173,10 +175,10 @@
         "direction": "vertical",
         "focus": true
       },
-      "openFile": false,
+      "openFile": true,
       "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": false
+      "fileExistsMode": "Nothing",
+      "setFileExistsBehavior": true
     }
   ],
   "macros": [],

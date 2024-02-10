@@ -2,9 +2,6 @@
 tags:
   - concept
 topic:
-  - GIS
-  - Spatial Analysis
-links: "[[@thiessenpolygon]]"
 ---
 
 ```dataviewjs

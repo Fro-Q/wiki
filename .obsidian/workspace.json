@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/thiessenpolygon.md",
+                "file": "concepts/@thiessenpolygon.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/thiessenpolygon.md",
+                "file": "notes/create_thiessen_polygon.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -139,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/thiessenpolygon.md",
+                "file": "concepts/@thiessenpolygon.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/thiessenpolygon.md",
+                "file": "concepts/@thiessenpolygon.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -168,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/thiessenpolygon.md"
+                "file": "concepts/@thiessenpolygon.md"
               }
             }
           },
@@ -201,7 +201,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "notes/thiessenpolygon.md"
+                "file": "concepts/@thiessenpolygon.md"
               }
             }
           }
@@ -218,7 +218,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "notes/thiessenpolygon.md",
+                "file": "concepts/@thiessenpolygon.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -271,20 +271,22 @@
   },
   "active": "1f9590ca84b66cbe",
   "lastOpenFiles": [
+    "template/concept.md",
+    "concepts/@thiessenpolygon.md",
+    "notes/create_thiessen_polygon.md",
+    "project/drought/record_2024_02_09_2343.md",
+    "project/drought/doc-2402061041.md",
+    "template/note.md",
+    "notes/dawdawd.md",
+    "homepage.md",
     "template/timestamp.md",
     "template/project-tasks.md",
     "template/project-record.md",
     "template/project-meeting.md",
     "template/project-homepage.md",
     "template/project-doc.md",
-    "template/note.md",
     "template/diary.md",
-    "project/drought/doc-2402061041.md",
-    "notes/thiessenpolygon.md",
-    "concepts/@thiessenpolygon.md",
-    "homepage.md",
     "concepts",
-    "project/drought/record_2024_02_09_2343.md",
     "timestamp/ts2024_01_17_0956.md",
     "project/drought/record-2402041533.md",
     "project/drought/record-2401300529.md",
@@ -296,8 +298,6 @@
     "project/drought/record-240203.md",
     "project/drought/record_2024_02_09_2320.md",
     "project/drought/record_2024_02_09_2319.md",
-    "project/drought/record_2024_02_09_2318.md",
-    "timestamp/ts2024_01_17_0952.md",
     "db/test",
     "notes",
     "project/test",
