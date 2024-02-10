@@ -261,7 +261,8 @@ body {
     --text-strong: hsl(0, 0%, 0%);
     --text-muted: hsla(0, 0%, 60%, 1) !important;
     --code-bg-color: #dedede;
-    --codebloc-border-color: #888;
+    --inline-bg-color: hsla(0, 0%, 90%, 1);
+    --codeblock-border-color: #888;
     --background-primary: hsla(0, 0%, 96%, 1);
     --background-secondary: hsl(0, 0%, 92%);
     --background-modifier-active-hover: #d9d9d9;
@@ -331,12 +332,13 @@ body {
     --color-h: var(--color-orange-h);
     --color-s: var(--color-orange-s);
     --color-l: var(--color-orange-l);
-    --text-normal: hsl(0, 0%, 85%);
+    --text-normal: #aaa;
     --text-strong: hsl(0, 0%, 100%);
-    --text-muted: hsla(0, 0%, 40%, 1) !important;
-    --code-bg-color: #323232;
-    --codebloc-border-color: #888;
-    --background-primary: #1a1a1a;
+    --text-muted: #999 !important;
+    --code-bg-color: #181818;
+    --inline-bg-color: rgba(255, 255, 255, 0.1);
+    --codeblock-border-color: #888;
+    --background-primary: #111;
     --background-secondary: #151515;
     --background-modifier-active-hover: #272727;
     --background-modifier-border-focus: #272727;
@@ -423,7 +425,7 @@ body {
 .markdown-rendered p,
 .markdown-source-view .cm-line {
   @include font();
-  line-height: 1.75;
+  line-height: 2;
 }
 
 // headers
@@ -641,6 +643,7 @@ body {
   border-radius: 4px;
 }
 
+// if callout-dogs-ear is enabled
 body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
   &:after {
     content: "";
@@ -654,7 +657,7 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
     background: linear-gradient(to bottom right, rgba(var(--callout-color), 0.2) 50%, var(--background-primary) 50%);
     -webkit-backdrop-filter: blur(2.5px);
     backdrop-filter: blur(2.5px);
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
     box-shadow: -2px 2px 4px 2px rgba(0, 0, 0, 0.2);
   }
 
@@ -664,8 +667,8 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
   }
 }
 
-
-:is(.markdown-source-view, .markdown-rendered) .markdown-embed:after {
+// embed alt
+:is(.markdown-source-view, .markdown-rendered) .media-embed img:after {
   body.embed-alt & {
     content: attr(alt);
     @include font(var(--font-default), 0.8em, 100, var(--text-muted));
@@ -696,7 +699,7 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
   font-size: var(--font-monospace-size);
   font-weight: var(--font-monospace-weight);
   color: auto;
-  background-color: var(--code-bg-color);
+  background-color: var(--inline-bg-color);
   padding: 0 0.2em;
 }
 

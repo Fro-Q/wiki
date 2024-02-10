@@ -4,19 +4,21 @@ An Obsidian theme offers a clean and clutter-free interface for enhanced focus a
 
 ## Updates
 
-### Version 0.1.8(02/10/2024)
+### Version 1.0.0-beta(02/10/2024)
 
 #### new & change
 
 1. Smoothing header hovering.
-2. Headers' `font-weight` is set to `normal` by default.
-3. Paragraphs' `line-height` is set to `1.75`.
-4. If "Header Indicator" is enabled, headers' level indicator now takes the collapse indicator's job. You can now collapse headers by clicking on the level indicator, And it will give you a clear visual feedback.
-5. Add header alignment options. `h1` has a default alignment of `center`.
-6. Checked task(`- [x]`) now has a `line-through` style just like the default theme.
-7. Changed the default highlight style. Feel free to change it back if you like the older one.
-8. Callouts' dog-ear is disabled by default.
-9.
+2. Darker background color in Dark mode.
+3. Paler text color in Dark mode.
+4. Paragraphs' `line-height` is set to `1.75`.
+5. If "Header Indicator" is enabled, headers' level indicator now takes the collapse indicator's job. You can now collapse headers by clicking on the level indicator, And it will give you a clear visual feedback.
+6. Add header alignment options. `h1` has a default alignment of `center`.
+7. Checked task(`- [x]`) now has a `line-through` style just like the default theme.
+8. Changed the default highlight style. Feel free to change it back if you like the older one.
+9. Callouts' dog-ear is disabled by default.
+9. Darker code block background color in Dark mode.
+10.
 
 #### bug fix
 

@@ -40,7 +40,7 @@
               "type": "markdown",
               "state": {
                 "file": "test_page_2.md",
-                "mode": "source",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
@@ -248,7 +248,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -268,6 +269,7 @@
   },
   "active": "f10a8c3fce5cf1f1",
   "lastOpenFiles": [
+    "Porsche.jpg",
     "test_page_2.md",
     "test_page.md",
     "homepage.md",
@@ -293,7 +295,6 @@
     "project/drought/r_2024_02_04_1533.md",
     "template/concept.md",
     "template/diary.md",
-    "template/note.md",
     "topics",
     "concepts",
     "db/test",
