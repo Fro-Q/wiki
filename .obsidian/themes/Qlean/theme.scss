@@ -428,6 +428,11 @@ $languages: "markup",
   "yang",
   "zig";
 
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   // font
   --font-default: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
@@ -857,16 +862,24 @@ body {
   .markdown-rendered h#{$i},
   .markdown-source-view .cm-line.HyperMD-header-#{$i} {
     @include font(var(--font-header), var(--font-h#{$i}-size), var(--font-h#{$i}-weight), var(--h#{$i}-color));
-    text-decoration: underline solid transparent 5px;
-    text-underline-offset: 8px;
+    // text-decoration: underline solid transparent 5px;
+    // text-underline-offset: 8px;
     padding: 0;
     transition: all 0.3s ease-in-out;
     text-align: var(--h#{$i}-align);
+
+    &::after {
+      content: "";
+      display: block;
+      margin-top: 0.5rem;
+      border-bottom: 1px solid var(--color-accent);
+      width: 100%;
+    }
   }
 
   // if header-hovering-underline is enabled:
   body.header-hovering-underline :is(.markdown-rendered h#{$i}, .markdown-source-view .cm-line.HyperMD-header-#{$i}):hover {
-    text-decoration-color: var(--h#{$i}-color);
+    text-decoration-color: var(--color-accent);
   }
 
   // if header-indicator is enabled:
@@ -901,6 +914,18 @@ body {
     }
   }
 }
+
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6) {
+  width: max-content;
+}
+
+// .markdown-rendered :is(h1, h2, h3, h4, h5, h6),
+// .markdown-source-view .cm-line.HyperMD-header {
+//   position: relative;
+//   width: 20px;
+//   margin: 0 5px 0 0;
+//   transition: all 0.3s ease-in-out;
+// }
 
 .markdown-rendered :is(h1, h2, h3, h4, h5, h6):before,
 .markdown-source-view .cm-line.HyperMD-header:before {
@@ -1187,16 +1212,13 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
 }
 
 // source view
-.markdown-source-view div.HyperMD-codeblock-bg {
+.markdown-source-view div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg {
   border-radius: auto;
   background-color: var(--code-bg-color);
+  padding: 0 30px;
 
   &.HyperMD-codeblock-begin-bg {
     border-radius: 4px 4px 0 0;
-
-    &:not(.is-active) {
-      height: 0;
-    }
 
     & span.code-block-flair {
       @include copy-button();
@@ -1214,41 +1236,31 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
   }
 }
 
+// tag
 .markdown-rendered a.tag,
 .markdown-source-view .cm-line .cm-hashtag,
 .metadata-container .metadata-property[data-property-key="tags"] .multi-select-pill {
-  @include font(var(--font-tag), var(--font-tag-size), var(--font-tag-weight), auto);
+  @include font(var(--font-tag), var(--font-tag-size) !important, var(--font-tag-weight), auto);
   transition: all 0.2s ease-in-out;
   border-width: 2px;
 }
 
-%tag-begin {
-  border-radius: var(--tag-radius) 0 0 var(--tag-radius);
-}
+.metadata-container .metadata-property[data-property-key="tags"] .multi-select-pill {
 
-%tag-end {
-  border-radius: 0 var(--tag-radius) var(--tag-radius) 0;
-}
-
-.markdown-source-view .cm-line .cm-hashtag {
-  &.cm-hashtag-end {
-    @extend %tag-end;
-  }
-
-  &.cm-hashtag-begin {
-    @extend %tag-begin;
-  }
-}
-
-.metadata-container .metadata-property[data-property-key="tags"] .metadata-property-value {
   & .multi-select-pill-content {
-    @extend %tag-begin;
+    margin: 0;
   }
 
   & .multi-select-pill-remove-button {
-    @extend %tag-end;
+    margin: 0;
   }
 }
+
+.markdown-rendered a.tag,
+.metadata-container .metadata-property[data-property-key="tags"] .multi-select-pill {
+  padding: 0.1em 0.5em;
+}
+
 
 body.tag-fill {
 

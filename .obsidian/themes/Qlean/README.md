@@ -20,6 +20,8 @@ An Obsidian theme offers a clean and clutter-free interface for enhanced focus a
 10. Darker code block background color in Dark mode.
 11. Added codeblock language indicator that supports all languages listed in [prismjs](https://prismjs.com/#supported-languages).
 12. Better "Copy" button style in codeblock.
+13. Smaller tag.
+14.
 
 
 #### bug fix
