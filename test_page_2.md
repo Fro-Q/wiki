@@ -68,7 +68,7 @@ Text Code. Text Code.Text Code.Text Code.Text Code.Text Code.Text Code.Text Code
 ```js
 var pages = dv.pages(`"project" and #homepage`)
 
-dv.table(["Name", "Status"],  // long line long line long line long line
+dv.table(["Name", "Status"],  // long line long line long line long line long line long line
 	pages.map(p => [
 		p.file.link,
 		p.status,

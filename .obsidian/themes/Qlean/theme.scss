@@ -12,9 +12,9 @@
   border-radius: $border-radius;
 }
 
-$language: "JavaScript";
+$languages: "markup", "html", "xml", "svg", "mathml", "ssml", "atom", "rss", "clike", "javascript", "js", "abap", "abnf", "actionscipt", "ada", "agda", "al", "antlr4", "g4", "apacheconf", "apex", "apl", "arduino", "ino", "arff", "armasm", "arm-asm", "arturo", "art", "asciidoc", "adoc", "aspnet", "asm6502", "asmatmel", "autohotkey", "autoit", "autoit", "avisynth", "avs", "avro-idl", "avdl", "awk", "gawk", "bash", "sh", "shell", "basic", "batch", "bbcode", "shortcode", "bbj", "bicep", "birb", "bison", "bnf", "rbnf", "bqn", "brainfuck", "brightscript", "bro",
 
-body {
+  body {
   // font
   --font-default: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
   --font-monospace-default: iawriter-mono, Nitti, Menlo, Courier, monospace;
@@ -719,8 +719,14 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
       height: auto;
       bottom: 0.8em;
       width: auto;
-      content: 'JavaScript';
+    }
+  }
 
+  @each $l in $languages {
+    &.language-#{$l} {
+      &:before {
+        content: "#{$l}";
+      }
     }
   }
 
