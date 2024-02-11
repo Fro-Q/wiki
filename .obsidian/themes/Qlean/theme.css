@@ -796,19 +796,15 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view, .markdown-rendered) .
 }
 .markdown-rendered pre[class^=language-]:before {
   font-family: Lato sans-serif;
-  font-size: 1em;
-  font-weight: 900;
-  color: auto;
+  font-size: 0.9em;
+  font-weight: 100;
+  color: var(--text-muted);
   position: absolute;
-  right: -3.5rem;
-  height: 1.5rem;
-  bottom: 0;
-  width: 16rem;
-  background-image: linear-gradient(90deg, var(--code-bg-color) 31%, var(--text-normal) 31%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-  content: attr(class);
+  right: 0.8em;
+  height: auto;
+  bottom: 0.8em;
+  width: auto;
+  content: "JavaScript";
 }
 .markdown-rendered pre .copy-code-button {
   color: transparent;

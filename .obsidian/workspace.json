@@ -111,8 +111,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "b87e94253deaa70c",
@@ -244,7 +243,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -269,9 +269,9 @@
   },
   "active": "f10a8c3fce5cf1f1",
   "lastOpenFiles": [
-    "Porsche.jpg",
     "test_page_2.md",
     "test_page.md",
+    "Porsche.jpg",
     "homepage.md",
     "notes/create_thiessen_polygon.md",
     "global_file_format_spec.md",

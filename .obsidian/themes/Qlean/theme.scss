@@ -12,6 +12,8 @@
   border-radius: $border-radius;
 }
 
+$language: "JavaScript";
+
 body {
   // font
   --font-default: "Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif;
@@ -709,17 +711,16 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
   &[class^=language-] {
     padding: 40px 20px 20px;
 
+    // language indicator
     &:before {
-      @include font(Lato sans-serif, 1em, 900, auto);
+      @include font(Lato sans-serif, 0.9em, 100, var(--text-muted));
       position: absolute;
-      right: -3.5rem;
-      height: 1.5rem;
-      bottom: 0;
-      width: 16rem;
-      background-image: linear-gradient(90deg, var(--code-bg-color) 31%, var(--text-normal) 31%);
-      background-clip: text;
-      color: transparent;
-      content: attr(class);
+      right: 0.8em;
+      height: auto;
+      bottom: 0.8em;
+      width: auto;
+      content: 'JavaScript';
+
     }
   }
 
