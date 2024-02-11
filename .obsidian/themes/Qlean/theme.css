@@ -214,6 +214,7 @@ body.theme-light {
   --tab-active-bg-color: #fff;
   --close-button-hover-bg-color: rgba(0, 0, 0, 0.1);
   --switch-inset-shadow-color: rgba(0, 0, 0, 0.2);
+  --border-color: #d9d9d9;
 }
 body.theme-light.accent-color-green-light {
   --color-h: var(--color-green-h);
@@ -279,6 +280,7 @@ body.theme-dark {
   --tab-active-bg-color: #303030;
   --close-button-hover-bg-color: rgba(255, 255, 255, 0.1);
   --switch-inset-shadow-color: rgba(0, 0, 0, 0.2);
+  --border-color: #333;
 }
 body.theme-dark.accent-color-green-dark {
   --color-h: var(--color-green-h);
@@ -792,7 +794,7 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view, .markdown-rendered) .
   margin: 16px auto;
 }
 .markdown-rendered pre[class^=language-] {
-  padding: 40px 20px 20px;
+  padding: 20px 30px;
 }
 .markdown-rendered pre[class^=language-]:before {
   font-family: Lato sans-serif;
@@ -805,56 +807,1275 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view, .markdown-rendered) .
   bottom: 0.8em;
   width: auto;
 }
+.markdown-rendered pre.language-markup:before {
+  content: "markup";
+}
+.markdown-rendered pre.language-html:before {
+  content: "html";
+}
+.markdown-rendered pre.language-xml:before {
+  content: "xml";
+}
+.markdown-rendered pre.language-svg:before {
+  content: "svg";
+}
+.markdown-rendered pre.language-mathml:before {
+  content: "mathml";
+}
+.markdown-rendered pre.language-ssml:before {
+  content: "ssml";
+}
+.markdown-rendered pre.language-atom:before {
+  content: "atom";
+}
+.markdown-rendered pre.language-rss:before {
+  content: "rss";
+}
+.markdown-rendered pre.language-css:before {
+  content: "css";
+}
+.markdown-rendered pre.language-like:before {
+  content: "like";
+}
+.markdown-rendered pre.language-javascript:before {
+  content: "javascript";
+}
 .markdown-rendered pre.language-js:before {
   content: "js";
 }
-.markdown-rendered pre.language-text:before {
-  content: "text";
+.markdown-rendered pre.language-abap:before {
+  content: "abap";
 }
-.markdown-rendered pre .copy-code-button {
-  color: transparent;
+.markdown-rendered pre.language-abnf:before {
+  content: "abnf";
 }
-.markdown-rendered pre .copy-code-button:before {
-  font-family: Lato sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-  color: var(--text-muted);
+.markdown-rendered pre.language-actionscript:before {
+  content: "actionscript";
+}
+.markdown-rendered pre.language-ada:before {
+  content: "ada";
+}
+.markdown-rendered pre.language-agda:before {
+  content: "agda";
+}
+.markdown-rendered pre.language-al:before {
+  content: "al";
+}
+.markdown-rendered pre.language-antlr4:before {
+  content: "antlr4";
+}
+.markdown-rendered pre.language-g4:before {
+  content: "g4";
+}
+.markdown-rendered pre.language-apacheconf:before {
+  content: "apacheconf";
+}
+.markdown-rendered pre.language-apex:before {
+  content: "apex";
+}
+.markdown-rendered pre.language-apl:before {
+  content: "apl";
+}
+.markdown-rendered pre.language-applescript:before {
+  content: "applescript";
+}
+.markdown-rendered pre.language-aql:before {
+  content: "aql";
+}
+.markdown-rendered pre.language-arduino:before {
+  content: "arduino";
+}
+.markdown-rendered pre.language-ino:before {
+  content: "ino";
+}
+.markdown-rendered pre.language-arff:before {
+  content: "arff";
+}
+.markdown-rendered pre.language-armasm:before {
+  content: "armasm";
+}
+.markdown-rendered pre.language-arm-asm:before {
+  content: "arm-asm";
+}
+.markdown-rendered pre.language-arturo:before {
+  content: "arturo";
+}
+.markdown-rendered pre.language-art:before {
+  content: "art";
+}
+.markdown-rendered pre.language-asciidoc:before {
+  content: "asciidoc";
+}
+.markdown-rendered pre.language-adoc:before {
+  content: "adoc";
+}
+.markdown-rendered pre.language-aspnet:before {
+  content: "aspnet";
+}
+.markdown-rendered pre.language-asm6502:before {
+  content: "asm6502";
+}
+.markdown-rendered pre.language-asmatmel:before {
+  content: "asmatmel";
+}
+.markdown-rendered pre.language-autohotkey:before {
+  content: "autohotkey";
+}
+.markdown-rendered pre.language-autoit:before {
+  content: "autoit";
+}
+.markdown-rendered pre.language-avisynth:before {
+  content: "avisynth";
+}
+.markdown-rendered pre.language-avs:before {
+  content: "avs";
+}
+.markdown-rendered pre.language-avro-idl:before {
+  content: "avro-idl";
+}
+.markdown-rendered pre.language-avdl:before {
+  content: "avdl";
+}
+.markdown-rendered pre.language-awk:before {
+  content: "awk";
+}
+.markdown-rendered pre.language-gawk:before {
+  content: "gawk";
+}
+.markdown-rendered pre.language-bash:before {
+  content: "bash";
+}
+.markdown-rendered pre.language-sh:before {
+  content: "sh";
+}
+.markdown-rendered pre.language-shell:before {
+  content: "shell";
+}
+.markdown-rendered pre.language-basic:before {
+  content: "basic";
+}
+.markdown-rendered pre.language-batch:before {
+  content: "batch";
+}
+.markdown-rendered pre.language-bbcode:before {
+  content: "bbcode";
+}
+.markdown-rendered pre.language-shortcode:before {
+  content: "shortcode";
+}
+.markdown-rendered pre.language-bbj:before {
+  content: "bbj";
+}
+.markdown-rendered pre.language-bicep:before {
+  content: "bicep";
+}
+.markdown-rendered pre.language-birb:before {
+  content: "birb";
+}
+.markdown-rendered pre.language-bison:before {
+  content: "bison";
+}
+.markdown-rendered pre.language-bnf:before {
+  content: "bnf";
+}
+.markdown-rendered pre.language-rbnf:before {
+  content: "rbnf";
+}
+.markdown-rendered pre.language-bqn:before {
+  content: "bqn";
+}
+.markdown-rendered pre.language-brainfuck:before {
+  content: "brainfuck";
+}
+.markdown-rendered pre.language-brightscript:before {
+  content: "brightscript";
+}
+.markdown-rendered pre.language-bro:before {
+  content: "bro";
+}
+.markdown-rendered pre.language-bsl:before {
+  content: "bsl";
+}
+.markdown-rendered pre.language-oscript:before {
+  content: "oscript";
+}
+.markdown-rendered pre.language-c:before {
+  content: "c";
+}
+.markdown-rendered pre.language-csharp:before {
+  content: "csharp";
+}
+.markdown-rendered pre.language-cs:before {
+  content: "cs";
+}
+.markdown-rendered pre.language-dotnet:before {
+  content: "dotnet";
+}
+.markdown-rendered pre.language-cpp:before {
+  content: "cpp";
+}
+.markdown-rendered pre.language-cfscript:before {
+  content: "cfscript";
+}
+.markdown-rendered pre.language-cfc:before {
+  content: "cfc";
+}
+.markdown-rendered pre.language-chaiscript:before {
+  content: "chaiscript";
+}
+.markdown-rendered pre.language-cil:before {
+  content: "cil";
+}
+.markdown-rendered pre.language-cilkc:before {
+  content: "cilkc";
+}
+.markdown-rendered pre.language-cilk-c:before {
+  content: "cilk-c";
+}
+.markdown-rendered pre.language-cilkcpp:before {
+  content: "cilkcpp";
+}
+.markdown-rendered pre.language-cilk:before {
+  content: "cilk";
+}
+.markdown-rendered pre.language-clojure:before {
+  content: "clojure";
+}
+.markdown-rendered pre.language-cmake:before {
+  content: "cmake";
+}
+.markdown-rendered pre.language-cobol:before {
+  content: "cobol";
+}
+.markdown-rendered pre.language-coffeescript:before {
+  content: "coffeescript";
+}
+.markdown-rendered pre.language-coffee:before {
+  content: "coffee";
+}
+.markdown-rendered pre.language-concurnas:before {
+  content: "concurnas";
+}
+.markdown-rendered pre.language-conc:before {
+  content: "conc";
+}
+.markdown-rendered pre.language-Security:before {
+  content: "Security";
+}
+.markdown-rendered pre.language-cooklang:before {
+  content: "cooklang";
+}
+.markdown-rendered pre.language-coq:before {
+  content: "coq";
+}
+.markdown-rendered pre.language-crystal:before {
+  content: "crystal";
+}
+.markdown-rendered pre.language-css-extras:before {
+  content: "css-extras";
+}
+.markdown-rendered pre.language-csv:before {
+  content: "csv";
+}
+.markdown-rendered pre.language-cue:before {
+  content: "cue";
+}
+.markdown-rendered pre.language-cypher:before {
+  content: "cypher";
+}
+.markdown-rendered pre.language-d:before {
+  content: "d";
+}
+.markdown-rendered pre.language-dart:before {
+  content: "dart";
+}
+.markdown-rendered pre.language-dataweave:before {
+  content: "dataweave";
+}
+.markdown-rendered pre.language-dax:before {
+  content: "dax";
+}
+.markdown-rendered pre.language-dhall:before {
+  content: "dhall";
+}
+.markdown-rendered pre.language-diff:before {
+  content: "diff";
+}
+.markdown-rendered pre.language-django:before {
+  content: "django";
+}
+.markdown-rendered pre.language-jinja2:before {
+  content: "jinja2";
+}
+.markdown-rendered pre.language-dns-zone-file:before {
+  content: "dns-zone-file";
+}
+.markdown-rendered pre.language-dns-zone:before {
+  content: "dns-zone";
+}
+.markdown-rendered pre.language-docker:before {
+  content: "docker";
+}
+.markdown-rendered pre.language-dockerfile:before {
+  content: "dockerfile";
+}
+.markdown-rendered pre.language-dot:before {
+  content: "dot";
+}
+.markdown-rendered pre.language-gv:before {
+  content: "gv";
+}
+.markdown-rendered pre.language-ebnf:before {
+  content: "ebnf";
+}
+.markdown-rendered pre.language-editorconfig:before {
+  content: "editorconfig";
+}
+.markdown-rendered pre.language-eiffel:before {
+  content: "eiffel";
+}
+.markdown-rendered pre.language-ejs:before {
+  content: "ejs";
+}
+.markdown-rendered pre.language-eta:before {
+  content: "eta";
+}
+.markdown-rendered pre.language-elixir:before {
+  content: "elixir";
+}
+.markdown-rendered pre.language-elm:before {
+  content: "elm";
+}
+.markdown-rendered pre.language-etlua:before {
+  content: "etlua";
+}
+.markdown-rendered pre.language-erb:before {
+  content: "erb";
+}
+.markdown-rendered pre.language-erlang:before {
+  content: "erlang";
+}
+.markdown-rendered pre.language-excel-formula:before {
+  content: "excel-formula";
+}
+.markdown-rendered pre.language-xlsx:before {
+  content: "xlsx";
+}
+.markdown-rendered pre.language-xls:before {
+  content: "xls";
+}
+.markdown-rendered pre.language-fsharp:before {
+  content: "fsharp";
+}
+.markdown-rendered pre.language-factor:before {
+  content: "factor";
+}
+.markdown-rendered pre.language-false:before {
+  content: "false";
+}
+.markdown-rendered pre.language-firestore-security-rules:before {
+  content: "firestore-security-rules";
+}
+.markdown-rendered pre.language-flow:before {
+  content: "flow";
+}
+.markdown-rendered pre.language-fortran:before {
+  content: "fortran";
+}
+.markdown-rendered pre.language-ftl:before {
+  content: "ftl";
+}
+.markdown-rendered pre.language-gml:before {
+  content: "gml";
+}
+.markdown-rendered pre.language-gamemakerlanguage:before {
+  content: "gamemakerlanguage";
+}
+.markdown-rendered pre.language-gap:before {
+  content: "gap";
+}
+.markdown-rendered pre.language-code:before {
+  content: "code";
+}
+.markdown-rendered pre.language-gdscript:before {
+  content: "gdscript";
+}
+.markdown-rendered pre.language-gedcom:before {
+  content: "gedcom";
+}
+.markdown-rendered pre.language-gettext:before {
+  content: "gettext";
+}
+.markdown-rendered pre.language-po:before {
+  content: "po";
+}
+.markdown-rendered pre.language-gherkin:before {
+  content: "gherkin";
+}
+.markdown-rendered pre.language-git:before {
+  content: "git";
+}
+.markdown-rendered pre.language-glsl:before {
+  content: "glsl";
+}
+.markdown-rendered pre.language-gn:before {
+  content: "gn";
+}
+.markdown-rendered pre.language-gni:before {
+  content: "gni";
+}
+.markdown-rendered pre.language-linker-script:before {
+  content: "linker-script";
+}
+.markdown-rendered pre.language-ld:before {
+  content: "ld";
+}
+.markdown-rendered pre.language-go:before {
+  content: "go";
+}
+.markdown-rendered pre.language-go-module:before {
+  content: "go-module";
+}
+.markdown-rendered pre.language-go-mod:before {
+  content: "go-mod";
+}
+.markdown-rendered pre.language-gradle:before {
+  content: "gradle";
+}
+.markdown-rendered pre.language-graphql:before {
+  content: "graphql";
+}
+.markdown-rendered pre.language-groovy:before {
+  content: "groovy";
+}
+.markdown-rendered pre.language-haml:before {
+  content: "haml";
+}
+.markdown-rendered pre.language-handlebars:before {
+  content: "handlebars";
+}
+.markdown-rendered pre.language-hbs:before {
+  content: "hbs";
+}
+.markdown-rendered pre.language-mustache:before {
+  content: "mustache";
+}
+.markdown-rendered pre.language-haskell:before {
+  content: "haskell";
+}
+.markdown-rendered pre.language-hs:before {
+  content: "hs";
+}
+.markdown-rendered pre.language-haxe:before {
+  content: "haxe";
+}
+.markdown-rendered pre.language-hcl:before {
+  content: "hcl";
+}
+.markdown-rendered pre.language-hlsl:before {
+  content: "hlsl";
+}
+.markdown-rendered pre.language-hoon:before {
+  content: "hoon";
+}
+.markdown-rendered pre.language-http:before {
+  content: "http";
+}
+.markdown-rendered pre.language-Key:before {
+  content: "Key";
+}
+.markdown-rendered pre.language-Transport:before {
+  content: "Transport";
+}
+.markdown-rendered pre.language-ichigojam:before {
+  content: "ichigojam";
+}
+.markdown-rendered pre.language-icon:before {
+  content: "icon";
+}
+.markdown-rendered pre.language-icu-message-format:before {
+  content: "icu-message-format";
+}
+.markdown-rendered pre.language-idris:before {
+  content: "idris";
+}
+.markdown-rendered pre.language-idr:before {
+  content: "idr";
+}
+.markdown-rendered pre.language-ignore:before {
+  content: "ignore";
+}
+.markdown-rendered pre.language-gitignore:before {
+  content: "gitignore";
+}
+.markdown-rendered pre.language-hgignore:before {
+  content: "hgignore";
+}
+.markdown-rendered pre.language-npmignore:before {
+  content: "npmignore";
+}
+.markdown-rendered pre.language-inform7:before {
+  content: "inform7";
+}
+.markdown-rendered pre.language-ini:before {
+  content: "ini";
+}
+.markdown-rendered pre.language-io:before {
+  content: "io";
+}
+.markdown-rendered pre.language-j:before {
+  content: "j";
+}
+.markdown-rendered pre.language-java:before {
+  content: "java";
+}
+.markdown-rendered pre.language-javadoc:before {
+  content: "javadoc";
+}
+.markdown-rendered pre.language-like:before {
+  content: "like";
+}
+.markdown-rendered pre.language-javastacktrace:before {
+  content: "javastacktrace";
+}
+.markdown-rendered pre.language-jexl:before {
+  content: "jexl";
+}
+.markdown-rendered pre.language-jolie:before {
+  content: "jolie";
+}
+.markdown-rendered pre.language-jq:before {
+  content: "jq";
+}
+.markdown-rendered pre.language-jsdoc:before {
+  content: "jsdoc";
+}
+.markdown-rendered pre.language-js-extras:before {
+  content: "js-extras";
+}
+.markdown-rendered pre.language-json:before {
+  content: "json";
+}
+.markdown-rendered pre.language-webmanifest:before {
+  content: "webmanifest";
+}
+.markdown-rendered pre.language-json5:before {
+  content: "json5";
+}
+.markdown-rendered pre.language-jsonp:before {
+  content: "jsonp";
+}
+.markdown-rendered pre.language-jsstacktrace:before {
+  content: "jsstacktrace";
+}
+.markdown-rendered pre.language-js-templates:before {
+  content: "js-templates";
+}
+.markdown-rendered pre.language-julia:before {
+  content: "julia";
+}
+.markdown-rendered pre.language-keepalived:before {
+  content: "keepalived";
+}
+.markdown-rendered pre.language-keyman:before {
+  content: "keyman";
+}
+.markdown-rendered pre.language-kotlin:before {
+  content: "kotlin";
+}
+.markdown-rendered pre.language-kt:before {
+  content: "kt";
+}
+.markdown-rendered pre.language-kts:before {
+  content: "kts";
+}
+.markdown-rendered pre.language-kumir:before {
+  content: "kumir";
+}
+.markdown-rendered pre.language-kum:before {
+  content: "kum";
+}
+.markdown-rendered pre.language-kusto:before {
+  content: "kusto";
+}
+.markdown-rendered pre.language-latex:before {
+  content: "latex";
+}
+.markdown-rendered pre.language-tex:before {
+  content: "tex";
+}
+.markdown-rendered pre.language-context:before {
+  content: "context";
+}
+.markdown-rendered pre.language-latte:before {
+  content: "latte";
+}
+.markdown-rendered pre.language-less:before {
+  content: "less";
+}
+.markdown-rendered pre.language-lilypond:before {
+  content: "lilypond";
+}
+.markdown-rendered pre.language-ly:before {
+  content: "ly";
+}
+.markdown-rendered pre.language-liquid:before {
+  content: "liquid";
+}
+.markdown-rendered pre.language-lisp:before {
+  content: "lisp";
+}
+.markdown-rendered pre.language-emacs:before {
+  content: "emacs";
+}
+.markdown-rendered pre.language-elisp:before {
+  content: "elisp";
+}
+.markdown-rendered pre.language-emacs-lisp:before {
+  content: "emacs-lisp";
+}
+.markdown-rendered pre.language-livescript:before {
+  content: "livescript";
+}
+.markdown-rendered pre.language-llvm:before {
+  content: "llvm";
+}
+.markdown-rendered pre.language-log:before {
+  content: "log";
+}
+.markdown-rendered pre.language-lolcode:before {
+  content: "lolcode";
+}
+.markdown-rendered pre.language-lua:before {
+  content: "lua";
+}
+.markdown-rendered pre.language-magma:before {
+  content: "magma";
+}
+.markdown-rendered pre.language-makefile:before {
+  content: "makefile";
+}
+.markdown-rendered pre.language-markdown:before {
+  content: "markdown";
+}
+.markdown-rendered pre.language-md:before {
+  content: "md";
+}
+.markdown-rendered pre.language-markup-templating:before, .markdown-rendered pre mata:before {
+  content: "markup-templating, mata";
+}
+.markdown-rendered pre.language-matlab:before {
+  content: "matlab";
+}
+.markdown-rendered pre.language-maxscript:before {
+  content: "maxscript";
+}
+.markdown-rendered pre.language-mel:before {
+  content: "mel";
+}
+.markdown-rendered pre.language-mermaid:before {
+  content: "mermaid";
+}
+.markdown-rendered pre.language-metafont:before {
+  content: "metafont";
+}
+.markdown-rendered pre.language-mizar:before {
+  content: "mizar";
+}
+.markdown-rendered pre.language-mongodb:before {
+  content: "mongodb";
+}
+.markdown-rendered pre.language-monkey:before {
+  content: "monkey";
+}
+.markdown-rendered pre.language-moonscript:before {
+  content: "moonscript";
+}
+.markdown-rendered pre.language-moon:before {
+  content: "moon";
+}
+.markdown-rendered pre.language-n1ql:before {
+  content: "n1ql";
+}
+.markdown-rendered pre.language-n4js:before {
+  content: "n4js";
+}
+.markdown-rendered pre.language-n4jsd:before {
+  content: "n4jsd";
+}
+.markdown-rendered pre.language-nand2tetris-hdl:before {
+  content: "nand2tetris-hdl";
+}
+.markdown-rendered pre.language-naniscript:before {
+  content: "naniscript";
+}
+.markdown-rendered pre.language-nani:before {
+  content: "nani";
+}
+.markdown-rendered pre.language-nasm:before {
+  content: "nasm";
+}
+.markdown-rendered pre.language-neon:before {
+  content: "neon";
+}
+.markdown-rendered pre.language-nevod:before {
+  content: "nevod";
+}
+.markdown-rendered pre.language-nginx:before {
+  content: "nginx";
+}
+.markdown-rendered pre.language-nim:before {
+  content: "nim";
+}
+.markdown-rendered pre.language-nix:before {
+  content: "nix";
+}
+.markdown-rendered pre.language-nsis:before {
+  content: "nsis";
+}
+.markdown-rendered pre.language-C:before {
+  content: "C";
+}
+.markdown-rendered pre.language-ocaml:before {
+  content: "ocaml";
+}
+.markdown-rendered pre.language-odin:before {
+  content: "odin";
+}
+.markdown-rendered pre.language-opencl:before {
+  content: "opencl";
+}
+.markdown-rendered pre.language-openqasm:before {
+  content: "openqasm";
+}
+.markdown-rendered pre.language-qasm:before {
+  content: "qasm";
+}
+.markdown-rendered pre.language-oz:before {
+  content: "oz";
+}
+.markdown-rendered pre.language-parigp:before {
+  content: "parigp";
+}
+.markdown-rendered pre.language-parser:before {
+  content: "parser";
+}
+.markdown-rendered pre.language-pascal:before {
+  content: "pascal";
+}
+.markdown-rendered pre.language-objectpascal:before {
+  content: "objectpascal";
+}
+.markdown-rendered pre.language-pascaligo:before {
+  content: "pascaligo";
+}
+.markdown-rendered pre.language-psl:before {
+  content: "psl";
+}
+.markdown-rendered pre.language-Axis:before {
+  content: "Axis";
+}
+.markdown-rendered pre.language-peoplecode:before {
+  content: "peoplecode";
+}
+.markdown-rendered pre.language-pcode:before {
+  content: "pcode";
+}
+.markdown-rendered pre.language-perl:before {
+  content: "perl";
+}
+.markdown-rendered pre.language-php:before {
+  content: "php";
+}
+.markdown-rendered pre.language-phpdoc:before {
+  content: "phpdoc";
+}
+.markdown-rendered pre.language-php-extras:before {
+  content: "php-extras";
+}
+.markdown-rendered pre.language-plant-uml:before {
+  content: "plant-uml";
+}
+.markdown-rendered pre.language-plantuml:before {
+  content: "plantuml";
+}
+.markdown-rendered pre.language-plsql:before {
+  content: "plsql";
+}
+.markdown-rendered pre.language-powerquery:before {
+  content: "powerquery";
+}
+.markdown-rendered pre.language-pq:before {
+  content: "pq";
+}
+.markdown-rendered pre.language-mscript:before {
+  content: "mscript";
+}
+.markdown-rendered pre.language-powershell:before {
+  content: "powershell";
+}
+.markdown-rendered pre.language-processing:before {
+  content: "processing";
+}
+.markdown-rendered pre.language-prolog:before {
+  content: "prolog";
+}
+.markdown-rendered pre.language-promql:before {
+  content: "promql";
+}
+.markdown-rendered pre.language-properties:before {
+  content: "properties";
+}
+.markdown-rendered pre.language-protobuf:before {
+  content: "protobuf";
+}
+.markdown-rendered pre.language-pug:before {
+  content: "pug";
+}
+.markdown-rendered pre.language-puppet:before {
+  content: "puppet";
+}
+.markdown-rendered pre.language-pure:before {
+  content: "pure";
+}
+.markdown-rendered pre.language-purebasic:before {
+  content: "purebasic";
+}
+.markdown-rendered pre.language-pbfasm:before {
+  content: "pbfasm";
+}
+.markdown-rendered pre.language-purescript:before {
+  content: "purescript";
+}
+.markdown-rendered pre.language-purs:before {
+  content: "purs";
+}
+.markdown-rendered pre.language-python:before {
+  content: "python";
+}
+.markdown-rendered pre.language-py:before {
+  content: "py";
+}
+.markdown-rendered pre.language-qsharp:before {
+  content: "qsharp";
+}
+.markdown-rendered pre.language-qs:before {
+  content: "qs";
+}
+.markdown-rendered pre.language-q:before {
+  content: "q";
+}
+.markdown-rendered pre.language-qml:before {
+  content: "qml";
+}
+.markdown-rendered pre.language-qore:before {
+  content: "qore";
+}
+.markdown-rendered pre.language-r:before {
+  content: "r";
+}
+.markdown-rendered pre.language-racket:before {
+  content: "racket";
+}
+.markdown-rendered pre.language-rkt:before {
+  content: "rkt";
+}
+.markdown-rendered pre.language-cshtml:before {
+  content: "cshtml";
+}
+.markdown-rendered pre.language-razor:before {
+  content: "razor";
+}
+.markdown-rendered pre.language-jsx:before {
+  content: "jsx";
+}
+.markdown-rendered pre.language-tsx:before {
+  content: "tsx";
+}
+.markdown-rendered pre.language-reason:before {
+  content: "reason";
+}
+.markdown-rendered pre.language-regex:before {
+  content: "regex";
+}
+.markdown-rendered pre.language-rego:before {
+  content: "rego";
+}
+.markdown-rendered pre.language-renpy:before {
+  content: "renpy";
+}
+.markdown-rendered pre.language-rpy:before {
+  content: "rpy";
+}
+.markdown-rendered pre.language-rescript:before {
+  content: "rescript";
+}
+.markdown-rendered pre.language-res:before {
+  content: "res";
+}
+.markdown-rendered pre.language-rest:before {
+  content: "rest";
+}
+.markdown-rendered pre.language-rip:before {
+  content: "rip";
+}
+.markdown-rendered pre.language-roboconf:before {
+  content: "roboconf";
+}
+.markdown-rendered pre.language-robotframework:before {
+  content: "robotframework";
+}
+.markdown-rendered pre.language-robot:before {
+  content: "robot";
+}
+.markdown-rendered pre.language-ruby:before {
+  content: "ruby";
+}
+.markdown-rendered pre.language-rb:before {
+  content: "rb";
+}
+.markdown-rendered pre.language-rust:before {
+  content: "rust";
+}
+.markdown-rendered pre.language-sas:before {
+  content: "sas";
+}
+.markdown-rendered pre.language-sass:before {
+  content: "sass";
+}
+.markdown-rendered pre.language-scss:before {
+  content: "scss";
+}
+.markdown-rendered pre.language-scala:before {
+  content: "scala";
+}
+.markdown-rendered pre.language-scheme:before {
+  content: "scheme";
+}
+.markdown-rendered pre.language-shell-session:before {
+  content: "shell-session";
+}
+.markdown-rendered pre.language-sh-session:before {
+  content: "sh-session";
+}
+.markdown-rendered pre.language-shellsession:before {
+  content: "shellsession";
+}
+.markdown-rendered pre.language-smali:before {
+  content: "smali";
+}
+.markdown-rendered pre.language-smalltalk:before {
+  content: "smalltalk";
+}
+.markdown-rendered pre.language-smarty:before {
+  content: "smarty";
+}
+.markdown-rendered pre.language-sml:before {
+  content: "sml";
+}
+.markdown-rendered pre.language-smlnj:before {
+  content: "smlnj";
+}
+.markdown-rendered pre.language-solidity:before {
+  content: "solidity";
+}
+.markdown-rendered pre.language-sol:before {
+  content: "sol";
+}
+.markdown-rendered pre.language-solution-file:before {
+  content: "solution-file";
+}
+.markdown-rendered pre.language-soy:before {
+  content: "soy";
+}
+.markdown-rendered pre.language-sparql:before {
+  content: "sparql";
+}
+.markdown-rendered pre.language-rq:before {
+  content: "rq";
+}
+.markdown-rendered pre.language-splunk-spl:before {
+  content: "splunk-spl";
+}
+.markdown-rendered pre.language-sqf:before {
+  content: "sqf";
+}
+.markdown-rendered pre.language-sql:before {
+  content: "sql";
+}
+.markdown-rendered pre.language-squirrel:before {
+  content: "squirrel";
+}
+.markdown-rendered pre.language-stan:before {
+  content: "stan";
+}
+.markdown-rendered pre.language-stata:before {
+  content: "stata";
+}
+.markdown-rendered pre.language-iecst:before {
+  content: "iecst";
+}
+.markdown-rendered pre.language-stylus:before {
+  content: "stylus";
+}
+.markdown-rendered pre.language-supercollider:before {
+  content: "supercollider";
+}
+.markdown-rendered pre.language-sclang:before {
+  content: "sclang";
+}
+.markdown-rendered pre.language-swift:before {
+  content: "swift";
+}
+.markdown-rendered pre.language-systemd:before {
+  content: "systemd";
+}
+.markdown-rendered pre.language-t4-templating:before {
+  content: "t4-templating";
+}
+.markdown-rendered pre.language-t4-cs:before {
+  content: "t4-cs";
+}
+.markdown-rendered pre.language-t4:before {
+  content: "t4";
+}
+.markdown-rendered pre.language-t4-vb:before {
+  content: "t4-vb";
+}
+.markdown-rendered pre.language-tap:before {
+  content: "tap";
+}
+.markdown-rendered pre.language-tcl:before {
+  content: "tcl";
+}
+.markdown-rendered pre.language-tt2:before {
+  content: "tt2";
+}
+.markdown-rendered pre.language-textile:before {
+  content: "textile";
+}
+.markdown-rendered pre.language-toml:before {
+  content: "toml";
+}
+.markdown-rendered pre.language-tremor:before {
+  content: "tremor";
+}
+.markdown-rendered pre.language-trickle:before {
+  content: "trickle";
+}
+.markdown-rendered pre.language-troy:before {
+  content: "troy";
+}
+.markdown-rendered pre.language-turtle:before {
+  content: "turtle";
+}
+.markdown-rendered pre.language-trig:before {
+  content: "trig";
+}
+.markdown-rendered pre.language-twig:before {
+  content: "twig";
+}
+.markdown-rendered pre.language-typescript:before {
+  content: "typescript";
+}
+.markdown-rendered pre.language-ts:before {
+  content: "ts";
+}
+.markdown-rendered pre.language-typoscript:before {
+  content: "typoscript";
+}
+.markdown-rendered pre.language-tsconfig:before {
+  content: "tsconfig";
+}
+.markdown-rendered pre.language-unrealscript:before {
+  content: "unrealscript";
+}
+.markdown-rendered pre.language-uscript:before {
+  content: "uscript";
+}
+.markdown-rendered pre.language-uc:before {
+  content: "uc";
+}
+.markdown-rendered pre.language-uorazor:before {
+  content: "uorazor";
+}
+.markdown-rendered pre.language-uri:before {
+  content: "uri";
+}
+.markdown-rendered pre.language-url:before {
+  content: "url";
+}
+.markdown-rendered pre.language-v:before {
+  content: "v";
+}
+.markdown-rendered pre.language-vala:before {
+  content: "vala";
+}
+.markdown-rendered pre.language-vbnet:before {
+  content: "vbnet";
+}
+.markdown-rendered pre.language-velocity:before {
+  content: "velocity";
+}
+.markdown-rendered pre.language-verilog:before {
+  content: "verilog";
+}
+.markdown-rendered pre.language-vhdl:before {
+  content: "vhdl";
+}
+.markdown-rendered pre.language-vim:before {
+  content: "vim";
+}
+.markdown-rendered pre.language-visual-basic:before {
+  content: "visual-basic";
+}
+.markdown-rendered pre.language-vba:before {
+  content: "vba";
+}
+.markdown-rendered pre.language-vb:before {
+  content: "vb";
+}
+.markdown-rendered pre.language-warpscript:before {
+  content: "warpscript";
+}
+.markdown-rendered pre.language-wasm:before {
+  content: "wasm";
+}
+.markdown-rendered pre.language-web-idl:before {
+  content: "web-idl";
+}
+.markdown-rendered pre.language-webidl:before {
+  content: "webidl";
+}
+.markdown-rendered pre.language-wgsl:before {
+  content: "wgsl";
+}
+.markdown-rendered pre.language-wiki:before {
+  content: "wiki";
+}
+.markdown-rendered pre.language-wolfram:before {
+  content: "wolfram";
+}
+.markdown-rendered pre.language-mathematica:before {
+  content: "mathematica";
+}
+.markdown-rendered pre.language-nb:before {
+  content: "nb";
+}
+.markdown-rendered pre.language-wl:before {
+  content: "wl";
+}
+.markdown-rendered pre.language-wren:before {
+  content: "wren";
+}
+.markdown-rendered pre.language-xeora:before {
+  content: "xeora";
+}
+.markdown-rendered pre.language-xeoracube:before {
+  content: "xeoracube";
+}
+.markdown-rendered pre.language-xml-doc:before {
+  content: "xml-doc";
+}
+.markdown-rendered pre.language-xojo:before {
+  content: "xojo";
+}
+.markdown-rendered pre.language-xquery:before {
+  content: "xquery";
+}
+.markdown-rendered pre.language-yaml:before {
+  content: "yaml";
+}
+.markdown-rendered pre.language-yml:before {
+  content: "yml";
+}
+.markdown-rendered pre.language-yang:before {
+  content: "yang";
+}
+.markdown-rendered pre.language-zig:before {
+  content: "zig";
+}
+.markdown-rendered pre:hover button.copy-code-button {
+  opacity: 1;
+}
+.markdown-rendered pre button.copy-code-button {
   position: absolute;
-  top: 50%;
-  right: auto;
-  bottom: auto;
-  left: 50%;
-  content: "Copy";
-  width: 45px;
-  letter-spacing: 0.1em;
-  transform: translate(-50%, -50%);
-  transition: all 0.2s ease-in-out;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  background-color: var(--code-bg-color);
+  transition: all 0.2s ease;
+  z-index: 1;
+  width: 50px;
+  height: 30px;
+  color: transparent;
+  opacity: 0;
 }
-.markdown-rendered pre .copy-code-button:active:before {
-  font-family: "Material Icons Outlined";
-  font-size: 1.5em;
-  font-weight: 100;
-  color: var(--color-done);
-  content: "done";
+.markdown-rendered pre button.copy-code-button:hover {
+  background-color: var(--code-bg-color);
+  border-color: var(--border-color);
+}
+.markdown-rendered pre button.copy-code-button::after {
+  content: "Copy";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: var(--text-muted);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+.markdown-rendered pre button.copy-code-button:hover {
+  background-color: var(--code-bg-color);
+  border: 1px solid var(--text-muted);
+}
+.markdown-rendered pre button.copy-code-button:hover::after {
+  color: var(--text-strong);
 }
 
 .markdown-source-view div.HyperMD-codeblock-bg {
-  border-width: 0 2px;
-  border-style: solid;
-  border-color: var(--divider-color);
   border-radius: auto;
   background-color: var(--code-bg-color);
 }
 .markdown-source-view div.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg {
-  border-width: 2px 2px 0;
-  border-style: solid;
-  border-color: var(--divider-color);
   border-radius: 4px 4px 0 0;
 }
+.markdown-source-view div.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg:not(.is-active) {
+  height: 0;
+}
+.markdown-source-view div.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg span.code-block-flair {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  background-color: var(--code-bg-color);
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+.markdown-source-view div.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg span.code-block-flair:hover {
+  background-color: var(--code-bg-color);
+  border-color: var(--border-color);
+}
+.markdown-source-view div.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg span.code-block-flair:hover {
+  background-color: var(--code-bg-color);
+  border: 1px solid var(--text-muted);
+  color: var(--text-strong);
+}
 .markdown-source-view div.HyperMD-codeblock-bg.HyperMD-codeblock-end-bg {
-  border-width: 0 2px 2px;
-  border-style: solid;
-  border-color: var(--divider-color);
   border-radius: 0 0 4px 4px;
 }
 

@@ -17,7 +17,9 @@ An Obsidian theme offers a clean and clutter-free interface for enhanced focus a
 7. Checked task(`- [x]`) now has a `line-through` style just like the default theme.
 8. Changed the default highlight style. Feel free to change it back if you like the older one.
 9. Callouts' dog-ear is disabled by default.
-9. Darker code block background color in Dark mode.
+10. Darker code block background color in Dark mode.
+11. Added codeblock language indicator that supports all languages listed in [prismjs](https://prismjs.com/#supported-languages).
+12. Better "Copy" button style in codeblock.
 
 
 #### bug fix
