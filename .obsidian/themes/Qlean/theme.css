@@ -61,12 +61,6 @@ body {
   --color-gradient-h4: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 9%));
   --color-gradient-h5: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 12%));
   --color-gradient-h6: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 15%));
-  --h1-align: center;
-  --h2-align: left;
-  --h3-align: left;
-  --h4-align: left;
-  --h5-align: left;
-  --h6-align: left;
   --font-strong-size: 1em;
   --font-strong-weight: 900;
   --font-strong-style: normal;
@@ -358,21 +352,10 @@ body.colorful-headers.header-color-gradient {
   font-size: var(--font-h1-size);
   font-weight: var(--font-h1-weight);
   color: var(--h1-color);
-  padding: 0;
-  transition: all 0.3s ease-in-out;
-  text-align: var(--h1-align);
-}
-.markdown-rendered h1::after,
-.markdown-source-view .cm-line.HyperMD-header-1::after {
-  content: "";
-  display: block;
-  margin-top: 0.5rem;
-  border-bottom: 1px solid var(--color-accent);
-  width: 100%;
 }
 
-body.header-hovering-underline :is(.markdown-rendered h1, .markdown-source-view .cm-line.HyperMD-header-1):hover {
-  text-decoration-color: var(--color-accent);
+.markdown-source-view .cm-line.HyperMD-header-1::after {
+  margin-top: calc(1px - 0.8rem);
 }
 
 body.header-indicator :is(.markdown-rendered h1, .markdown-source-view .cm-line.HyperMD-header-1):before {
@@ -403,21 +386,10 @@ body.header-indicator .markdown-rendered h1 .collapse-indicator svg {
   font-size: var(--font-h2-size);
   font-weight: var(--font-h2-weight);
   color: var(--h2-color);
-  padding: 0;
-  transition: all 0.3s ease-in-out;
-  text-align: var(--h2-align);
-}
-.markdown-rendered h2::after,
-.markdown-source-view .cm-line.HyperMD-header-2::after {
-  content: "";
-  display: block;
-  margin-top: 0.5rem;
-  border-bottom: 1px solid var(--color-accent);
-  width: 100%;
 }
 
-body.header-hovering-underline :is(.markdown-rendered h2, .markdown-source-view .cm-line.HyperMD-header-2):hover {
-  text-decoration-color: var(--color-accent);
+.markdown-source-view .cm-line.HyperMD-header-2::after {
+  margin-top: calc(2px - 0.8rem);
 }
 
 body.header-indicator :is(.markdown-rendered h2, .markdown-source-view .cm-line.HyperMD-header-2):before {
@@ -448,21 +420,10 @@ body.header-indicator .markdown-rendered h2 .collapse-indicator svg {
   font-size: var(--font-h3-size);
   font-weight: var(--font-h3-weight);
   color: var(--h3-color);
-  padding: 0;
-  transition: all 0.3s ease-in-out;
-  text-align: var(--h3-align);
-}
-.markdown-rendered h3::after,
-.markdown-source-view .cm-line.HyperMD-header-3::after {
-  content: "";
-  display: block;
-  margin-top: 0.5rem;
-  border-bottom: 1px solid var(--color-accent);
-  width: 100%;
 }
 
-body.header-hovering-underline :is(.markdown-rendered h3, .markdown-source-view .cm-line.HyperMD-header-3):hover {
-  text-decoration-color: var(--color-accent);
+.markdown-source-view .cm-line.HyperMD-header-3::after {
+  margin-top: calc(3px - 0.8rem);
 }
 
 body.header-indicator :is(.markdown-rendered h3, .markdown-source-view .cm-line.HyperMD-header-3):before {
@@ -493,21 +454,10 @@ body.header-indicator .markdown-rendered h3 .collapse-indicator svg {
   font-size: var(--font-h4-size);
   font-weight: var(--font-h4-weight);
   color: var(--h4-color);
-  padding: 0;
-  transition: all 0.3s ease-in-out;
-  text-align: var(--h4-align);
-}
-.markdown-rendered h4::after,
-.markdown-source-view .cm-line.HyperMD-header-4::after {
-  content: "";
-  display: block;
-  margin-top: 0.5rem;
-  border-bottom: 1px solid var(--color-accent);
-  width: 100%;
 }
 
-body.header-hovering-underline :is(.markdown-rendered h4, .markdown-source-view .cm-line.HyperMD-header-4):hover {
-  text-decoration-color: var(--color-accent);
+.markdown-source-view .cm-line.HyperMD-header-4::after {
+  margin-top: calc(4px - 0.8rem);
 }
 
 body.header-indicator :is(.markdown-rendered h4, .markdown-source-view .cm-line.HyperMD-header-4):before {
@@ -538,21 +488,10 @@ body.header-indicator .markdown-rendered h4 .collapse-indicator svg {
   font-size: var(--font-h5-size);
   font-weight: var(--font-h5-weight);
   color: var(--h5-color);
-  padding: 0;
-  transition: all 0.3s ease-in-out;
-  text-align: var(--h5-align);
-}
-.markdown-rendered h5::after,
-.markdown-source-view .cm-line.HyperMD-header-5::after {
-  content: "";
-  display: block;
-  margin-top: 0.5rem;
-  border-bottom: 1px solid var(--color-accent);
-  width: 100%;
 }
 
-body.header-hovering-underline :is(.markdown-rendered h5, .markdown-source-view .cm-line.HyperMD-header-5):hover {
-  text-decoration-color: var(--color-accent);
+.markdown-source-view .cm-line.HyperMD-header-5::after {
+  margin-top: calc(5px - 0.8rem);
 }
 
 body.header-indicator :is(.markdown-rendered h5, .markdown-source-view .cm-line.HyperMD-header-5):before {
@@ -583,21 +522,10 @@ body.header-indicator .markdown-rendered h5 .collapse-indicator svg {
   font-size: var(--font-h6-size);
   font-weight: var(--font-h6-weight);
   color: var(--h6-color);
-  padding: 0;
-  transition: all 0.3s ease-in-out;
-  text-align: var(--h6-align);
-}
-.markdown-rendered h6::after,
-.markdown-source-view .cm-line.HyperMD-header-6::after {
-  content: "";
-  display: block;
-  margin-top: 0.5rem;
-  border-bottom: 1px solid var(--color-accent);
-  width: 100%;
 }
 
-body.header-hovering-underline :is(.markdown-rendered h6, .markdown-source-view .cm-line.HyperMD-header-6):hover {
-  text-decoration-color: var(--color-accent);
+.markdown-source-view .cm-line.HyperMD-header-6::after {
+  margin-top: calc(6px - 0.8rem);
 }
 
 body.header-indicator :is(.markdown-rendered h6, .markdown-source-view .cm-line.HyperMD-header-6):before {
@@ -622,9 +550,25 @@ body.header-indicator .markdown-rendered h6 .collapse-indicator svg {
   opacity: 0 !important;
 }
 
-.markdown-rendered :is(h1, h2, h3, h4, h5, h6) {
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6),
+.markdown-source-view .cm-line.HyperMD-header {
   width: -moz-max-content;
   width: max-content;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+}
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6)::after,
+.markdown-source-view .cm-line.HyperMD-header::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: var(--text-normal);
+}
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6):hover::after,
+.markdown-source-view .cm-line.HyperMD-header:hover::after {
+  content: "";
+  width: 100%;
 }
 
 .markdown-rendered :is(h1, h2, h3, h4, h5, h6):before,

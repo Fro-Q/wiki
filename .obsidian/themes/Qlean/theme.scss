@@ -506,13 +506,6 @@ body {
   --color-gradient-h5: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 12%));
   --color-gradient-h6: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 15%));
 
-  --h1-align: center;
-  --h2-align: left;
-  --h3-align: left;
-  --h4-align: left;
-  --h5-align: left;
-  --h6-align: left;
-
   // strong
   --font-strong-size: 1em;
   --font-strong-weight: 900;
@@ -862,25 +855,15 @@ body {
   .markdown-rendered h#{$i},
   .markdown-source-view .cm-line.HyperMD-header-#{$i} {
     @include font(var(--font-header), var(--font-h#{$i}-size), var(--font-h#{$i}-weight), var(--h#{$i}-color));
-    // text-decoration: underline solid transparent 5px;
-    // text-underline-offset: 8px;
-    padding: 0;
-    transition: all 0.3s ease-in-out;
-    text-align: var(--h#{$i}-align);
+  }
 
+  .markdown-source-view .cm-line.HyperMD-header-#{$i} {
     &::after {
-      content: "";
-      display: block;
-      margin-top: 0.5rem;
-      border-bottom: 1px solid var(--color-accent);
-      width: 100%;
+      margin-top: calc(#{$i}px - 0.8rem);
     }
   }
 
   // if header-hovering-underline is enabled:
-  body.header-hovering-underline :is(.markdown-rendered h#{$i}, .markdown-source-view .cm-line.HyperMD-header-#{$i}):hover {
-    text-decoration-color: var(--color-accent);
-  }
 
   // if header-indicator is enabled:
   body.header-indicator {
@@ -893,7 +876,6 @@ body {
     }
 
     & .markdown-source-view .cm-line.cm-line.HyperMD-header-#{$i} .collapse-indicator {
-      // margin-right: calc(var(--font-text-size) * 1);
       top: 0.5rem;
       right: 0.5rem;
       cursor: pointer;
@@ -915,17 +897,31 @@ body {
   }
 }
 
-.markdown-rendered :is(h1, h2, h3, h4, h5, h6) {
-  width: max-content;
+.markdown-source-view .cm-line.HyperMD-header::after {
+  // margin-top: -0.5rem;
 }
 
-// .markdown-rendered :is(h1, h2, h3, h4, h5, h6),
-// .markdown-source-view .cm-line.HyperMD-header {
-//   position: relative;
-//   width: 20px;
-//   margin: 0 5px 0 0;
-//   transition: all 0.3s ease-in-out;
-// }
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6),
+.markdown-source-view .cm-line.HyperMD-header {
+  width: max-content;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: var(--text-normal);
+  }
+
+  &:hover {
+    &::after {
+      content: "";
+      width: 100%;
+    }
+  }
+}
 
 .markdown-rendered :is(h1, h2, h3, h4, h5, h6):before,
 .markdown-source-view .cm-line.HyperMD-header:before {
