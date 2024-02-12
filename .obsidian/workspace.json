@@ -40,13 +40,14 @@
               "type": "markdown",
               "state": {
                 "file": "test_page_2.md",
-                "mode": "source",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -126,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "homepage.md",
+                "file": "test_page_2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "homepage.md",
+                "file": "test_page_2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -155,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "homepage.md"
+                "file": "test_page_2.md"
               }
             }
           },
@@ -188,7 +189,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "homepage.md"
+                "file": "test_page_2.md"
               }
             }
           }
@@ -205,7 +206,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "homepage.md",
+                "file": "test_page_2.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -265,13 +266,13 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "7e72efbc4de930de",
+  "active": "f10a8c3fce5cf1f1",
   "lastOpenFiles": [
-    "notes/create_thiessen_polygon.md",
-    "homepage.md",
-    "project/drought/drought.md",
-    "test_page_2.md",
     "test_page.md",
+    "test_page_2.md",
+    "homepage.md",
+    "notes/create_thiessen_polygon.md",
+    "project/drought/drought.md",
     "Porsche.jpg",
     "global_file_format_spec.md",
     "timestamp/ts_2024_01_17_0956.md",

@@ -107,7 +107,7 @@ Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. 
 
 [[test_page_2]]
 
-[dataview:: ok] 
+[dataview:: ok]
 
 ### [dataview:: okk]
 

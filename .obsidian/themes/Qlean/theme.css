@@ -109,6 +109,24 @@ body {
   --font-inline-title: var(--font-header);
   --font-inline-title-size: 2em;
   --font-inline-title-weight: 900;
+  --link-unresolved-color: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 20%));
+  --link-unresolved-color-hover: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 10%));
+  --link-external-color: var(--color-accent-ln5);
+  --link-external-color-hover: var(--color-accent);
+  --link-color: var(--color-accent-ln5);
+  --link-color-hover: var(--color-accent);
+  --font-inline-tile-color: var(--text-normal);
+  --link-decoration-line: underline;
+  --link-decoration-width: auto;
+  --link-decoration-style: solid;
+  --link-decoration-color: var(--link-color);
+  --link-decoration-offset: 2px;
+  --link-unresolved-decoration-line: underline;
+  --link-unresolved-decoration-width: auto;
+  --link-unresolved-decoration-style: dashed;
+  --link-unresolved-decoration-color: hsla(var(--link-unresolved-color), 0.3);
+  --link-unresolved-decoration-offset: 1px;
+  --link-unresolved-decoration-color-hover: hsla(var(--link-unresolved-color-hover), 0.3);
   --checkbox-checked-color: hsla(var(--color-h), var(--color-s), var(--color-l));
   --checkbox-border-color: var(--color-base-70);
   --checkbox-color-hover: hsla(0, 0%, 73%, 0.5);
@@ -124,7 +142,7 @@ body {
   --callout-dogs-ear-size: 30px;
   --tab-curve: 6px;
   --icon-color-focused: hsl(var(--color-h), var(--color-s), 40%);
-  --icon-color-hovering: var(--text-normal);
+  --icon-color-hovering: var(--text-strong);
   --color-green-h: 150;
   --color-green-s: 100%;
   --color-green-l: 40%;
@@ -172,24 +190,6 @@ body {
   --color-accent-o40: hsla(var(--color-h), var(--color-s), var(--color-l), 0.4);
   --color-accent-o30: hsla(var(--color-h), var(--color-s), var(--color-l), 0.3);
   --text-selection: hsla(var(--color-h), var(--color-s), var(--color-l), 0.15) !important;
-  --link-unresolved-color: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 20%));
-  --link-unresolved-color-hover: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 10%));
-  --link-external-color: var(--color-accent-ln5);
-  --link-external-color-hover: var(--color-accent);
-  --link-color: var(--color-accent-ln5);
-  --link-color-hover: var(--color-accent);
-  --font-inline-tile-color: var(--text-normal);
-  --link-decoration-line: underline;
-  --link-decoration-width: auto;
-  --link-decoration-style: solid;
-  --link-decoration-color: var(--link-color);
-  --link-decoration-offset: 2px;
-  --link-unresolved-decoration-line: underline;
-  --link-unresolved-decoration-width: auto;
-  --link-unresolved-decoration-style: dashed;
-  --link-unresolved-decoration-color: hsla(var(--link-unresolved-color), 0.3);
-  --link-unresolved-decoration-offset: 2px;
-  --link-unresolved-decoration-color-hover: hsla(var(--link-unresolved-color-hover), 0.3);
   --color-error: var(--background-modifier-error);
   --color-done: hsl(120, 100%, 40%);
   --color-warning: #fbbc04;
@@ -208,7 +208,7 @@ body.theme-light {
   --text-strong: hsl(0, 0%, 0%);
   --text-muted: hsla(0, 0%, 60%, 1) !important;
   --code-bg-color: #dedede;
-  --inline-bg-color: hsla(0, 0%, 90%, 1);
+  --inline-code-bg-color: hsla(0, 0%, 90%, 1);
   --background-primary: hsla(0, 0%, 96%, 1);
   --background-secondary: hsl(0, 0%, 92%);
   --background-modifier-active-hover: #d9d9d9;
@@ -274,7 +274,7 @@ body.theme-dark {
   --text-strong: hsl(0, 0%, 100%);
   --text-muted: #999 !important;
   --code-bg-color: #181818;
-  --inline-bg-color: rgba(255, 255, 255, 0.1);
+  --inline-code-bg-color: rgba(255, 255, 255, 0.1);
   --background-primary: #111;
   --background-secondary: #151515;
   --background-modifier-active-hover: #151515;
@@ -701,7 +701,7 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view, .markdown-rendered) .
   font-size: var(--font-monospace-size);
   font-weight: var(--font-monospace-weight);
   color: var(--code-color);
-  background-color: var(--inline-bg-color);
+  background-color: var(--inline-code-bg-color);
 }
 
 .markdown-rendered pre {
@@ -2153,19 +2153,20 @@ body.tag-outline .markdown-source-view .cm-line .cm-hashtag:is(.cm-hashtag-begin
   width: 35px;
 }
 
-.clickable-icon {
+.clickable-icon:not([aria-disabled=true]) {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   opacity: 0.75;
   background-color: transparent;
 }
-.clickable-icon:hover {
+.clickable-icon:not([aria-disabled=true]):hover {
   opacity: 1;
+  background-color: transparent;
 }
-.clickable-icon:hover svg {
-  stroke-width: 2px;
+.clickable-icon:not([aria-disabled=true]):hover svg {
+  stroke: var(--icon-color-hovering);
 }
-.clickable-icon[aria-disabled=true] {
+.clickable-icon:not([aria-disabled=true])[aria-disabled=true] {
   opacity: 0.3;
   cursor: not-allowed;
 }
