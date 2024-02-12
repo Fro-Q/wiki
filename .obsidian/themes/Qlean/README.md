@@ -20,14 +20,15 @@ An Obsidian theme offers a clean and clutter-free interface for enhanced focus a
 10. Darker code block background color in Dark mode.
 11. Added codeblock language indicator that supports all languages listed in [prismjs](https://prismjs.com/#supported-languages).
 12. Better "Copy" button style in codeblock.
-13. Smaller tag.
-14.
-
+13. Smaller #tag.
+14. Removed "Red Close Button" and "Close Button Rotate Animation" option.
+15. Active sideber icon are highlighted by `stroke` instead of `fill`.
 
 #### bug fix
 
 1. Alt text of images now correctly displayed.
 2. Inlince code doesn't have a "wings" anymore.
+3. Header hovering underline is now a continuous line.
 
 ### Version 0.1.6(12/22/2023)
 

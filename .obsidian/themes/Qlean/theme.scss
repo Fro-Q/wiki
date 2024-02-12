@@ -543,6 +543,18 @@ body {
   --font-highlight-decoration-color: var(--text-normal);
   --font-highlight-decoration-offset: 3px;
 
+  // strikethrough
+  --font-strikethrough-size: 1em;
+  --font-strikethrough-weight: normal;
+  --font-strikethrough-style: normal;
+  --font-strikethrough-color: var(--text-muted);
+
+  --font-strikethrough-decoration-line: line-through;
+  --font-strikethrough-decoration-width: 1px;
+  --font-strikethrough-decoration-style: solid;
+  --font-strikethrough-decoration-color: var(--font-strikethrough-color);
+  --font-strikethrough-decoration-offset: 2px;
+
   // underlined
   --font-underlined-size: 1em;
   --font-underlined-weight: normal;
@@ -578,10 +590,14 @@ body {
 
   // tag
   --tag-radius: 1em;
-
   --blockquote-border-thickness: 2px;
   --callout-dogs-ear-size: 30px;
   --tab-curve: 6px;
+
+  // svg
+  --icon-color-focused: hsl(var(--color-h), var(--color-s), 40%);
+  --icon-color-hovering: var(--text-normal);
+
   // preset accent color
   --color-green-h: 150;
   --color-green-s: 100%;
@@ -759,8 +775,7 @@ body {
     --inline-bg-color: rgba(255, 255, 255, 0.1);
     --background-primary: #111;
     --background-secondary: #151515;
-    --background-modifier-active-hover: #272727;
-    --background-modifier-border-focus: #272727;
+    --background-modifier-active-hover: #151515;
     --background-modifier-border-focus: var(--color-base-40);
     --button-shadow-color: rgba(255, 255, 255, 0.2);
     --titlebar-isfocused: #171514;
@@ -768,7 +783,7 @@ body {
     --divider-color: #303030;
     --tab-bg-color: #303030;
     --tab-hover-bg-color: var(--background-modifier-active-hover);
-    --tab-active-bg-color: #303030;
+    --tab-active-bg-color: #202020;
     --close-button-hover-bg-color: rgba(255, 255, 255, 0.1);
     --switch-inset-shadow-color: rgba(0, 0, 0, 0.2);
 
@@ -857,72 +872,75 @@ body {
     @include font(var(--font-header), var(--font-h#{$i}-size), var(--font-h#{$i}-weight), var(--h#{$i}-color));
   }
 
+  // justify header hovering underline position
   .markdown-source-view .cm-line.HyperMD-header-#{$i} {
     &::after {
-      margin-top: calc(#{$i}px - 0.8rem);
+      margin-top: calc(#{$i}px * 1.5 - 0.8rem);
     }
   }
 
-  // if header-hovering-underline is enabled:
-
-  // if header-indicator is enabled:
+  // header level indicator content
   body.header-indicator {
     & :is(.markdown-rendered h#{$i}, .markdown-source-view .cm-line.HyperMD-header-#{$i}):before {
       content: "H#{$i}";
     }
-
-    & :is(.markdown-rendered h#{$i}, .markdown-source-view .cm-line.HyperMD-header-#{$i}):has(.is-collapsed):before {
-      color: var(--text-normal);
-    }
-
-    & .markdown-source-view .cm-line.cm-line.HyperMD-header-#{$i} .collapse-indicator {
-      top: 0.5rem;
-      right: 0.5rem;
-      cursor: pointer;
-
-      & svg {
-        opacity: 0 !important;
-      }
-    }
-
-    & .markdown-rendered h#{$i} .collapse-indicator {
-
-      transform: translate(1.2rem, -1.8rem);
-      cursor: pointer;
-
-      & svg {
-        opacity: 0 !important;
-      }
-    }
   }
 }
 
-.markdown-source-view .cm-line.HyperMD-header::after {
-  // margin-top: -0.5rem;
+// header level indicator style
+// make collapse indicator invisible and the same position as the level indicator
+// so clicking the level indicator will trigger the collapse event
+body.header-indicator {
+  & .markdown-source-view .cm-line.cm-line.HyperMD-header .collapse-indicator {
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+
+    & svg {
+      opacity: 0 !important;
+    }
+  }
+
+  & .markdown-rendered :is(h1, h2, h3, h4, h5, h6) .collapse-indicator {
+
+    transform: translate(1.2rem, -1.8rem);
+    cursor: pointer;
+
+    & svg {
+      opacity: 0 !important;
+    }
+  }
 }
 
 .markdown-rendered :is(h1, h2, h3, h4, h5, h6),
 .markdown-source-view .cm-line.HyperMD-header {
+  // max-content so the underline will not be too long
   width: max-content;
   padding: 0;
   transition: all 0.3s ease-in-out;
 
+  // hovering underline
+  body.header-hovering-underline &:hover::after {
+    background-color: var(--text-normal);
+  }
+
+  // underline style
   &::after {
     content: "";
     display: block;
     height: 2px;
-    width: 0;
-    background-color: var(--text-normal);
+    width: 100%;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
   }
 
-  &:hover {
-    &::after {
-      content: "";
-      width: 100%;
-    }
+  // if is collapsed, change the color of the level indicator to give a hint
+  body.header-indicator &:has(.is-collapsed):before {
+    color: var(--text-strong);
   }
 }
 
+// header level indicator style
 .markdown-rendered :is(h1, h2, h3, h4, h5, h6):before,
 .markdown-source-view .cm-line.HyperMD-header:before {
   @include font($font-family: var(--font-monospace), $font-size: 14px, $color: var(--text-muted));
@@ -964,6 +982,16 @@ body {
   padding: 2px 4px;
   border-radius: 4px;
   margin: 0 2px;
+}
+
+// strikethrough
+.markdown-rendered del,
+.markdown-source-view .cm-line .cm-strikethrough,
+.markdown-source-view del {
+  @include font(var(--font-text), var(--font-strikethrough-size), var(--font-strikethrough-weight), var(--font-strikethrough-color));
+  text-decoration: var(--font-strikethrough-decoration-line) var(--font-strikethrough-decoration-style) var(--font-strikethrough-decoration-color) var(--font-strikethrough-decoration-width);
+  text-underline-offset: var(--font-strikethrough-decoration-offset);
+  font-style: var(--font-strikethrough-style);
 }
 
 // underlined
@@ -1105,6 +1133,7 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
     box-shadow: -2px 2px 4px 2px rgba(0, 0, 0, 0.2);
   }
 
+  // unfold the dogs ear
   &:hover:after {
     width: 0;
     height: 0;
@@ -1122,6 +1151,7 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
     margin-top: 0.5em;
   }
 
+  // embed alt position, with a default value of end
   body.embed-alt.embed-alt-left & {
     text-align: start;
   }
@@ -1131,6 +1161,8 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
   }
 }
 
+
+// inline code
 .markdown-source-view .cm-line .cm-inline-code,
 .markdown-source-view .HyperMD-codeblock,
 .markdown-rendered code {
@@ -1138,8 +1170,7 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
   background-color: var(--inline-bg-color);
 }
 
-// code block
-// preview
+// code block preview view
 .markdown-rendered pre {
   border: none;
   border-radius: 4px;
@@ -1161,6 +1192,7 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
     }
   }
 
+  // supoort for multiple languages
   @each $l in $languages {
     &.language-#{$l} {
       &:before {
@@ -1207,7 +1239,7 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
   }
 }
 
-// source view
+// code block source view
 .markdown-source-view div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg {
   border-radius: auto;
   background-color: var(--code-bg-color);
@@ -1241,6 +1273,7 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
   border-width: 2px;
 }
 
+// delete margin of tags in metadata to avoid the tags being too wide
 .metadata-container .metadata-property[data-property-key="tags"] .multi-select-pill {
 
   & .multi-select-pill-content {
@@ -1257,7 +1290,20 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
   padding: 0.1em 0.5em;
 }
 
+.markdown-source-view .cm-line .cm-hashtag {
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
 
+  &.cm-hashtag-begin {
+    padding-left: 0.5em;
+  }
+
+  &.cm-hashtag-end {
+    padding-right: 0.5em;
+  }
+}
+
+// if tag-fill is enabled
 body.tag-fill {
 
   & .markdown-rendered a.tag,
@@ -1283,6 +1329,7 @@ body.tag-fill {
   }
 }
 
+// if tag-outline is enabled
 body.tag-outline {
 
   & .markdown-rendered a.tag,
@@ -1314,43 +1361,77 @@ body.tag-outline {
   background-color: var(--background-primary);
 }
 
-// body.is-focused {
-//   &.mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right {
-//     background-color: var(--titlebar-isfocused);
-//   }
-
-//   & .workspace-tab.mod-top,
-//   & .workspace-tab-header-container,
-//   & .workspace-ribbon.mod-left:before {
-//     background-color: var(--titlebar-isfocused);
-//   }
-// }
-
+// topbar and sidebar
 .workspace {
+
+  // if left sidedock is open
   &.is-left-sidedock-open {
     & .side-dock-ribbon.mod-left {
+      // dock ribbon color should be the same as primary background color
       background-color: var(--background-primary);
     }
   }
 
-  & :is(.mod-left-split, .mod-right-split) .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header {
-    min-width: 30px;
+  // left sidedock tab item
+  & :is(.mod-left-split, .mod-right-split) .workspace-tabs .workspace-tab-header-container-inner {
+    gap: 0;
+
+    & .workspace-tab-header {
+      min-width: 30px;
+
+      & svg {
+        transition: all 0.2s ease-in-out;
+      }
+
+      &:hover {
+        & .workspace-tab-header-inner {
+          background-color: transparent;
+        }
+
+        & svg {
+          stroke: var(--icon-color-hovering);
+        }
+      }
+
+      &.is-active {
+        & svg {
+          stroke: var(--icon-color-focused);
+        }
+      }
+    }
+
   }
 
-  & .workspace-tabs {
+  // main workspace
+  & .workspace-split.mod-vertical.mod-root .workspace-tabs {
+
+    & .workspace-tab-header {
+      &.is-active {
+        background-color: var(--tab-active-bg-color);
+
+        & .workspace-tab-header-inner-title {
+          color: var(--text-strong);
+        }
+      }
+
+      &:not(.is-active):hover {
+        & .workspace-tab-header-inner-title {
+          color: var(--text-normal);
+        }
+      }
+    }
+
 
     & .workspace-tab-header-container-inner {
       margin: 0;
-      padding: 2px 6px 0;
+      padding-top: 2px;
+      gap: 0;
     }
 
     & .workspace-tab-header-container-inner .workspace-tab-header {
       border-width: 0;
-      border-style: solid;
-      border-color: transparent;
       border-radius: 4px;
-      // background-color: var(--titlebar-isfocused);
-      min-width: 50px;
+      min-width: 100px;
       height: 30px;
       margin: 3.2px 5px 0 0;
       padding: 1px 3px 1px;
@@ -1361,6 +1442,7 @@ body.tag-outline {
         background-color: transparent;
       }
 
+      // close button
       & .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button {
         display: flex;
         color: var(--text-normal);
@@ -1374,61 +1456,16 @@ body.tag-outline {
   }
 }
 
-
-.workspace-tab-header-inner-close-button {
-  body.red-close-button .workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header:is(.mod-active, :hover) & {
-    color: indianred;
-  }
-
-  body.close-button-rotate-animation .workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header &:hover svg {
-    animation: rotate 0.4s ease-in-out forwards;
-  }
-}
-
 .workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header {
-  &.mod-active {
-    background-color: var(--tab-active-bg-color);
-    box-shadow: 0 0 2px 1.5px rgba(0, 0, 0, 0.2);
-  }
-
-  &:not(.mod-active) {
-    & .workspace-tab-header-inner-close-button {
-      color: var(--text-muted);
-    }
-
-    &:hover {
-      background-color: var(--tab-hover-bg-color);
-
-      & .workspace-tab-header-inner {
-        background-color: transparent;
-      }
-
-      & .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button {
-        display: flex;
-      }
-    }
-  }
+  background-color: transparent;
 
   &:before,
   &:after {
     box-shadow: none;
   }
-
-  body:not(.is-focused) & {
-    &.mod-active {
-
-      & .workspace-tab-header-inner-title,
-      & .workspace-tab-header-inner-icon {
-        color: var(--text-normal);
-      }
-    }
-
-    &:not(.mod-active) {
-      background-color: var(--background-primary);
-    }
-  }
 }
 
+// links in source view
 .markdown-source-view {
 
   & .cm-hmd-internal-link:has(.is-unresolved),
@@ -1451,13 +1488,6 @@ body.tag-outline {
     bottom: 12px;
     left: 4px;
     width: 35px;
-  }
-
-  & .mod-left-split,
-  & .mod-right-split {
-    & .workspace-tab-header.is-active svg {
-      fill: hsl(var(--color-h), var(--color-s), var(--color-l));
-    }
   }
 }
 
@@ -2886,16 +2916,6 @@ settings:
     type: heading
     level: 1
     collapsed: true
-  -
-    id: red-close-button
-    title: Red Close Button
-    type: class-toggle
-    default: false
-  -
-    id: close-button-rotate-animation
-    title: Close Button Rotate Animation
-    type: class-toggle
-    default: false
   -
     id: hide-close-button-when-window-narrow
     title: Hide Close Button When Window Narrow

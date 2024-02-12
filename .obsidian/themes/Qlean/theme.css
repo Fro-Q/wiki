@@ -89,6 +89,15 @@ body {
   --font-highlight-decoration-line: none;
   --font-highlight-decoration-color: var(--text-normal);
   --font-highlight-decoration-offset: 3px;
+  --font-strikethrough-size: 1em;
+  --font-strikethrough-weight: normal;
+  --font-strikethrough-style: normal;
+  --font-strikethrough-color: var(--text-muted);
+  --font-strikethrough-decoration-line: line-through;
+  --font-strikethrough-decoration-width: 1px;
+  --font-strikethrough-decoration-style: solid;
+  --font-strikethrough-decoration-color: var(--font-strikethrough-color);
+  --font-strikethrough-decoration-offset: 2px;
   --font-underlined-size: 1em;
   --font-underlined-weight: normal;
   --font-underlined-color: var(--text-normal);
@@ -114,6 +123,8 @@ body {
   --blockquote-border-thickness: 2px;
   --callout-dogs-ear-size: 30px;
   --tab-curve: 6px;
+  --icon-color-focused: hsl(var(--color-h), var(--color-s), 40%);
+  --icon-color-hovering: var(--text-normal);
   --color-green-h: 150;
   --color-green-s: 100%;
   --color-green-l: 40%;
@@ -266,8 +277,7 @@ body.theme-dark {
   --inline-bg-color: rgba(255, 255, 255, 0.1);
   --background-primary: #111;
   --background-secondary: #151515;
-  --background-modifier-active-hover: #272727;
-  --background-modifier-border-focus: #272727;
+  --background-modifier-active-hover: #151515;
   --background-modifier-border-focus: var(--color-base-40);
   --button-shadow-color: rgba(255, 255, 255, 0.2);
   --titlebar-isfocused: #171514;
@@ -275,7 +285,7 @@ body.theme-dark {
   --divider-color: #303030;
   --tab-bg-color: #303030;
   --tab-hover-bg-color: var(--background-modifier-active-hover);
-  --tab-active-bg-color: #303030;
+  --tab-active-bg-color: #202020;
   --close-button-hover-bg-color: rgba(255, 255, 255, 0.1);
   --switch-inset-shadow-color: rgba(0, 0, 0, 0.2);
   --border-color: #333;
@@ -355,29 +365,11 @@ body.colorful-headers.header-color-gradient {
 }
 
 .markdown-source-view .cm-line.HyperMD-header-1::after {
-  margin-top: calc(1px - 0.8rem);
+  margin-top: calc(1px * 1.5 - 0.8rem);
 }
 
 body.header-indicator :is(.markdown-rendered h1, .markdown-source-view .cm-line.HyperMD-header-1):before {
   content: "H1";
-}
-body.header-indicator :is(.markdown-rendered h1, .markdown-source-view .cm-line.HyperMD-header-1):has(.is-collapsed):before {
-  color: var(--text-normal);
-}
-body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-1 .collapse-indicator {
-  top: 0.5rem;
-  right: 0.5rem;
-  cursor: pointer;
-}
-body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-1 .collapse-indicator svg {
-  opacity: 0 !important;
-}
-body.header-indicator .markdown-rendered h1 .collapse-indicator {
-  transform: translate(1.2rem, -1.8rem);
-  cursor: pointer;
-}
-body.header-indicator .markdown-rendered h1 .collapse-indicator svg {
-  opacity: 0 !important;
 }
 
 .markdown-rendered h2,
@@ -389,29 +381,11 @@ body.header-indicator .markdown-rendered h1 .collapse-indicator svg {
 }
 
 .markdown-source-view .cm-line.HyperMD-header-2::after {
-  margin-top: calc(2px - 0.8rem);
+  margin-top: calc(2px * 1.5 - 0.8rem);
 }
 
 body.header-indicator :is(.markdown-rendered h2, .markdown-source-view .cm-line.HyperMD-header-2):before {
   content: "H2";
-}
-body.header-indicator :is(.markdown-rendered h2, .markdown-source-view .cm-line.HyperMD-header-2):has(.is-collapsed):before {
-  color: var(--text-normal);
-}
-body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-2 .collapse-indicator {
-  top: 0.5rem;
-  right: 0.5rem;
-  cursor: pointer;
-}
-body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-2 .collapse-indicator svg {
-  opacity: 0 !important;
-}
-body.header-indicator .markdown-rendered h2 .collapse-indicator {
-  transform: translate(1.2rem, -1.8rem);
-  cursor: pointer;
-}
-body.header-indicator .markdown-rendered h2 .collapse-indicator svg {
-  opacity: 0 !important;
 }
 
 .markdown-rendered h3,
@@ -423,29 +397,11 @@ body.header-indicator .markdown-rendered h2 .collapse-indicator svg {
 }
 
 .markdown-source-view .cm-line.HyperMD-header-3::after {
-  margin-top: calc(3px - 0.8rem);
+  margin-top: calc(3px * 1.5 - 0.8rem);
 }
 
 body.header-indicator :is(.markdown-rendered h3, .markdown-source-view .cm-line.HyperMD-header-3):before {
   content: "H3";
-}
-body.header-indicator :is(.markdown-rendered h3, .markdown-source-view .cm-line.HyperMD-header-3):has(.is-collapsed):before {
-  color: var(--text-normal);
-}
-body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-3 .collapse-indicator {
-  top: 0.5rem;
-  right: 0.5rem;
-  cursor: pointer;
-}
-body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-3 .collapse-indicator svg {
-  opacity: 0 !important;
-}
-body.header-indicator .markdown-rendered h3 .collapse-indicator {
-  transform: translate(1.2rem, -1.8rem);
-  cursor: pointer;
-}
-body.header-indicator .markdown-rendered h3 .collapse-indicator svg {
-  opacity: 0 !important;
 }
 
 .markdown-rendered h4,
@@ -457,29 +413,11 @@ body.header-indicator .markdown-rendered h3 .collapse-indicator svg {
 }
 
 .markdown-source-view .cm-line.HyperMD-header-4::after {
-  margin-top: calc(4px - 0.8rem);
+  margin-top: calc(4px * 1.5 - 0.8rem);
 }
 
 body.header-indicator :is(.markdown-rendered h4, .markdown-source-view .cm-line.HyperMD-header-4):before {
   content: "H4";
-}
-body.header-indicator :is(.markdown-rendered h4, .markdown-source-view .cm-line.HyperMD-header-4):has(.is-collapsed):before {
-  color: var(--text-normal);
-}
-body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-4 .collapse-indicator {
-  top: 0.5rem;
-  right: 0.5rem;
-  cursor: pointer;
-}
-body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-4 .collapse-indicator svg {
-  opacity: 0 !important;
-}
-body.header-indicator .markdown-rendered h4 .collapse-indicator {
-  transform: translate(1.2rem, -1.8rem);
-  cursor: pointer;
-}
-body.header-indicator .markdown-rendered h4 .collapse-indicator svg {
-  opacity: 0 !important;
 }
 
 .markdown-rendered h5,
@@ -491,29 +429,11 @@ body.header-indicator .markdown-rendered h4 .collapse-indicator svg {
 }
 
 .markdown-source-view .cm-line.HyperMD-header-5::after {
-  margin-top: calc(5px - 0.8rem);
+  margin-top: calc(5px * 1.5 - 0.8rem);
 }
 
 body.header-indicator :is(.markdown-rendered h5, .markdown-source-view .cm-line.HyperMD-header-5):before {
   content: "H5";
-}
-body.header-indicator :is(.markdown-rendered h5, .markdown-source-view .cm-line.HyperMD-header-5):has(.is-collapsed):before {
-  color: var(--text-normal);
-}
-body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-5 .collapse-indicator {
-  top: 0.5rem;
-  right: 0.5rem;
-  cursor: pointer;
-}
-body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-5 .collapse-indicator svg {
-  opacity: 0 !important;
-}
-body.header-indicator .markdown-rendered h5 .collapse-indicator {
-  transform: translate(1.2rem, -1.8rem);
-  cursor: pointer;
-}
-body.header-indicator .markdown-rendered h5 .collapse-indicator svg {
-  opacity: 0 !important;
 }
 
 .markdown-rendered h6,
@@ -525,28 +445,26 @@ body.header-indicator .markdown-rendered h5 .collapse-indicator svg {
 }
 
 .markdown-source-view .cm-line.HyperMD-header-6::after {
-  margin-top: calc(6px - 0.8rem);
+  margin-top: calc(6px * 1.5 - 0.8rem);
 }
 
 body.header-indicator :is(.markdown-rendered h6, .markdown-source-view .cm-line.HyperMD-header-6):before {
   content: "H6";
 }
-body.header-indicator :is(.markdown-rendered h6, .markdown-source-view .cm-line.HyperMD-header-6):has(.is-collapsed):before {
-  color: var(--text-normal);
-}
-body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-6 .collapse-indicator {
+
+body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header .collapse-indicator {
   top: 0.5rem;
   right: 0.5rem;
   cursor: pointer;
 }
-body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header-6 .collapse-indicator svg {
+body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header .collapse-indicator svg {
   opacity: 0 !important;
 }
-body.header-indicator .markdown-rendered h6 .collapse-indicator {
+body.header-indicator .markdown-rendered :is(h1, h2, h3, h4, h5, h6) .collapse-indicator {
   transform: translate(1.2rem, -1.8rem);
   cursor: pointer;
 }
-body.header-indicator .markdown-rendered h6 .collapse-indicator svg {
+body.header-indicator .markdown-rendered :is(h1, h2, h3, h4, h5, h6) .collapse-indicator svg {
   opacity: 0 !important;
 }
 
@@ -557,18 +475,22 @@ body.header-indicator .markdown-rendered h6 .collapse-indicator svg {
   padding: 0;
   transition: all 0.3s ease-in-out;
 }
+body.header-hovering-underline .markdown-rendered :is(h1, h2, h3, h4, h5, h6):hover::after,
+body.header-hovering-underline .markdown-source-view .cm-line.HyperMD-header:hover::after {
+  background-color: var(--text-normal);
+}
 .markdown-rendered :is(h1, h2, h3, h4, h5, h6)::after,
 .markdown-source-view .cm-line.HyperMD-header::after {
   content: "";
   display: block;
   height: 2px;
-  width: 0;
-  background-color: var(--text-normal);
-}
-.markdown-rendered :is(h1, h2, h3, h4, h5, h6):hover::after,
-.markdown-source-view .cm-line.HyperMD-header:hover::after {
-  content: "";
   width: 100%;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+body.header-indicator .markdown-rendered :is(h1, h2, h3, h4, h5, h6):has(.is-collapsed):before,
+body.header-indicator .markdown-source-view .cm-line.HyperMD-header:has(.is-collapsed):before {
+  color: var(--text-strong);
 }
 
 .markdown-rendered :is(h1, h2, h3, h4, h5, h6):before,
@@ -624,6 +546,19 @@ body.header-indicator .markdown-rendered h6 .collapse-indicator svg {
   padding: 2px 4px;
   border-radius: 4px;
   margin: 0 2px;
+}
+
+.markdown-rendered del,
+.markdown-source-view .cm-line .cm-strikethrough,
+.markdown-source-view del {
+  font-family: var(--font-text);
+  font-size: var(--font-strikethrough-size);
+  font-weight: var(--font-strikethrough-weight);
+  color: var(--font-strikethrough-color);
+  -webkit-text-decoration: var(--font-strikethrough-decoration-line) var(--font-strikethrough-decoration-style) var(--font-strikethrough-decoration-color) var(--font-strikethrough-decoration-width);
+          text-decoration: var(--font-strikethrough-decoration-line) var(--font-strikethrough-decoration-style) var(--font-strikethrough-decoration-color) var(--font-strikethrough-decoration-width);
+  text-underline-offset: var(--font-strikethrough-decoration-offset);
+  font-style: var(--font-strikethrough-style);
 }
 
 :is(.markdown-rendered, .markdown-source-view .cm-line, .markdown-source-view) u {
@@ -2083,6 +2018,17 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view, .markdown-rendered) .
   padding: 0.1em 0.5em;
 }
 
+.markdown-source-view .cm-line .cm-hashtag {
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+}
+.markdown-source-view .cm-line .cm-hashtag.cm-hashtag-begin {
+  padding-left: 0.5em;
+}
+.markdown-source-view .cm-line .cm-hashtag.cm-hashtag-end {
+  padding-right: 0.5em;
+}
+
 body.tag-fill .markdown-rendered a.tag, body.tag-fill .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill {
   border-color: var(--color-accent-o40);
   background-color: var(--color-accent-o30);
@@ -2129,68 +2075,65 @@ body.tag-outline .markdown-source-view .cm-line .cm-hashtag:is(.cm-hashtag-begin
 .workspace.is-left-sidedock-open .side-dock-ribbon.mod-left {
   background-color: var(--background-primary);
 }
+.workspace :is(.mod-left-split, .mod-right-split) .workspace-tabs .workspace-tab-header-container-inner {
+  gap: 0;
+}
 .workspace :is(.mod-left-split, .mod-right-split) .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header {
   min-width: 30px;
 }
-.workspace .workspace-tabs .workspace-tab-header-container-inner {
-  margin: 0;
-  padding: 2px 6px 0;
+.workspace :is(.mod-left-split, .mod-right-split) .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header svg {
+  transition: all 0.2s ease-in-out;
 }
-.workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header {
+.workspace :is(.mod-left-split, .mod-right-split) .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header:hover .workspace-tab-header-inner {
+  background-color: transparent;
+}
+.workspace :is(.mod-left-split, .mod-right-split) .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header:hover svg {
+  stroke: var(--icon-color-hovering);
+}
+.workspace :is(.mod-left-split, .mod-right-split) .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header.is-active svg {
+  stroke: var(--icon-color-focused);
+}
+.workspace .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header.is-active {
+  background-color: var(--tab-active-bg-color);
+}
+.workspace .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: var(--text-strong);
+}
+.workspace .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-title {
+  color: var(--text-normal);
+}
+.workspace .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container-inner {
+  margin: 0;
+  padding-top: 2px;
+  gap: 0;
+}
+.workspace .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header {
   border-width: 0;
-  border-style: solid;
-  border-color: transparent;
   border-radius: 4px;
-  min-width: 50px;
+  min-width: 100px;
   height: 30px;
   margin: 3.2px 5px 0 0;
   padding: 1px 3px 1px;
   color: var(--text-muted);
   box-shadow: none;
 }
-.workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header .workspace-tab-header-inner:after {
+.workspace .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header .workspace-tab-header-inner:after {
   background-color: transparent;
 }
-.workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button {
+.workspace .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button {
   display: flex;
   color: var(--text-normal);
 }
-.workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button:hover {
+.workspace .workspace-split.mod-vertical.mod-root .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button:hover {
   color: var(--text-strong);
   background-color: var(--close-button-hover-bg-color);
 }
 
-body.red-close-button .workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header:is(.mod-active, :hover) .workspace-tab-header-inner-close-button {
-  color: indianred;
-}
-body.close-button-rotate-animation .workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header .workspace-tab-header-inner-close-button:hover svg {
-  animation: rotate 0.4s ease-in-out forwards;
-}
-
-.workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header.mod-active {
-  background-color: var(--tab-active-bg-color);
-  box-shadow: 0 0 2px 1.5px rgba(0, 0, 0, 0.2);
-}
-.workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header:not(.mod-active) .workspace-tab-header-inner-close-button {
-  color: var(--text-muted);
-}
-.workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header:not(.mod-active):hover {
-  background-color: var(--tab-hover-bg-color);
-}
-.workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header:not(.mod-active):hover .workspace-tab-header-inner {
+.workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header {
   background-color: transparent;
-}
-.workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header:not(.mod-active):hover .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button {
-  display: flex;
 }
 .workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header:before, .workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header:after {
   box-shadow: none;
-}
-body:not(.is-focused) .workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header.mod-active .workspace-tab-header-inner-title, body:not(.is-focused) .workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header.mod-active .workspace-tab-header-inner-icon {
-  color: var(--text-normal);
-}
-body:not(.is-focused) .workspace .workspace-tabs .workspace-tab-header-container-inner .workspace-tab-header:not(.mod-active) {
-  background-color: var(--background-primary);
 }
 
 .markdown-source-view .cm-hmd-internal-link:has(.is-unresolved):hover, .markdown-source-view .is-unresolved:hover {
@@ -2208,9 +2151,6 @@ body:not(.is-focused) .workspace .workspace-tabs .workspace-tab-header-container
   bottom: 12px;
   left: 4px;
   width: 35px;
-}
-.workspace .mod-left-split .workspace-tab-header.is-active svg, .workspace .mod-right-split .workspace-tab-header.is-active svg {
-  fill: hsl(var(--color-h), var(--color-s), var(--color-l));
 }
 
 .clickable-icon {
@@ -3506,16 +3446,6 @@ settings:
     type: heading
     level: 1
     collapsed: true
-  -
-    id: red-close-button
-    title: Red Close Button
-    type: class-toggle
-    default: false
-  -
-    id: close-button-rotate-animation
-    title: Close Button Rotate Animation
-    type: class-toggle
-    default: false
   -
     id: hide-close-button-when-window-narrow
     title: Hide Close Button When Window Narrow

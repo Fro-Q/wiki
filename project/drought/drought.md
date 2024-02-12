@@ -23,42 +23,6 @@ dv.table(["Title", "Date"],
 	])
 )
 ```
-
-```data
-var pages = dv.pages(`"project/drought" and -#homepage`)
-	.sort(p => -p.file.ctime);
-
-function processTitle(p) {
-	let alias = p.file.name;
-	if (p.aliases) {
-		alias = p.aliases[0];
-	}else if (p.alias) {
-		alias = p.alias;
-	}
-	return `[[${p.file.name}|${alias}]]`
-}
-
-function linkedBy(p) {
-	const allPages = dv.pages(`-#homepage`)
-	let linked = []
-	allPages.find(function(value, index, arr){
-		if (value == p) {
-			linked.append(value)
-		}
-	})
-	return allPages
-}
-
-dv.table(["Name", "Linking", "LinkedBy"],
-	pages.map(p => [
-		processTitle(p),
-		p.file.outlinks,
-		p.file.inlinks,
-		]
-	)
-)
-```
-
 ## Docs
 
 ```dataview
