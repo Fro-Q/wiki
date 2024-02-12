@@ -444,7 +444,7 @@ body {
   --font-source-view: var(--font-monospace);
   --font-interface-override: "";
 
-  --font-tag-size: 0.8em;
+  --font-tag-size: 0.9em;
   --font-latex-size: 1em;
   --font-monospace-size: 0.95em;
   --font-file-tree-size: 0.95em;
@@ -1167,7 +1167,7 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
 .markdown-source-view .cm-line .cm-inline-code,
 .markdown-source-view .HyperMD-codeblock,
 .markdown-rendered code {
-  @include font(var(--font-monospace), var(--font-monospace-size), var(--font-monospace-weight), var(--code-color));
+  @include font(var(--font-monospace), var(--font-monospace-size), var(--font-monospace-weight), var(--text-muted));
   background-color: var(--inline-code-bg-color);
 }
 
@@ -1269,9 +1269,9 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
 .markdown-rendered a.tag,
 .markdown-source-view .cm-line .cm-hashtag,
 .metadata-container .metadata-property[data-property-key="tags"] .multi-select-pill {
-  @include font(var(--font-tag), var(--font-tag-size) !important, var(--font-tag-weight), auto);
+  @include font(var(--font-tag), var(--font-tag-size) !important, var(--font-tag-weight), var(--text-strong));
   transition: all 0.2s ease-in-out;
-  border-width: 2px;
+  border-width: 1px;
 }
 
 // delete margin of tags in metadata to avoid the tags being too wide
@@ -1283,17 +1283,21 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
 
   & .multi-select-pill-remove-button {
     margin: 0;
+
+    & svg {
+      color: var(--text-normal);
+    }
   }
 }
 
 .markdown-rendered a.tag,
 .metadata-container .metadata-property[data-property-key="tags"] .multi-select-pill {
-  padding: 0.1em 0.5em;
+  padding: 0 0.5em;
 }
 
 .markdown-source-view .cm-line .cm-hashtag {
-  padding-top: 0.1em;
-  padding-bottom: 0.1em;
+  padding-top: 0;
+  padding-bottom: 0;
 
   &.cm-hashtag-begin {
     padding-left: 0.5em;
@@ -1311,21 +1315,19 @@ body.tag-fill {
   & .metadata-container .metadata-property[data-property-key="tags"] .multi-select-pill {
     border-color: var(--color-accent-o40);
     background-color: var(--color-accent-o30);
-    color: var(--text-normal);
+    color: var(--text-strong);
 
     &:hover {
       border-color: var(--color-accent-o80);
       background-color: var(--color-accent-o60);
       color: var(--text-strong);
-      box-shadow: inset 1px 1px 3px 1px var(--switch-inset-shadow-color);
-      text-shadow: 2px 2px 0 var(--switch-inset-shadow-color);
     }
   }
 
   & .markdown-source-view .cm-line .cm-hashtag:is(.cm-hashtag-begin, .cm-hashtag-end) {
     border-color: var(--color-accent-o40);
     background-color: var(--color-accent-o30);
-    color: var(--text-normal);
+    color: var(--text-strong);
 
   }
 }
@@ -1337,21 +1339,18 @@ body.tag-outline {
   & .metadata-container .metadata-property[data-property-key="tags"] .multi-select-pill {
     border-color: var(--color-accent-o50);
     background-color: transparent;
-    color: var(--text-normal);
+    color: var(--text-strong);
 
     &:hover {
       border-color: var(--color-accent-o80);
       background-color: var(--color-accent-o30);
-      color: var(--text-normal);
-      box-shadow: inset 1px 1px 3px 1px var(--switch-inset-shadow-color);
-      text-shadow: 2px 2px 0 var(--switch-inset-shadow-color);
     }
   }
 
   & .markdown-source-view .cm-line .cm-hashtag:is(.cm-hashtag-begin, .cm-hashtag-end) {
     border-color: var(--color-accent-o50);
     background-color: transparent;
-    color: var(--text-normal);
+    color: var(--text-strong);
   }
 }
 

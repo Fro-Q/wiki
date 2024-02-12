@@ -40,7 +40,7 @@
               "type": "markdown",
               "state": {
                 "file": "test_page_2.md",
-                "mode": "preview",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
@@ -93,7 +93,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "9e87f895a36db30e",
@@ -111,7 +112,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 235.5
   },
   "right": {
     "id": "b87e94253deaa70c",
@@ -248,7 +249,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {

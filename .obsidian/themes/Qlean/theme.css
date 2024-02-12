@@ -11,7 +11,7 @@ body {
   --font-file-tree: var(--font-default);
   --font-source-view: var(--font-monospace);
   --font-interface-override: "";
-  --font-tag-size: 0.8em;
+  --font-tag-size: 0.9em;
   --font-latex-size: 1em;
   --font-monospace-size: 0.95em;
   --font-file-tree-size: 0.95em;
@@ -700,7 +700,7 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view, .markdown-rendered) .
   font-family: var(--font-monospace);
   font-size: var(--font-monospace-size);
   font-weight: var(--font-monospace-weight);
-  color: var(--code-color);
+  color: var(--text-muted);
   background-color: var(--inline-code-bg-color);
 }
 
@@ -2001,9 +2001,9 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view, .markdown-rendered) .
   font-family: var(--font-tag);
   font-size: var(--font-tag-size) !important;
   font-weight: var(--font-tag-weight);
-  color: auto;
+  color: var(--text-strong);
   transition: all 0.2s ease-in-out;
-  border-width: 2px;
+  border-width: 1px;
 }
 
 .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill .multi-select-pill-content {
@@ -2012,15 +2012,18 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view, .markdown-rendered) .
 .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill .multi-select-pill-remove-button {
   margin: 0;
 }
+.metadata-container .metadata-property[data-property-key=tags] .multi-select-pill .multi-select-pill-remove-button svg {
+  color: var(--text-normal);
+}
 
 .markdown-rendered a.tag,
 .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill {
-  padding: 0.1em 0.5em;
+  padding: 0 0.5em;
 }
 
 .markdown-source-view .cm-line .cm-hashtag {
-  padding-top: 0.1em;
-  padding-bottom: 0.1em;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .markdown-source-view .cm-line .cm-hashtag.cm-hashtag-begin {
   padding-left: 0.5em;
@@ -2032,37 +2035,32 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view, .markdown-rendered) .
 body.tag-fill .markdown-rendered a.tag, body.tag-fill .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill {
   border-color: var(--color-accent-o40);
   background-color: var(--color-accent-o30);
-  color: var(--text-normal);
+  color: var(--text-strong);
 }
 body.tag-fill .markdown-rendered a.tag:hover, body.tag-fill .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill:hover {
   border-color: var(--color-accent-o80);
   background-color: var(--color-accent-o60);
   color: var(--text-strong);
-  box-shadow: inset 1px 1px 3px 1px var(--switch-inset-shadow-color);
-  text-shadow: 2px 2px 0 var(--switch-inset-shadow-color);
 }
 body.tag-fill .markdown-source-view .cm-line .cm-hashtag:is(.cm-hashtag-begin, .cm-hashtag-end) {
   border-color: var(--color-accent-o40);
   background-color: var(--color-accent-o30);
-  color: var(--text-normal);
+  color: var(--text-strong);
 }
 
 body.tag-outline .markdown-rendered a.tag, body.tag-outline .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill {
   border-color: var(--color-accent-o50);
   background-color: transparent;
-  color: var(--text-normal);
+  color: var(--text-strong);
 }
 body.tag-outline .markdown-rendered a.tag:hover, body.tag-outline .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill:hover {
   border-color: var(--color-accent-o80);
   background-color: var(--color-accent-o30);
-  color: var(--text-normal);
-  box-shadow: inset 1px 1px 3px 1px var(--switch-inset-shadow-color);
-  text-shadow: 2px 2px 0 var(--switch-inset-shadow-color);
 }
 body.tag-outline .markdown-source-view .cm-line .cm-hashtag:is(.cm-hashtag-begin, .cm-hashtag-end) {
   border-color: var(--color-accent-o50);
   background-color: transparent;
-  color: var(--text-normal);
+  color: var(--text-strong);
 }
 
 .workspace-tab.mod-top,

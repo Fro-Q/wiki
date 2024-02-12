@@ -196,5 +196,6 @@
   "font@@font-highlight-weight": 400,
   "inline-elements@@embed-alt-position": "embed-alt-right",
   "inline-elements@@tag-radius": 0.3,
-  "inline-elements@@custom-tag-color-fill": "tag-fill"
+  "inline-elements@@custom-tag-color-fill": "tag-outline",
+  "ui-style@@hide-close-button-when-window-narrow": false
 }

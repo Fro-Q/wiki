@@ -24,7 +24,9 @@ An Obsidian theme offers a clean and clutter-free interface for enhanced focus a
 14. Removed "Red Close Button" and "Close Button Rotate Animation" option.
 15. Active sideber icon are highlighted by `stroke` instead of `fill`.
 16. Changed side dock icon hovering style.
-17.
+17. Brighter text color in tags.
+18. Removed `box-shadow` and `text-shadow` in tags.
+19.
 
 #### bug fix
 
