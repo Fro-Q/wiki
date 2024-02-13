@@ -610,6 +610,7 @@ body {
   --checklist-delete-decoration-line: line-through;
 
   // callout
+  --callout-warning: 25;
 
   // tag
   --tag-radius: 1em;
@@ -712,6 +713,7 @@ body {
     --tab-active-bg-color: #fff;
     --close-button-hover-bg-color: rgba(0, 0, 0, 0.1);
     --switch-inset-shadow-color: rgba(0, 0, 0, 0.2);
+    --quote-bg-color: rgba(0, 0, 0, 0.05);
 
     --border-color: #d9d9d9;
 
@@ -787,6 +789,7 @@ body {
     --tab-active-bg-color: #202020;
     --close-button-hover-bg-color: rgba(255, 255, 255, 0.1);
     --switch-inset-shadow-color: rgba(0, 0, 0, 0.2);
+    --quote-bg-color: rgba(255, 255, 255, 0.05);
 
     --border-color: #333;
 
@@ -1141,7 +1144,49 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
   }
 }
 
+// blockquote
+.markdown-source-view .HyperMD-quote.cm-line {
+  background-color: var(--quote-bg-color);
+}
+
+.markdown-rendered blockquote {
+  margin: 16px auto;
+  padding: 20px 30px;
+  background-color: var(--quote-bg-color);
+  border-radius: 4px;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  border-left: 4px solid var(--text-muted);
+  transition: all 0.2s ease;
+  position: relative;
+
+  & > p:first-child::before {
+    content: "”";
+    font-family: "Arial Black", sans-serif;
+    position: absolute;
+    display: block;
+    top: -20px;
+    right: 10px;
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--text-muted);
+    opacity: 0.2;
+
+  }
+
+  &:hover {
+    border-left-color: var(--text-normal);
+  }
+
+
+  & p {
+    margin-top: 0;
+  }
+}
+
+
 // embed alt
+
 :is(.markdown-source-view, .markdown-rendered) .media-embed:after {
   body.embed-alt & {
     content: attr(alt);
@@ -1262,6 +1307,16 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
 
   &.HyperMD-codeblock-end-bg {
     border-radius: 0 0 4px 4px;
+  }
+}
+
+// inline math
+.markdown-source-view,
+.markdown-rendered {
+
+  & div.math-block,
+  & span.math {
+    color: var(--text-strong);
   }
 }
 

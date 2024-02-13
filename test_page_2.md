@@ -98,6 +98,15 @@ Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. 
 > > [!error]
 > > Nested Callout.
 
+> [!error]
+> ok
+> > [!warning]
+> > okk
+
+> [!warning]
+> ok
+
+
 
 [test_page_2](test_page_2.md)
 

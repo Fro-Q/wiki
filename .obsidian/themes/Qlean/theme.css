@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -137,6 +138,7 @@ body {
   --checklist-done-decoration-line: none;
   --checklist-delete-decoration-color: var(--background-modifier-error);
   --checklist-delete-decoration-line: line-through;
+  --callout-warning: 25;
   --tag-radius: 1em;
   --blockquote-border-thickness: 2px;
   --callout-dogs-ear-size: 30px;
@@ -223,6 +225,7 @@ body.theme-light {
   --tab-active-bg-color: #fff;
   --close-button-hover-bg-color: rgba(0, 0, 0, 0.1);
   --switch-inset-shadow-color: rgba(0, 0, 0, 0.2);
+  --quote-bg-color: rgba(0, 0, 0, 0.05);
   --border-color: #d9d9d9;
 }
 body.theme-light.accent-color-green-light {
@@ -288,6 +291,7 @@ body.theme-dark {
   --tab-active-bg-color: #202020;
   --close-button-hover-bg-color: rgba(255, 255, 255, 0.1);
   --switch-inset-shadow-color: rgba(0, 0, 0, 0.2);
+  --quote-bg-color: rgba(255, 255, 255, 0.05);
   --border-color: #333;
 }
 body.theme-dark.accent-color-green-dark {
@@ -674,6 +678,40 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout:af
 body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout:hover:after {
   width: 0;
   height: 0;
+}
+
+.markdown-source-view .HyperMD-quote.cm-line {
+  background-color: var(--quote-bg-color);
+}
+
+.markdown-rendered blockquote {
+  margin: 16px auto;
+  padding: 20px 30px;
+  background-color: var(--quote-bg-color);
+  border-radius: 4px;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  border-left: 4px solid var(--text-muted);
+  transition: all 0.2s ease;
+  position: relative;
+}
+.markdown-rendered blockquote > p:first-child::before {
+  content: "”";
+  font-family: "Arial Black", sans-serif;
+  position: absolute;
+  display: block;
+  top: -20px;
+  right: 10px;
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--text-muted);
+  opacity: 0.2;
+}
+.markdown-rendered blockquote:hover {
+  border-left-color: var(--text-normal);
+}
+.markdown-rendered blockquote p {
+  margin-top: 0;
 }
 
 body.embed-alt :is(.markdown-source-view, .markdown-rendered) .media-embed:after {
@@ -1993,6 +2031,12 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view, .markdown-rendered) .
 }
 .markdown-source-view div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-end-bg {
   border-radius: 0 0 4px 4px;
+}
+
+.markdown-source-view div.math-block, .markdown-source-view span.math,
+.markdown-rendered div.math-block,
+.markdown-rendered span.math {
+  color: var(--text-strong);
 }
 
 .markdown-rendered a.tag,
