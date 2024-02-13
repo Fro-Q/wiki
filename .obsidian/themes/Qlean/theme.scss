@@ -610,7 +610,20 @@ body {
   --checklist-delete-decoration-line: line-through;
 
   // callout
-  --callout-warning: 25;
+  --callout-summary-bg: rgba(102, 102, 120, .16);
+  --callout-info-bg: rgba(102, 102, 120, .16);
+  --callout-todo-bg: rgba(102, 102, 120, .16);
+  --callout-important-bg: rgba(102, 102, 120, .16);
+  --callout-tip-bg: rgba(104, 126, 236, 0.16);
+  --callout-done-bg: rgba(0, 0, 0, 0.05);
+  --callout-question-bg: rgba(255, 255, 255, 0.05);
+  --callout-warning-bg: rgba(234, 179, 8, .16);
+  --callout-fail-bg: rgba(244, 63, 94, .16);
+  --callout-error-bg: rgba(244, 63, 94, .16);
+  --callout-bug-bg: rgba(244, 63, 94, .16);
+  --callout-example-bg: rgba(102, 102, 120, .16);
+  --callout-quote-bg: rgba(0, 0, 0, 0.05);
+  --callout-default-bg: rgba(255, 255, 255, 0.05);
 
   // tag
   --tag-radius: 1em;
@@ -1117,6 +1130,35 @@ body.header-indicator {
   margin: 16px auto;
   padding: 20px 30px;
   border-radius: 4px;
+
+  &[data-callout="summary"],
+  &[data-callout="abstract"],
+  &[data-callout="tldr"] {
+    background-color: var(--callout-summary-bg);
+  }
+
+  &[data-callout="info"] {
+    background-color: var(--callout-info-bg);
+  }
+
+  &[data-callout="todo"] {
+    background-color: var(--callout-todo-bg);
+  }
+
+  &[data-callout="important"] {
+    background-color: var(--callout-important-bg);
+  }
+
+  &[data-callout="tip"],
+  &[data-callout="hint"] {
+    background-color: var(--callout-tip-bg);
+  }
+
+  &[data-callout="done"],
+  &[data-callout="success"],
+  &[data-callout="check"] {
+    background-color: var(--callout-done-bg);
+  }
 }
 
 // if callout-dogs-ear is enabled

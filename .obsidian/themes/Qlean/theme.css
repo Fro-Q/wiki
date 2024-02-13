@@ -138,7 +138,20 @@ body {
   --checklist-done-decoration-line: none;
   --checklist-delete-decoration-color: var(--background-modifier-error);
   --checklist-delete-decoration-line: line-through;
-  --callout-warning: 25;
+  --callout-summary-bg: rgba(102, 102, 120, .16);
+  --callout-info-bg: rgba(102, 102, 120, .16);
+  --callout-todo-bg: rgba(102, 102, 120, .16);
+  --callout-important-bg: rgba(102, 102, 120, .16);
+  --callout-tip-bg: rgba(104, 126, 236, 0.16);
+  --callout-done-bg: rgba(0, 0, 0, 0.05);
+  --callout-question-bg: rgba(255, 255, 255, 0.05);
+  --callout-warning-bg: rgba(234, 179, 8, .16);
+  --callout-fail-bg: rgba(244, 63, 94, .16);
+  --callout-error-bg: rgba(244, 63, 94, .16);
+  --callout-bug-bg: rgba(244, 63, 94, .16);
+  --callout-example-bg: rgba(102, 102, 120, .16);
+  --callout-quote-bg: rgba(0, 0, 0, 0.05);
+  --callout-default-bg: rgba(255, 255, 255, 0.05);
   --tag-radius: 1em;
   --blockquote-border-thickness: 2px;
   --callout-dogs-ear-size: 30px;
@@ -658,6 +671,24 @@ body.circle-checkbox .markdown-rendered .task-list-item > .task-list-item-checkb
   margin: 16px auto;
   padding: 20px 30px;
   border-radius: 4px;
+}
+:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=summary], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=abstract], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=tldr] {
+  background-color: var(--callout-summary-bg);
+}
+:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=info] {
+  background-color: var(--callout-info-bg);
+}
+:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=todo] {
+  background-color: var(--callout-todo-bg);
+}
+:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=important] {
+  background-color: var(--callout-important-bg);
+}
+:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=tip], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=hint] {
+  background-color: var(--callout-tip-bg);
+}
+:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=done], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=success], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=check] {
+  background-color: var(--callout-done-bg);
 }
 
 body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout:after {

@@ -106,6 +106,48 @@ Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. 
 > [!warning]
 > ok
 
+> [!summary]
+> sum
+
+> [!info]
+> info
+
+> [!todo]
+> todo
+
+> [!important]
+> important
+
+> [!tip]
+> tip
+
+> [!done]
+> done
+
+> [!faq]
+> faq
+
+> [!caution]
+> caution
+
+> [!fail]
+> fail
+
+> [!error]
+> error
+
+> [!bug]
+> bug
+
+> [!example]
+> example
+
+> [!quote]
+> quote
+
+> [!none]
+> none
+
 
 
 [test_page_2](test_page_2.md)
