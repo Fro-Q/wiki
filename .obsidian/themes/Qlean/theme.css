@@ -736,7 +736,15 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view.is-live-prev
 
 .markdown-source-view.is-live-preview .HyperMD-quote.cm-line {
   background-color: var(--quote-bg-color);
+  padding: 0 30px;
 }
+.markdown-source-view.is-live-preview .HyperMD-quote.cm-line::before, .markdown-source-view.is-live-preview .HyperMD-quote.cm-line .cm-blockquote-border::before {
+  border-left-color: var(--text-muted);
+}
+.markdown-source-view.is-live-preview .HyperMD-quote.cm-line:first-child {
+  padding-top: 20px;
+}
+
 .markdown-rendered blockquote {
   margin: 16px auto;
   padding: 20px 30px;
