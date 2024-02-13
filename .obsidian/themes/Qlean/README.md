@@ -37,6 +37,7 @@ An Obsidian theme offers a clean and clutter-free interface for enhanced focus a
 1. Alt text of images now correctly displayed.
 2. Inlince code doesn't have a "wings" anymore.
 3. Header hovering underline is now a continuous line.
+4. Fix the bug in ZEN mode that the topbar is hard to reach.
 
 ### Version 0.1.6(12/22/2023)
 

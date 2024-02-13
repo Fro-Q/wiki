@@ -2103,6 +2103,7 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view.is-live-preview, .mark
 }
 :is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) table {
   white-space: pre-wrap;
+  width: 100%;
 }
 :is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) table .cm-s-obsidian .cm-line {
   line-height: 1.3;
@@ -2117,6 +2118,7 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view.is-live-preview, .mark
 }
 :is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) table thead th {
   border-top: none;
+  border-bottom: 1.5px solid var(--text-normal);
   padding: 10px 20px !important;
   text-align: center;
   font-weight: inherit;
@@ -2675,19 +2677,18 @@ body.fade-out-inactive-lines .cm-line.cm-active {
   opacity: 1;
 }
 
-.theme-dark .markdown-source-view:not(.is-live-preview) {
+.markdown-source-view:not(.is-live-preview) {
   --color-text: var(--text-normal);
-  --color-header: var(--color-accent-ln10);
-  --color-strong: var(--color-accent-ln5);
+  --color-header: var(--text-strong);
+  --color-strong: var(--text-strong);
+}
+.theme-dark .markdown-source-view:not(.is-live-preview) {
   --color-list-bullet: rgb(216, 179, 139);
   --color-link: rgb(87, 128, 243);
   --color-inline-code: rgb(87, 222, 107);
   --color-quote-format: rgb(116, 152, 93);
 }
 .theme-light .markdown-source-view:not(.is-live-preview) {
-  --color-text: var(--text-normal);
-  --color-header: var(--color-accent-ln10);
-  --color-strong: var(--color-accent-ln5);
   --color-list-bullet: rgb(148, 101, 51);
   --color-link: rgb(87, 128, 243);
   --color-inline-code: rgb(51, 139, 64);
@@ -2698,6 +2699,7 @@ body.fade-out-inactive-lines .cm-line.cm-active {
   font-size: var(--font-text-size);
   font-weight: var(--font-source-view-weight);
   color: var(--color-text);
+  background-color: transparent;
 }
 .markdown-source-view:not(.is-live-preview) .cm-line.cm-active {
   background-color: var(--background-modifier-border);
@@ -2710,6 +2712,7 @@ body.fade-out-inactive-lines .cm-line.cm-active {
 }
 .markdown-source-view:not(.is-live-preview) .cm-header {
   color: var(--color-header);
+  line-height: 1.5;
 }
 .markdown-source-view:not(.is-live-preview) :is(.cm-link, .cm-hmd-internal-link) {
   color: var(--color-link);
@@ -2753,32 +2756,6 @@ body.fade-out-inactive-lines .cm-line.cm-active {
   color: var(--color-quote-format);
 }
 
-.theme-dark .cm-bracket.cm-tag, .theme-dark .token.punctuation {
-  color: var(--text-normal);
-}
-.theme-dark .cm-tag, .theme-dark .token.tag {
-  color: rgb(152, 228, 145);
-}
-.theme-dark .cm-attribute, .theme-dark .token.attr-name {
-  color: rgb(137, 190, 250);
-}
-.theme-dark .cm-string, .theme-dark .token.attr-value {
-  color: rgb(175, 213, 251);
-}
-
-.theme-light .cm-bracket.cm-tag, .theme-light .token.punctuation {
-  color: var(--text-normal);
-}
-.theme-light .cm-tag, .theme-light .token.tag {
-  color: rgb(46, 97, 48);
-}
-.theme-light .cm-attribute, .theme-light .token.attr-name {
-  color: rgb(33, 79, 168);
-}
-.theme-light .cm-string, .theme-light .token.attr-value {
-  color: rgb(21, 47, 101);
-}
-
 body.zen-mode .side-dock-ribbon.is-collapsed {
   border-right: none;
   transition: all 0.3s ease-in-out;
@@ -2803,22 +2780,11 @@ body.zen-mode :is(.mod-root .workspace-tab-header-container, .view-header) {
   opacity: 0;
   border-bottom: none;
 }
-body.zen-mode .view-header {
-  height: 0;
-}
 body.zen-mode .mod-root .workspace-tab-header-container:hover, body.zen-mode .mod-root .workspace-tab-header-container:hover + .workspace-tab-container .view-header, body.zen-mode .view-header:hover, body.zen-mode .view-header:hover + .workspace-tab-container .view-header {
   height: 40px;
   opacity: 1;
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(180deg);
-  }
-}
 @media (max-width: 700px) {
   .hide-close-button-when-window-narrow .workspace-tab-header:not(.is-active.mod-active) .workspace-tab-header-inner-close-button {
     display: none;

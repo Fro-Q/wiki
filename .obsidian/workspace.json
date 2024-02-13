@@ -42,7 +42,7 @@
                 "file": "test_page_2.md",
                 "mode": "source",
                 "backlinks": true,
-                "source": false
+                "source": true
               }
             }
           }
@@ -111,8 +111,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235.5,
-    "collapsed": true
+    "width": 278.5
   },
   "right": {
     "id": "b87e94253deaa70c",
