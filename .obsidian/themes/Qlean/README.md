@@ -29,6 +29,8 @@ An Obsidian theme offers a clean and clutter-free interface for enhanced focus a
 19. Changed callout's background color to opaque so nested callouts are more distinguishable.
 20. Removed underline of file name in editor.
 21. Changed all buttons' style.
+22. Redeisgned table.
+23.
 
 #### bug fix
 

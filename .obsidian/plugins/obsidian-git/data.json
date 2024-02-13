@@ -48,7 +48,7 @@
     },
     "textColorCss": "var(--text-muted)",
     "ignoreWhitespace": false,
-    "gutterSpacingFallbackLength": 4,
+    "gutterSpacingFallbackLength": 5,
     "lastShownAuthorDisplay": "first name",
     "lastShownDateTimeFormatOptions": "natural language"
   },

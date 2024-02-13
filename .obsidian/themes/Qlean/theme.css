@@ -2098,6 +2098,17 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view.is-live-preview, .mark
   color: var(--text-strong);
 }
 
+:is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) {
+  max-width: 100%;
+}
+
+thead tr {
+  background-color: var(--tab-bg-color);
+}
+thead tr:hover {
+  background-color: var(--tab-hover-bg-color);
+}
+
 .markdown-rendered a.tag,
 .markdown-source-view.is-live-preview .cm-line .cm-hashtag,
 .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill {
@@ -2443,192 +2454,187 @@ body.opaque-expanded-folder .workspace .mod-left-split .nav-folder:not(.is-colla
   display: none;
 }
 
-.mod-settings select.dropdown, .mod-settings button:not(.clickable-icon) {
+.modal .setting-item.setting-item-heading .setting-item-info .setting-item-name, .modal .vertical-tab-header-group-title {
+  color: var(--text-strong);
+}
+.modal .modal-close-button {
+  transition: all 0.2s ease-in-out;
+}
+.modal .modal-close-button:hover {
+  background-color: transparent;
+  color: var(--text-strong);
+}
+.modal select, .modal button:not(.clickable-icon) {
   transition: all 0.3s;
   box-shadow: none;
   background-color: var(--tab-bg-color);
   border: 1px solid var(--background-modifier-border);
 }
-.mod-settings select.dropdown:hover, .mod-settings button:not(.clickable-icon):hover {
+.modal select:hover, .modal button:not(.clickable-icon):hover {
   border: 1px solid var(--text-strong);
 }
-.mod-settings button.mod-cta {
+.modal button.mod-cta {
   border: 1px solid var(--interactive-accent);
   background-color: var(--interactive-accent);
 }
-.mod-settings button.mod-cta:hover {
+.modal button.mod-cta:hover {
   background-color: var(--interactive-accent-hover);
 }
-.mod-settings input[type=range] {
+.modal input[type=range] {
   border: 1px solid var(--background-modifier-border-focus);
   height: 0.3em;
   transition: all 0.3s;
   border-radius: 0.5em;
 }
-.mod-settings input[type=range]:hover {
+.modal input[type=range]:hover {
   background-color: var(--tab-active-bg-color);
   height: 0.6em;
   border: 1px solid var(--text-strong);
 }
-.mod-settings input[type=text], .mod-settings input[type=search] {
+.modal input[type=text], .modal input[type=search], .modal input[type=number], .modal textarea {
   transition: all 0.3s;
   border: 1px solid var(--background-modifier-border);
 }
-.mod-settings input[type=text]:hover, .mod-settings input[type=search]:hover {
+.modal input[type=text]:hover, .modal input[type=search]:hover, .modal input[type=number]:hover, .modal textarea:hover {
   border: 1px solid var(--background-modifier-border-hover);
 }
-.mod-settings input[type=text]:active, .mod-settings input[type=text]:focus, .mod-settings input[type=search]:active, .mod-settings input[type=search]:focus {
+.modal input[type=text]:active, .modal input[type=text]:focus, .modal input[type=search]:active, .modal input[type=search]:focus, .modal input[type=number]:active, .modal input[type=number]:focus, .modal textarea:active, .modal textarea:focus {
   box-shadow: 0 0 0 1px var(--text-strong);
 }
-.mod-settings .checkbox-container {
-  border: none;
-  overflow-x: hidden;
-  border-radius: 0;
-  transition: all 0.3s;
-  box-shadow: none;
-  width: 15px;
-  height: 15px;
-}
-.mod-settings .checkbox-container.is-enabled {
-  border: none;
-  background-color: transparent;
-}
-.mod-settings .checkbox-container::after, .mod-settings .checkbox-container::before {
-  display: none;
-}
-.mod-settings .checkbox-container input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  width: 15px;
-  height: 15px;
-  border: 1px solid var(--text-muted);
-  background-color: transparent;
-  display: inline-block;
-  position: relative;
-  margin-right: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.mod-settings .checkbox-container input::before {
-  content: "";
-  background-color: var(--text-strong);
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  width: 8px;
-  height: 8px;
-  transition: all 0.3s ease;
-}
-.mod-settings .checkbox-container input:hover {
-  border-color: var(--text-strong);
-}
-.mod-settings .checkbox-container input:hover::before {
-  transform: translate(-50%, -50%) scale(0.3);
-}
-.mod-settings .checkbox-container input:checked:hover::before {
-  transform: translate(-50%, -50%) scale(0.7);
-}
-.mod-settings .checkbox-container input:checked::before {
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.checkbox-container:has(input[type=checkbox]).mod-small {
-  width: 34px;
+.modal .checkbox-container {
   border: 2px solid var(--background-modifier-border-focus);
   overflow-x: hidden;
   border-radius: 1em;
   transition: all 0.3s;
   box-shadow: none;
 }
-.checkbox-container:has(input[type=checkbox]).mod-small:hover {
+.modal .checkbox-container:has(input[type=checkbox]) {
+  width: 40px;
+  padding-right: 0;
+}
+.modal .checkbox-container:focus-within {
+  outline: none;
+}
+.modal .checkbox-container:hover {
+  background-color: var(--background-modifier-border-hover);
+  box-shadow: inset 2px 2px 5px 4px var(--switch-inset-shadow-color);
+  border: 2px solid var(--text-muted);
+}
+.modal .checkbox-container:hover:after {
+  box-shadow: -2px -2px 3px 2px var(--switch-inset-shadow-color);
+}
+.modal .checkbox-container:after {
+  margin-top: 0;
+  left: -20px;
+  width: 100% !important;
+  transition: all 0.3s ease-in-out;
+}
+.modal .checkbox-container:active:after {
+  left: -2px;
+}
+.modal .checkbox-container.is-enabled {
+  border: 2px solid var(--interactive-accent);
+}
+.modal .checkbox-container.is-enabled:hover {
+  background-color: var(--interactive-accent);
+  box-shadow: inset 2px 2px 5px 4px var(--switch-inset-shadow-color);
+  border: 2px solid var(--interactive-accent-hover);
+}
+.modal .checkbox-container.is-enabled:hover:after {
+  box-shadow: -2px -2px 3px 2px var(--switch-inset-shadow-color);
+}
+.modal .checkbox-container.is-enabled:after {
+  transform: translateX(38px);
+}
+.modal .checkbox-container.is-enabled:active:after {
+  transform: translateX(2px);
+}
+.modal .checkbox-container:has(input[type=checkbox]).mod-small {
+  width: 34px;
+  border: 2px solid var(--background-modifier-border-focus);
+  overflow-x: hidden;
+  border-radius: 1em;
+  transition: all 0.3s ease-in-out;
+  box-shadow: none;
+}
+.modal .checkbox-container:has(input[type=checkbox]).mod-small:hover {
   background-color: var(--background-modifier-border-hover);
   box-shadow: inset 2px 2px 5px 4px var(--switch-inset-shadow-color);
 }
-.checkbox-container:has(input[type=checkbox]).mod-small:hover:after {
+.modal .checkbox-container:has(input[type=checkbox]).mod-small:hover:after {
   box-shadow: -2px -2px 3px 2px var(--switch-inset-shadow-color);
 }
-.checkbox-container:has(input[type=checkbox]).mod-small input {
+.modal .checkbox-container:has(input[type=checkbox]).mod-small input {
   width: 30px;
 }
-.checkbox-container:has(input[type=checkbox]).mod-small:before {
+.modal .checkbox-container:has(input[type=checkbox]).mod-small:before {
   width: 30px;
 }
-.checkbox-container:has(input[type=checkbox]).mod-small:after {
+.modal .checkbox-container:has(input[type=checkbox]).mod-small:after {
   width: 30px;
-  top: -2px;
   left: -17px;
 }
-.checkbox-container:has(input[type=checkbox]).mod-small:active:after {
+.modal .checkbox-container:has(input[type=checkbox]).mod-small:active:after {
   transform: translateX(17px);
 }
-.checkbox-container:has(input[type=checkbox]).mod-small.is-enabled {
+.modal .checkbox-container:has(input[type=checkbox]).mod-small.is-enabled {
   border: 2px solid var(--interactive-accent);
 }
-.checkbox-container:has(input[type=checkbox]).mod-small.is-enabled:hover {
+.modal .checkbox-container:has(input[type=checkbox]).mod-small.is-enabled:hover {
   background-color: var(--interactive-accent);
   box-shadow: inset 2px 2px 5px 4px var(--switch-inset-shadow-color);
 }
-.checkbox-container:has(input[type=checkbox]).mod-small.is-enabled:hover:after {
+.modal .checkbox-container:has(input[type=checkbox]).mod-small.is-enabled:hover:after {
   box-shadow: -2px -2px 3px 2px var(--switch-inset-shadow-color);
 }
-.checkbox-container:has(input[type=checkbox]).mod-small.is-enabled:after {
+.modal .checkbox-container:has(input[type=checkbox]).mod-small.is-enabled:after {
   transform: translateX(32px);
 }
-.checkbox-container:has(input[type=checkbox]).mod-small.is-enabled:active:after {
+.modal .checkbox-container:has(input[type=checkbox]).mod-small.is-enabled:active:after {
   transform: translateX(17px);
 }
-
-.style-settings-container .themed-color-wrapper > div + div {
+.modal .checkbox-container:has(input[type=checkbox]).mod-small .style-settings-container .themed-color-wrapper > div + div {
   margin-top: 0;
 }
-.style-settings-container .themed-color-wrapper button {
+.modal .checkbox-container:has(input[type=checkbox]).mod-small .style-settings-container .themed-color-wrapper button {
   border: 2px solid var(--background-modifier-border);
   transition: all 0.3s;
   box-shadow: none;
 }
-.style-settings-container .themed-color-wrapper button:hover {
+.modal .checkbox-container:has(input[type=checkbox]).mod-small .style-settings-container .themed-color-wrapper button:hover {
   border: 2px solid var(--background-modifier-border-hover);
   box-shadow: 0 1px 0.6px 1.5px var(--button-shadow-color);
 }
-
-button[aria-label="Restore default"] {
+.modal .checkbox-container:has(input[type=checkbox]).mod-small button[aria-label="Restore default"] {
   height: 40px;
 }
-
-.setting-item[data-id*=hue] .slider {
+.modal .checkbox-container:has(input[type=checkbox]).mod-small .setting-item[data-id*=hue] .slider {
   background: linear-gradient(to right, hsl(0, 100%, 50%) 0%, hsl(60, 100%, 50%) 17%, hsl(120, 100%, 50%) 33%, hsl(180, 100%, 50%) 50%, hsl(240, 100%, 50%) 67%, hsl(300, 100%, 50%) 83%, hsl(0, 100%, 50%) 100%);
 }
-.setting-item.style-settings-heading[data-level="0"] + .style-settings-container {
+.modal .checkbox-container:has(input[type=checkbox]).mod-small .setting-item.style-settings-heading[data-level="0"] + .style-settings-container {
   border-radius: 10px;
 }
-.setting-item.style-settings-heading[data-level]:not(.is-collapsed) {
+.modal .checkbox-container:has(input[type=checkbox]).mod-small .setting-item.style-settings-heading[data-level]:not(.is-collapsed) {
   margin-bottom: 10px;
 }
-.setting-item.style-settings-heading:not([data-level="0"], [data-level="1"]), .setting-item.style-settings-heading:not([data-level="0"], [data-level="1"]) + .style-settings-container {
+.modal .checkbox-container:has(input[type=checkbox]).mod-small .setting-item.style-settings-heading:not([data-level="0"], [data-level="1"]), .modal .checkbox-container:has(input[type=checkbox]).mod-small .setting-item.style-settings-heading:not([data-level="0"], [data-level="1"]) + .style-settings-container {
   padding-left: 15px;
 }
-:has(.setting-item).style-settings-container {
+:has(.modal .checkbox-container:has(input[type=checkbox]).mod-small .setting-item).style-settings-container {
   padding-bottom: 0;
 }
-.setting-item:nth-last-child(1) {
+.modal .checkbox-container:has(input[type=checkbox]).mod-small .setting-item:nth-last-child(1) {
   border-bottom: 1px solid var(--background-modifier-border);
 }
-.setting-item + .setting-item-heading {
+.modal .checkbox-container:has(input[type=checkbox]).mod-small .setting-item + .setting-item-heading {
   margin-top: 0;
   border-top: 1px solid var(--background-modifier-border);
 }
-
-:is(.markdown-rendered, .markdown-source-view.is-live-preview) table {
-  width: 100%;
+.modal .community-item {
+  transition: all 0.3s ease-in-out;
 }
-:is(.markdown-rendered, .markdown-source-view.is-live-preview) table thead tr {
-  background-color: var(--tab-bg-color);
-}
-:is(.markdown-rendered, .markdown-source-view.is-live-preview) table thead tr:hover {
-  background-color: var(--tab-hover-bg-color);
+.modal .community-item:hover {
+  border: 1px solid var(--text-strong);
 }
 
 body.fade-out-inactive-lines :is(.cm-line:not(.cm-active), .cm-embed-block) {
