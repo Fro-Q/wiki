@@ -113,7 +113,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5
+    "width": 200
   },
   "right": {
     "id": "b87e94253deaa70c",
@@ -130,7 +130,7 @@
               "type": "backlink",
               "state": {
                 "file": "test_page_2.md",
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -169,7 +169,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
@@ -210,9 +210,9 @@
               "state": {
                 "file": "test_page_2.md",
                 "options": {
-                  "collapse-filter": true,
+                  "collapse-filter": false,
                   "search": "",
-                  "localJumps": 1,
+                  "localJumps": 3,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": false,
@@ -232,7 +232,7 @@
                   "linkStrength": 1,
                   "linkDistance": 250,
                   "scale": 0.8008450962368846,
-                  "close": true
+                  "close": false
                 }
               }
             }
@@ -245,13 +245,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 476.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -269,11 +267,11 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "033ea5ab02eedc2e",
+  "active": "7481b78f420508ae",
   "lastOpenFiles": [
+    "test_page_2.md",
     "test_page.md",
     "timestamp/ts_2024_01_17_0952.md",
-    "test_page_2.md",
     "homepage.md",
     "notes/create_thiessen_polygon.md",
     "project/drought/drought.md",

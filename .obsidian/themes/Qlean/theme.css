@@ -2483,102 +2483,103 @@ body.opaque-expanded-folder .workspace .mod-left-split .nav-folder:not(.is-colla
   display: none;
 }
 
-.modal .setting-item.setting-item-heading .setting-item-info .setting-item-name, .modal .vertical-tab-header-group-title {
+body .setting-item.setting-item-heading .setting-item-info .setting-item-name, body .vertical-tab-header-group-title {
   color: var(--text-strong);
 }
-.modal .modal-close-button {
+body .modal-close-button {
   transition: all 0.2s ease-in-out;
 }
-.modal .modal-close-button:hover {
+body .modal-close-button:hover {
   background-color: transparent;
   color: var(--text-strong);
 }
-.modal select, .modal button:not(.clickable-icon) {
+body select, body select.dropdown, body button:not(.clickable-icon) {
   transition: all 0.3s;
   box-shadow: none;
   background-color: var(--tab-bg-color);
   border: 1px solid var(--background-modifier-border);
 }
-.modal select:hover, .modal button:not(.clickable-icon):hover {
+body select:hover, body select.dropdown:hover, body button:not(.clickable-icon):hover {
   border: 1px solid var(--text-strong);
+  outline: none;
 }
-.modal button.mod-cta {
+body button.mod-cta {
   border: 1px solid var(--interactive-accent);
   background-color: var(--interactive-accent);
 }
-.modal button.mod-cta:hover {
+body button.mod-cta:hover {
   background-color: var(--interactive-accent-hover);
 }
-.modal input[type=range] {
+body input[type=range] {
   border: 1px solid var(--background-modifier-border-focus);
   height: 0.3em;
   transition: all 0.3s;
   border-radius: 0.5em;
 }
-.modal input[type=range]:hover {
+body input[type=range]:hover {
   background-color: var(--tab-active-bg-color);
   height: 0.6em;
   border: 1px solid var(--text-strong);
 }
-.modal input[type=text], .modal input[type=search], .modal input[type=number], .modal textarea {
+body input[type=text], body input[type=search], body input[type=number], body textarea {
   transition: all 0.3s;
   border: 1px solid var(--background-modifier-border);
 }
-.modal input[type=text]:hover, .modal input[type=search]:hover, .modal input[type=number]:hover, .modal textarea:hover {
+body input[type=text]:hover, body input[type=search]:hover, body input[type=number]:hover, body textarea:hover {
   border: 1px solid var(--background-modifier-border-hover);
 }
-.modal input[type=text]:active, .modal input[type=text]:focus, .modal input[type=search]:active, .modal input[type=search]:focus, .modal input[type=number]:active, .modal input[type=number]:focus, .modal textarea:active, .modal textarea:focus {
+body input[type=text]:active, body input[type=text]:focus, body input[type=search]:active, body input[type=search]:focus, body input[type=number]:active, body input[type=number]:focus, body textarea:active, body textarea:focus {
   box-shadow: 0 0 0 1px var(--text-strong);
 }
-.modal .checkbox-container {
+body .checkbox-container {
   border: 2px solid var(--background-modifier-border-focus);
   overflow-x: hidden;
   border-radius: 1em;
   transition: all 0.3s;
   box-shadow: none;
 }
-.modal .checkbox-container:has(input[type=checkbox]) {
+body .checkbox-container:has(input[type=checkbox]) {
   width: 40px;
   padding-right: 0;
 }
-.modal .checkbox-container:focus-within {
+body .checkbox-container:focus-within {
   outline: none;
 }
-.modal .checkbox-container:hover {
+body .checkbox-container:hover {
   background-color: var(--background-modifier-border-hover);
   box-shadow: inset 2px 2px 5px 4px var(--switch-inset-shadow-color);
   border: 2px solid var(--text-muted);
 }
-.modal .checkbox-container:hover:after {
+body .checkbox-container:hover:after {
   box-shadow: -2px -2px 3px 2px var(--switch-inset-shadow-color);
 }
-.modal .checkbox-container:after {
+body .checkbox-container:after {
   margin-top: 0;
   left: -20px;
   width: 100% !important;
   transition: all 0.3s ease-in-out;
 }
-.modal .checkbox-container:active:after {
+body .checkbox-container:active:after {
   left: -2px;
 }
-.modal .checkbox-container.is-enabled {
+body .checkbox-container.is-enabled {
   border: 2px solid var(--interactive-accent);
 }
-.modal .checkbox-container.is-enabled:hover {
+body .checkbox-container.is-enabled:hover {
   background-color: var(--interactive-accent);
   box-shadow: inset 2px 2px 5px 4px var(--switch-inset-shadow-color);
   border: 2px solid var(--interactive-accent-hover);
 }
-.modal .checkbox-container.is-enabled:hover:after {
+body .checkbox-container.is-enabled:hover:after {
   box-shadow: -2px -2px 3px 2px var(--switch-inset-shadow-color);
 }
-.modal .checkbox-container.is-enabled:after {
+body .checkbox-container.is-enabled:after {
   transform: translateX(38px);
 }
-.modal .checkbox-container.is-enabled:active:after {
+body .checkbox-container.is-enabled:active:after {
   transform: translateX(2px);
 }
-.modal .checkbox-container:has(input[type=checkbox]).mod-small {
+body .checkbox-container:has(input[type=checkbox]).mod-small {
   width: 34px;
   border: 2px solid var(--background-modifier-border-focus);
   overflow-x: hidden;
@@ -2586,83 +2587,83 @@ body.opaque-expanded-folder .workspace .mod-left-split .nav-folder:not(.is-colla
   transition: all 0.3s ease-in-out;
   box-shadow: none;
 }
-.modal .checkbox-container:has(input[type=checkbox]).mod-small:hover {
+body .checkbox-container:has(input[type=checkbox]).mod-small:hover {
   background-color: var(--background-modifier-border-hover);
   box-shadow: inset 2px 2px 5px 4px var(--switch-inset-shadow-color);
 }
-.modal .checkbox-container:has(input[type=checkbox]).mod-small:hover:after {
+body .checkbox-container:has(input[type=checkbox]).mod-small:hover:after {
   box-shadow: -2px -2px 3px 2px var(--switch-inset-shadow-color);
 }
-.modal .checkbox-container:has(input[type=checkbox]).mod-small input {
+body .checkbox-container:has(input[type=checkbox]).mod-small input {
   width: 30px;
 }
-.modal .checkbox-container:has(input[type=checkbox]).mod-small:before {
+body .checkbox-container:has(input[type=checkbox]).mod-small:before {
   width: 30px;
 }
-.modal .checkbox-container:has(input[type=checkbox]).mod-small:after {
+body .checkbox-container:has(input[type=checkbox]).mod-small:after {
   width: 30px;
   left: -17px;
 }
-.modal .checkbox-container:has(input[type=checkbox]).mod-small:active:after {
+body .checkbox-container:has(input[type=checkbox]).mod-small:active:after {
   transform: translateX(17px);
 }
-.modal .checkbox-container:has(input[type=checkbox]).mod-small.is-enabled {
+body .checkbox-container:has(input[type=checkbox]).mod-small.is-enabled {
   border: 2px solid var(--interactive-accent);
 }
-.modal .checkbox-container:has(input[type=checkbox]).mod-small.is-enabled:hover {
+body .checkbox-container:has(input[type=checkbox]).mod-small.is-enabled:hover {
   background-color: var(--interactive-accent);
   box-shadow: inset 2px 2px 5px 4px var(--switch-inset-shadow-color);
 }
-.modal .checkbox-container:has(input[type=checkbox]).mod-small.is-enabled:hover:after {
+body .checkbox-container:has(input[type=checkbox]).mod-small.is-enabled:hover:after {
   box-shadow: -2px -2px 3px 2px var(--switch-inset-shadow-color);
 }
-.modal .checkbox-container:has(input[type=checkbox]).mod-small.is-enabled:after {
+body .checkbox-container:has(input[type=checkbox]).mod-small.is-enabled:after {
   transform: translateX(32px);
 }
-.modal .checkbox-container:has(input[type=checkbox]).mod-small.is-enabled:active:after {
+body .checkbox-container:has(input[type=checkbox]).mod-small.is-enabled:active:after {
   transform: translateX(17px);
 }
-.modal .checkbox-container:has(input[type=checkbox]).mod-small .style-settings-container .themed-color-wrapper > div + div {
+body .checkbox-container:has(input[type=checkbox]).mod-small .style-settings-container .themed-color-wrapper > div + div {
   margin-top: 0;
 }
-.modal .checkbox-container:has(input[type=checkbox]).mod-small .style-settings-container .themed-color-wrapper button {
+body .checkbox-container:has(input[type=checkbox]).mod-small .style-settings-container .themed-color-wrapper button {
   border: 2px solid var(--background-modifier-border);
   transition: all 0.3s;
   box-shadow: none;
 }
-.modal .checkbox-container:has(input[type=checkbox]).mod-small .style-settings-container .themed-color-wrapper button:hover {
+body .checkbox-container:has(input[type=checkbox]).mod-small .style-settings-container .themed-color-wrapper button:hover {
   border: 2px solid var(--background-modifier-border-hover);
   box-shadow: 0 1px 0.6px 1.5px var(--button-shadow-color);
 }
-.modal .checkbox-container:has(input[type=checkbox]).mod-small button[aria-label="Restore default"] {
+body .checkbox-container:has(input[type=checkbox]).mod-small button[aria-label="Restore default"] {
   height: 40px;
 }
-.modal .checkbox-container:has(input[type=checkbox]).mod-small .setting-item[data-id*=hue] .slider {
+body .checkbox-container:has(input[type=checkbox]).mod-small .setting-item[data-id*=hue] .slider {
   background: linear-gradient(to right, hsl(0, 100%, 50%) 0%, hsl(60, 100%, 50%) 17%, hsl(120, 100%, 50%) 33%, hsl(180, 100%, 50%) 50%, hsl(240, 100%, 50%) 67%, hsl(300, 100%, 50%) 83%, hsl(0, 100%, 50%) 100%);
 }
-.modal .checkbox-container:has(input[type=checkbox]).mod-small .setting-item.style-settings-heading[data-level="0"] + .style-settings-container {
+body .checkbox-container:has(input[type=checkbox]).mod-small .setting-item.style-settings-heading[data-level="0"] + .style-settings-container {
   border-radius: 10px;
 }
-.modal .checkbox-container:has(input[type=checkbox]).mod-small .setting-item.style-settings-heading[data-level]:not(.is-collapsed) {
+body .checkbox-container:has(input[type=checkbox]).mod-small .setting-item.style-settings-heading[data-level]:not(.is-collapsed) {
   margin-bottom: 10px;
 }
-.modal .checkbox-container:has(input[type=checkbox]).mod-small .setting-item.style-settings-heading:not([data-level="0"], [data-level="1"]), .modal .checkbox-container:has(input[type=checkbox]).mod-small .setting-item.style-settings-heading:not([data-level="0"], [data-level="1"]) + .style-settings-container {
+body .checkbox-container:has(input[type=checkbox]).mod-small .setting-item.style-settings-heading:not([data-level="0"], [data-level="1"]), body .checkbox-container:has(input[type=checkbox]).mod-small .setting-item.style-settings-heading:not([data-level="0"], [data-level="1"]) + .style-settings-container {
   padding-left: 15px;
 }
-:has(.modal .checkbox-container:has(input[type=checkbox]).mod-small .setting-item).style-settings-container {
+:has(body .checkbox-container:has(input[type=checkbox]).mod-small .setting-item).style-settings-container {
   padding-bottom: 0;
 }
-.modal .checkbox-container:has(input[type=checkbox]).mod-small .setting-item:nth-last-child(1) {
+body .checkbox-container:has(input[type=checkbox]).mod-small .setting-item:nth-last-child(1) {
   border-bottom: 1px solid var(--background-modifier-border);
 }
-.modal .checkbox-container:has(input[type=checkbox]).mod-small .setting-item + .setting-item-heading {
+body .checkbox-container:has(input[type=checkbox]).mod-small .setting-item + .setting-item-heading {
   margin-top: 0;
   border-top: 1px solid var(--background-modifier-border);
 }
-.modal .community-item {
+body .community-item {
   transition: all 0.3s ease-in-out;
 }
-.modal .community-item:hover {
+body .community-item:hover {
   border: 1px solid var(--text-strong);
 }
 
@@ -2785,6 +2786,20 @@ body.zen-mode .mod-root .workspace-tab-header-container:hover, body.zen-mode .mo
   opacity: 1;
 }
 
+.embedded-backlinks .backlink-pane .tree-item-self.is-clickable .tree-item-inner {
+  transition: all 0.3s ease-in-out;
+}
+.embedded-backlinks .backlink-pane .tree-item-self.is-clickable:hover {
+  background-color: transparent;
+}
+.embedded-backlinks .backlink-pane .tree-item-self.is-clickable:hover .tree-item-inner {
+  color: var(--text-strong);
+}
+.embedded-backlinks .search-input-container {
+  width: calc(100% - 200px);
+  margin-left: 0;
+}
+
 @media (max-width: 700px) {
   .hide-close-button-when-window-narrow .workspace-tab-header:not(.is-active.mod-active) .workspace-tab-header-inner-close-button {
     display: none;
@@ -2802,6 +2817,17 @@ body.zen-mode .mod-root .workspace-tab-header-container:hover, body.zen-mode .mo
 }
 #calendar-container .nav .arrow:hover svg, #calendar-container .nav .reset-button:hover svg, #calendar-container table.calendar .day:hover svg {
   color: var(--text-strong);
+}
+
+.search-row input[type=search] {
+  transition: all 0.3s;
+  border: 1px solid var(--background-modifier-border);
+}
+.search-row input[type=search]:hover {
+  border: 1px solid var(--background-modifier-border-hover);
+}
+.search-row input[type=search]:active, .search-row input[type=search]:focus {
+  box-shadow: 0 0 0 1px var(--text-strong);
 }
 
 .setting-item:is([data-id^=custom-accent-color-for-], [data-id^=custom-accent-color-]) {
