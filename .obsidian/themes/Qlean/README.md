@@ -27,6 +27,8 @@ An Obsidian theme offers a clean and clutter-free interface for enhanced focus a
 17. Brighter text color in tags.
 18. Removed `box-shadow` and `text-shadow` in tags.
 19. Changed callout's background color to opaque so nested callouts are more distinguishable.
+20. Removed underline of file name in editor.
+21. Changed all buttons' style.
 
 #### bug fix
 

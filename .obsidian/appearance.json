@@ -1,7 +1,10 @@
 {
-  "accentColor": "#d7d5dd",
+  "accentColor": "#f2f1f3",
   "cssTheme": "Qlean",
   "theme": "system",
   "translucency": false,
-  "baseFontSize": 16
+  "baseFontSize": 16,
+  "showViewHeader": false,
+  "nativeMenus": false,
+  "baseFontSizeAction": false
 }
