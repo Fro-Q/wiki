@@ -173,9 +173,13 @@ this is (dataview:: ok).
 
 #ok 
 
-| dawd | dawdawd | dawdawdawdawdawdawdawdawdawdawdawdawdawdawdwadawdawdawdawdawdawddawddadwa |
-| ---- | ---- | ---- |
-| awdawd | awdawd | adwawd |
+| dawd   | dawdawd | 你好的啊我的啊我的啊我打我嗲的的啊我打我 |
+| ------ | ------- |:---------------------------------------- |
+| awdawd | awdawd 嗲啊打  | adwawd                                   |
+|        |         |                                          |
+|        |         |                                          |
+|        |         |                                          |
+|        |         |                                          |
 
 ## #ok in Header
 

@@ -295,8 +295,8 @@ body.theme-dark {
   --inline-code-bg-color: rgba(255, 255, 255, 0.1);
   --background-primary: #111;
   --background-secondary: #151515;
-  --background-modifier-active-hover: #151515;
-  --background-modifier-border-focus: var(--color-base-40);
+  --background-modifier-active-hover: #222;
+  --background-modifier-border-focus: #222;
   --button-shadow-color: rgba(255, 255, 255, 0.2);
   --titlebar-isfocused: #171514;
   --titlebar-not-focused: hsla(218, 1%, 30%, 1);
@@ -2099,14 +2099,41 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view.is-live-preview, .mark
 }
 
 :is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) {
-  max-width: 100%;
+  width: 100% !important;
 }
-
-thead tr {
-  background-color: var(--tab-bg-color);
+:is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) table {
+  white-space: pre-wrap;
 }
-thead tr:hover {
-  background-color: var(--tab-hover-bg-color);
+:is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) table .cm-s-obsidian .cm-line {
+  line-height: 1.3;
+}
+:is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) table .cm-gutters {
+  display: none;
+}
+:is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) table * {
+  border-color: var(--text-muted);
+  border-left: none;
+  border-right: none;
+}
+:is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) table thead th {
+  border-top: none;
+  padding: 10px 20px !important;
+  text-align: center;
+  font-weight: inherit;
+  color: var(--text-strong);
+}
+:is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) table thead th .cm-line.cm-active {
+  color: var(--text-strong);
+}
+:is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) table tbody tr {
+  border-top: 1px solid var(--divider-color);
+  transition: all 0.2s ease-in-out;
+}
+:is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) table tbody tr:hover {
+  background-color: var(--background-modifier-active-hover);
+}
+:is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) table tbody td {
+  padding: 10px 10px !important;
 }
 
 .markdown-rendered a.tag,

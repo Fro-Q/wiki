@@ -792,8 +792,8 @@ body {
     --inline-code-bg-color: rgba(255, 255, 255, 0.1);
     --background-primary: #111;
     --background-secondary: #151515;
-    --background-modifier-active-hover: #151515;
-    --background-modifier-border-focus: var(--color-base-40);
+    --background-modifier-active-hover: #222;
+    --background-modifier-border-focus: #222;
     --button-shadow-color: rgba(255, 255, 255, 0.2);
     --titlebar-isfocused: #171514;
     --titlebar-not-focused: hsla(218, 1%, 30%, 1);
@@ -1409,15 +1409,54 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view.is-live-prev
 // table
 :is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) {
   width: 100% !important;
-}
 
-// max-width: 100%;
+  & table {
+    white-space: pre-wrap;
 
-thead tr {
-  background-color: var(--tab-bg-color);
+    & .cm-s-obsidian .cm-line {
+      line-height: 1.3;
+    }
 
-  &:hover {
-    background-color: var(--tab-hover-bg-color);
+    & .cm-gutters {
+      display: none;
+    }
+
+    & * {
+      border-color: var(--text-muted);
+      border-left: none;
+      border-right: none;
+    }
+
+    & thead {
+
+      & th {
+        border-top: none;
+        padding: 10px 20px !important;
+        text-align: center;
+        font-weight: inherit;
+        color: var(--text-strong);
+
+        & .cm-line.cm-active {
+          color: var(--text-strong);
+        }
+      }
+    }
+
+    & tbody {
+
+      & tr {
+        border-top: 1px solid var(--divider-color);
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          background-color: var(--background-modifier-active-hover);
+        }
+      }
+
+      & td {
+        padding: 10px 10px !important;
+      }
+    }
   }
 }
 
