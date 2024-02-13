@@ -155,8 +155,6 @@ Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. 
 
 > nih 
 
-
-
 [test_page_2](test_page_2.md)
 
 [test_page_2](no_exist_file.md)
