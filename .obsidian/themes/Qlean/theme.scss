@@ -2000,7 +2000,7 @@ body {
     }
 
     &:focus-within {
-      outline: none;
+      outline: none !important;
     }
 
     &:hover {
@@ -2050,10 +2050,6 @@ body {
 
   & .checkbox-container:has(input[type=checkbox]).mod-small {
     width: 34px;
-    border: 2px solid var(--background-modifier-border-focus);
-    overflow-x: hidden;
-    border-radius: 1em;
-    transition: all 0.3s ease-in-out;
     box-shadow: none;
 
     &:hover {
@@ -2074,6 +2070,7 @@ body {
     }
 
     &:after {
+      top: -2px;
       width: 30px;
       left: -17px;
     }
@@ -2103,7 +2100,7 @@ body {
       }
     }
 
-    .style-settings-container .themed-color-wrapper {
+    & .style-settings-container .themed-color-wrapper {
       & > div + div {
         margin-top: 0;
       }
@@ -2401,6 +2398,9 @@ body.zen-mode {
     box-shadow: 0 0 0 1px var(--text-strong);
   }
 }
+
+// dataview
+.dataview {}
 
 // style settings item
 

@@ -7,6 +7,7 @@
     "topic": "multitext",
     "course": "multitext",
     "project": "multitext",
-    "list_test": "multitext"
+    "list_test": "multitext",
+    "status": "text"
   }
 }

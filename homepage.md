@@ -42,11 +42,14 @@ function getTopic(p) {
 	return ["None"]
 }
 
-function generateCheckbox(p) {
-	if (p.dealed) {
-		return dv.el('input', 'ok', {attr: { type: "checkbox", disabled: "true", checked: true } })
+function generateStatus(p) {
+	if (p.status == "finished") {
+		return "✅"
+	} else if (p.status == "draft") {
+    	return "✏️"
+	} else if (p.status == "archived") {
+        return "📂"
 	}
-	return dv.el('input', 'ok', {attr: {type: "checkbox", disabled: "true"}})
 }
 
 dv.table(["Title", "Time", "Topics Related", "Dealed"],
@@ -54,7 +57,7 @@ dv.table(["Title", "Time", "Topics Related", "Dealed"],
 		getTitle(p),
 		`${p.file.ctime.year}-${p.file.ctime.month}-${p.file.ctime.day} ${p.file.ctime.hour}:${p.file.ctime.minute}`,
 		getTopic(p),
-		generateCheckbox(p),
+		generateStatus(p),
 	])
 )
 ```

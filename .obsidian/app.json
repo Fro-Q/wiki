@@ -5,7 +5,7 @@
   "newFileFolderPath": "",
   "promptDelete": false,
   "showInlineTitle": true,
-  "propertiesInDocument": "source",
+  "propertiesInDocument": "visible",
   "pdfExportSettings": {
     "includeName": false,
     "pageSize": "Letter",

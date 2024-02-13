@@ -1,9 +1,10 @@
 ---
 tags:
   - timestamp
-date: {{date}}
-time: {{time}}
-dealed: false
+date:
+  "{ date }": 
+time:
+  "{ time }": 
+status: draft
 ---
-
-
+# [title:: ]

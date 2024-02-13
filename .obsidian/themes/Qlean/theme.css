@@ -2543,7 +2543,7 @@ body .checkbox-container:has(input[type=checkbox]) {
   padding-right: 0;
 }
 body .checkbox-container:focus-within {
-  outline: none;
+  outline: none !important;
 }
 body .checkbox-container:hover {
   background-color: var(--background-modifier-border-hover);
@@ -2581,10 +2581,6 @@ body .checkbox-container.is-enabled:active:after {
 }
 body .checkbox-container:has(input[type=checkbox]).mod-small {
   width: 34px;
-  border: 2px solid var(--background-modifier-border-focus);
-  overflow-x: hidden;
-  border-radius: 1em;
-  transition: all 0.3s ease-in-out;
   box-shadow: none;
 }
 body .checkbox-container:has(input[type=checkbox]).mod-small:hover {
@@ -2601,6 +2597,7 @@ body .checkbox-container:has(input[type=checkbox]).mod-small:before {
   width: 30px;
 }
 body .checkbox-container:has(input[type=checkbox]).mod-small:after {
+  top: -2px;
   width: 30px;
   left: -17px;
 }

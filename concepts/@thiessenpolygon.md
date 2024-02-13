@@ -25,18 +25,21 @@ function getInlinkNotes(thisLink) {
   return allNotes
 }
 
-function generateCheckbox(p) {
-	if (p.finished) {
-		return dv.el('input', 'ok', {attr: { type: "checkbox", disabled: "true", checked: true } })
+function generateStatus(p) {
+	if (p.status == "finished") {
+		return "✅"
+	} else if (p.status == "draft") {
+    	return "✏️"
+	} else if (p.status == "archived") {
+        return "📂"
 	}
-	return dv.el('input', 'ok', {attr: {type: "checkbox", disabled: "true"}})
 }
 
 
 dv.table(["Notes Related", "Finished", "Concepts Related"],
   getInlinkNotes(thisPage.file.link).map(n => [
     getTitle(n),
-    generateCheckbox(n),
+    generateStatus(n),
     n.file.outlinks,
   ])
 )

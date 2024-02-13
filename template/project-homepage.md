@@ -9,45 +9,90 @@ status: "working"
 
 ## Records
 
-```dataview
-table
-dateformat(date, "DD") as date,
-sum
-from !#homepage and #record
-where contains(file.folder, project)
-and split(file.folder, "/")[-1] = <% tp.file.folder() %>
-```
+```dataviewjs
+var pages = dv.pages(`"project/${dv.current().file.name}" and #record`)
 
+function getTitle(p) {
+	if (p.title) {
+		return `[${p.title}](${p.file.name})`
+	}
+	return `[[${p.file.name}]]`
+}
+
+dv.table(["Title", "Date"],
+	pages.map(p => [
+		getTitle(p),
+		`${p.file.ctime.year}-${p.file.ctime.month}-${p.file.ctime.day} ${p.file.ctime.hour}:${p.file.ctime.minute}`,
+	])
+)
+```
 ## Docs
 
-```dataview
-table
-dateformat(date, "DD") as date,
-split(type, "_")[1] as type,
-sum
-from !#homepage and #doc
-where contains(file.folder, project)
-and split(file.folder, "/")[-1] = <% tp.file.folder() %>
+```dataviewjs
+var pages = dv.pages(`"project/${dv.current().file.name}" and #doc`)
+
+function getTitle(p) {
+	if (p.title) {
+		return `[${p.title}](${p.file.name})`
+	}
+	return `[[${p.file.name}]]`
+}
+
+function generateStatus(p) {
+	if (p.status == "finished") {
+		return "✅"
+	} else if (p.status == "draft") {
+    	return "✏️"
+	} else if (p.status == "archived") {
+        return "📂"
+	}
+}
+
+dv.table(["Title", "Date", "Status"],
+	pages.map(p => [
+		getTitle(p),
+		`${p.file.ctime.year}-${p.file.ctime.month}-${p.file.ctime.day} ${p.file.ctime.hour}:${p.file.ctime.minute}`,
+		generateStatus(p),
+	])
+)
 ```
 
 ## Tasks
 
-```dataview
-task
-from !#homepage and #tasks
-where contains(file.folder, project)
-and split(file.folder, "/")[-1] = <% tp.file.folder() %>
-group by file.name
+```dataviewjs
+var pages = dv.pages(`"project/${dv.current().file.name}" and #tasks`)
+
+function getTitle(p) {
+	if (p.title) {
+		return `[${p.title}](${p.file.name})`
+	}
+	return `[[${p.file.name}]]`
+}
+
+dv.table(["Title", "Date"],
+	pages.map(p => [
+		getTitle(p),
+		`${p.file.ctime.year}-${p.file.ctime.month}-${p.file.ctime.day} ${p.file.ctime.hour}:${p.file.ctime.minute}`,
+	])
+)
 ```
 
 ## Meetings
 
-```dataview
-table
-dateformat(date, "DD") as date,
-split(type, "_")[1] as type,
-sum
-from !#homepage and #meeting
-where contains(file.folder, project)
-and split(file.folder, "/")[-1] = <% tp.file.folder() %>
+```dataviewjs
+var pages = dv.pages(`"project/${dv.current().file.name}" and #meeting`)
+
+function getTitle(p) {
+	if (p.title) {
+		return `[${p.title}](${p.file.name})`
+	}
+	return `[[${p.file.name}]]`
+}
+
+dv.table(["Title", "Date"],
+	pages.map(p => [
+		getTitle(p),
+		`${p.file.ctime.year}-${p.file.ctime.month}-${p.file.ctime.day} ${p.file.ctime.hour}:${p.file.ctime.minute}`,
+	])
+)
 ```

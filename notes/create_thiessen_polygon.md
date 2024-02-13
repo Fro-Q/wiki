@@ -3,7 +3,7 @@ tags:
   - note
 date: 2024-02-10
 time: 00:37
-finished: false
+status: finished
 ---
 
 # [title::Create Thiessen Polygon]
