@@ -2790,6 +2790,20 @@ body.zen-mode .mod-root .workspace-tab-header-container:hover, body.zen-mode .mo
     display: none;
   }
 }
+#calendar-container .nav .arrow, #calendar-container .nav .reset-button, #calendar-container table.calendar .day {
+  transition: all 0.3s ease-in-out;
+}
+#calendar-container .nav .arrow svg, #calendar-container .nav .reset-button svg, #calendar-container table.calendar .day svg {
+  transition: all 0.3s ease-in-out;
+}
+#calendar-container .nav .arrow:hover, #calendar-container .nav .reset-button:hover, #calendar-container table.calendar .day:hover {
+  background-color: transparent;
+  color: var(--text-strong);
+}
+#calendar-container .nav .arrow:hover svg, #calendar-container .nav .reset-button:hover svg, #calendar-container table.calendar .day:hover svg {
+  color: var(--text-strong);
+}
+
 .setting-item:is([data-id^=custom-accent-color-for-], [data-id^=custom-accent-color-]) {
   display: none;
 }

@@ -59,6 +59,7 @@
       {
         "id": "72decc94e5d0e06a",
         "type": "tabs",
+        "dimension": 49.80732177263969,
         "children": [
           {
             "id": "400aa4924092117f",
@@ -98,6 +99,7 @@
       {
         "id": "9e87f895a36db30e",
         "type": "tabs",
+        "dimension": 50.19267822736031,
         "children": [
           {
             "id": "033ea5ab02eedc2e",
@@ -111,7 +113,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 278.5
+    "width": 280.5
   },
   "right": {
     "id": "b87e94253deaa70c",
@@ -267,7 +269,7 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "f10a8c3fce5cf1f1",
+  "active": "033ea5ab02eedc2e",
   "lastOpenFiles": [
     "test_page.md",
     "timestamp/ts_2024_01_17_0952.md",

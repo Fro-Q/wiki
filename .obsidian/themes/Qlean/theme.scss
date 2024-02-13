@@ -2335,10 +2335,35 @@ body.zen-mode {
 
 // plugins support
 // calendar
-#calendar-container {}
+#calendar-container {
 
+  & .nav .arrow,
+  & .nav .reset-button,
+  & table.calendar .day {
+    transition: all 0.3s ease-in-out;
+
+    & svg {
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: var(--text-strong);
+
+      & svg {
+        color: var(--text-strong);
+      }
+    }
+  }
+}
+
+// search
+.search-row input {
+  @extend input;
+}
 
 // style settings item
+
 .setting-item {
   &:is([data-id^=custom-accent-color-for-], [data-id^=custom-accent-color-]) {
     display: none;
