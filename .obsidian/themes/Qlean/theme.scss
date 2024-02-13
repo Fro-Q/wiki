@@ -610,20 +610,20 @@ body {
   --checklist-delete-decoration-line: line-through;
 
   // callout
-  --callout-summary: 25, 134, 255;
-  --callout-info: 25, 134, 255;
-  --callout-todo: 25, 134, 255;
-  --callout-important: 153, 102, 232;
-  --callout-tip: 0, 191, 165;
-  --callout-done: 45, 234, 102;
-  --callout-question: 234, 179, 8;
-  --callout-warning: 234, 179, 8;
-  --callout-fail: 244, 63, 94;
-  --callout-error: 244, 63, 94;
-  --callout-bug: 244, 63, 94;
-  --callout-example: 34, 152, 187;
-  --callout-quote: 102, 102, 102;
-  --callout-default: 102, 102, 102;
+  --callout-summary-bg: 23, 45, 41;
+  --callout-info-bg: 19, 33, 56;
+  --callout-todo-bg: 19, 33, 56;
+  --callout-important-bg: 23, 45, 41;
+  --callout-tip-bg: 23, 45, 41;
+  --callout-success-bg: 36, 52, 31;
+  --callout-question-bg: 51, 43, 21;
+  --callout-warning-bg: 51, 43, 21;
+  --callout-fail-bg: 54, 26, 30;
+  --callout-error-bg: 54, 26, 30;
+  --callout-bug-bg: 54, 26, 30;
+  --callout-example-bg: 38, 31, 51;
+  --callout-quote-bg: 30, 30, 30;
+  --callout-default-bg: 19, 33, 56;
 
   // tag
   --tag-radius: 1em;
@@ -1126,77 +1126,78 @@ body.header-indicator {
 
 // callout
 :is(.markdown-rendered, .markdown-source-view) .callout {
-  --callout-color: var(--callout-default);
+  --callout-bg-color: var(--callout-default-bg);
   position: relative;
   margin: 16px auto;
   padding: 20px 30px;
   border-radius: 4px;
-  background-color: rgba(var(--callout-color), 0.16);
+  mix-blend-mode: normal;
+  background-color: rgba(var(--callout-bg-color), 0.8);
 
 
   &[data-callout="summary"],
   &[data-callout="abstract"],
   &[data-callout="tldr"] {
-    --callout-color: var(--callout-summary);
+    --callout-bg-color: var(--callout-summary-bg);
   }
 
   &[data-callout="info"] {
-    --callout-color: var(--callout-info);
+    --callout-bg-color: var(--callout-info-bg);
   }
 
   &[data-callout="todo"] {
-    --callout-color: var(--callout-todo);
+    --callout-bg-color: var(--callout-todo-bg);
   }
 
   &[data-callout="important"] {
-    --callout-color: var(--callout-important);
+    --callout-bg-color: var(--callout-important-bg);
   }
 
   &[data-callout="tip"],
   &[data-callout="hint"] {
-    --callout-color: var(--callout-tip);
+    --callout-bg-color: var(--callout-tip-bg);
   }
 
   &[data-callout="done"],
   &[data-callout="success"],
   &[data-callout="check"] {
-    --callout-color: var(--callout-done);
+    --callout-bg-color: var(--callout-success-bg);
   }
 
   &[data-callout="question"],
   &[data-callout="help"],
   &[data-callout="faq"] {
-    --callout-color: var(--callout-question);
+    --callout-bg-color: var(--callout-question-bg);
   }
 
   &[data-callout="warning"],
   &[data-callout="caution"],
   &[data-callout="attention"] {
-    --callout-color: var(--callout-warning);
+    --callout-bg-color: var(--callout-warning-bg);
   }
 
   &[data-callout="fail"],
   &[data-callout="failure"],
   &[data-callout="missing"] {
-    --callout-color: var(--callout-fail);
+    --callout-bg-color: var(--callout-fail-bg);
   }
 
   &[data-callout="error"],
   &[data-callout="danger"] {
-    --callout-color: var(--callout-error);
+    --callout-bg-color: var(--callout-error-bg);
   }
 
   &[data-callout="bug"] {
-    --callout-color: var(--callout-bug);
+    --callout-bg-color: var(--callout-bug-bg);
   }
 
   &[data-callout="example"] {
-    --callout-color: var(--callout-example);
+    --callout-bg-color: var(--callout-example-bg);
   }
 
   &[data-callout="quote"],
   &[data-callout="cite"] {
-    --callout-color: var(--callout-quote);
+    --callout-bg-color: var(--callout-quote-bg);
   }
 }
 

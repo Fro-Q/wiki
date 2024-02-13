@@ -102,6 +102,8 @@ Test paragraph. Test paragraph. Test paragraph. Test paragraph. Test paragraph. 
 > ok
 > > [!warning]
 > > okk
+> > > [!info]
+> > > info
 
 > [!warning]
 > ok
