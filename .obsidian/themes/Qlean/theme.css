@@ -138,20 +138,20 @@ body {
   --checklist-done-decoration-line: none;
   --checklist-delete-decoration-color: var(--background-modifier-error);
   --checklist-delete-decoration-line: line-through;
-  --callout-summary-bg: rgba(102, 102, 120, .16);
-  --callout-info-bg: rgba(102, 102, 120, .16);
-  --callout-todo-bg: rgba(102, 102, 120, .16);
-  --callout-important-bg: rgba(102, 102, 120, .16);
-  --callout-tip-bg: rgba(104, 126, 236, 0.16);
-  --callout-done-bg: rgba(0, 0, 0, 0.05);
-  --callout-question-bg: rgba(255, 255, 255, 0.05);
-  --callout-warning-bg: rgba(234, 179, 8, .16);
-  --callout-fail-bg: rgba(244, 63, 94, .16);
-  --callout-error-bg: rgba(244, 63, 94, .16);
-  --callout-bug-bg: rgba(244, 63, 94, .16);
-  --callout-example-bg: rgba(102, 102, 120, .16);
-  --callout-quote-bg: rgba(0, 0, 0, 0.05);
-  --callout-default-bg: rgba(255, 255, 255, 0.05);
+  --callout-summary: 25, 134, 255;
+  --callout-info: 25, 134, 255;
+  --callout-todo: 25, 134, 255;
+  --callout-important: 153, 102, 232;
+  --callout-tip: 0, 191, 165;
+  --callout-done: 45, 234, 102;
+  --callout-question: 234, 179, 8;
+  --callout-warning: 234, 179, 8;
+  --callout-fail: 244, 63, 94;
+  --callout-error: 244, 63, 94;
+  --callout-bug: 244, 63, 94;
+  --callout-example: 34, 152, 187;
+  --callout-quote: 102, 102, 102;
+  --callout-default: 102, 102, 102;
   --tag-radius: 1em;
   --blockquote-border-thickness: 2px;
   --callout-dogs-ear-size: 30px;
@@ -667,28 +667,51 @@ body.circle-checkbox .markdown-rendered .task-list-item > .task-list-item-checkb
 }
 
 :is(.markdown-rendered, .markdown-source-view) .callout {
+  --callout-color: var(--callout-default);
   position: relative;
   margin: 16px auto;
   padding: 20px 30px;
   border-radius: 4px;
+  background-color: rgba(var(--callout-color), 0.16);
 }
 :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=summary], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=abstract], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=tldr] {
-  background-color: var(--callout-summary-bg);
+  --callout-color: var(--callout-summary);
 }
 :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=info] {
-  background-color: var(--callout-info-bg);
+  --callout-color: var(--callout-info);
 }
 :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=todo] {
-  background-color: var(--callout-todo-bg);
+  --callout-color: var(--callout-todo);
 }
 :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=important] {
-  background-color: var(--callout-important-bg);
+  --callout-color: var(--callout-important);
 }
 :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=tip], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=hint] {
-  background-color: var(--callout-tip-bg);
+  --callout-color: var(--callout-tip);
 }
 :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=done], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=success], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=check] {
-  background-color: var(--callout-done-bg);
+  --callout-color: var(--callout-done);
+}
+:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=question], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=help], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=faq] {
+  --callout-color: var(--callout-question);
+}
+:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=warning], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=caution], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=attention] {
+  --callout-color: var(--callout-warning);
+}
+:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=fail], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=failure], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=missing] {
+  --callout-color: var(--callout-fail);
+}
+:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=error], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=danger] {
+  --callout-color: var(--callout-error);
+}
+:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=bug] {
+  --callout-color: var(--callout-bug);
+}
+:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=example] {
+  --callout-color: var(--callout-example);
+}
+:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=quote], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=cite] {
+  --callout-color: var(--callout-quote);
 }
 
 body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout:after {

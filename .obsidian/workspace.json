@@ -40,7 +40,7 @@
               "type": "markdown",
               "state": {
                 "file": "test_page_2.md",
-                "mode": "source",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
@@ -93,8 +93,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "9e87f895a36db30e",
