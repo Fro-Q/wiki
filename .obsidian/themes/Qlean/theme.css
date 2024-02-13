@@ -365,7 +365,7 @@ body.colorful-headers.header-color-gradient {
 }
 
 .markdown-rendered p,
-.markdown-source-view .cm-line {
+.markdown-source-view.is-live-preview .cm-line {
   font-family: var(--font-default);
   font-size: 1em;
   font-weight: normal;
@@ -374,107 +374,107 @@ body.colorful-headers.header-color-gradient {
 }
 
 .markdown-rendered h1,
-.markdown-source-view .cm-line.HyperMD-header-1 {
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-1 {
   font-family: var(--font-header);
   font-size: var(--font-h1-size);
   font-weight: var(--font-h1-weight);
   color: var(--h1-color);
 }
 
-.markdown-source-view .cm-line.HyperMD-header-1::after {
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-1::after {
   margin-top: calc(1px * 1.5 - 0.8rem);
 }
 
-body.header-indicator :is(.markdown-rendered h1, .markdown-source-view .cm-line.HyperMD-header-1):before {
+body.header-indicator :is(.markdown-rendered h1, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-1):before {
   content: "H1";
 }
 
 .markdown-rendered h2,
-.markdown-source-view .cm-line.HyperMD-header-2 {
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-2 {
   font-family: var(--font-header);
   font-size: var(--font-h2-size);
   font-weight: var(--font-h2-weight);
   color: var(--h2-color);
 }
 
-.markdown-source-view .cm-line.HyperMD-header-2::after {
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-2::after {
   margin-top: calc(2px * 1.5 - 0.8rem);
 }
 
-body.header-indicator :is(.markdown-rendered h2, .markdown-source-view .cm-line.HyperMD-header-2):before {
+body.header-indicator :is(.markdown-rendered h2, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-2):before {
   content: "H2";
 }
 
 .markdown-rendered h3,
-.markdown-source-view .cm-line.HyperMD-header-3 {
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-3 {
   font-family: var(--font-header);
   font-size: var(--font-h3-size);
   font-weight: var(--font-h3-weight);
   color: var(--h3-color);
 }
 
-.markdown-source-view .cm-line.HyperMD-header-3::after {
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-3::after {
   margin-top: calc(3px * 1.5 - 0.8rem);
 }
 
-body.header-indicator :is(.markdown-rendered h3, .markdown-source-view .cm-line.HyperMD-header-3):before {
+body.header-indicator :is(.markdown-rendered h3, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-3):before {
   content: "H3";
 }
 
 .markdown-rendered h4,
-.markdown-source-view .cm-line.HyperMD-header-4 {
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-4 {
   font-family: var(--font-header);
   font-size: var(--font-h4-size);
   font-weight: var(--font-h4-weight);
   color: var(--h4-color);
 }
 
-.markdown-source-view .cm-line.HyperMD-header-4::after {
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-4::after {
   margin-top: calc(4px * 1.5 - 0.8rem);
 }
 
-body.header-indicator :is(.markdown-rendered h4, .markdown-source-view .cm-line.HyperMD-header-4):before {
+body.header-indicator :is(.markdown-rendered h4, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-4):before {
   content: "H4";
 }
 
 .markdown-rendered h5,
-.markdown-source-view .cm-line.HyperMD-header-5 {
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-5 {
   font-family: var(--font-header);
   font-size: var(--font-h5-size);
   font-weight: var(--font-h5-weight);
   color: var(--h5-color);
 }
 
-.markdown-source-view .cm-line.HyperMD-header-5::after {
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-5::after {
   margin-top: calc(5px * 1.5 - 0.8rem);
 }
 
-body.header-indicator :is(.markdown-rendered h5, .markdown-source-view .cm-line.HyperMD-header-5):before {
+body.header-indicator :is(.markdown-rendered h5, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-5):before {
   content: "H5";
 }
 
 .markdown-rendered h6,
-.markdown-source-view .cm-line.HyperMD-header-6 {
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-6 {
   font-family: var(--font-header);
   font-size: var(--font-h6-size);
   font-weight: var(--font-h6-weight);
   color: var(--h6-color);
 }
 
-.markdown-source-view .cm-line.HyperMD-header-6::after {
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header-6::after {
   margin-top: calc(6px * 1.5 - 0.8rem);
 }
 
-body.header-indicator :is(.markdown-rendered h6, .markdown-source-view .cm-line.HyperMD-header-6):before {
+body.header-indicator :is(.markdown-rendered h6, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-6):before {
   content: "H6";
 }
 
-body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header .collapse-indicator {
+body.header-indicator .markdown-source-view.is-live-preview .cm-line.cm-line.HyperMD-header .collapse-indicator {
   top: 0.5rem;
   right: 0.5rem;
   cursor: pointer;
 }
-body.header-indicator .markdown-source-view .cm-line.cm-line.HyperMD-header .collapse-indicator svg {
+body.header-indicator .markdown-source-view.is-live-preview .cm-line.cm-line.HyperMD-header .collapse-indicator svg {
   opacity: 0 !important;
 }
 body.header-indicator .markdown-rendered :is(h1, h2, h3, h4, h5, h6) .collapse-indicator {
@@ -486,18 +486,18 @@ body.header-indicator .markdown-rendered :is(h1, h2, h3, h4, h5, h6) .collapse-i
 }
 
 .markdown-rendered :is(h1, h2, h3, h4, h5, h6),
-.markdown-source-view .cm-line.HyperMD-header {
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header {
   width: -moz-max-content;
   width: max-content;
   padding: 0;
   transition: all 0.3s ease-in-out;
 }
 body.header-hovering-underline .markdown-rendered :is(h1, h2, h3, h4, h5, h6):hover::after,
-body.header-hovering-underline .markdown-source-view .cm-line.HyperMD-header:hover::after {
+body.header-hovering-underline .markdown-source-view.is-live-preview .cm-line.HyperMD-header:hover::after {
   background-color: var(--text-normal);
 }
 .markdown-rendered :is(h1, h2, h3, h4, h5, h6)::after,
-.markdown-source-view .cm-line.HyperMD-header::after {
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header::after {
   content: "";
   display: block;
   height: 2px;
@@ -506,12 +506,12 @@ body.header-hovering-underline .markdown-source-view .cm-line.HyperMD-header:hov
   transition: all 0.2s ease-in-out;
 }
 body.header-indicator .markdown-rendered :is(h1, h2, h3, h4, h5, h6):has(.is-collapsed):before,
-body.header-indicator .markdown-source-view .cm-line.HyperMD-header:has(.is-collapsed):before {
+body.header-indicator .markdown-source-view.is-live-preview .cm-line.HyperMD-header:has(.is-collapsed):before {
   color: var(--text-strong);
 }
 
 .markdown-rendered :is(h1, h2, h3, h4, h5, h6):before,
-.markdown-source-view .cm-line.HyperMD-header:before {
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header:before {
   font-family: var(--font-monospace);
   font-size: 14px;
   font-weight: normal;
@@ -523,8 +523,8 @@ body.header-indicator .markdown-source-view .cm-line.HyperMD-header:has(.is-coll
 }
 
 .markdown-rendered strong,
-.markdown-source-view .cm-line .cm-strong,
-.markdown-source-view strong {
+.markdown-source-view.is-live-preview .cm-line .cm-strong,
+.markdown-source-view.is-live-preview strong {
   font-family: var(--font-text);
   font-size: var(--font-strong-size);
   font-weight: var(--font-strong-weight);
@@ -536,8 +536,8 @@ body.header-indicator .markdown-source-view .cm-line.HyperMD-header:has(.is-coll
 }
 
 .markdown-rendered em,
-.markdown-source-view .cm-line .cm-em,
-.markdown-source-view em {
+.markdown-source-view.is-live-preview .cm-line .cm-em,
+.markdown-source-view.is-live-preview em {
   font-family: var(--font-text);
   font-size: var(--font-em-size);
   font-weight: var(--font-em-weight);
@@ -549,8 +549,8 @@ body.header-indicator .markdown-source-view .cm-line.HyperMD-header:has(.is-coll
 }
 
 .markdown-rendered mark,
-.markdown-source-view .cm-line .cm-highlight,
-.markdown-source-view mark {
+.markdown-source-view.is-live-preview .cm-line .cm-highlight,
+.markdown-source-view.is-live-preview mark {
   font-family: var(--font-text);
   font-size: var(--font-highlight-size);
   font-weight: var(--font-highlight-weight);
@@ -566,8 +566,8 @@ body.header-indicator .markdown-source-view .cm-line.HyperMD-header:has(.is-coll
 }
 
 .markdown-rendered del,
-.markdown-source-view .cm-line .cm-strikethrough,
-.markdown-source-view del {
+.markdown-source-view.is-live-preview .cm-line .cm-strikethrough,
+.markdown-source-view.is-live-preview del {
   font-family: var(--font-text);
   font-size: var(--font-strikethrough-size);
   font-weight: var(--font-strikethrough-weight);
@@ -578,7 +578,7 @@ body.header-indicator .markdown-source-view .cm-line.HyperMD-header:has(.is-coll
   font-style: var(--font-strikethrough-style);
 }
 
-:is(.markdown-rendered, .markdown-source-view .cm-line, .markdown-source-view) u {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) u {
   font-family: var(--font-text);
   font-size: var(--font-underlined-size);
   font-weight: var(--font-underlined-weight);
@@ -588,134 +588,133 @@ body.header-indicator .markdown-source-view .cm-line.HyperMD-header:has(.is-coll
   text-underline-offset: var(--font-underlined-decoration-offset);
 }
 
-:is(.markdown-rendered, .markdown-source-view) .inline-title {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) .inline-title {
   font-family: var(--font-inline-title);
   font-size: var(--font-inline-title-size);
   font-weight: var(--font-inline-title-weight);
   color: var(--text-normal);
 }
 
-.markdown-source-view .HyperMD-task-line:is([data-task="-"]) [class^=cm-list], .markdown-source-view .HyperMD-task-line:is([data-task="-"]),
+.markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task="-"]) [class^=cm-list], .markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task="-"]),
 .markdown-rendered .task-list-item:is([data-task="-"]) [class^=cm-list],
 .markdown-rendered .task-list-item:is([data-task="-"]) {
   color: var(--checklist-delete-decoration-color);
 }
 
-.markdown-source-view .HyperMD-task-line .task-list-item-checkbox,
+.markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox,
 .markdown-rendered .task-list-item > p .task-list-item-checkbox,
 .markdown-rendered .task-list-item > .task-list-item-checkbox {
   transition: all 0.3s ease-in-out;
 }
-body.circle-checkbox .markdown-source-view .HyperMD-task-line .task-list-item-checkbox,
+body.circle-checkbox .markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox,
 body.circle-checkbox .markdown-rendered .task-list-item > p .task-list-item-checkbox,
 body.circle-checkbox .markdown-rendered .task-list-item > .task-list-item-checkbox {
   border-radius: 50%;
 }
-.markdown-source-view .HyperMD-task-line .task-list-item-checkbox:checked,
+.markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox:checked,
 .markdown-rendered .task-list-item > p .task-list-item-checkbox:checked,
 .markdown-rendered .task-list-item > .task-list-item-checkbox:checked {
   border-color: var(--color-done);
   background-color: var(--color-done);
 }
-.markdown-source-view .HyperMD-task-line .task-list-item-checkbox:checked:hover,
+.markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox:checked:hover,
 .markdown-rendered .task-list-item > p .task-list-item-checkbox:checked:hover,
 .markdown-rendered .task-list-item > .task-list-item-checkbox:checked:hover {
   border-color: var(--checkbox-border-color);
   background-color: var(--checkbox-color-hover);
 }
-.markdown-source-view .HyperMD-task-line .task-list-item-checkbox:checked:after,
+.markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox:checked:after,
 .markdown-rendered .task-list-item > p .task-list-item-checkbox:checked:after,
 .markdown-rendered .task-list-item > .task-list-item-checkbox:checked:after {
   -webkit-mask-position: center center;
   mask-position: center center;
 }
 
-.markdown-source-view .HyperMD-task-line[data-task=" "] .task-list-item-checkbox:hover, .markdown-rendered .task-list-item:not(.is-checked) > p .task-list-item-checkbox:hover, .markdown-rendered .task-list-item:not(.is-checked) > .task-list-item-checkbox:hover {
+.markdown-source-view.is-live-preview .HyperMD-task-line[data-task=" "] .task-list-item-checkbox:hover, .markdown-rendered .task-list-item:not(.is-checked) > p .task-list-item-checkbox:hover, .markdown-rendered .task-list-item:not(.is-checked) > .task-list-item-checkbox:hover {
   border-color: var(--color-done);
 }
-.markdown-source-view .HyperMD-task-line[data-task="-"] .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="-"] > p .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="-"] > .task-list-item-checkbox {
+.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="-"] .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="-"] > p .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="-"] > .task-list-item-checkbox {
   border-color: var(--color-error);
   background-color: var(--color-error);
 }
-.markdown-source-view .HyperMD-task-line[data-task="-"] .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="-"] > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="-"] > .task-list-item-checkbox:after {
+.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="-"] .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="-"] > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="-"] > .task-list-item-checkbox:after {
   -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 1 10 h 22 v 4 H 1 z" fill="black"/></svg>');
   mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 1 10 h 22 v 4 H 1 z" fill="black"/></svg>');
 }
-.markdown-source-view .HyperMD-task-line[data-task="!"] .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="!"] > p .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="!"] > .task-list-item-checkbox {
+.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="!"] .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="!"] > p .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="!"] > .task-list-item-checkbox {
   border-color: var(--color-warning);
   background-color: var(--color-warning);
 }
-.markdown-source-view .HyperMD-task-line[data-task="!"] .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="!"] > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="!"] > .task-list-item-checkbox:after {
+.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="!"] .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="!"] > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="!"] > .task-list-item-checkbox:after {
   -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 1 v 16 h 2 v -16 h -2 v 1 M 11 21 h 2 v 2 h -2 v -2 h 1" stroke="black" stroke-width="2" stroke-linejoin="round" /></svg>');
   mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 1 v 16 h 2 v -16 h -2 v 1 M 11 21 h 2 v 2 h -2 v -2 h 1" stroke="black" stroke-width="2" stroke-linejoin="round" /></svg>');
 }
-.markdown-source-view .HyperMD-task-line[data-task="?"] .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="?"] > p .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="?"] > .task-list-item-checkbox {
+.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="?"] .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="?"] > p .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="?"] > .task-list-item-checkbox {
   border-color: var(--color-ques);
   background-color: var(--color-ques);
 }
-.markdown-source-view .HyperMD-task-line[data-task="?"] .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="?"] > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="?"] > .task-list-item-checkbox:after {
+.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="?"] .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="?"] > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="?"] > .task-list-item-checkbox:after {
   -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="6.5 2 11 19" fill="none"><path d="M9.09009 9.00003 C9.32519 8.33169 9.78924 7.76813 10.4 7.40916 C11.0108 7.05019 12.079 6.94542 12.7773 7.06519C13.9093 7.25935 14.9767 8.25497 14.9748 9.49073C14.9748 11.9908 12 11.2974 12 14 M12 17 H 12.01" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" /></svg>');
   mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 1 v 16 h 2 v -16 h -2 v 1 M 11 21 h 2 v 2 h -2 v -2 h 1" stroke="black" stroke-width="2" stroke-linejoin="round" /></svg>');
 }
-.markdown-source-view .HyperMD-task-line:is([data-task=i], [data-task=I]) .task-list-item-checkbox, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > p .task-list-item-checkbox, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > .task-list-item-checkbox {
+.markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task=i], [data-task=I]) .task-list-item-checkbox, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > p .task-list-item-checkbox, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > .task-list-item-checkbox {
   border-color: var(--color-info);
   background-color: var(--color-info);
 }
-.markdown-source-view .HyperMD-task-line:is([data-task=i], [data-task=I]) .task-list-item-checkbox:after, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > .task-list-item-checkbox:after {
+.markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task=i], [data-task=I]) .task-list-item-checkbox:after, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > .task-list-item-checkbox:after {
   -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 7 v 14 h -4 v 2 h 10 v -2 h -4 v -14 h -6 v 2 h 6 M 11 3 v -2 h 2 v 2 h -2 v -1 " stroke="black" fill="black" stroke-width="2" stroke-linejoin="round" /></svg>');
   mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 7 v 14 h -4 v 2 h 10 v -2 h -4 v -14 h -6 v 2 h 6 M 11 3 v -2 h 2 v 2 h -2 v -1 " stroke="black" fill="black" stroke-width="2" stroke-linejoin="round" /></svg>');
 }
 
-:is(.markdown-rendered, .markdown-source-view) .callout {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout {
   --callout-bg-color: var(--callout-default-bg);
   position: relative;
-  margin: 16px auto;
   padding: 20px 30px;
   border-radius: 4px;
   mix-blend-mode: normal;
   background-color: rgba(var(--callout-bg-color), 0.8);
 }
-:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=summary], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=abstract], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=tldr] {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=summary], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=abstract], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=tldr] {
   --callout-bg-color: var(--callout-summary-bg);
 }
-:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=info] {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=info] {
   --callout-bg-color: var(--callout-info-bg);
 }
-:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=todo] {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=todo] {
   --callout-bg-color: var(--callout-todo-bg);
 }
-:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=important] {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=important] {
   --callout-bg-color: var(--callout-important-bg);
 }
-:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=tip], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=hint] {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=tip], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=hint] {
   --callout-bg-color: var(--callout-tip-bg);
 }
-:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=done], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=success], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=check] {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=done], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=success], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=check] {
   --callout-bg-color: var(--callout-success-bg);
 }
-:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=question], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=help], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=faq] {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=question], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=help], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=faq] {
   --callout-bg-color: var(--callout-question-bg);
 }
-:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=warning], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=caution], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=attention] {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=warning], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=caution], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=attention] {
   --callout-bg-color: var(--callout-warning-bg);
 }
-:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=fail], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=failure], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=missing] {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=fail], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=failure], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=missing] {
   --callout-bg-color: var(--callout-fail-bg);
 }
-:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=error], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=danger] {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=error], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=danger] {
   --callout-bg-color: var(--callout-error-bg);
 }
-:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=bug] {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=bug] {
   --callout-bg-color: var(--callout-bug-bg);
 }
-:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=example] {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=example] {
   --callout-bg-color: var(--callout-example-bg);
 }
-:is(.markdown-rendered, .markdown-source-view) .callout[data-callout=quote], :is(.markdown-rendered, .markdown-source-view) .callout[data-callout=cite] {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=quote], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=cite] {
   --callout-bg-color: var(--callout-quote-bg);
 }
 
-body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout:after {
+body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout:after {
   content: "";
   position: absolute;
   top: auto;
@@ -730,15 +729,14 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout:af
   transition: all 0.3s ease-in-out;
   box-shadow: -2px 2px 4px 2px rgba(0, 0, 0, 0.2);
 }
-body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout:hover:after {
+body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout:hover:after {
   width: 0;
   height: 0;
 }
 
-.markdown-source-view .HyperMD-quote.cm-line {
+.markdown-source-view.is-live-preview .HyperMD-quote.cm-line {
   background-color: var(--quote-bg-color);
 }
-
 .markdown-rendered blockquote {
   margin: 16px auto;
   padding: 20px 30px;
@@ -769,7 +767,7 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout:ho
   margin-top: 0;
 }
 
-body.embed-alt :is(.markdown-source-view, .markdown-rendered) .media-embed:after {
+body.embed-alt :is(.markdown-source-view.is-live-preview, .markdown-rendered) .media-embed:after {
   content: attr(alt);
   font-family: var(--font-default);
   font-size: 0.8em;
@@ -780,15 +778,15 @@ body.embed-alt :is(.markdown-source-view, .markdown-rendered) .media-embed:after
   text-align: end;
   margin-top: 0.5em;
 }
-body.embed-alt.embed-alt-left :is(.markdown-source-view, .markdown-rendered) .media-embed:after {
+body.embed-alt.embed-alt-left :is(.markdown-source-view.is-live-preview, .markdown-rendered) .media-embed:after {
   text-align: start;
 }
-body.embed-alt.embed-alt-middle :is(.markdown-source-view, .markdown-rendered) .media-embed:after {
+body.embed-alt.embed-alt-middle :is(.markdown-source-view.is-live-preview, .markdown-rendered) .media-embed:after {
   text-align: center;
 }
 
-.markdown-source-view .cm-line .cm-inline-code,
-.markdown-source-view .HyperMD-codeblock,
+.markdown-source-view.is-live-preview .cm-line .cm-inline-code,
+.markdown-source-view.is-live-preview .HyperMD-codeblock,
 .markdown-rendered code {
   font-family: var(--font-monospace);
   font-size: var(--font-monospace-size);
@@ -2053,15 +2051,15 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view, .markdown-rendered) .
   color: var(--text-strong);
 }
 
-.markdown-source-view div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg {
+.markdown-source-view.is-live-preview div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg {
   border-radius: auto;
   background-color: var(--code-bg-color);
   padding: 0 30px;
 }
-.markdown-source-view div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg {
+.markdown-source-view.is-live-preview div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg {
   border-radius: 4px 4px 0 0;
 }
-.markdown-source-view div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg span.code-block-flair {
+.markdown-source-view.is-live-preview div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg span.code-block-flair {
   position: absolute;
   top: 0;
   right: 0;
@@ -2075,27 +2073,27 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view, .markdown-rendered) .
   transition: all 0.2s ease;
   z-index: 1;
 }
-.markdown-source-view div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg span.code-block-flair:hover {
+.markdown-source-view.is-live-preview div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg span.code-block-flair:hover {
   background-color: var(--code-bg-color);
   border-color: var(--border-color);
 }
-.markdown-source-view div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg span.code-block-flair:hover {
+.markdown-source-view.is-live-preview div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg span.code-block-flair:hover {
   background-color: var(--code-bg-color);
   border: 1px solid var(--text-muted);
   color: var(--text-strong);
 }
-.markdown-source-view div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-end-bg {
+.markdown-source-view.is-live-preview div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-end-bg {
   border-radius: 0 0 4px 4px;
 }
 
-.markdown-source-view div.math-block, .markdown-source-view span.math,
+.markdown-source-view.is-live-preview div.math-block, .markdown-source-view.is-live-preview span.math,
 .markdown-rendered div.math-block,
 .markdown-rendered span.math {
   color: var(--text-strong);
 }
 
 .markdown-rendered a.tag,
-.markdown-source-view .cm-line .cm-hashtag,
+.markdown-source-view.is-live-preview .cm-line .cm-hashtag,
 .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill {
   font-family: var(--font-tag);
   font-size: var(--font-tag-size) !important;
@@ -2120,14 +2118,14 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view, .markdown-rendered) .
   padding: 0 0.5em;
 }
 
-.markdown-source-view .cm-line .cm-hashtag {
+.markdown-source-view.is-live-preview .cm-line .cm-hashtag {
   padding-top: 0;
   padding-bottom: 0;
 }
-.markdown-source-view .cm-line .cm-hashtag.cm-hashtag-begin {
+.markdown-source-view.is-live-preview .cm-line .cm-hashtag.cm-hashtag-begin {
   padding-left: 0.5em;
 }
-.markdown-source-view .cm-line .cm-hashtag.cm-hashtag-end {
+.markdown-source-view.is-live-preview .cm-line .cm-hashtag.cm-hashtag-end {
   padding-right: 0.5em;
 }
 
@@ -2141,7 +2139,7 @@ body.tag-fill .markdown-rendered a.tag:hover, body.tag-fill .metadata-container 
   background-color: var(--color-accent-o60);
   color: var(--text-strong);
 }
-body.tag-fill .markdown-source-view .cm-line .cm-hashtag:is(.cm-hashtag-begin, .cm-hashtag-end) {
+body.tag-fill .markdown-source-view.is-live-preview .cm-line .cm-hashtag:is(.cm-hashtag-begin, .cm-hashtag-end) {
   border-color: var(--color-accent-o40);
   background-color: var(--color-accent-o30);
   color: var(--text-strong);
@@ -2156,7 +2154,7 @@ body.tag-outline .markdown-rendered a.tag:hover, body.tag-outline .metadata-cont
   border-color: var(--color-accent-o80);
   background-color: var(--color-accent-o30);
 }
-body.tag-outline .markdown-source-view .cm-line .cm-hashtag:is(.cm-hashtag-begin, .cm-hashtag-end) {
+body.tag-outline .markdown-source-view.is-live-preview .cm-line .cm-hashtag:is(.cm-hashtag-begin, .cm-hashtag-end) {
   border-color: var(--color-accent-o50);
   background-color: transparent;
   color: var(--text-strong);
@@ -2233,7 +2231,7 @@ body.tag-outline .markdown-source-view .cm-line .cm-hashtag:is(.cm-hashtag-begin
   box-shadow: none;
 }
 
-.markdown-source-view .cm-hmd-internal-link:has(.is-unresolved):hover, .markdown-source-view .is-unresolved:hover {
+.markdown-source-view.is-live-preview .cm-hmd-internal-link:has(.is-unresolved):hover, .markdown-source-view.is-live-preview .is-unresolved:hover {
   -webkit-text-decoration: var(--link-unresolved-decoration-line) var(--link-unresolved-decoration-style) var(--link-unresolved-decoration-color) var(--link-unresolved-decoration-width);
   text-decoration: var(--link-unresolved-decoration-line) var(--link-unresolved-decoration-style) var(--link-unresolved-decoration-color) var(--link-unresolved-decoration-width);
   text-underline-offset: var(--link-unresolved-decoration-offset);
@@ -2618,13 +2616,13 @@ button[aria-label="Restore default"] {
   border-top: 1px solid var(--background-modifier-border);
 }
 
-:is(.markdown-rendered, .markdown-source-view) table {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) table {
   width: 100%;
 }
-:is(.markdown-rendered, .markdown-source-view) table thead tr {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) table thead tr {
   background-color: var(--tab-bg-color);
 }
-:is(.markdown-rendered, .markdown-source-view) table thead tr:hover {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) table thead tr:hover {
   background-color: var(--tab-hover-bg-color);
 }
 
@@ -2639,7 +2637,7 @@ body.fade-out-inactive-lines .cm-line.cm-active {
   opacity: 1;
 }
 
-.theme-dark .markdown-source-view:not(.markdown-source-view) {
+.theme-dark .markdown-source-view:not(.is-live-preview) {
   --color-text: var(--text-normal);
   --color-header: var(--color-accent-ln10);
   --color-strong: var(--color-accent-ln5);
@@ -2648,7 +2646,7 @@ body.fade-out-inactive-lines .cm-line.cm-active {
   --color-inline-code: rgb(87, 222, 107);
   --color-quote-format: rgb(116, 152, 93);
 }
-.theme-light .markdown-source-view:not(.markdown-source-view) {
+.theme-light .markdown-source-view:not(.is-live-preview) {
   --color-text: var(--text-normal);
   --color-header: var(--color-accent-ln10);
   --color-strong: var(--color-accent-ln5);
@@ -2657,63 +2655,63 @@ body.fade-out-inactive-lines .cm-line.cm-active {
   --color-inline-code: rgb(51, 139, 64);
   --color-quote-format: rgb(116, 152, 93);
 }
-.markdown-source-view:not(.markdown-source-view) .cm-line {
+.markdown-source-view:not(.is-live-preview) .cm-line {
   font-family: var(--font-source-view);
   font-size: var(--font-text-size);
   font-weight: var(--font-source-view-weight);
   color: var(--color-text);
 }
-.markdown-source-view:not(.markdown-source-view) .cm-line.cm-active {
+.markdown-source-view:not(.is-live-preview) .cm-line.cm-active {
   background-color: var(--background-modifier-border);
 }
-.markdown-source-view:not(.markdown-source-view) .inline-title {
+.markdown-source-view:not(.is-live-preview) .inline-title {
   font-family: var(--font-source-view);
   font-size: var(--font-inline-title-size);
   font-weight: var(--font-source-view-weight);
   color: var(--color-text);
 }
-.markdown-source-view:not(.markdown-source-view) .cm-header {
+.markdown-source-view:not(.is-live-preview) .cm-header {
   color: var(--color-header);
 }
-.markdown-source-view:not(.markdown-source-view) :is(.cm-link, .cm-hmd-internal-link) {
+.markdown-source-view:not(.is-live-preview) :is(.cm-link, .cm-hmd-internal-link) {
   color: var(--color-link);
 }
-.markdown-source-view:not(.markdown-source-view) :is(.cm-link, .cm-hmd-internal-link):hover {
+.markdown-source-view:not(.is-live-preview) :is(.cm-link, .cm-hmd-internal-link):hover {
   text-decoration: none;
   color: var(--color-link);
 }
-.markdown-source-view:not(.markdown-source-view) :is(.cm-url):not(.cm-formatting-link-string) {
+.markdown-source-view:not(.is-live-preview) :is(.cm-url):not(.cm-formatting-link-string) {
   color: var(--color-text);
   -webkit-text-decoration: underline solid 2px var(--color-text);
   text-decoration: underline solid 2px var(--color-text);
   text-underline-offset: 4px;
 }
-.markdown-source-view:not(.markdown-source-view) .cm-formatting-link {
+.markdown-source-view:not(.is-live-preview) .cm-formatting-link {
   color: var(--color-text);
 }
-.markdown-source-view:not(.markdown-source-view) .cm-highlight {
+.markdown-source-view:not(.is-live-preview) .cm-highlight {
   background-color: transparent;
 }
-.markdown-source-view:not(.markdown-source-view) .cm-strong {
+.markdown-source-view:not(.is-live-preview) .cm-strong {
   color: var(--color-strong);
 }
-.markdown-source-view:not(.markdown-source-view) .cm-formatting.cm-formatting-list {
+.markdown-source-view:not(.is-live-preview) .cm-formatting.cm-formatting-list {
   color: var(--color-list-bullet);
 }
-.markdown-source-view:not(.markdown-source-view) .cm-formatting.cm-formatting-link-string {
+.markdown-source-view:not(.is-live-preview) .cm-formatting.cm-formatting-link-string {
   color: var(--color-text);
 }
-.markdown-source-view:not(.markdown-source-view) .cm-inline-code {
+.markdown-source-view:not(.is-live-preview) .cm-inline-code {
   color: var(--color-inline-code);
   white-space: nowrap;
 }
-.markdown-source-view:not(.markdown-source-view) .cm-hashtag {
+.markdown-source-view:not(.is-live-preview) .cm-hashtag {
   color: var(--color-text);
   font-size: var(--font-text-size);
   padding: 0;
   background: transparent;
 }
-.markdown-source-view:not(.markdown-source-view) .cm-formatting-quote {
+.markdown-source-view:not(.is-live-preview) .cm-formatting-quote {
   color: var(--color-quote-format);
 }
 

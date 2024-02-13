@@ -876,7 +876,7 @@ body {
 
 // paragraphs basic
 .markdown-rendered p,
-.markdown-source-view .cm-line {
+.markdown-source-view.is-live-preview .cm-line {
   @include font();
   line-height: 2;
 }
@@ -885,12 +885,12 @@ body {
 @for $i from 1 through 6 {
 
   .markdown-rendered h#{$i},
-  .markdown-source-view .cm-line.HyperMD-header-#{$i} {
+  .markdown-source-view.is-live-preview .cm-line.HyperMD-header-#{$i} {
     @include font(var(--font-header), var(--font-h#{$i}-size), var(--font-h#{$i}-weight), var(--h#{$i}-color));
   }
 
   // justify header hovering underline position
-  .markdown-source-view .cm-line.HyperMD-header-#{$i} {
+  .markdown-source-view.is-live-preview .cm-line.HyperMD-header-#{$i} {
     &::after {
       margin-top: calc(#{$i}px * 1.5 - 0.8rem);
     }
@@ -898,7 +898,7 @@ body {
 
   // header level indicator content
   body.header-indicator {
-    & :is(.markdown-rendered h#{$i}, .markdown-source-view .cm-line.HyperMD-header-#{$i}):before {
+    & :is(.markdown-rendered h#{$i}, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-#{$i}):before {
       content: "H#{$i}";
     }
   }
@@ -908,7 +908,7 @@ body {
 // make collapse indicator invisible and the same position as the level indicator
 // so clicking the level indicator will trigger the collapse event
 body.header-indicator {
-  & .markdown-source-view .cm-line.cm-line.HyperMD-header .collapse-indicator {
+  & .markdown-source-view.is-live-preview .cm-line.cm-line.HyperMD-header .collapse-indicator {
     top: 0.5rem;
     right: 0.5rem;
     cursor: pointer;
@@ -930,7 +930,7 @@ body.header-indicator {
 }
 
 .markdown-rendered :is(h1, h2, h3, h4, h5, h6),
-.markdown-source-view .cm-line.HyperMD-header {
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header {
   // max-content so the underline will not be too long
   width: max-content;
   padding: 0;
@@ -959,7 +959,7 @@ body.header-indicator {
 
 // header level indicator style
 .markdown-rendered :is(h1, h2, h3, h4, h5, h6):before,
-.markdown-source-view .cm-line.HyperMD-header:before {
+.markdown-source-view.is-live-preview .cm-line.HyperMD-header:before {
   @include font($font-family: var(--font-monospace), $font-size: 14px, $color: var(--text-muted));
   position: relative;
   width: 20px;
@@ -969,8 +969,8 @@ body.header-indicator {
 
 // strong
 .markdown-rendered strong,
-.markdown-source-view .cm-line .cm-strong,
-.markdown-source-view strong {
+.markdown-source-view.is-live-preview .cm-line .cm-strong,
+.markdown-source-view.is-live-preview strong {
   @include font(var(--font-text), var(--font-strong-size), var(--font-strong-weight), var(--font-strong-color));
   text-decoration: var(--font-strong-decoration-line) var(--font-strong-decoration-style) var(--font-strong-decoration-color) var(--font-strong-decoration-width);
   text-underline-offset: var(--font-strong-decoration-offset);
@@ -979,8 +979,8 @@ body.header-indicator {
 
 // em
 .markdown-rendered em,
-.markdown-source-view .cm-line .cm-em,
-.markdown-source-view em {
+.markdown-source-view.is-live-preview .cm-line .cm-em,
+.markdown-source-view.is-live-preview em {
   @include font(var(--font-text), var(--font-em-size), var(--font-em-weight), var(--font-em-color));
   text-decoration: var(--font-em-decoration-line) var(--font-em-decoration-style) var(--font-em-decoration-color) var(--font-em-decoration-width);
   text-underline-offset: var(--font-em-decoration-offset);
@@ -989,8 +989,8 @@ body.header-indicator {
 
 // highlight(mark)
 .markdown-rendered mark,
-.markdown-source-view .cm-line .cm-highlight,
-.markdown-source-view mark {
+.markdown-source-view.is-live-preview .cm-line .cm-highlight,
+.markdown-source-view.is-live-preview mark {
   @include font(var(--font-text), var(--font-highlight-size), var(--font-highlight-weight), var(--font-highlight-color));
   text-decoration: var(--font-highlight-decoration-line) var(--font-highlight-decoration-style) var(--font-highlight-decoration-color) var(--font-highlight-decoration-width);
   text-underline-offset: var(--font-highlight-decoration-offset);
@@ -1003,8 +1003,8 @@ body.header-indicator {
 
 // strikethrough
 .markdown-rendered del,
-.markdown-source-view .cm-line .cm-strikethrough,
-.markdown-source-view del {
+.markdown-source-view.is-live-preview .cm-line .cm-strikethrough,
+.markdown-source-view.is-live-preview del {
   @include font(var(--font-text), var(--font-strikethrough-size), var(--font-strikethrough-weight), var(--font-strikethrough-color));
   text-decoration: var(--font-strikethrough-decoration-line) var(--font-strikethrough-decoration-style) var(--font-strikethrough-decoration-color) var(--font-strikethrough-decoration-width);
   text-underline-offset: var(--font-strikethrough-decoration-offset);
@@ -1012,19 +1012,19 @@ body.header-indicator {
 }
 
 // underlined
-:is(.markdown-rendered, .markdown-source-view .cm-line, .markdown-source-view) u {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) u {
   @include font(var(--font-text), var(--font-underlined-size), var(--font-underlined-weight), var(--font-underlined-color));
   text-decoration: var(--font-underlined-decoration-line) var(--font-underlined-decoration-style) var(--font-underlined-decoration-color) var(--font-underlined-decoration-width);
   text-underline-offset: var(--font-underlined-decoration-offset);
 }
 
 // inline title
-:is(.markdown-rendered, .markdown-source-view) .inline-title {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) .inline-title {
   @include font(var(--font-inline-title), var(--font-inline-title-size), var(--font-inline-title-weight), var(--text-normal));
 }
 
 // canceled task
-.markdown-source-view .HyperMD-task-line,
+.markdown-source-view.is-live-preview .HyperMD-task-line,
 .markdown-rendered .task-list-item {
 
   &:is([data-task="-"]) [class^=cm-list],
@@ -1034,7 +1034,7 @@ body.header-indicator {
 }
 
 // task list
-.markdown-source-view .HyperMD-task-line .task-list-item-checkbox,
+.markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox,
 .markdown-rendered .task-list-item > p .task-list-item-checkbox,
 .markdown-rendered .task-list-item > .task-list-item-checkbox {
   transition: all 0.3s ease-in-out;
@@ -1063,7 +1063,7 @@ body.header-indicator {
 .task-list-item-checkbox {
 
   // empty checkbox
-  .markdown-source-view .HyperMD-task-line[data-task=" "] &,
+  .markdown-source-view.is-live-preview .HyperMD-task-line[data-task=" "] &,
   .markdown-rendered .task-list-item:not(.is-checked) > p &,
   .markdown-rendered .task-list-item:not(.is-checked) > & {
     &:hover {
@@ -1072,7 +1072,7 @@ body.header-indicator {
   }
 
   // canceled task
-  .markdown-source-view .HyperMD-task-line[data-task="-"] &,
+  .markdown-source-view.is-live-preview .HyperMD-task-line[data-task="-"] &,
   .markdown-rendered .task-list-item[data-task="-"] > p &,
   .markdown-rendered .task-list-item[data-task="-"] > & {
     border-color: var(--color-error);
@@ -1085,7 +1085,7 @@ body.header-indicator {
   }
 
   // important task
-  .markdown-source-view .HyperMD-task-line[data-task="!"] &,
+  .markdown-source-view.is-live-preview .HyperMD-task-line[data-task="!"] &,
   .markdown-rendered .task-list-item[data-task="!"] > p &,
   .markdown-rendered .task-list-item[data-task="!"] > & {
     border-color: var(--color-warning);
@@ -1098,7 +1098,7 @@ body.header-indicator {
   }
 
   // question task
-  .markdown-source-view .HyperMD-task-line[data-task="?"] &,
+  .markdown-source-view.is-live-preview .HyperMD-task-line[data-task="?"] &,
   .markdown-rendered .task-list-item[data-task="?"] > p &,
   .markdown-rendered .task-list-item[data-task="?"] > & {
     border-color: var(--color-ques);
@@ -1111,7 +1111,7 @@ body.header-indicator {
   }
 
   // info task
-  .markdown-source-view .HyperMD-task-line:is([data-task=i], [data-task=I]) &,
+  .markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task=i], [data-task=I]) &,
   .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > p &,
   .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > & {
     border-color: var(--color-info);
@@ -1125,10 +1125,9 @@ body.header-indicator {
 }
 
 // callout
-:is(.markdown-rendered, .markdown-source-view) .callout {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout {
   --callout-bg-color: var(--callout-default-bg);
   position: relative;
-  margin: 16px auto;
   padding: 20px 30px;
   border-radius: 4px;
   mix-blend-mode: normal;
@@ -1202,7 +1201,7 @@ body.header-indicator {
 }
 
 // if callout-dogs-ear is enabled
-body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
+body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout {
   &:after {
     content: "";
     position: absolute;
@@ -1227,8 +1226,12 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
 }
 
 // blockquote
-.markdown-source-view .HyperMD-quote.cm-line {
+.markdown-source-view.is-live-preview .HyperMD-quote.cm-line {
   background-color: var(--quote-bg-color);
+
+  &:first-child {
+    // padding-top: 20px;
+  }
 }
 
 .markdown-rendered blockquote {
@@ -1269,7 +1272,7 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
 
 // embed alt
 
-:is(.markdown-source-view, .markdown-rendered) .media-embed:after {
+:is(.markdown-source-view.is-live-preview, .markdown-rendered) .media-embed:after {
   body.embed-alt & {
     content: attr(alt);
     @include font(var(--font-default), 0.8em, 100, var(--text-muted));
@@ -1291,8 +1294,8 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
 
 
 // inline code
-.markdown-source-view .cm-line .cm-inline-code,
-.markdown-source-view .HyperMD-codeblock,
+.markdown-source-view.is-live-preview .cm-line .cm-inline-code,
+.markdown-source-view.is-live-preview .HyperMD-codeblock,
 .markdown-rendered code {
   @include font(var(--font-monospace), var(--font-monospace-size), var(--font-monospace-weight), var(--text-muted));
   background-color: var(--inline-code-bg-color);
@@ -1368,7 +1371,7 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
 }
 
 // code block source view
-.markdown-source-view div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg {
+.markdown-source-view.is-live-preview div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg {
   border-radius: auto;
   background-color: var(--code-bg-color);
   padding: 0 30px;
@@ -1393,7 +1396,7 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
 }
 
 // inline math
-.markdown-source-view,
+.markdown-source-view.is-live-preview,
 .markdown-rendered {
 
   & div.math-block,
@@ -1404,7 +1407,7 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
 
 // tag
 .markdown-rendered a.tag,
-.markdown-source-view .cm-line .cm-hashtag,
+.markdown-source-view.is-live-preview .cm-line .cm-hashtag,
 .metadata-container .metadata-property[data-property-key="tags"] .multi-select-pill {
   @include font(var(--font-tag), var(--font-tag-size) !important, var(--font-tag-weight), var(--text-strong));
   transition: all 0.2s ease-in-out;
@@ -1432,7 +1435,7 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view) .callout {
   padding: 0 0.5em;
 }
 
-.markdown-source-view .cm-line .cm-hashtag {
+.markdown-source-view.is-live-preview .cm-line .cm-hashtag {
   padding-top: 0;
   padding-bottom: 0;
 
@@ -1461,7 +1464,7 @@ body.tag-fill {
     }
   }
 
-  & .markdown-source-view .cm-line .cm-hashtag:is(.cm-hashtag-begin, .cm-hashtag-end) {
+  & .markdown-source-view.is-live-preview .cm-line .cm-hashtag:is(.cm-hashtag-begin, .cm-hashtag-end) {
     border-color: var(--color-accent-o40);
     background-color: var(--color-accent-o30);
     color: var(--text-strong);
@@ -1484,7 +1487,7 @@ body.tag-outline {
     }
   }
 
-  & .markdown-source-view .cm-line .cm-hashtag:is(.cm-hashtag-begin, .cm-hashtag-end) {
+  & .markdown-source-view.is-live-preview .cm-line .cm-hashtag:is(.cm-hashtag-begin, .cm-hashtag-end) {
     border-color: var(--color-accent-o50);
     background-color: transparent;
     color: var(--text-strong);
@@ -1603,7 +1606,7 @@ body.tag-outline {
 }
 
 // links in source view
-.markdown-source-view {
+.markdown-source-view.is-live-preview {
 
   & .cm-hmd-internal-link:has(.is-unresolved),
   & .is-unresolved {
@@ -2052,7 +2055,7 @@ button[aria-label="Restore default"] {
   }
 }
 
-:is(.markdown-rendered, .markdown-source-view) {
+:is(.markdown-rendered, .markdown-source-view.is-live-preview) {
   & table {
     width: 100%;
 
@@ -2081,7 +2084,7 @@ body.fade-out-inactive-lines {
   }
 }
 
-.markdown-source-view:not(.markdown-source-view) {
+.markdown-source-view:not(.is-live-preview) {
   .theme-dark & {
     --color-text: var(--text-normal);
     --color-header: var(--color-accent-ln10);
