@@ -98,7 +98,6 @@ body {
   --font-strikethrough-decoration-width: 1px;
   --font-strikethrough-decoration-style: solid;
   --font-strikethrough-decoration-color: var(--font-strikethrough-color);
-  --font-strikethrough-decoration-offset: 2px;
   --font-underlined-size: 1em;
   --font-underlined-weight: normal;
   --font-underlined-color: var(--text-normal);
@@ -214,9 +213,9 @@ body.theme-light {
   --color-h: var(--color-green-h);
   --color-s: var(--color-green-s);
   --color-l: var(--color-green-l);
-  --text-normal: #555;
+  --text-normal: #555555;
   --text-strong: hsl(0, 0%, 0%);
-  --text-muted: #888 !important;
+  --text-muted: #888888 !important;
   --code-bg-color: #f7f7f7;
   --inline-code-bg-color: hsla(0, 0%, 90%, 1);
   --background-primary: #fff;
@@ -288,9 +287,9 @@ body.theme-dark {
   --color-h: var(--color-orange-h);
   --color-s: var(--color-orange-s);
   --color-l: var(--color-orange-l);
-  --text-normal: #aaa;
+  --text-normal: #aaaaaa;
   --text-strong: hsl(0, 0%, 100%);
-  --text-muted: #999 !important;
+  --text-muted: #999999 !important;
   --code-bg-color: #181818;
   --inline-code-bg-color: rgba(255, 255, 255, 0.1);
   --background-primary: #111;
@@ -412,7 +411,7 @@ body *::-webkit-scrollbar-thumb:hover {
   margin-top: calc(1px * 1.5 - 0.8rem);
 }
 
-body.header-indicator :is(.markdown-rendered h1, .style-settings-container h1, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-1):before {
+body.header-level-indicator :is(.markdown-rendered h1, .style-settings-container h1, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-1):before {
   content: "H1";
 }
 
@@ -428,7 +427,7 @@ body.header-indicator :is(.markdown-rendered h1, .style-settings-container h1, .
   margin-top: calc(2px * 1.5 - 0.8rem);
 }
 
-body.header-indicator :is(.markdown-rendered h2, .style-settings-container h2, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-2):before {
+body.header-level-indicator :is(.markdown-rendered h2, .style-settings-container h2, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-2):before {
   content: "H2";
 }
 
@@ -444,7 +443,7 @@ body.header-indicator :is(.markdown-rendered h2, .style-settings-container h2, .
   margin-top: calc(3px * 1.5 - 0.8rem);
 }
 
-body.header-indicator :is(.markdown-rendered h3, .style-settings-container h3, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-3):before {
+body.header-level-indicator :is(.markdown-rendered h3, .style-settings-container h3, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-3):before {
   content: "H3";
 }
 
@@ -460,7 +459,7 @@ body.header-indicator :is(.markdown-rendered h3, .style-settings-container h3, .
   margin-top: calc(4px * 1.5 - 0.8rem);
 }
 
-body.header-indicator :is(.markdown-rendered h4, .style-settings-container h4, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-4):before {
+body.header-level-indicator :is(.markdown-rendered h4, .style-settings-container h4, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-4):before {
   content: "H4";
 }
 
@@ -476,7 +475,7 @@ body.header-indicator :is(.markdown-rendered h4, .style-settings-container h4, .
   margin-top: calc(5px * 1.5 - 0.8rem);
 }
 
-body.header-indicator :is(.markdown-rendered h5, .style-settings-container h5, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-5):before {
+body.header-level-indicator :is(.markdown-rendered h5, .style-settings-container h5, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-5):before {
   content: "H5";
 }
 
@@ -492,23 +491,23 @@ body.header-indicator :is(.markdown-rendered h5, .style-settings-container h5, .
   margin-top: calc(6px * 1.5 - 0.8rem);
 }
 
-body.header-indicator :is(.markdown-rendered h6, .style-settings-container h6, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-6):before {
+body.header-level-indicator :is(.markdown-rendered h6, .style-settings-container h6, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-6):before {
   content: "H6";
 }
 
-body.header-indicator .markdown-source-view.is-live-preview .cm-line.cm-line.HyperMD-header .collapse-indicator {
+body.header-level-indicator .markdown-source-view.is-live-preview .cm-line.cm-line.HyperMD-header .collapse-indicator {
   top: 0.5rem;
   right: 0.5rem;
   cursor: pointer;
 }
-body.header-indicator .markdown-source-view.is-live-preview .cm-line.cm-line.HyperMD-header .collapse-indicator svg {
+body.header-level-indicator .markdown-source-view.is-live-preview .cm-line.cm-line.HyperMD-header .collapse-indicator svg {
   opacity: 0 !important;
 }
-body.header-indicator .markdown-rendered :is(h1, h2, h3, h4, h5, h6) .collapse-indicator, body.header-indicator .style-settings-container :is(h1, h2, h3, h4, h5, h6) .collapse-indicator {
+body.header-level-indicator .markdown-rendered :is(h1, h2, h3, h4, h5, h6) .collapse-indicator, body.header-level-indicator .style-settings-container :is(h1, h2, h3, h4, h5, h6) .collapse-indicator {
   transform: translate(1.2rem, -1.8rem);
   cursor: pointer;
 }
-body.header-indicator .markdown-rendered :is(h1, h2, h3, h4, h5, h6) .collapse-indicator svg, body.header-indicator .style-settings-container :is(h1, h2, h3, h4, h5, h6) .collapse-indicator svg {
+body.header-level-indicator .markdown-rendered :is(h1, h2, h3, h4, h5, h6) .collapse-indicator svg, body.header-level-indicator .style-settings-container :is(h1, h2, h3, h4, h5, h6) .collapse-indicator svg {
   opacity: 0 !important;
 }
 
@@ -532,8 +531,8 @@ body.header-hovering-underline .markdown-source-view.is-live-preview .cm-line.Hy
   background-color: transparent;
   transition: all 0.2s ease-in-out;
 }
-body.header-indicator .markdown-rendered :is(h1, h2, h3, h4, h5, h6):has(.is-collapsed):before, body.header-indicator .style-settings-container :is(h1, h2, h3, h4, h5, h6):has(.is-collapsed):before,
-body.header-indicator .markdown-source-view.is-live-preview .cm-line.HyperMD-header:has(.is-collapsed):before {
+body.header-level-indicator .markdown-rendered :is(h1, h2, h3, h4, h5, h6):has(.is-collapsed):before, body.header-level-indicator .style-settings-container :is(h1, h2, h3, h4, h5, h6):has(.is-collapsed):before,
+body.header-level-indicator .markdown-source-view.is-live-preview .cm-line.HyperMD-header:has(.is-collapsed):before {
   color: var(--text-strong);
 }
 
@@ -601,7 +600,6 @@ body.header-indicator .markdown-source-view.is-live-preview .cm-line.HyperMD-hea
   color: var(--font-strikethrough-color);
   -webkit-text-decoration: var(--font-strikethrough-decoration-line) var(--font-strikethrough-decoration-style) var(--font-strikethrough-decoration-color) var(--font-strikethrough-decoration-width);
           text-decoration: var(--font-strikethrough-decoration-line) var(--font-strikethrough-decoration-style) var(--font-strikethrough-decoration-color) var(--font-strikethrough-decoration-width);
-  text-underline-offset: var(--font-strikethrough-decoration-offset);
   font-style: var(--font-strikethrough-style);
 }
 
@@ -3173,8 +3171,8 @@ settings:
     type: variable-themed-color
     format: hsl
     opacity: true
-    default-light: hsl(0, 0%, 15%)
-    default-dark: hsl(0, 0%, 85%)
+    default-light: hsl(0, 0%, 33.3%)
+    default-dark: hsl(0, 0%, 66.7%)
   -
     id: font-em-style
     title: Style
@@ -3229,7 +3227,7 @@ settings:
     format: hsl
     opacity: true
     default-light: hsl(0, 0%, 100%)
-    default-dark: hsl(0, 0%, 85%)
+    default-dark: hsl(0, 0%, 6.67%)
   -
     id: font-highlight-weight
     title: Weight
@@ -3257,6 +3255,8 @@ settings:
     id: font-highlight-bg-color
     title: Background
     title.zh: 背景色
+    description: Default values displayed are incorrect. Default values are accent color.
+    description.zh: 下面显示的默认值是错的，它的默认值是强调色。
     type: variable-themed-color
     format: hsl
     opacity: true
@@ -3265,8 +3265,9 @@ settings:
   -
     id: font-highlight-decoration-line
     title: Decoration
+    title.zh: 装饰位置
     type: variable-select
-    default: underline
+    default: none
     allowEmpty: false
     options:
     -
@@ -3284,6 +3285,7 @@ settings:
   -
     id: font-highlight-decoration-style
     title: Decoration Style
+    title.zh: 装饰样式
     type: variable-select
     default: solid
     allowEmpty: false
@@ -3306,24 +3308,28 @@ settings:
   -
     id: font-highlight-decoration-color
     title: Decoration Color
+    title.zh: 装饰颜色
     type: variable-themed-color
     format: hsl
     opacity: true
-    default-light: hsla(0, 0%, 0%, 1)
-    default-dark: hsla(0, 0%, 100%, 1)
+    default-light: hsla(0, 0%, 33.3%, 1)
+    default-dark: hsla(0, 0%, 66.7%, 1)
   -
     id: font-highlight-decoration-width
     title: Decoration Width(px)
+    title.zh: 装饰宽度（px）
     type: variable-number-slider
     min: 1
     max: 5
     step: 0.5
     format: px
-    default: 5
+    default: 2
   -
     id: font-highlight-decoration-offset
-    title: Decoration Offset(px)
+    title: Underline Offset(px)
+    title.zh: 下划线偏移（px）
     description: Only available for underline.
+    description.zh: 仅对下划线有效。
     type: variable-number-slider
     min: -5
     max: 5
@@ -3333,21 +3339,25 @@ settings:
   -
     id: custom-underlined-style
     title: Underlined Style
+    title.zh: 下划线样式
     type: heading
     level: 1
     collapsed: true
   -
     id: font-underlined-color
     title: Color
+    title.zh: 颜色
     type: variable-themed-color
     format: hsl
     opacity: true
-    default-light: hsl(0, 0%, 15%)
-    default-dark: hsl(0, 0%, 85%)
+    default-light: hsl(0, 0%, 33.3%)
+    default-dark: hsl(0, 0%, 66.7%)
   -
     id: font-underlined-weight
     title: Weight
+    title.zh: 粗细
     description: Uasually makes difference at 100, 400, 700, 900 though depends on the font.
+    description.zh: 通常在 100、400、700、900 时会有明显区别，但取决于字体。
     type: variable-number-slider
     default: 400
     min: 100
@@ -3356,7 +3366,9 @@ settings:
   -
     id: font-underlined-size
     title: Size(em)
+    title.zh: 大小（em）
     description: Base on the font size inherited from its parent.
+    description.zh: 基于从父级继承的字体大小。
     type: variable-number-slider
     min: 0.5
     max: 2
@@ -3364,27 +3376,9 @@ settings:
     format: em
     default: 1
   -
-    id: font-underlined-decoration-line
-    title: Decoration
-    type: variable-select
-    default: underline
-    allowEmpty: false
-    options:
-    -
-      label: underline
-      value: underline
-    -
-      label: overline
-      value: overline
-    -
-      label: line-through
-      value: line-through
-    -
-      label: none
-      value: none
-  -
     id: font-underlined-decoration-style
     title: Decoration Style
+    title.zh: 装饰样式
     type: variable-select
     default: solid
     allowEmpty: false
@@ -3407,14 +3401,16 @@ settings:
   -
     id: font-underlined-decoration-color
     title: Decoration Color
+    title.zh: 装饰颜色
     type: variable-themed-color
     format: hsl
     opacity: true
-    default-light: hsla(0, 0%, 0%, 1)
-    default-dark: hsla(0, 0%, 100%, 1)
+    default-light: hsla(0, 0%, 33.3%, 1)
+    default-dark: hsla(0, 0%, 66.7%, 1)
   -
     id: font-underlined-decoration-width
     title: Decoration Width(px)
+    title.zh: 装饰宽度（px）
     type: variable-number-slider
     min: 1
     max: 5
@@ -3423,8 +3419,8 @@ settings:
     default: 1
   -
     id: font-underlined-decoration-offset
-    title: Decoration Offset(px)
-    description: Only available for underline.
+    title: Underline Offset(px)
+    title.zh: 下划线偏移（px）
     type: variable-number-slider
     min: -5
     max: 5
@@ -3432,46 +3428,137 @@ settings:
     format: px
     default: 2
   -
-    id: header-style
-    title: Header Style
+    id: custom-strikethrough-style
+    title: Strikethrough Style
+    title.zh: 删除线样式
     type: heading
     level: 1
     collapsed: true
   -
-    id: header-indicator
-    title: Header Indicator
-    type: class-toggle
-    default: true
+    id: font-strikethrough-color
+    title: Color
+    title.zh: 颜色
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    default-light: hsl(0, 0%, 53%)
+    default-dark: hsl(0, 0%, 60%)
   -
-    id: header-hovering-underline
-    title: Header Hovering Underline
-    type: class-toggle
-    default: true
+    id: font-strikethrough-weight
+    title: Weight
+    title.zh: 粗细
+    description: Uasually makes difference at 100, 400, 700, 900 though depends on the font.
+    description.zh: 通常在 100、400、700、900 时会有明显区别，但取决于字体。
+    type: variable-number-slider
+    default: 400
+    min: 100
+    max: 900
+    step: 100
   -
-    id: colorful-headers
-    title: Headers Coloring
-    type: class-toggle
-    default: true
+    id: font-strikethrough-size
+    title: Size(em)
+    title.zh: 大小（em）
+    description: Base on the font size inherited from its parent.
+    description.zh: 基于从父级继承的字体大小。
+    type: variable-number-slider
+    min: 0.5
+    max: 2
+    step: 0.1
+    format: em
+    default: 1
   -
-    id: header-color-gradient
-    title: Gradient Header Colors
-    type: class-toggle
-    default: true
+    id: font-strikethrough-decoration-style
+    title: Decoration Style
+    title.zh: 装饰样式
+    type: variable-select
+    default: solid
+    allowEmpty: false
+    options:
+    -
+      label: solid
+      value: solid
+    -
+      label: double
+      value: double
+    -
+      label: dotted
+      value: dotted
+    -
+      label: dashed
+      value: dashed
+    -
+      label: wavy
+      value: wavy
   -
+    id: font-strikethrough-decoration-color
+    title: Decoration Color
+    title.zh: 装饰颜色
+    type: variable-themed-color
+    format: hsl
+    opacity: true
+    default-light: hsla(0, 0%, 53%, 1)
+    default-dark: hsla(0, 0%, 60%, 1)
+  -
+    id: font-strikethrough-decoration-width
+    title: Decoration Width(px)
+    title.zh: 装饰宽度（px）
+    type: variable-number-slider
+    min: 1
+    max: 5
+    step: 0.5
+    format: px
+    default: 1
+  -
+
 */
 /* @settings
 name: Inline Elements
 id: inline-elements
 settings:
   -
+    id: header-style
+    title: Header Style
+    title.zh: 标题样式
+    type: heading
+    level: 1
+    collapsed: true
+  -
+    id: header-level-indicator
+    title: Header Level Indicator
+    title.zh: 标题层级指示器
+    description: If turned on, the collapse indicator will not be displayed and clicking the level indicator will fold or unfold the contents of a header.
+    description.zh: 如果开启，折叠指示器将不会显示，点击标题层级指示器将展开或折叠标题下的内容。
+    type: class-toggle
+    default: true
+  -
+    id: header-hovering-underline
+    title: Header Hovering Underline
+    title.zh: 标题悬停下划线
+    type: class-toggle
+    default: true
+  -
+    id: colorful-headers
+    title: Headers Coloring
+    title.zh: 彩色标题
+    type: class-toggle
+    default: true
+  -
+    id: header-color-gradient
+    title: Gradient Header Colors
+    title.zh: 渐变标题颜色
+    type: class-toggle
+    default: true
+  -
     id: tag-style
     title: Tag Style
+    title.zh: 标签样式
     type: heading
     level: 1
     collapsed: true
   -
     id: custom-tag-color-fill
     title: Color Fill
+    title.zh: 颜色填充
     type: class-select
     default: tag-outline
     options:
@@ -3484,6 +3571,7 @@ settings:
   -
     id: tag-radius
     title: Radius(em)
+    title.zh: 圆角（em）
     type: variable-number-slider
     min: 0
     max: 1
@@ -3493,17 +3581,20 @@ settings:
   -
     id: checkbox-style
     title: Checkbox Style
+    title.zh: 复选框样式
     type: heading
     level: 1
     collapsed: true
   -
     id: circle-checkbox
     title: Circle Checkbox
+    title.zh: 圆形复选框
     type: class-toggle
     default: true
   -
     id: callout-style
     title: Callout Style
+
     type: heading
     level: 1
     collapsed: true

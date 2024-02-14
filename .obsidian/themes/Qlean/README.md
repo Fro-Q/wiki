@@ -12,7 +12,7 @@ An Obsidian theme offers a clean and clutter-free interface for enhanced focus a
 2. Darker background color in Dark mode.
 3. Paler text color in Dark mode.
 4. Paragraphs' `line-height` is set to `1.75`.
-5. If "Header Indicator" is enabled, headers' level indicator now takes the collapse indicator's job. You can now collapse headers by clicking on the level indicator, And it will give you a clear visual feedback.
+5. If "Header Level Indicator" is enabled, headers' level indicator now takes the collapse indicator's job. You can now collapse headers by clicking on the level indicator, And it will give you a clear visual feedback.
 6. Add header alignment options. `h1` has a default alignment of `center`.
 7. Checked task(`- [x]`) now has a `line-through` style just like the default theme.
 8. Changed the default highlight style. Feel free to change it back if you like the older one.
