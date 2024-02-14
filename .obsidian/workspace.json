@@ -42,8 +42,23 @@
                 "file": "test_page_2.md",
                 "mode": "source",
                 "backlinks": true,
-                "source": true
+                "source": false
               }
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "dcba1e9ec8bce704",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2921a0fd84f305eb",
+            "type": "leaf",
+            "state": {
+              "type": "style-settings",
+              "state": {}
             }
           }
         ]
@@ -76,7 +91,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "的",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -112,7 +127,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 251.5
   },
   "right": {
     "id": "b87e94253deaa70c",
@@ -128,7 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "homepage.md",
+                "file": "test_page_2.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "homepage.md",
+                "file": "test_page_2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -157,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "homepage.md"
+                "file": "test_page_2.md"
               }
             }
           },
@@ -190,12 +205,12 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "homepage.md"
+                "file": "test_page_2.md"
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       },
       {
         "id": "24473a813a64069f",
@@ -207,7 +222,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "homepage.md",
+                "file": "test_page_2.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -267,11 +282,11 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "7e72efbc4de930de",
+  "active": "f10a8c3fce5cf1f1",
   "lastOpenFiles": [
-    "test_page.md",
     "test_page_2.md",
     "homepage.md",
+    "test_page.md",
     "timestamp/ts_2024_01_17_0956.md",
     "timestamp/ts_2024_01_17_0952.md",
     "template/timestamp.md",

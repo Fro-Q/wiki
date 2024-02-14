@@ -28,7 +28,7 @@
   "gitDir": "",
   "showFileMenu": true,
   "lineAuthor": {
-    "show": true,
+    "show": false,
     "followMovement": "inactive",
     "authorDisplay": "hide",
     "showCommitHash": false,
@@ -48,7 +48,7 @@
     },
     "textColorCss": "var(--text-muted)",
     "ignoreWhitespace": false,
-    "gutterSpacingFallbackLength": 5,
+    "gutterSpacingFallbackLength": 6,
     "lastShownAuthorDisplay": "first name",
     "lastShownDateTimeFormatOptions": "natural language"
   },

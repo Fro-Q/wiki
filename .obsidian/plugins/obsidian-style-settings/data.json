@@ -177,7 +177,7 @@
   "font@@font-strong-decoration-width": 1,
   "font@@font-strong-decoration-offset": 2,
   "ui-style@@tab-style": "chrome-tab-style",
-  "accent-color@@custom-accent-color": true,
+  "accent-color@@custom-accent-color": false,
   "focus-mode@@focuse-transition-duration": 0.2,
   "focus-mode@@inactive-hover-opacity": 0.8,
   "focus-mode@@inactive-opacity": 0.3,

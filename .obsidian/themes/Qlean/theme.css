@@ -117,6 +117,7 @@ body {
   --link-color: var(--color-accent-ln5);
   --link-color-hover: var(--color-accent);
   --font-inline-tile-color: var(--text-normal);
+  --text-accent-hover: var(--text-strong);
   --link-decoration-line: underline;
   --link-decoration-width: auto;
   --link-decoration-style: solid;
@@ -138,25 +139,11 @@ body {
   --checklist-done-decoration-line: none;
   --checklist-delete-decoration-color: var(--background-modifier-error);
   --checklist-delete-decoration-line: line-through;
-  --callout-summary-bg: 23, 45, 41;
-  --callout-info-bg: 19, 33, 56;
-  --callout-todo-bg: 19, 33, 56;
-  --callout-important-bg: 23, 45, 41;
-  --callout-tip-bg: 23, 45, 41;
-  --callout-success-bg: 36, 52, 31;
-  --callout-question-bg: 51, 43, 21;
-  --callout-warning-bg: 51, 43, 21;
-  --callout-fail-bg: 54, 26, 30;
-  --callout-error-bg: 54, 26, 30;
-  --callout-bug-bg: 54, 26, 30;
-  --callout-example-bg: 38, 31, 51;
-  --callout-quote-bg: 30, 30, 30;
-  --callout-default-bg: 19, 33, 56;
   --tag-radius: 1em;
   --blockquote-border-thickness: 2px;
   --callout-dogs-ear-size: 30px;
   --tab-curve: 6px;
-  --icon-color-focused: hsl(var(--color-h), var(--color-s), 40%);
+  --icon-color-focused: hsl(var(--color-h), var(--color-s), 30%);
   --icon-color-hovering: var(--text-strong);
   --color-green-h: 150;
   --color-green-s: 100%;
@@ -221,13 +208,15 @@ body.theme-light {
   --color-h: var(--color-green-h);
   --color-s: var(--color-green-s);
   --color-l: var(--color-green-l);
-  --text-normal: hsl(0, 0%, 15%);
+  --text-normal: #555;
   --text-strong: hsl(0, 0%, 0%);
-  --text-muted: hsla(0, 0%, 60%, 1) !important;
-  --code-bg-color: #dedede;
+  --text-muted: #888 !important;
+  --code-bg-color: #f7f7f7;
   --inline-code-bg-color: hsla(0, 0%, 90%, 1);
-  --background-primary: hsla(0, 0%, 96%, 1);
-  --background-secondary: hsl(0, 0%, 92%);
+  --background-primary: #fff;
+  --background-primary-alt: #e8e8e8;
+  --background-secondary: #fafafa;
+  --background-secondary-alt: #d6d6d6;
   --background-modifier-active-hover: #d9d9d9;
   --background-modifier-border-focus: #d9d9d9;
   --background-modifier-error-rgb: var(--color-red-rgb);
@@ -235,13 +224,13 @@ body.theme-light {
   --titlebar-isfocused: hsl(0, 0%, 92%);
   --titlebar-not-focused: hsla(0, 0%, 70%, 1);
   --divider-color: #d9d9d9;
-  --tab-bg-color: #eee;
+  --tab-bg-color: #ddd;
   --tab-hover-bg-color: var(--background-modifier-active-hover);
-  --tab-active-bg-color: #fff;
+  --tab-active-bg-color: #eee;
   --close-button-hover-bg-color: rgba(0, 0, 0, 0.1);
   --switch-inset-shadow-color: rgba(0, 0, 0, 0.2);
   --quote-bg-color: rgba(0, 0, 0, 0.05);
-  --border-color: #d9d9d9;
+  --border-color: #ccc;
 }
 body.theme-light.accent-color-green-light {
   --color-h: var(--color-green-h);
@@ -294,7 +283,9 @@ body.theme-dark {
   --code-bg-color: #181818;
   --inline-code-bg-color: rgba(255, 255, 255, 0.1);
   --background-primary: #111;
+  --background-primary-alt: #242424;
   --background-secondary: #151515;
+  --background-secondary-alt: #363636;
   --background-modifier-active-hover: #222;
   --background-modifier-border-focus: #222;
   --button-shadow-color: rgba(255, 255, 255, 0.2);
@@ -364,6 +355,24 @@ body.colorful-headers.header-color-gradient {
   --h4-color: var(--color-gradient-h4);
   --h5-color: var(--color-gradient-h5);
   --h6-color: var(--color-gradient-h6);
+}
+
+body *::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  -webkit-appearance: none;
+          appearance: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+body *::-webkit-scrollbar-thumb {
+  background-color: var(--text-muted);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-radius: 10px;
+}
+body *::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-normal);
 }
 
 .markdown-rendered p,
@@ -594,7 +603,7 @@ body.header-indicator .markdown-source-view.is-live-preview .cm-line.HyperMD-hea
   font-family: var(--font-inline-title);
   font-size: var(--font-inline-title-size);
   font-weight: var(--font-inline-title-weight);
-  color: var(--text-normal);
+  color: var(--text-strong);
 }
 
 .markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task="-"]) [class^=cm-list], .markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task="-"]),
@@ -669,51 +678,10 @@ body.circle-checkbox .markdown-rendered .task-list-item > .task-list-item-checkb
 }
 
 :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout {
-  --callout-bg-color: var(--callout-default-bg);
   position: relative;
   padding: 20px 30px;
   border-radius: 4px;
   mix-blend-mode: normal;
-  background-color: rgba(var(--callout-bg-color), 0.8);
-}
-:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=summary], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=abstract], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=tldr] {
-  --callout-bg-color: var(--callout-summary-bg);
-}
-:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=info] {
-  --callout-bg-color: var(--callout-info-bg);
-}
-:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=todo] {
-  --callout-bg-color: var(--callout-todo-bg);
-}
-:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=important] {
-  --callout-bg-color: var(--callout-important-bg);
-}
-:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=tip], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=hint] {
-  --callout-bg-color: var(--callout-tip-bg);
-}
-:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=done], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=success], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=check] {
-  --callout-bg-color: var(--callout-success-bg);
-}
-:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=question], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=help], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=faq] {
-  --callout-bg-color: var(--callout-question-bg);
-}
-:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=warning], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=caution], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=attention] {
-  --callout-bg-color: var(--callout-warning-bg);
-}
-:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=fail], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=failure], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=missing] {
-  --callout-bg-color: var(--callout-fail-bg);
-}
-:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=error], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=danger] {
-  --callout-bg-color: var(--callout-error-bg);
-}
-:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=bug] {
-  --callout-bg-color: var(--callout-bug-bg);
-}
-:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=example] {
-  --callout-bg-color: var(--callout-example-bg);
-}
-:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=quote], :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout[data-callout=cite] {
-  --callout-bg-color: var(--callout-quote-bg);
 }
 
 body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout:after {
@@ -748,7 +716,6 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view.is-live-prev
   padding: 20px 30px;
   background-color: var(--quote-bg-color);
   border-radius: 4px;
-  font-size: 1.2rem;
   color: var(--text-muted);
   border-left: 4px solid var(--text-muted);
   transition: all 0.2s ease;
@@ -2083,6 +2050,9 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view.is-live-preview, .mark
   background-color: var(--code-bg-color);
   border-color: var(--border-color);
 }
+.markdown-source-view.is-live-preview div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg span.code-block-flair svg {
+  vertical-align: middle;
+}
 .markdown-source-view.is-live-preview div.cm-line.HyperMD-codeblock.HyperMD-codeblock-bg.HyperMD-codeblock-begin-bg span.code-block-flair:hover {
   background-color: var(--code-bg-color);
   border: 1px solid var(--text-muted);
@@ -2502,6 +2472,10 @@ body select, body select.dropdown, body button:not(.clickable-icon) {
 body select:hover, body select.dropdown:hover, body button:not(.clickable-icon):hover {
   border: 1px solid var(--text-strong);
   outline: none;
+  box-shadow: none;
+}
+body select:active, body select:focus, body select.dropdown:active, body select.dropdown:focus, body button:not(.clickable-icon):active, body button:not(.clickable-icon):focus {
+  box-shadow: 0 0 0 1px var(--text-strong);
 }
 body button.mod-cta {
   border: 1px solid var(--interactive-accent);
