@@ -25,7 +25,7 @@ body {
   --font-file-tree-weight: normal;
   --font-vault-name-weight: normal;
   --font-source-view-weight: normal;
-  --font-header: var(--font-default);
+  --font-header: var(--font-text);
   --font-h1-size: 2.0em;
   --font-h2-size: 1.8em;
   --font-h3-size: 1.6em;
@@ -145,6 +145,8 @@ body {
   --tab-curve: 6px;
   --icon-color-focused: hsl(var(--color-h), var(--color-s), 30%);
   --icon-color-hovering: var(--text-strong);
+  --color-bw-h: 0;
+  --color-bw-s: 0%;
   --color-green-h: 150;
   --color-green-s: 100%;
   --color-green-l: 40%;
@@ -179,6 +181,9 @@ body {
   --accent-color-dark-hue-default: 254;
   --accent-color-dark-saturation-default: 80%;
   --accent-color-dark-lightness-default: 68%;
+  --accent-h: var(--color-h);
+  --accent-s: var(--color-s);
+  --accent-l: var(--color-l);
   --color-main: hsl(var(--color-h), var(--color-s), var(--color-l));
   --color-accent: var(--color-main) !important;
   --color-accent-1: var(--color-main) !important;
@@ -192,8 +197,7 @@ body {
   --color-accent-o40: hsla(var(--color-h), var(--color-s), var(--color-l), 0.4);
   --color-accent-o30: hsla(var(--color-h), var(--color-s), var(--color-l), 0.3);
   --text-selection: hsla(var(--color-h), var(--color-s), var(--color-l), 0.15) !important;
-  --interactive-accent: hsl(var(--color-h), var(--color-s), 60%) !important;
-  --interactive-accent-hover: hsl(var(--color-h), var(--color-s), 64%) !important;
+  --interactive-hover: var(--background-primary) !important;
   --color-error: var(--background-modifier-error);
   --color-done: hsl(120, 100%, 40%);
   --color-warning: #fbbc04;
@@ -231,6 +235,11 @@ body.theme-light {
   --switch-inset-shadow-color: rgba(0, 0, 0, 0.2);
   --quote-bg-color: rgba(0, 0, 0, 0.05);
   --border-color: #ccc;
+}
+body.theme-light.accent-color-bw-dark {
+  --color-h: var(--color-bw-h);
+  --color-s: var(--color-bw-s);
+  --color-l: 30%;
 }
 body.theme-light.accent-color-green-light {
   --color-h: var(--color-green-h);
@@ -299,6 +308,11 @@ body.theme-dark {
   --switch-inset-shadow-color: rgba(0, 0, 0, 0.2);
   --quote-bg-color: rgba(255, 255, 255, 0.05);
   --border-color: #333;
+}
+body.theme-dark.accent-color-bw-dark {
+  --color-h: var(--color-bw-h);
+  --color-s: var(--color-bw-s);
+  --color-l: 70%;
 }
 body.theme-dark.accent-color-green-dark {
   --color-h: var(--color-green-h);
@@ -377,7 +391,7 @@ body *::-webkit-scrollbar-thumb:hover {
 
 .markdown-rendered p,
 .markdown-source-view.is-live-preview .cm-line {
-  font-family: var(--font-default);
+  font-family: var(--font-text);
   font-size: 1em;
   font-weight: normal;
   color: var(--text-normal);
@@ -2453,6 +2467,19 @@ body.opaque-expanded-folder .workspace .mod-left-split .nav-folder:not(.is-colla
   display: none;
 }
 
+body .vertical-tab-nav-item {
+  transition: all 0.2s ease-in-out;
+}
+body .vertical-tab-nav-item:hover {
+  background-color: var(--tab-bg-color);
+}
+body .vertical-tab-nav-item.is-active {
+  background-color: var(--text-muted);
+  color: var(--text-strong);
+}
+body .vertical-tab-nav-item.is-active:hover {
+  background-color: var(--text-muted);
+}
 body .setting-item.setting-item-heading .setting-item-info .setting-item-name, body .vertical-tab-header-group-title {
   color: var(--text-strong);
 }
@@ -2473,6 +2500,7 @@ body select:hover, body select.dropdown:hover, body button:not(.clickable-icon):
   border: 1px solid var(--text-strong);
   outline: none;
   box-shadow: none;
+  background-color: var(--interactive-hover);
 }
 body select:active, body select:focus, body select.dropdown:active, body select.dropdown:focus, body button:not(.clickable-icon):active, body button:not(.clickable-icon):focus {
   box-shadow: 0 0 0 1px var(--text-strong);
@@ -2482,7 +2510,7 @@ body button.mod-cta {
   background-color: var(--interactive-accent);
 }
 body button.mod-cta:hover {
-  background-color: var(--interactive-accent-hover);
+  background-color: var(--interactive-hover);
 }
 body input[type=range] {
   border: 1px solid var(--background-modifier-border-focus);
@@ -2491,7 +2519,7 @@ body input[type=range] {
   border-radius: 0.5em;
 }
 body input[type=range]:hover {
-  background-color: var(--tab-active-bg-color);
+  background-color: var(--interactive-hover);
   height: 0.6em;
   border: 1px solid var(--text-strong);
 }
@@ -2831,12 +2859,25 @@ name: Accent Color
 id: accent-color
 settings:
   -
+    id: accent-color-info
+    title: To Know
+    type: info-text
+    description: |
+      - Since
+    markdown: true
+  -
     id: accent-color-for-light-theme
     title: Accent Color for Light Theme
+    title.zh: 亮色主题强调色
+    description: Selections below will be ignored if custom accent color is on. (Using `Custom Accent Color` is recommended.)
+    description.zh: 如果自定义强调色开启，以下选择将被忽略。（建议使用“自定义强调色”）
     type: class-select
     allowEmpty: false
     default: accent-color-green-light
     options:
+    -
+      label: Panda
+      value: accent-color-bw-light
     -
       label: Green
       value: accent-color-green-light
@@ -2865,6 +2906,9 @@ settings:
     allowEmpty: false
     default: accent-color-orange-dark
     options:
+    -
+      label: Panda
+      value: accent-color-bw-dark
     -
       label: Green
       value: accent-color-green-dark
