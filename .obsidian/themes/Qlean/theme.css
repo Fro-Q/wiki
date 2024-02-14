@@ -198,6 +198,8 @@ body {
   --color-accent-o30: hsla(var(--color-h), var(--color-s), var(--color-l), 0.3);
   --text-selection: hsla(var(--color-h), var(--color-s), var(--color-l), 0.15) !important;
   --interactive-hover: var(--background-primary) !important;
+  --interactive-accent: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 10%)) !important;
+  --interactive-accent-hover: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 5%)) !important;
   --color-error: var(--background-modifier-error);
   --color-done: hsl(120, 100%, 40%);
   --color-warning: #fbbc04;
@@ -389,7 +391,7 @@ body *::-webkit-scrollbar-thumb:hover {
   background-color: var(--text-normal);
 }
 
-.markdown-rendered p,
+.markdown-rendered p, .style-settings-container p,
 .markdown-source-view.is-live-preview .cm-line {
   font-family: var(--font-text);
   font-size: 1em;
@@ -398,7 +400,7 @@ body *::-webkit-scrollbar-thumb:hover {
   line-height: 2;
 }
 
-.markdown-rendered h1,
+.markdown-rendered h1, .style-settings-container h1,
 .markdown-source-view.is-live-preview .cm-line.HyperMD-header-1 {
   font-family: var(--font-header);
   font-size: var(--font-h1-size);
@@ -410,11 +412,11 @@ body *::-webkit-scrollbar-thumb:hover {
   margin-top: calc(1px * 1.5 - 0.8rem);
 }
 
-body.header-indicator :is(.markdown-rendered h1, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-1):before {
+body.header-indicator :is(.markdown-rendered h1, .style-settings-container h1, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-1):before {
   content: "H1";
 }
 
-.markdown-rendered h2,
+.markdown-rendered h2, .style-settings-container h2,
 .markdown-source-view.is-live-preview .cm-line.HyperMD-header-2 {
   font-family: var(--font-header);
   font-size: var(--font-h2-size);
@@ -426,11 +428,11 @@ body.header-indicator :is(.markdown-rendered h1, .markdown-source-view.is-live-p
   margin-top: calc(2px * 1.5 - 0.8rem);
 }
 
-body.header-indicator :is(.markdown-rendered h2, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-2):before {
+body.header-indicator :is(.markdown-rendered h2, .style-settings-container h2, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-2):before {
   content: "H2";
 }
 
-.markdown-rendered h3,
+.markdown-rendered h3, .style-settings-container h3,
 .markdown-source-view.is-live-preview .cm-line.HyperMD-header-3 {
   font-family: var(--font-header);
   font-size: var(--font-h3-size);
@@ -442,11 +444,11 @@ body.header-indicator :is(.markdown-rendered h2, .markdown-source-view.is-live-p
   margin-top: calc(3px * 1.5 - 0.8rem);
 }
 
-body.header-indicator :is(.markdown-rendered h3, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-3):before {
+body.header-indicator :is(.markdown-rendered h3, .style-settings-container h3, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-3):before {
   content: "H3";
 }
 
-.markdown-rendered h4,
+.markdown-rendered h4, .style-settings-container h4,
 .markdown-source-view.is-live-preview .cm-line.HyperMD-header-4 {
   font-family: var(--font-header);
   font-size: var(--font-h4-size);
@@ -458,11 +460,11 @@ body.header-indicator :is(.markdown-rendered h3, .markdown-source-view.is-live-p
   margin-top: calc(4px * 1.5 - 0.8rem);
 }
 
-body.header-indicator :is(.markdown-rendered h4, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-4):before {
+body.header-indicator :is(.markdown-rendered h4, .style-settings-container h4, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-4):before {
   content: "H4";
 }
 
-.markdown-rendered h5,
+.markdown-rendered h5, .style-settings-container h5,
 .markdown-source-view.is-live-preview .cm-line.HyperMD-header-5 {
   font-family: var(--font-header);
   font-size: var(--font-h5-size);
@@ -474,11 +476,11 @@ body.header-indicator :is(.markdown-rendered h4, .markdown-source-view.is-live-p
   margin-top: calc(5px * 1.5 - 0.8rem);
 }
 
-body.header-indicator :is(.markdown-rendered h5, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-5):before {
+body.header-indicator :is(.markdown-rendered h5, .style-settings-container h5, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-5):before {
   content: "H5";
 }
 
-.markdown-rendered h6,
+.markdown-rendered h6, .style-settings-container h6,
 .markdown-source-view.is-live-preview .cm-line.HyperMD-header-6 {
   font-family: var(--font-header);
   font-size: var(--font-h6-size);
@@ -490,7 +492,7 @@ body.header-indicator :is(.markdown-rendered h5, .markdown-source-view.is-live-p
   margin-top: calc(6px * 1.5 - 0.8rem);
 }
 
-body.header-indicator :is(.markdown-rendered h6, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-6):before {
+body.header-indicator :is(.markdown-rendered h6, .style-settings-container h6, .markdown-source-view.is-live-preview .cm-line.HyperMD-header-6):before {
   content: "H6";
 }
 
@@ -502,26 +504,26 @@ body.header-indicator .markdown-source-view.is-live-preview .cm-line.cm-line.Hyp
 body.header-indicator .markdown-source-view.is-live-preview .cm-line.cm-line.HyperMD-header .collapse-indicator svg {
   opacity: 0 !important;
 }
-body.header-indicator .markdown-rendered :is(h1, h2, h3, h4, h5, h6) .collapse-indicator {
+body.header-indicator .markdown-rendered :is(h1, h2, h3, h4, h5, h6) .collapse-indicator, body.header-indicator .style-settings-container :is(h1, h2, h3, h4, h5, h6) .collapse-indicator {
   transform: translate(1.2rem, -1.8rem);
   cursor: pointer;
 }
-body.header-indicator .markdown-rendered :is(h1, h2, h3, h4, h5, h6) .collapse-indicator svg {
+body.header-indicator .markdown-rendered :is(h1, h2, h3, h4, h5, h6) .collapse-indicator svg, body.header-indicator .style-settings-container :is(h1, h2, h3, h4, h5, h6) .collapse-indicator svg {
   opacity: 0 !important;
 }
 
-.markdown-rendered :is(h1, h2, h3, h4, h5, h6),
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6), .style-settings-container :is(h1, h2, h3, h4, h5, h6),
 .markdown-source-view.is-live-preview .cm-line.HyperMD-header {
   width: -moz-max-content;
   width: max-content;
   padding: 0;
   transition: all 0.3s ease-in-out;
 }
-body.header-hovering-underline .markdown-rendered :is(h1, h2, h3, h4, h5, h6):hover::after,
+body.header-hovering-underline .markdown-rendered :is(h1, h2, h3, h4, h5, h6):hover::after, body.header-hovering-underline .style-settings-container :is(h1, h2, h3, h4, h5, h6):hover::after,
 body.header-hovering-underline .markdown-source-view.is-live-preview .cm-line.HyperMD-header:hover::after {
   background-color: var(--text-normal);
 }
-.markdown-rendered :is(h1, h2, h3, h4, h5, h6)::after,
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6)::after, .style-settings-container :is(h1, h2, h3, h4, h5, h6)::after,
 .markdown-source-view.is-live-preview .cm-line.HyperMD-header::after {
   content: "";
   display: block;
@@ -530,12 +532,12 @@ body.header-hovering-underline .markdown-source-view.is-live-preview .cm-line.Hy
   background-color: transparent;
   transition: all 0.2s ease-in-out;
 }
-body.header-indicator .markdown-rendered :is(h1, h2, h3, h4, h5, h6):has(.is-collapsed):before,
+body.header-indicator .markdown-rendered :is(h1, h2, h3, h4, h5, h6):has(.is-collapsed):before, body.header-indicator .style-settings-container :is(h1, h2, h3, h4, h5, h6):has(.is-collapsed):before,
 body.header-indicator .markdown-source-view.is-live-preview .cm-line.HyperMD-header:has(.is-collapsed):before {
   color: var(--text-strong);
 }
 
-.markdown-rendered :is(h1, h2, h3, h4, h5, h6):before,
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6):before, .style-settings-container :is(h1, h2, h3, h4, h5, h6):before,
 .markdown-source-view.is-live-preview .cm-line.HyperMD-header:before {
   font-family: var(--font-monospace);
   font-size: 14px;
@@ -547,7 +549,7 @@ body.header-indicator .markdown-source-view.is-live-preview .cm-line.HyperMD-hea
   transition: all 0.3s ease-in-out;
 }
 
-.markdown-rendered strong,
+.markdown-rendered strong, .style-settings-container strong,
 .markdown-source-view.is-live-preview .cm-line .cm-strong,
 .markdown-source-view.is-live-preview strong {
   font-family: var(--font-text);
@@ -560,7 +562,7 @@ body.header-indicator .markdown-source-view.is-live-preview .cm-line.HyperMD-hea
   font-style: var(--font-strong-style);
 }
 
-.markdown-rendered em,
+.markdown-rendered em, .style-settings-container em,
 .markdown-source-view.is-live-preview .cm-line .cm-em,
 .markdown-source-view.is-live-preview em {
   font-family: var(--font-text);
@@ -573,7 +575,7 @@ body.header-indicator .markdown-source-view.is-live-preview .cm-line.HyperMD-hea
   font-style: var(--font-em-style);
 }
 
-.markdown-rendered mark,
+.markdown-rendered mark, .style-settings-container mark,
 .markdown-source-view.is-live-preview .cm-line .cm-highlight,
 .markdown-source-view.is-live-preview mark {
   font-family: var(--font-text);
@@ -590,7 +592,7 @@ body.header-indicator .markdown-source-view.is-live-preview .cm-line.HyperMD-hea
   margin: 0 2px;
 }
 
-.markdown-rendered del,
+.markdown-rendered del, .style-settings-container del,
 .markdown-source-view.is-live-preview .cm-line .cm-strikethrough,
 .markdown-source-view.is-live-preview del {
   font-family: var(--font-text);
@@ -603,7 +605,7 @@ body.header-indicator .markdown-source-view.is-live-preview .cm-line.HyperMD-hea
   font-style: var(--font-strikethrough-style);
 }
 
-:is(.markdown-rendered, .markdown-source-view.is-live-preview) u {
+:is(.markdown-rendered, .style-settings-container, .markdown-source-view.is-live-preview) u {
   font-family: var(--font-text);
   font-size: var(--font-underlined-size);
   font-weight: var(--font-underlined-weight);
@@ -613,7 +615,7 @@ body.header-indicator .markdown-source-view.is-live-preview .cm-line.HyperMD-hea
   text-underline-offset: var(--font-underlined-decoration-offset);
 }
 
-:is(.markdown-rendered, .markdown-source-view.is-live-preview) .inline-title {
+:is(.markdown-rendered, .style-settings-container, .markdown-source-view.is-live-preview) .inline-title {
   font-family: var(--font-inline-title);
   font-size: var(--font-inline-title-size);
   font-weight: var(--font-inline-title-weight);
@@ -622,83 +624,95 @@ body.header-indicator .markdown-source-view.is-live-preview .cm-line.HyperMD-hea
 
 .markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task="-"]) [class^=cm-list], .markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task="-"]),
 .markdown-rendered .task-list-item:is([data-task="-"]) [class^=cm-list],
-.markdown-rendered .task-list-item:is([data-task="-"]) {
+.style-settings-container .task-list-item:is([data-task="-"]) [class^=cm-list],
+.markdown-rendered .task-list-item:is([data-task="-"]),
+.style-settings-container .task-list-item:is([data-task="-"]) {
   color: var(--checklist-delete-decoration-color);
 }
 
 .markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox,
 .markdown-rendered .task-list-item > p .task-list-item-checkbox,
-.markdown-rendered .task-list-item > .task-list-item-checkbox {
+.style-settings-container .task-list-item > p .task-list-item-checkbox,
+.markdown-rendered .task-list-item > .task-list-item-checkbox,
+.style-settings-container .task-list-item > .task-list-item-checkbox {
   transition: all 0.3s ease-in-out;
 }
 body.circle-checkbox .markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox,
 body.circle-checkbox .markdown-rendered .task-list-item > p .task-list-item-checkbox,
-body.circle-checkbox .markdown-rendered .task-list-item > .task-list-item-checkbox {
+body.circle-checkbox .style-settings-container .task-list-item > p .task-list-item-checkbox,
+body.circle-checkbox .markdown-rendered .task-list-item > .task-list-item-checkbox,
+body.circle-checkbox .style-settings-container .task-list-item > .task-list-item-checkbox {
   border-radius: 50%;
 }
 .markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox:checked,
 .markdown-rendered .task-list-item > p .task-list-item-checkbox:checked,
-.markdown-rendered .task-list-item > .task-list-item-checkbox:checked {
+.style-settings-container .task-list-item > p .task-list-item-checkbox:checked,
+.markdown-rendered .task-list-item > .task-list-item-checkbox:checked,
+.style-settings-container .task-list-item > .task-list-item-checkbox:checked {
   border-color: var(--color-done);
   background-color: var(--color-done);
 }
 .markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox:checked:hover,
 .markdown-rendered .task-list-item > p .task-list-item-checkbox:checked:hover,
-.markdown-rendered .task-list-item > .task-list-item-checkbox:checked:hover {
+.style-settings-container .task-list-item > p .task-list-item-checkbox:checked:hover,
+.markdown-rendered .task-list-item > .task-list-item-checkbox:checked:hover,
+.style-settings-container .task-list-item > .task-list-item-checkbox:checked:hover {
   border-color: var(--checkbox-border-color);
   background-color: var(--checkbox-color-hover);
 }
 .markdown-source-view.is-live-preview .HyperMD-task-line .task-list-item-checkbox:checked:after,
 .markdown-rendered .task-list-item > p .task-list-item-checkbox:checked:after,
-.markdown-rendered .task-list-item > .task-list-item-checkbox:checked:after {
+.style-settings-container .task-list-item > p .task-list-item-checkbox:checked:after,
+.markdown-rendered .task-list-item > .task-list-item-checkbox:checked:after,
+.style-settings-container .task-list-item > .task-list-item-checkbox:checked:after {
   -webkit-mask-position: center center;
   mask-position: center center;
 }
 
-.markdown-source-view.is-live-preview .HyperMD-task-line[data-task=" "] .task-list-item-checkbox:hover, .markdown-rendered .task-list-item:not(.is-checked) > p .task-list-item-checkbox:hover, .markdown-rendered .task-list-item:not(.is-checked) > .task-list-item-checkbox:hover {
+.markdown-source-view.is-live-preview .HyperMD-task-line[data-task=" "] .task-list-item-checkbox:hover, .markdown-rendered .task-list-item:not(.is-checked) > p .task-list-item-checkbox:hover, .style-settings-container .task-list-item:not(.is-checked) > p .task-list-item-checkbox:hover, .markdown-rendered .task-list-item:not(.is-checked) > .task-list-item-checkbox:hover, .style-settings-container .task-list-item:not(.is-checked) > .task-list-item-checkbox:hover {
   border-color: var(--color-done);
 }
-.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="-"] .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="-"] > p .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="-"] > .task-list-item-checkbox {
+.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="-"] .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="-"] > p .task-list-item-checkbox, .style-settings-container .task-list-item[data-task="-"] > p .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="-"] > .task-list-item-checkbox, .style-settings-container .task-list-item[data-task="-"] > .task-list-item-checkbox {
   border-color: var(--color-error);
   background-color: var(--color-error);
 }
-.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="-"] .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="-"] > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="-"] > .task-list-item-checkbox:after {
+.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="-"] .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="-"] > p .task-list-item-checkbox:after, .style-settings-container .task-list-item[data-task="-"] > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="-"] > .task-list-item-checkbox:after, .style-settings-container .task-list-item[data-task="-"] > .task-list-item-checkbox:after {
   -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 1 10 h 22 v 4 H 1 z" fill="black"/></svg>');
   mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 1 10 h 22 v 4 H 1 z" fill="black"/></svg>');
 }
-.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="!"] .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="!"] > p .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="!"] > .task-list-item-checkbox {
+.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="!"] .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="!"] > p .task-list-item-checkbox, .style-settings-container .task-list-item[data-task="!"] > p .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="!"] > .task-list-item-checkbox, .style-settings-container .task-list-item[data-task="!"] > .task-list-item-checkbox {
   border-color: var(--color-warning);
   background-color: var(--color-warning);
 }
-.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="!"] .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="!"] > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="!"] > .task-list-item-checkbox:after {
+.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="!"] .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="!"] > p .task-list-item-checkbox:after, .style-settings-container .task-list-item[data-task="!"] > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="!"] > .task-list-item-checkbox:after, .style-settings-container .task-list-item[data-task="!"] > .task-list-item-checkbox:after {
   -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 1 v 16 h 2 v -16 h -2 v 1 M 11 21 h 2 v 2 h -2 v -2 h 1" stroke="black" stroke-width="2" stroke-linejoin="round" /></svg>');
   mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 1 v 16 h 2 v -16 h -2 v 1 M 11 21 h 2 v 2 h -2 v -2 h 1" stroke="black" stroke-width="2" stroke-linejoin="round" /></svg>');
 }
-.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="?"] .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="?"] > p .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="?"] > .task-list-item-checkbox {
+.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="?"] .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="?"] > p .task-list-item-checkbox, .style-settings-container .task-list-item[data-task="?"] > p .task-list-item-checkbox, .markdown-rendered .task-list-item[data-task="?"] > .task-list-item-checkbox, .style-settings-container .task-list-item[data-task="?"] > .task-list-item-checkbox {
   border-color: var(--color-ques);
   background-color: var(--color-ques);
 }
-.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="?"] .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="?"] > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="?"] > .task-list-item-checkbox:after {
+.markdown-source-view.is-live-preview .HyperMD-task-line[data-task="?"] .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="?"] > p .task-list-item-checkbox:after, .style-settings-container .task-list-item[data-task="?"] > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item[data-task="?"] > .task-list-item-checkbox:after, .style-settings-container .task-list-item[data-task="?"] > .task-list-item-checkbox:after {
   -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="6.5 2 11 19" fill="none"><path d="M9.09009 9.00003 C9.32519 8.33169 9.78924 7.76813 10.4 7.40916 C11.0108 7.05019 12.079 6.94542 12.7773 7.06519C13.9093 7.25935 14.9767 8.25497 14.9748 9.49073C14.9748 11.9908 12 11.2974 12 14 M12 17 H 12.01" stroke="black" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" /></svg>');
   mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 1 v 16 h 2 v -16 h -2 v 1 M 11 21 h 2 v 2 h -2 v -2 h 1" stroke="black" stroke-width="2" stroke-linejoin="round" /></svg>');
 }
-.markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task=i], [data-task=I]) .task-list-item-checkbox, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > p .task-list-item-checkbox, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > .task-list-item-checkbox {
+.markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task=i], [data-task=I]) .task-list-item-checkbox, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > p .task-list-item-checkbox, .style-settings-container .task-list-item:is([data-task=i], [data-task=I]) > p .task-list-item-checkbox, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > .task-list-item-checkbox, .style-settings-container .task-list-item:is([data-task=i], [data-task=I]) > .task-list-item-checkbox {
   border-color: var(--color-info);
   background-color: var(--color-info);
 }
-.markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task=i], [data-task=I]) .task-list-item-checkbox:after, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > .task-list-item-checkbox:after {
+.markdown-source-view.is-live-preview .HyperMD-task-line:is([data-task=i], [data-task=I]) .task-list-item-checkbox:after, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > p .task-list-item-checkbox:after, .style-settings-container .task-list-item:is([data-task=i], [data-task=I]) > p .task-list-item-checkbox:after, .markdown-rendered .task-list-item:is([data-task=i], [data-task=I]) > .task-list-item-checkbox:after, .style-settings-container .task-list-item:is([data-task=i], [data-task=I]) > .task-list-item-checkbox:after {
   -webkit-mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 7 v 14 h -4 v 2 h 10 v -2 h -4 v -14 h -6 v 2 h 6 M 11 3 v -2 h 2 v 2 h -2 v -1 " stroke="black" fill="black" stroke-width="2" stroke-linejoin="round" /></svg>');
   mask-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><path d="M 11 7 v 14 h -4 v 2 h 10 v -2 h -4 v -14 h -6 v 2 h 6 M 11 3 v -2 h 2 v 2 h -2 v -1 " stroke="black" fill="black" stroke-width="2" stroke-linejoin="round" /></svg>');
 }
 
-:is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout {
+:is(.markdown-rendered, .style-settings-container, .markdown-source-view.is-live-preview) .callout {
   position: relative;
   padding: 20px 30px;
   border-radius: 4px;
   mix-blend-mode: normal;
 }
 
-body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout:after {
+body.callout-dogs-ear :is(.markdown-rendered, .style-settings-container, .markdown-source-view.is-live-preview) .callout:after {
   content: "";
   position: absolute;
   top: auto;
@@ -713,7 +727,7 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view.is-live-prev
   transition: all 0.3s ease-in-out;
   box-shadow: -2px 2px 4px 2px rgba(0, 0, 0, 0.2);
 }
-body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view.is-live-preview) .callout:hover:after {
+body.callout-dogs-ear :is(.markdown-rendered, .style-settings-container, .markdown-source-view.is-live-preview) .callout:hover:after {
   width: 0;
   height: 0;
 }
@@ -725,7 +739,7 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view.is-live-prev
   border-left: 4px solid var(--text-muted);
 }
 
-.markdown-rendered blockquote {
+.markdown-rendered blockquote, .style-settings-container blockquote {
   margin: 16px auto;
   padding: 20px 30px;
   background-color: var(--quote-bg-color);
@@ -735,7 +749,7 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view.is-live-prev
   transition: all 0.2s ease;
   position: relative;
 }
-.markdown-rendered blockquote > p:first-child::before {
+.markdown-rendered blockquote > p:first-child::before, .style-settings-container blockquote > p:first-child::before {
   content: "”";
   font-family: "Arial Black", sans-serif;
   position: absolute;
@@ -747,14 +761,14 @@ body.callout-dogs-ear :is(.markdown-rendered, .markdown-source-view.is-live-prev
   color: var(--text-muted);
   opacity: 0.2;
 }
-.markdown-rendered blockquote:hover {
+.markdown-rendered blockquote:hover, .style-settings-container blockquote:hover {
   border-left-color: var(--text-normal);
 }
-.markdown-rendered blockquote p {
+.markdown-rendered blockquote p, .style-settings-container blockquote p {
   margin-top: 0;
 }
 
-body.embed-alt :is(.markdown-source-view.is-live-preview, .markdown-rendered) .media-embed:after {
+body.embed-alt :is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container) .media-embed:after {
   content: attr(alt);
   font-family: var(--font-default);
   font-size: 0.8em;
@@ -765,16 +779,17 @@ body.embed-alt :is(.markdown-source-view.is-live-preview, .markdown-rendered) .m
   text-align: end;
   margin-top: 0.5em;
 }
-body.embed-alt.embed-alt-left :is(.markdown-source-view.is-live-preview, .markdown-rendered) .media-embed:after {
+body.embed-alt.embed-alt-left :is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container) .media-embed:after {
   text-align: start;
 }
-body.embed-alt.embed-alt-middle :is(.markdown-source-view.is-live-preview, .markdown-rendered) .media-embed:after {
+body.embed-alt.embed-alt-middle :is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container) .media-embed:after {
   text-align: center;
 }
 
 .markdown-source-view.is-live-preview .cm-line .cm-inline-code,
 .markdown-source-view.is-live-preview .HyperMD-codeblock,
-.markdown-rendered code {
+.markdown-rendered code,
+.style-settings-container code {
   font-family: var(--font-monospace);
   font-size: var(--font-monospace-size);
   font-weight: var(--font-monospace-weight);
@@ -782,17 +797,17 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view.is-live-preview, .mark
   background-color: var(--inline-code-bg-color);
 }
 
-.markdown-rendered pre {
+.markdown-rendered pre, .style-settings-container pre {
   border: none;
   border-radius: 4px;
   background-color: var(--code-bg-color);
   position: relative;
   margin: 16px auto;
 }
-.markdown-rendered pre[class^=language-] {
+.markdown-rendered pre[class^=language-], .style-settings-container pre[class^=language-] {
   padding: 20px 30px;
 }
-.markdown-rendered pre[class^=language-]:before {
+.markdown-rendered pre[class^=language-]:before, .style-settings-container pre[class^=language-]:before {
   font-family: Lato sans-serif;
   font-size: 0.9em;
   font-weight: 100;
@@ -803,1198 +818,1198 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view.is-live-preview, .mark
   bottom: 0.8em;
   width: auto;
 }
-.markdown-rendered pre.language-markup:before {
+.markdown-rendered pre.language-markup:before, .style-settings-container pre.language-markup:before {
   content: "markup";
 }
-.markdown-rendered pre.language-html:before {
+.markdown-rendered pre.language-html:before, .style-settings-container pre.language-html:before {
   content: "html";
 }
-.markdown-rendered pre.language-xml:before {
+.markdown-rendered pre.language-xml:before, .style-settings-container pre.language-xml:before {
   content: "xml";
 }
-.markdown-rendered pre.language-svg:before {
+.markdown-rendered pre.language-svg:before, .style-settings-container pre.language-svg:before {
   content: "svg";
 }
-.markdown-rendered pre.language-mathml:before {
+.markdown-rendered pre.language-mathml:before, .style-settings-container pre.language-mathml:before {
   content: "mathml";
 }
-.markdown-rendered pre.language-ssml:before {
+.markdown-rendered pre.language-ssml:before, .style-settings-container pre.language-ssml:before {
   content: "ssml";
 }
-.markdown-rendered pre.language-atom:before {
+.markdown-rendered pre.language-atom:before, .style-settings-container pre.language-atom:before {
   content: "atom";
 }
-.markdown-rendered pre.language-rss:before {
+.markdown-rendered pre.language-rss:before, .style-settings-container pre.language-rss:before {
   content: "rss";
 }
-.markdown-rendered pre.language-css:before {
+.markdown-rendered pre.language-css:before, .style-settings-container pre.language-css:before {
   content: "css";
 }
-.markdown-rendered pre.language-like:before {
+.markdown-rendered pre.language-like:before, .style-settings-container pre.language-like:before {
   content: "like";
 }
-.markdown-rendered pre.language-javascript:before {
+.markdown-rendered pre.language-javascript:before, .style-settings-container pre.language-javascript:before {
   content: "javascript";
 }
-.markdown-rendered pre.language-js:before {
+.markdown-rendered pre.language-js:before, .style-settings-container pre.language-js:before {
   content: "js";
 }
-.markdown-rendered pre.language-abap:before {
+.markdown-rendered pre.language-abap:before, .style-settings-container pre.language-abap:before {
   content: "abap";
 }
-.markdown-rendered pre.language-abnf:before {
+.markdown-rendered pre.language-abnf:before, .style-settings-container pre.language-abnf:before {
   content: "abnf";
 }
-.markdown-rendered pre.language-actionscript:before {
+.markdown-rendered pre.language-actionscript:before, .style-settings-container pre.language-actionscript:before {
   content: "actionscript";
 }
-.markdown-rendered pre.language-ada:before {
+.markdown-rendered pre.language-ada:before, .style-settings-container pre.language-ada:before {
   content: "ada";
 }
-.markdown-rendered pre.language-agda:before {
+.markdown-rendered pre.language-agda:before, .style-settings-container pre.language-agda:before {
   content: "agda";
 }
-.markdown-rendered pre.language-al:before {
+.markdown-rendered pre.language-al:before, .style-settings-container pre.language-al:before {
   content: "al";
 }
-.markdown-rendered pre.language-antlr4:before {
+.markdown-rendered pre.language-antlr4:before, .style-settings-container pre.language-antlr4:before {
   content: "antlr4";
 }
-.markdown-rendered pre.language-g4:before {
+.markdown-rendered pre.language-g4:before, .style-settings-container pre.language-g4:before {
   content: "g4";
 }
-.markdown-rendered pre.language-apacheconf:before {
+.markdown-rendered pre.language-apacheconf:before, .style-settings-container pre.language-apacheconf:before {
   content: "apacheconf";
 }
-.markdown-rendered pre.language-apex:before {
+.markdown-rendered pre.language-apex:before, .style-settings-container pre.language-apex:before {
   content: "apex";
 }
-.markdown-rendered pre.language-apl:before {
+.markdown-rendered pre.language-apl:before, .style-settings-container pre.language-apl:before {
   content: "apl";
 }
-.markdown-rendered pre.language-applescript:before {
+.markdown-rendered pre.language-applescript:before, .style-settings-container pre.language-applescript:before {
   content: "applescript";
 }
-.markdown-rendered pre.language-aql:before {
+.markdown-rendered pre.language-aql:before, .style-settings-container pre.language-aql:before {
   content: "aql";
 }
-.markdown-rendered pre.language-arduino:before {
+.markdown-rendered pre.language-arduino:before, .style-settings-container pre.language-arduino:before {
   content: "arduino";
 }
-.markdown-rendered pre.language-ino:before {
+.markdown-rendered pre.language-ino:before, .style-settings-container pre.language-ino:before {
   content: "ino";
 }
-.markdown-rendered pre.language-arff:before {
+.markdown-rendered pre.language-arff:before, .style-settings-container pre.language-arff:before {
   content: "arff";
 }
-.markdown-rendered pre.language-armasm:before {
+.markdown-rendered pre.language-armasm:before, .style-settings-container pre.language-armasm:before {
   content: "armasm";
 }
-.markdown-rendered pre.language-arm-asm:before {
+.markdown-rendered pre.language-arm-asm:before, .style-settings-container pre.language-arm-asm:before {
   content: "arm-asm";
 }
-.markdown-rendered pre.language-arturo:before {
+.markdown-rendered pre.language-arturo:before, .style-settings-container pre.language-arturo:before {
   content: "arturo";
 }
-.markdown-rendered pre.language-art:before {
+.markdown-rendered pre.language-art:before, .style-settings-container pre.language-art:before {
   content: "art";
 }
-.markdown-rendered pre.language-asciidoc:before {
+.markdown-rendered pre.language-asciidoc:before, .style-settings-container pre.language-asciidoc:before {
   content: "asciidoc";
 }
-.markdown-rendered pre.language-adoc:before {
+.markdown-rendered pre.language-adoc:before, .style-settings-container pre.language-adoc:before {
   content: "adoc";
 }
-.markdown-rendered pre.language-aspnet:before {
+.markdown-rendered pre.language-aspnet:before, .style-settings-container pre.language-aspnet:before {
   content: "aspnet";
 }
-.markdown-rendered pre.language-asm6502:before {
+.markdown-rendered pre.language-asm6502:before, .style-settings-container pre.language-asm6502:before {
   content: "asm6502";
 }
-.markdown-rendered pre.language-asmatmel:before {
+.markdown-rendered pre.language-asmatmel:before, .style-settings-container pre.language-asmatmel:before {
   content: "asmatmel";
 }
-.markdown-rendered pre.language-autohotkey:before {
+.markdown-rendered pre.language-autohotkey:before, .style-settings-container pre.language-autohotkey:before {
   content: "autohotkey";
 }
-.markdown-rendered pre.language-autoit:before {
+.markdown-rendered pre.language-autoit:before, .style-settings-container pre.language-autoit:before {
   content: "autoit";
 }
-.markdown-rendered pre.language-avisynth:before {
+.markdown-rendered pre.language-avisynth:before, .style-settings-container pre.language-avisynth:before {
   content: "avisynth";
 }
-.markdown-rendered pre.language-avs:before {
+.markdown-rendered pre.language-avs:before, .style-settings-container pre.language-avs:before {
   content: "avs";
 }
-.markdown-rendered pre.language-avro-idl:before {
+.markdown-rendered pre.language-avro-idl:before, .style-settings-container pre.language-avro-idl:before {
   content: "avro-idl";
 }
-.markdown-rendered pre.language-avdl:before {
+.markdown-rendered pre.language-avdl:before, .style-settings-container pre.language-avdl:before {
   content: "avdl";
 }
-.markdown-rendered pre.language-awk:before {
+.markdown-rendered pre.language-awk:before, .style-settings-container pre.language-awk:before {
   content: "awk";
 }
-.markdown-rendered pre.language-gawk:before {
+.markdown-rendered pre.language-gawk:before, .style-settings-container pre.language-gawk:before {
   content: "gawk";
 }
-.markdown-rendered pre.language-bash:before {
+.markdown-rendered pre.language-bash:before, .style-settings-container pre.language-bash:before {
   content: "bash";
 }
-.markdown-rendered pre.language-sh:before {
+.markdown-rendered pre.language-sh:before, .style-settings-container pre.language-sh:before {
   content: "sh";
 }
-.markdown-rendered pre.language-shell:before {
+.markdown-rendered pre.language-shell:before, .style-settings-container pre.language-shell:before {
   content: "shell";
 }
-.markdown-rendered pre.language-basic:before {
+.markdown-rendered pre.language-basic:before, .style-settings-container pre.language-basic:before {
   content: "basic";
 }
-.markdown-rendered pre.language-batch:before {
+.markdown-rendered pre.language-batch:before, .style-settings-container pre.language-batch:before {
   content: "batch";
 }
-.markdown-rendered pre.language-bbcode:before {
+.markdown-rendered pre.language-bbcode:before, .style-settings-container pre.language-bbcode:before {
   content: "bbcode";
 }
-.markdown-rendered pre.language-shortcode:before {
+.markdown-rendered pre.language-shortcode:before, .style-settings-container pre.language-shortcode:before {
   content: "shortcode";
 }
-.markdown-rendered pre.language-bbj:before {
+.markdown-rendered pre.language-bbj:before, .style-settings-container pre.language-bbj:before {
   content: "bbj";
 }
-.markdown-rendered pre.language-bicep:before {
+.markdown-rendered pre.language-bicep:before, .style-settings-container pre.language-bicep:before {
   content: "bicep";
 }
-.markdown-rendered pre.language-birb:before {
+.markdown-rendered pre.language-birb:before, .style-settings-container pre.language-birb:before {
   content: "birb";
 }
-.markdown-rendered pre.language-bison:before {
+.markdown-rendered pre.language-bison:before, .style-settings-container pre.language-bison:before {
   content: "bison";
 }
-.markdown-rendered pre.language-bnf:before {
+.markdown-rendered pre.language-bnf:before, .style-settings-container pre.language-bnf:before {
   content: "bnf";
 }
-.markdown-rendered pre.language-rbnf:before {
+.markdown-rendered pre.language-rbnf:before, .style-settings-container pre.language-rbnf:before {
   content: "rbnf";
 }
-.markdown-rendered pre.language-bqn:before {
+.markdown-rendered pre.language-bqn:before, .style-settings-container pre.language-bqn:before {
   content: "bqn";
 }
-.markdown-rendered pre.language-brainfuck:before {
+.markdown-rendered pre.language-brainfuck:before, .style-settings-container pre.language-brainfuck:before {
   content: "brainfuck";
 }
-.markdown-rendered pre.language-brightscript:before {
+.markdown-rendered pre.language-brightscript:before, .style-settings-container pre.language-brightscript:before {
   content: "brightscript";
 }
-.markdown-rendered pre.language-bro:before {
+.markdown-rendered pre.language-bro:before, .style-settings-container pre.language-bro:before {
   content: "bro";
 }
-.markdown-rendered pre.language-bsl:before {
+.markdown-rendered pre.language-bsl:before, .style-settings-container pre.language-bsl:before {
   content: "bsl";
 }
-.markdown-rendered pre.language-oscript:before {
+.markdown-rendered pre.language-oscript:before, .style-settings-container pre.language-oscript:before {
   content: "oscript";
 }
-.markdown-rendered pre.language-c:before {
+.markdown-rendered pre.language-c:before, .style-settings-container pre.language-c:before {
   content: "c";
 }
-.markdown-rendered pre.language-csharp:before {
+.markdown-rendered pre.language-csharp:before, .style-settings-container pre.language-csharp:before {
   content: "csharp";
 }
-.markdown-rendered pre.language-cs:before {
+.markdown-rendered pre.language-cs:before, .style-settings-container pre.language-cs:before {
   content: "cs";
 }
-.markdown-rendered pre.language-dotnet:before {
+.markdown-rendered pre.language-dotnet:before, .style-settings-container pre.language-dotnet:before {
   content: "dotnet";
 }
-.markdown-rendered pre.language-cpp:before {
+.markdown-rendered pre.language-cpp:before, .style-settings-container pre.language-cpp:before {
   content: "cpp";
 }
-.markdown-rendered pre.language-cfscript:before {
+.markdown-rendered pre.language-cfscript:before, .style-settings-container pre.language-cfscript:before {
   content: "cfscript";
 }
-.markdown-rendered pre.language-cfc:before {
+.markdown-rendered pre.language-cfc:before, .style-settings-container pre.language-cfc:before {
   content: "cfc";
 }
-.markdown-rendered pre.language-chaiscript:before {
+.markdown-rendered pre.language-chaiscript:before, .style-settings-container pre.language-chaiscript:before {
   content: "chaiscript";
 }
-.markdown-rendered pre.language-cil:before {
+.markdown-rendered pre.language-cil:before, .style-settings-container pre.language-cil:before {
   content: "cil";
 }
-.markdown-rendered pre.language-cilkc:before {
+.markdown-rendered pre.language-cilkc:before, .style-settings-container pre.language-cilkc:before {
   content: "cilkc";
 }
-.markdown-rendered pre.language-cilk-c:before {
+.markdown-rendered pre.language-cilk-c:before, .style-settings-container pre.language-cilk-c:before {
   content: "cilk-c";
 }
-.markdown-rendered pre.language-cilkcpp:before {
+.markdown-rendered pre.language-cilkcpp:before, .style-settings-container pre.language-cilkcpp:before {
   content: "cilkcpp";
 }
-.markdown-rendered pre.language-cilk:before {
+.markdown-rendered pre.language-cilk:before, .style-settings-container pre.language-cilk:before {
   content: "cilk";
 }
-.markdown-rendered pre.language-clojure:before {
+.markdown-rendered pre.language-clojure:before, .style-settings-container pre.language-clojure:before {
   content: "clojure";
 }
-.markdown-rendered pre.language-cmake:before {
+.markdown-rendered pre.language-cmake:before, .style-settings-container pre.language-cmake:before {
   content: "cmake";
 }
-.markdown-rendered pre.language-cobol:before {
+.markdown-rendered pre.language-cobol:before, .style-settings-container pre.language-cobol:before {
   content: "cobol";
 }
-.markdown-rendered pre.language-coffeescript:before {
+.markdown-rendered pre.language-coffeescript:before, .style-settings-container pre.language-coffeescript:before {
   content: "coffeescript";
 }
-.markdown-rendered pre.language-coffee:before {
+.markdown-rendered pre.language-coffee:before, .style-settings-container pre.language-coffee:before {
   content: "coffee";
 }
-.markdown-rendered pre.language-concurnas:before {
+.markdown-rendered pre.language-concurnas:before, .style-settings-container pre.language-concurnas:before {
   content: "concurnas";
 }
-.markdown-rendered pre.language-conc:before {
+.markdown-rendered pre.language-conc:before, .style-settings-container pre.language-conc:before {
   content: "conc";
 }
-.markdown-rendered pre.language-Security:before {
+.markdown-rendered pre.language-Security:before, .style-settings-container pre.language-Security:before {
   content: "Security";
 }
-.markdown-rendered pre.language-cooklang:before {
+.markdown-rendered pre.language-cooklang:before, .style-settings-container pre.language-cooklang:before {
   content: "cooklang";
 }
-.markdown-rendered pre.language-coq:before {
+.markdown-rendered pre.language-coq:before, .style-settings-container pre.language-coq:before {
   content: "coq";
 }
-.markdown-rendered pre.language-crystal:before {
+.markdown-rendered pre.language-crystal:before, .style-settings-container pre.language-crystal:before {
   content: "crystal";
 }
-.markdown-rendered pre.language-css-extras:before {
+.markdown-rendered pre.language-css-extras:before, .style-settings-container pre.language-css-extras:before {
   content: "css-extras";
 }
-.markdown-rendered pre.language-csv:before {
+.markdown-rendered pre.language-csv:before, .style-settings-container pre.language-csv:before {
   content: "csv";
 }
-.markdown-rendered pre.language-cue:before {
+.markdown-rendered pre.language-cue:before, .style-settings-container pre.language-cue:before {
   content: "cue";
 }
-.markdown-rendered pre.language-cypher:before {
+.markdown-rendered pre.language-cypher:before, .style-settings-container pre.language-cypher:before {
   content: "cypher";
 }
-.markdown-rendered pre.language-d:before {
+.markdown-rendered pre.language-d:before, .style-settings-container pre.language-d:before {
   content: "d";
 }
-.markdown-rendered pre.language-dart:before {
+.markdown-rendered pre.language-dart:before, .style-settings-container pre.language-dart:before {
   content: "dart";
 }
-.markdown-rendered pre.language-dataweave:before {
+.markdown-rendered pre.language-dataweave:before, .style-settings-container pre.language-dataweave:before {
   content: "dataweave";
 }
-.markdown-rendered pre.language-dax:before {
+.markdown-rendered pre.language-dax:before, .style-settings-container pre.language-dax:before {
   content: "dax";
 }
-.markdown-rendered pre.language-dhall:before {
+.markdown-rendered pre.language-dhall:before, .style-settings-container pre.language-dhall:before {
   content: "dhall";
 }
-.markdown-rendered pre.language-diff:before {
+.markdown-rendered pre.language-diff:before, .style-settings-container pre.language-diff:before {
   content: "diff";
 }
-.markdown-rendered pre.language-django:before {
+.markdown-rendered pre.language-django:before, .style-settings-container pre.language-django:before {
   content: "django";
 }
-.markdown-rendered pre.language-jinja2:before {
+.markdown-rendered pre.language-jinja2:before, .style-settings-container pre.language-jinja2:before {
   content: "jinja2";
 }
-.markdown-rendered pre.language-dns-zone-file:before {
+.markdown-rendered pre.language-dns-zone-file:before, .style-settings-container pre.language-dns-zone-file:before {
   content: "dns-zone-file";
 }
-.markdown-rendered pre.language-dns-zone:before {
+.markdown-rendered pre.language-dns-zone:before, .style-settings-container pre.language-dns-zone:before {
   content: "dns-zone";
 }
-.markdown-rendered pre.language-docker:before {
+.markdown-rendered pre.language-docker:before, .style-settings-container pre.language-docker:before {
   content: "docker";
 }
-.markdown-rendered pre.language-dockerfile:before {
+.markdown-rendered pre.language-dockerfile:before, .style-settings-container pre.language-dockerfile:before {
   content: "dockerfile";
 }
-.markdown-rendered pre.language-dot:before {
+.markdown-rendered pre.language-dot:before, .style-settings-container pre.language-dot:before {
   content: "dot";
 }
-.markdown-rendered pre.language-gv:before {
+.markdown-rendered pre.language-gv:before, .style-settings-container pre.language-gv:before {
   content: "gv";
 }
-.markdown-rendered pre.language-ebnf:before {
+.markdown-rendered pre.language-ebnf:before, .style-settings-container pre.language-ebnf:before {
   content: "ebnf";
 }
-.markdown-rendered pre.language-editorconfig:before {
+.markdown-rendered pre.language-editorconfig:before, .style-settings-container pre.language-editorconfig:before {
   content: "editorconfig";
 }
-.markdown-rendered pre.language-eiffel:before {
+.markdown-rendered pre.language-eiffel:before, .style-settings-container pre.language-eiffel:before {
   content: "eiffel";
 }
-.markdown-rendered pre.language-ejs:before {
+.markdown-rendered pre.language-ejs:before, .style-settings-container pre.language-ejs:before {
   content: "ejs";
 }
-.markdown-rendered pre.language-eta:before {
+.markdown-rendered pre.language-eta:before, .style-settings-container pre.language-eta:before {
   content: "eta";
 }
-.markdown-rendered pre.language-elixir:before {
+.markdown-rendered pre.language-elixir:before, .style-settings-container pre.language-elixir:before {
   content: "elixir";
 }
-.markdown-rendered pre.language-elm:before {
+.markdown-rendered pre.language-elm:before, .style-settings-container pre.language-elm:before {
   content: "elm";
 }
-.markdown-rendered pre.language-etlua:before {
+.markdown-rendered pre.language-etlua:before, .style-settings-container pre.language-etlua:before {
   content: "etlua";
 }
-.markdown-rendered pre.language-erb:before {
+.markdown-rendered pre.language-erb:before, .style-settings-container pre.language-erb:before {
   content: "erb";
 }
-.markdown-rendered pre.language-erlang:before {
+.markdown-rendered pre.language-erlang:before, .style-settings-container pre.language-erlang:before {
   content: "erlang";
 }
-.markdown-rendered pre.language-excel-formula:before {
+.markdown-rendered pre.language-excel-formula:before, .style-settings-container pre.language-excel-formula:before {
   content: "excel-formula";
 }
-.markdown-rendered pre.language-xlsx:before {
+.markdown-rendered pre.language-xlsx:before, .style-settings-container pre.language-xlsx:before {
   content: "xlsx";
 }
-.markdown-rendered pre.language-xls:before {
+.markdown-rendered pre.language-xls:before, .style-settings-container pre.language-xls:before {
   content: "xls";
 }
-.markdown-rendered pre.language-fsharp:before {
+.markdown-rendered pre.language-fsharp:before, .style-settings-container pre.language-fsharp:before {
   content: "fsharp";
 }
-.markdown-rendered pre.language-factor:before {
+.markdown-rendered pre.language-factor:before, .style-settings-container pre.language-factor:before {
   content: "factor";
 }
-.markdown-rendered pre.language-false:before {
+.markdown-rendered pre.language-false:before, .style-settings-container pre.language-false:before {
   content: "false";
 }
-.markdown-rendered pre.language-firestore-security-rules:before {
+.markdown-rendered pre.language-firestore-security-rules:before, .style-settings-container pre.language-firestore-security-rules:before {
   content: "firestore-security-rules";
 }
-.markdown-rendered pre.language-flow:before {
+.markdown-rendered pre.language-flow:before, .style-settings-container pre.language-flow:before {
   content: "flow";
 }
-.markdown-rendered pre.language-fortran:before {
+.markdown-rendered pre.language-fortran:before, .style-settings-container pre.language-fortran:before {
   content: "fortran";
 }
-.markdown-rendered pre.language-ftl:before {
+.markdown-rendered pre.language-ftl:before, .style-settings-container pre.language-ftl:before {
   content: "ftl";
 }
-.markdown-rendered pre.language-gml:before {
+.markdown-rendered pre.language-gml:before, .style-settings-container pre.language-gml:before {
   content: "gml";
 }
-.markdown-rendered pre.language-gamemakerlanguage:before {
+.markdown-rendered pre.language-gamemakerlanguage:before, .style-settings-container pre.language-gamemakerlanguage:before {
   content: "gamemakerlanguage";
 }
-.markdown-rendered pre.language-gap:before {
+.markdown-rendered pre.language-gap:before, .style-settings-container pre.language-gap:before {
   content: "gap";
 }
-.markdown-rendered pre.language-code:before {
+.markdown-rendered pre.language-code:before, .style-settings-container pre.language-code:before {
   content: "code";
 }
-.markdown-rendered pre.language-gdscript:before {
+.markdown-rendered pre.language-gdscript:before, .style-settings-container pre.language-gdscript:before {
   content: "gdscript";
 }
-.markdown-rendered pre.language-gedcom:before {
+.markdown-rendered pre.language-gedcom:before, .style-settings-container pre.language-gedcom:before {
   content: "gedcom";
 }
-.markdown-rendered pre.language-gettext:before {
+.markdown-rendered pre.language-gettext:before, .style-settings-container pre.language-gettext:before {
   content: "gettext";
 }
-.markdown-rendered pre.language-po:before {
+.markdown-rendered pre.language-po:before, .style-settings-container pre.language-po:before {
   content: "po";
 }
-.markdown-rendered pre.language-gherkin:before {
+.markdown-rendered pre.language-gherkin:before, .style-settings-container pre.language-gherkin:before {
   content: "gherkin";
 }
-.markdown-rendered pre.language-git:before {
+.markdown-rendered pre.language-git:before, .style-settings-container pre.language-git:before {
   content: "git";
 }
-.markdown-rendered pre.language-glsl:before {
+.markdown-rendered pre.language-glsl:before, .style-settings-container pre.language-glsl:before {
   content: "glsl";
 }
-.markdown-rendered pre.language-gn:before {
+.markdown-rendered pre.language-gn:before, .style-settings-container pre.language-gn:before {
   content: "gn";
 }
-.markdown-rendered pre.language-gni:before {
+.markdown-rendered pre.language-gni:before, .style-settings-container pre.language-gni:before {
   content: "gni";
 }
-.markdown-rendered pre.language-linker-script:before {
+.markdown-rendered pre.language-linker-script:before, .style-settings-container pre.language-linker-script:before {
   content: "linker-script";
 }
-.markdown-rendered pre.language-ld:before {
+.markdown-rendered pre.language-ld:before, .style-settings-container pre.language-ld:before {
   content: "ld";
 }
-.markdown-rendered pre.language-go:before {
+.markdown-rendered pre.language-go:before, .style-settings-container pre.language-go:before {
   content: "go";
 }
-.markdown-rendered pre.language-go-module:before {
+.markdown-rendered pre.language-go-module:before, .style-settings-container pre.language-go-module:before {
   content: "go-module";
 }
-.markdown-rendered pre.language-go-mod:before {
+.markdown-rendered pre.language-go-mod:before, .style-settings-container pre.language-go-mod:before {
   content: "go-mod";
 }
-.markdown-rendered pre.language-gradle:before {
+.markdown-rendered pre.language-gradle:before, .style-settings-container pre.language-gradle:before {
   content: "gradle";
 }
-.markdown-rendered pre.language-graphql:before {
+.markdown-rendered pre.language-graphql:before, .style-settings-container pre.language-graphql:before {
   content: "graphql";
 }
-.markdown-rendered pre.language-groovy:before {
+.markdown-rendered pre.language-groovy:before, .style-settings-container pre.language-groovy:before {
   content: "groovy";
 }
-.markdown-rendered pre.language-haml:before {
+.markdown-rendered pre.language-haml:before, .style-settings-container pre.language-haml:before {
   content: "haml";
 }
-.markdown-rendered pre.language-handlebars:before {
+.markdown-rendered pre.language-handlebars:before, .style-settings-container pre.language-handlebars:before {
   content: "handlebars";
 }
-.markdown-rendered pre.language-hbs:before {
+.markdown-rendered pre.language-hbs:before, .style-settings-container pre.language-hbs:before {
   content: "hbs";
 }
-.markdown-rendered pre.language-mustache:before {
+.markdown-rendered pre.language-mustache:before, .style-settings-container pre.language-mustache:before {
   content: "mustache";
 }
-.markdown-rendered pre.language-haskell:before {
+.markdown-rendered pre.language-haskell:before, .style-settings-container pre.language-haskell:before {
   content: "haskell";
 }
-.markdown-rendered pre.language-hs:before {
+.markdown-rendered pre.language-hs:before, .style-settings-container pre.language-hs:before {
   content: "hs";
 }
-.markdown-rendered pre.language-haxe:before {
+.markdown-rendered pre.language-haxe:before, .style-settings-container pre.language-haxe:before {
   content: "haxe";
 }
-.markdown-rendered pre.language-hcl:before {
+.markdown-rendered pre.language-hcl:before, .style-settings-container pre.language-hcl:before {
   content: "hcl";
 }
-.markdown-rendered pre.language-hlsl:before {
+.markdown-rendered pre.language-hlsl:before, .style-settings-container pre.language-hlsl:before {
   content: "hlsl";
 }
-.markdown-rendered pre.language-hoon:before {
+.markdown-rendered pre.language-hoon:before, .style-settings-container pre.language-hoon:before {
   content: "hoon";
 }
-.markdown-rendered pre.language-http:before {
+.markdown-rendered pre.language-http:before, .style-settings-container pre.language-http:before {
   content: "http";
 }
-.markdown-rendered pre.language-Key:before {
+.markdown-rendered pre.language-Key:before, .style-settings-container pre.language-Key:before {
   content: "Key";
 }
-.markdown-rendered pre.language-Transport:before {
+.markdown-rendered pre.language-Transport:before, .style-settings-container pre.language-Transport:before {
   content: "Transport";
 }
-.markdown-rendered pre.language-ichigojam:before {
+.markdown-rendered pre.language-ichigojam:before, .style-settings-container pre.language-ichigojam:before {
   content: "ichigojam";
 }
-.markdown-rendered pre.language-icon:before {
+.markdown-rendered pre.language-icon:before, .style-settings-container pre.language-icon:before {
   content: "icon";
 }
-.markdown-rendered pre.language-icu-message-format:before {
+.markdown-rendered pre.language-icu-message-format:before, .style-settings-container pre.language-icu-message-format:before {
   content: "icu-message-format";
 }
-.markdown-rendered pre.language-idris:before {
+.markdown-rendered pre.language-idris:before, .style-settings-container pre.language-idris:before {
   content: "idris";
 }
-.markdown-rendered pre.language-idr:before {
+.markdown-rendered pre.language-idr:before, .style-settings-container pre.language-idr:before {
   content: "idr";
 }
-.markdown-rendered pre.language-ignore:before {
+.markdown-rendered pre.language-ignore:before, .style-settings-container pre.language-ignore:before {
   content: "ignore";
 }
-.markdown-rendered pre.language-gitignore:before {
+.markdown-rendered pre.language-gitignore:before, .style-settings-container pre.language-gitignore:before {
   content: "gitignore";
 }
-.markdown-rendered pre.language-hgignore:before {
+.markdown-rendered pre.language-hgignore:before, .style-settings-container pre.language-hgignore:before {
   content: "hgignore";
 }
-.markdown-rendered pre.language-npmignore:before {
+.markdown-rendered pre.language-npmignore:before, .style-settings-container pre.language-npmignore:before {
   content: "npmignore";
 }
-.markdown-rendered pre.language-inform7:before {
+.markdown-rendered pre.language-inform7:before, .style-settings-container pre.language-inform7:before {
   content: "inform7";
 }
-.markdown-rendered pre.language-ini:before {
+.markdown-rendered pre.language-ini:before, .style-settings-container pre.language-ini:before {
   content: "ini";
 }
-.markdown-rendered pre.language-io:before {
+.markdown-rendered pre.language-io:before, .style-settings-container pre.language-io:before {
   content: "io";
 }
-.markdown-rendered pre.language-j:before {
+.markdown-rendered pre.language-j:before, .style-settings-container pre.language-j:before {
   content: "j";
 }
-.markdown-rendered pre.language-java:before {
+.markdown-rendered pre.language-java:before, .style-settings-container pre.language-java:before {
   content: "java";
 }
-.markdown-rendered pre.language-javadoc:before {
+.markdown-rendered pre.language-javadoc:before, .style-settings-container pre.language-javadoc:before {
   content: "javadoc";
 }
-.markdown-rendered pre.language-like:before {
+.markdown-rendered pre.language-like:before, .style-settings-container pre.language-like:before {
   content: "like";
 }
-.markdown-rendered pre.language-javastacktrace:before {
+.markdown-rendered pre.language-javastacktrace:before, .style-settings-container pre.language-javastacktrace:before {
   content: "javastacktrace";
 }
-.markdown-rendered pre.language-jexl:before {
+.markdown-rendered pre.language-jexl:before, .style-settings-container pre.language-jexl:before {
   content: "jexl";
 }
-.markdown-rendered pre.language-jolie:before {
+.markdown-rendered pre.language-jolie:before, .style-settings-container pre.language-jolie:before {
   content: "jolie";
 }
-.markdown-rendered pre.language-jq:before {
+.markdown-rendered pre.language-jq:before, .style-settings-container pre.language-jq:before {
   content: "jq";
 }
-.markdown-rendered pre.language-jsdoc:before {
+.markdown-rendered pre.language-jsdoc:before, .style-settings-container pre.language-jsdoc:before {
   content: "jsdoc";
 }
-.markdown-rendered pre.language-js-extras:before {
+.markdown-rendered pre.language-js-extras:before, .style-settings-container pre.language-js-extras:before {
   content: "js-extras";
 }
-.markdown-rendered pre.language-json:before {
+.markdown-rendered pre.language-json:before, .style-settings-container pre.language-json:before {
   content: "json";
 }
-.markdown-rendered pre.language-webmanifest:before {
+.markdown-rendered pre.language-webmanifest:before, .style-settings-container pre.language-webmanifest:before {
   content: "webmanifest";
 }
-.markdown-rendered pre.language-json5:before {
+.markdown-rendered pre.language-json5:before, .style-settings-container pre.language-json5:before {
   content: "json5";
 }
-.markdown-rendered pre.language-jsonp:before {
+.markdown-rendered pre.language-jsonp:before, .style-settings-container pre.language-jsonp:before {
   content: "jsonp";
 }
-.markdown-rendered pre.language-jsstacktrace:before {
+.markdown-rendered pre.language-jsstacktrace:before, .style-settings-container pre.language-jsstacktrace:before {
   content: "jsstacktrace";
 }
-.markdown-rendered pre.language-js-templates:before {
+.markdown-rendered pre.language-js-templates:before, .style-settings-container pre.language-js-templates:before {
   content: "js-templates";
 }
-.markdown-rendered pre.language-julia:before {
+.markdown-rendered pre.language-julia:before, .style-settings-container pre.language-julia:before {
   content: "julia";
 }
-.markdown-rendered pre.language-keepalived:before {
+.markdown-rendered pre.language-keepalived:before, .style-settings-container pre.language-keepalived:before {
   content: "keepalived";
 }
-.markdown-rendered pre.language-keyman:before {
+.markdown-rendered pre.language-keyman:before, .style-settings-container pre.language-keyman:before {
   content: "keyman";
 }
-.markdown-rendered pre.language-kotlin:before {
+.markdown-rendered pre.language-kotlin:before, .style-settings-container pre.language-kotlin:before {
   content: "kotlin";
 }
-.markdown-rendered pre.language-kt:before {
+.markdown-rendered pre.language-kt:before, .style-settings-container pre.language-kt:before {
   content: "kt";
 }
-.markdown-rendered pre.language-kts:before {
+.markdown-rendered pre.language-kts:before, .style-settings-container pre.language-kts:before {
   content: "kts";
 }
-.markdown-rendered pre.language-kumir:before {
+.markdown-rendered pre.language-kumir:before, .style-settings-container pre.language-kumir:before {
   content: "kumir";
 }
-.markdown-rendered pre.language-kum:before {
+.markdown-rendered pre.language-kum:before, .style-settings-container pre.language-kum:before {
   content: "kum";
 }
-.markdown-rendered pre.language-kusto:before {
+.markdown-rendered pre.language-kusto:before, .style-settings-container pre.language-kusto:before {
   content: "kusto";
 }
-.markdown-rendered pre.language-latex:before {
+.markdown-rendered pre.language-latex:before, .style-settings-container pre.language-latex:before {
   content: "latex";
 }
-.markdown-rendered pre.language-tex:before {
+.markdown-rendered pre.language-tex:before, .style-settings-container pre.language-tex:before {
   content: "tex";
 }
-.markdown-rendered pre.language-context:before {
+.markdown-rendered pre.language-context:before, .style-settings-container pre.language-context:before {
   content: "context";
 }
-.markdown-rendered pre.language-latte:before {
+.markdown-rendered pre.language-latte:before, .style-settings-container pre.language-latte:before {
   content: "latte";
 }
-.markdown-rendered pre.language-less:before {
+.markdown-rendered pre.language-less:before, .style-settings-container pre.language-less:before {
   content: "less";
 }
-.markdown-rendered pre.language-lilypond:before {
+.markdown-rendered pre.language-lilypond:before, .style-settings-container pre.language-lilypond:before {
   content: "lilypond";
 }
-.markdown-rendered pre.language-ly:before {
+.markdown-rendered pre.language-ly:before, .style-settings-container pre.language-ly:before {
   content: "ly";
 }
-.markdown-rendered pre.language-liquid:before {
+.markdown-rendered pre.language-liquid:before, .style-settings-container pre.language-liquid:before {
   content: "liquid";
 }
-.markdown-rendered pre.language-lisp:before {
+.markdown-rendered pre.language-lisp:before, .style-settings-container pre.language-lisp:before {
   content: "lisp";
 }
-.markdown-rendered pre.language-emacs:before {
+.markdown-rendered pre.language-emacs:before, .style-settings-container pre.language-emacs:before {
   content: "emacs";
 }
-.markdown-rendered pre.language-elisp:before {
+.markdown-rendered pre.language-elisp:before, .style-settings-container pre.language-elisp:before {
   content: "elisp";
 }
-.markdown-rendered pre.language-emacs-lisp:before {
+.markdown-rendered pre.language-emacs-lisp:before, .style-settings-container pre.language-emacs-lisp:before {
   content: "emacs-lisp";
 }
-.markdown-rendered pre.language-livescript:before {
+.markdown-rendered pre.language-livescript:before, .style-settings-container pre.language-livescript:before {
   content: "livescript";
 }
-.markdown-rendered pre.language-llvm:before {
+.markdown-rendered pre.language-llvm:before, .style-settings-container pre.language-llvm:before {
   content: "llvm";
 }
-.markdown-rendered pre.language-log:before {
+.markdown-rendered pre.language-log:before, .style-settings-container pre.language-log:before {
   content: "log";
 }
-.markdown-rendered pre.language-lolcode:before {
+.markdown-rendered pre.language-lolcode:before, .style-settings-container pre.language-lolcode:before {
   content: "lolcode";
 }
-.markdown-rendered pre.language-lua:before {
+.markdown-rendered pre.language-lua:before, .style-settings-container pre.language-lua:before {
   content: "lua";
 }
-.markdown-rendered pre.language-magma:before {
+.markdown-rendered pre.language-magma:before, .style-settings-container pre.language-magma:before {
   content: "magma";
 }
-.markdown-rendered pre.language-makefile:before {
+.markdown-rendered pre.language-makefile:before, .style-settings-container pre.language-makefile:before {
   content: "makefile";
 }
-.markdown-rendered pre.language-markdown:before {
+.markdown-rendered pre.language-markdown:before, .style-settings-container pre.language-markdown:before {
   content: "markdown";
 }
-.markdown-rendered pre.language-md:before {
+.markdown-rendered pre.language-md:before, .style-settings-container pre.language-md:before {
   content: "md";
 }
-.markdown-rendered pre.language-markup-templating:before, .markdown-rendered pre mata:before {
+.markdown-rendered pre.language-markup-templating:before, .style-settings-container pre.language-markup-templating:before, .markdown-rendered pre mata:before, .style-settings-container pre mata:before {
   content: "markup-templating, mata";
 }
-.markdown-rendered pre.language-matlab:before {
+.markdown-rendered pre.language-matlab:before, .style-settings-container pre.language-matlab:before {
   content: "matlab";
 }
-.markdown-rendered pre.language-maxscript:before {
+.markdown-rendered pre.language-maxscript:before, .style-settings-container pre.language-maxscript:before {
   content: "maxscript";
 }
-.markdown-rendered pre.language-mel:before {
+.markdown-rendered pre.language-mel:before, .style-settings-container pre.language-mel:before {
   content: "mel";
 }
-.markdown-rendered pre.language-mermaid:before {
+.markdown-rendered pre.language-mermaid:before, .style-settings-container pre.language-mermaid:before {
   content: "mermaid";
 }
-.markdown-rendered pre.language-metafont:before {
+.markdown-rendered pre.language-metafont:before, .style-settings-container pre.language-metafont:before {
   content: "metafont";
 }
-.markdown-rendered pre.language-mizar:before {
+.markdown-rendered pre.language-mizar:before, .style-settings-container pre.language-mizar:before {
   content: "mizar";
 }
-.markdown-rendered pre.language-mongodb:before {
+.markdown-rendered pre.language-mongodb:before, .style-settings-container pre.language-mongodb:before {
   content: "mongodb";
 }
-.markdown-rendered pre.language-monkey:before {
+.markdown-rendered pre.language-monkey:before, .style-settings-container pre.language-monkey:before {
   content: "monkey";
 }
-.markdown-rendered pre.language-moonscript:before {
+.markdown-rendered pre.language-moonscript:before, .style-settings-container pre.language-moonscript:before {
   content: "moonscript";
 }
-.markdown-rendered pre.language-moon:before {
+.markdown-rendered pre.language-moon:before, .style-settings-container pre.language-moon:before {
   content: "moon";
 }
-.markdown-rendered pre.language-n1ql:before {
+.markdown-rendered pre.language-n1ql:before, .style-settings-container pre.language-n1ql:before {
   content: "n1ql";
 }
-.markdown-rendered pre.language-n4js:before {
+.markdown-rendered pre.language-n4js:before, .style-settings-container pre.language-n4js:before {
   content: "n4js";
 }
-.markdown-rendered pre.language-n4jsd:before {
+.markdown-rendered pre.language-n4jsd:before, .style-settings-container pre.language-n4jsd:before {
   content: "n4jsd";
 }
-.markdown-rendered pre.language-nand2tetris-hdl:before {
+.markdown-rendered pre.language-nand2tetris-hdl:before, .style-settings-container pre.language-nand2tetris-hdl:before {
   content: "nand2tetris-hdl";
 }
-.markdown-rendered pre.language-naniscript:before {
+.markdown-rendered pre.language-naniscript:before, .style-settings-container pre.language-naniscript:before {
   content: "naniscript";
 }
-.markdown-rendered pre.language-nani:before {
+.markdown-rendered pre.language-nani:before, .style-settings-container pre.language-nani:before {
   content: "nani";
 }
-.markdown-rendered pre.language-nasm:before {
+.markdown-rendered pre.language-nasm:before, .style-settings-container pre.language-nasm:before {
   content: "nasm";
 }
-.markdown-rendered pre.language-neon:before {
+.markdown-rendered pre.language-neon:before, .style-settings-container pre.language-neon:before {
   content: "neon";
 }
-.markdown-rendered pre.language-nevod:before {
+.markdown-rendered pre.language-nevod:before, .style-settings-container pre.language-nevod:before {
   content: "nevod";
 }
-.markdown-rendered pre.language-nginx:before {
+.markdown-rendered pre.language-nginx:before, .style-settings-container pre.language-nginx:before {
   content: "nginx";
 }
-.markdown-rendered pre.language-nim:before {
+.markdown-rendered pre.language-nim:before, .style-settings-container pre.language-nim:before {
   content: "nim";
 }
-.markdown-rendered pre.language-nix:before {
+.markdown-rendered pre.language-nix:before, .style-settings-container pre.language-nix:before {
   content: "nix";
 }
-.markdown-rendered pre.language-nsis:before {
+.markdown-rendered pre.language-nsis:before, .style-settings-container pre.language-nsis:before {
   content: "nsis";
 }
-.markdown-rendered pre.language-C:before {
+.markdown-rendered pre.language-C:before, .style-settings-container pre.language-C:before {
   content: "C";
 }
-.markdown-rendered pre.language-ocaml:before {
+.markdown-rendered pre.language-ocaml:before, .style-settings-container pre.language-ocaml:before {
   content: "ocaml";
 }
-.markdown-rendered pre.language-odin:before {
+.markdown-rendered pre.language-odin:before, .style-settings-container pre.language-odin:before {
   content: "odin";
 }
-.markdown-rendered pre.language-opencl:before {
+.markdown-rendered pre.language-opencl:before, .style-settings-container pre.language-opencl:before {
   content: "opencl";
 }
-.markdown-rendered pre.language-openqasm:before {
+.markdown-rendered pre.language-openqasm:before, .style-settings-container pre.language-openqasm:before {
   content: "openqasm";
 }
-.markdown-rendered pre.language-qasm:before {
+.markdown-rendered pre.language-qasm:before, .style-settings-container pre.language-qasm:before {
   content: "qasm";
 }
-.markdown-rendered pre.language-oz:before {
+.markdown-rendered pre.language-oz:before, .style-settings-container pre.language-oz:before {
   content: "oz";
 }
-.markdown-rendered pre.language-parigp:before {
+.markdown-rendered pre.language-parigp:before, .style-settings-container pre.language-parigp:before {
   content: "parigp";
 }
-.markdown-rendered pre.language-parser:before {
+.markdown-rendered pre.language-parser:before, .style-settings-container pre.language-parser:before {
   content: "parser";
 }
-.markdown-rendered pre.language-pascal:before {
+.markdown-rendered pre.language-pascal:before, .style-settings-container pre.language-pascal:before {
   content: "pascal";
 }
-.markdown-rendered pre.language-objectpascal:before {
+.markdown-rendered pre.language-objectpascal:before, .style-settings-container pre.language-objectpascal:before {
   content: "objectpascal";
 }
-.markdown-rendered pre.language-pascaligo:before {
+.markdown-rendered pre.language-pascaligo:before, .style-settings-container pre.language-pascaligo:before {
   content: "pascaligo";
 }
-.markdown-rendered pre.language-psl:before {
+.markdown-rendered pre.language-psl:before, .style-settings-container pre.language-psl:before {
   content: "psl";
 }
-.markdown-rendered pre.language-Axis:before {
+.markdown-rendered pre.language-Axis:before, .style-settings-container pre.language-Axis:before {
   content: "Axis";
 }
-.markdown-rendered pre.language-peoplecode:before {
+.markdown-rendered pre.language-peoplecode:before, .style-settings-container pre.language-peoplecode:before {
   content: "peoplecode";
 }
-.markdown-rendered pre.language-pcode:before {
+.markdown-rendered pre.language-pcode:before, .style-settings-container pre.language-pcode:before {
   content: "pcode";
 }
-.markdown-rendered pre.language-perl:before {
+.markdown-rendered pre.language-perl:before, .style-settings-container pre.language-perl:before {
   content: "perl";
 }
-.markdown-rendered pre.language-php:before {
+.markdown-rendered pre.language-php:before, .style-settings-container pre.language-php:before {
   content: "php";
 }
-.markdown-rendered pre.language-phpdoc:before {
+.markdown-rendered pre.language-phpdoc:before, .style-settings-container pre.language-phpdoc:before {
   content: "phpdoc";
 }
-.markdown-rendered pre.language-php-extras:before {
+.markdown-rendered pre.language-php-extras:before, .style-settings-container pre.language-php-extras:before {
   content: "php-extras";
 }
-.markdown-rendered pre.language-plant-uml:before {
+.markdown-rendered pre.language-plant-uml:before, .style-settings-container pre.language-plant-uml:before {
   content: "plant-uml";
 }
-.markdown-rendered pre.language-plantuml:before {
+.markdown-rendered pre.language-plantuml:before, .style-settings-container pre.language-plantuml:before {
   content: "plantuml";
 }
-.markdown-rendered pre.language-plsql:before {
+.markdown-rendered pre.language-plsql:before, .style-settings-container pre.language-plsql:before {
   content: "plsql";
 }
-.markdown-rendered pre.language-powerquery:before {
+.markdown-rendered pre.language-powerquery:before, .style-settings-container pre.language-powerquery:before {
   content: "powerquery";
 }
-.markdown-rendered pre.language-pq:before {
+.markdown-rendered pre.language-pq:before, .style-settings-container pre.language-pq:before {
   content: "pq";
 }
-.markdown-rendered pre.language-mscript:before {
+.markdown-rendered pre.language-mscript:before, .style-settings-container pre.language-mscript:before {
   content: "mscript";
 }
-.markdown-rendered pre.language-powershell:before {
+.markdown-rendered pre.language-powershell:before, .style-settings-container pre.language-powershell:before {
   content: "powershell";
 }
-.markdown-rendered pre.language-processing:before {
+.markdown-rendered pre.language-processing:before, .style-settings-container pre.language-processing:before {
   content: "processing";
 }
-.markdown-rendered pre.language-prolog:before {
+.markdown-rendered pre.language-prolog:before, .style-settings-container pre.language-prolog:before {
   content: "prolog";
 }
-.markdown-rendered pre.language-promql:before {
+.markdown-rendered pre.language-promql:before, .style-settings-container pre.language-promql:before {
   content: "promql";
 }
-.markdown-rendered pre.language-properties:before {
+.markdown-rendered pre.language-properties:before, .style-settings-container pre.language-properties:before {
   content: "properties";
 }
-.markdown-rendered pre.language-protobuf:before {
+.markdown-rendered pre.language-protobuf:before, .style-settings-container pre.language-protobuf:before {
   content: "protobuf";
 }
-.markdown-rendered pre.language-pug:before {
+.markdown-rendered pre.language-pug:before, .style-settings-container pre.language-pug:before {
   content: "pug";
 }
-.markdown-rendered pre.language-puppet:before {
+.markdown-rendered pre.language-puppet:before, .style-settings-container pre.language-puppet:before {
   content: "puppet";
 }
-.markdown-rendered pre.language-pure:before {
+.markdown-rendered pre.language-pure:before, .style-settings-container pre.language-pure:before {
   content: "pure";
 }
-.markdown-rendered pre.language-purebasic:before {
+.markdown-rendered pre.language-purebasic:before, .style-settings-container pre.language-purebasic:before {
   content: "purebasic";
 }
-.markdown-rendered pre.language-pbfasm:before {
+.markdown-rendered pre.language-pbfasm:before, .style-settings-container pre.language-pbfasm:before {
   content: "pbfasm";
 }
-.markdown-rendered pre.language-purescript:before {
+.markdown-rendered pre.language-purescript:before, .style-settings-container pre.language-purescript:before {
   content: "purescript";
 }
-.markdown-rendered pre.language-purs:before {
+.markdown-rendered pre.language-purs:before, .style-settings-container pre.language-purs:before {
   content: "purs";
 }
-.markdown-rendered pre.language-python:before {
+.markdown-rendered pre.language-python:before, .style-settings-container pre.language-python:before {
   content: "python";
 }
-.markdown-rendered pre.language-py:before {
+.markdown-rendered pre.language-py:before, .style-settings-container pre.language-py:before {
   content: "py";
 }
-.markdown-rendered pre.language-qsharp:before {
+.markdown-rendered pre.language-qsharp:before, .style-settings-container pre.language-qsharp:before {
   content: "qsharp";
 }
-.markdown-rendered pre.language-qs:before {
+.markdown-rendered pre.language-qs:before, .style-settings-container pre.language-qs:before {
   content: "qs";
 }
-.markdown-rendered pre.language-q:before {
+.markdown-rendered pre.language-q:before, .style-settings-container pre.language-q:before {
   content: "q";
 }
-.markdown-rendered pre.language-qml:before {
+.markdown-rendered pre.language-qml:before, .style-settings-container pre.language-qml:before {
   content: "qml";
 }
-.markdown-rendered pre.language-qore:before {
+.markdown-rendered pre.language-qore:before, .style-settings-container pre.language-qore:before {
   content: "qore";
 }
-.markdown-rendered pre.language-r:before {
+.markdown-rendered pre.language-r:before, .style-settings-container pre.language-r:before {
   content: "r";
 }
-.markdown-rendered pre.language-racket:before {
+.markdown-rendered pre.language-racket:before, .style-settings-container pre.language-racket:before {
   content: "racket";
 }
-.markdown-rendered pre.language-rkt:before {
+.markdown-rendered pre.language-rkt:before, .style-settings-container pre.language-rkt:before {
   content: "rkt";
 }
-.markdown-rendered pre.language-cshtml:before {
+.markdown-rendered pre.language-cshtml:before, .style-settings-container pre.language-cshtml:before {
   content: "cshtml";
 }
-.markdown-rendered pre.language-razor:before {
+.markdown-rendered pre.language-razor:before, .style-settings-container pre.language-razor:before {
   content: "razor";
 }
-.markdown-rendered pre.language-jsx:before {
+.markdown-rendered pre.language-jsx:before, .style-settings-container pre.language-jsx:before {
   content: "jsx";
 }
-.markdown-rendered pre.language-tsx:before {
+.markdown-rendered pre.language-tsx:before, .style-settings-container pre.language-tsx:before {
   content: "tsx";
 }
-.markdown-rendered pre.language-reason:before {
+.markdown-rendered pre.language-reason:before, .style-settings-container pre.language-reason:before {
   content: "reason";
 }
-.markdown-rendered pre.language-regex:before {
+.markdown-rendered pre.language-regex:before, .style-settings-container pre.language-regex:before {
   content: "regex";
 }
-.markdown-rendered pre.language-rego:before {
+.markdown-rendered pre.language-rego:before, .style-settings-container pre.language-rego:before {
   content: "rego";
 }
-.markdown-rendered pre.language-renpy:before {
+.markdown-rendered pre.language-renpy:before, .style-settings-container pre.language-renpy:before {
   content: "renpy";
 }
-.markdown-rendered pre.language-rpy:before {
+.markdown-rendered pre.language-rpy:before, .style-settings-container pre.language-rpy:before {
   content: "rpy";
 }
-.markdown-rendered pre.language-rescript:before {
+.markdown-rendered pre.language-rescript:before, .style-settings-container pre.language-rescript:before {
   content: "rescript";
 }
-.markdown-rendered pre.language-res:before {
+.markdown-rendered pre.language-res:before, .style-settings-container pre.language-res:before {
   content: "res";
 }
-.markdown-rendered pre.language-rest:before {
+.markdown-rendered pre.language-rest:before, .style-settings-container pre.language-rest:before {
   content: "rest";
 }
-.markdown-rendered pre.language-rip:before {
+.markdown-rendered pre.language-rip:before, .style-settings-container pre.language-rip:before {
   content: "rip";
 }
-.markdown-rendered pre.language-roboconf:before {
+.markdown-rendered pre.language-roboconf:before, .style-settings-container pre.language-roboconf:before {
   content: "roboconf";
 }
-.markdown-rendered pre.language-robotframework:before {
+.markdown-rendered pre.language-robotframework:before, .style-settings-container pre.language-robotframework:before {
   content: "robotframework";
 }
-.markdown-rendered pre.language-robot:before {
+.markdown-rendered pre.language-robot:before, .style-settings-container pre.language-robot:before {
   content: "robot";
 }
-.markdown-rendered pre.language-ruby:before {
+.markdown-rendered pre.language-ruby:before, .style-settings-container pre.language-ruby:before {
   content: "ruby";
 }
-.markdown-rendered pre.language-rb:before {
+.markdown-rendered pre.language-rb:before, .style-settings-container pre.language-rb:before {
   content: "rb";
 }
-.markdown-rendered pre.language-rust:before {
+.markdown-rendered pre.language-rust:before, .style-settings-container pre.language-rust:before {
   content: "rust";
 }
-.markdown-rendered pre.language-sas:before {
+.markdown-rendered pre.language-sas:before, .style-settings-container pre.language-sas:before {
   content: "sas";
 }
-.markdown-rendered pre.language-sass:before {
+.markdown-rendered pre.language-sass:before, .style-settings-container pre.language-sass:before {
   content: "sass";
 }
-.markdown-rendered pre.language-scss:before {
+.markdown-rendered pre.language-scss:before, .style-settings-container pre.language-scss:before {
   content: "scss";
 }
-.markdown-rendered pre.language-scala:before {
+.markdown-rendered pre.language-scala:before, .style-settings-container pre.language-scala:before {
   content: "scala";
 }
-.markdown-rendered pre.language-scheme:before {
+.markdown-rendered pre.language-scheme:before, .style-settings-container pre.language-scheme:before {
   content: "scheme";
 }
-.markdown-rendered pre.language-shell-session:before {
+.markdown-rendered pre.language-shell-session:before, .style-settings-container pre.language-shell-session:before {
   content: "shell-session";
 }
-.markdown-rendered pre.language-sh-session:before {
+.markdown-rendered pre.language-sh-session:before, .style-settings-container pre.language-sh-session:before {
   content: "sh-session";
 }
-.markdown-rendered pre.language-shellsession:before {
+.markdown-rendered pre.language-shellsession:before, .style-settings-container pre.language-shellsession:before {
   content: "shellsession";
 }
-.markdown-rendered pre.language-smali:before {
+.markdown-rendered pre.language-smali:before, .style-settings-container pre.language-smali:before {
   content: "smali";
 }
-.markdown-rendered pre.language-smalltalk:before {
+.markdown-rendered pre.language-smalltalk:before, .style-settings-container pre.language-smalltalk:before {
   content: "smalltalk";
 }
-.markdown-rendered pre.language-smarty:before {
+.markdown-rendered pre.language-smarty:before, .style-settings-container pre.language-smarty:before {
   content: "smarty";
 }
-.markdown-rendered pre.language-sml:before {
+.markdown-rendered pre.language-sml:before, .style-settings-container pre.language-sml:before {
   content: "sml";
 }
-.markdown-rendered pre.language-smlnj:before {
+.markdown-rendered pre.language-smlnj:before, .style-settings-container pre.language-smlnj:before {
   content: "smlnj";
 }
-.markdown-rendered pre.language-solidity:before {
+.markdown-rendered pre.language-solidity:before, .style-settings-container pre.language-solidity:before {
   content: "solidity";
 }
-.markdown-rendered pre.language-sol:before {
+.markdown-rendered pre.language-sol:before, .style-settings-container pre.language-sol:before {
   content: "sol";
 }
-.markdown-rendered pre.language-solution-file:before {
+.markdown-rendered pre.language-solution-file:before, .style-settings-container pre.language-solution-file:before {
   content: "solution-file";
 }
-.markdown-rendered pre.language-soy:before {
+.markdown-rendered pre.language-soy:before, .style-settings-container pre.language-soy:before {
   content: "soy";
 }
-.markdown-rendered pre.language-sparql:before {
+.markdown-rendered pre.language-sparql:before, .style-settings-container pre.language-sparql:before {
   content: "sparql";
 }
-.markdown-rendered pre.language-rq:before {
+.markdown-rendered pre.language-rq:before, .style-settings-container pre.language-rq:before {
   content: "rq";
 }
-.markdown-rendered pre.language-splunk-spl:before {
+.markdown-rendered pre.language-splunk-spl:before, .style-settings-container pre.language-splunk-spl:before {
   content: "splunk-spl";
 }
-.markdown-rendered pre.language-sqf:before {
+.markdown-rendered pre.language-sqf:before, .style-settings-container pre.language-sqf:before {
   content: "sqf";
 }
-.markdown-rendered pre.language-sql:before {
+.markdown-rendered pre.language-sql:before, .style-settings-container pre.language-sql:before {
   content: "sql";
 }
-.markdown-rendered pre.language-squirrel:before {
+.markdown-rendered pre.language-squirrel:before, .style-settings-container pre.language-squirrel:before {
   content: "squirrel";
 }
-.markdown-rendered pre.language-stan:before {
+.markdown-rendered pre.language-stan:before, .style-settings-container pre.language-stan:before {
   content: "stan";
 }
-.markdown-rendered pre.language-stata:before {
+.markdown-rendered pre.language-stata:before, .style-settings-container pre.language-stata:before {
   content: "stata";
 }
-.markdown-rendered pre.language-iecst:before {
+.markdown-rendered pre.language-iecst:before, .style-settings-container pre.language-iecst:before {
   content: "iecst";
 }
-.markdown-rendered pre.language-stylus:before {
+.markdown-rendered pre.language-stylus:before, .style-settings-container pre.language-stylus:before {
   content: "stylus";
 }
-.markdown-rendered pre.language-supercollider:before {
+.markdown-rendered pre.language-supercollider:before, .style-settings-container pre.language-supercollider:before {
   content: "supercollider";
 }
-.markdown-rendered pre.language-sclang:before {
+.markdown-rendered pre.language-sclang:before, .style-settings-container pre.language-sclang:before {
   content: "sclang";
 }
-.markdown-rendered pre.language-swift:before {
+.markdown-rendered pre.language-swift:before, .style-settings-container pre.language-swift:before {
   content: "swift";
 }
-.markdown-rendered pre.language-systemd:before {
+.markdown-rendered pre.language-systemd:before, .style-settings-container pre.language-systemd:before {
   content: "systemd";
 }
-.markdown-rendered pre.language-t4-templating:before {
+.markdown-rendered pre.language-t4-templating:before, .style-settings-container pre.language-t4-templating:before {
   content: "t4-templating";
 }
-.markdown-rendered pre.language-t4-cs:before {
+.markdown-rendered pre.language-t4-cs:before, .style-settings-container pre.language-t4-cs:before {
   content: "t4-cs";
 }
-.markdown-rendered pre.language-t4:before {
+.markdown-rendered pre.language-t4:before, .style-settings-container pre.language-t4:before {
   content: "t4";
 }
-.markdown-rendered pre.language-t4-vb:before {
+.markdown-rendered pre.language-t4-vb:before, .style-settings-container pre.language-t4-vb:before {
   content: "t4-vb";
 }
-.markdown-rendered pre.language-tap:before {
+.markdown-rendered pre.language-tap:before, .style-settings-container pre.language-tap:before {
   content: "tap";
 }
-.markdown-rendered pre.language-tcl:before {
+.markdown-rendered pre.language-tcl:before, .style-settings-container pre.language-tcl:before {
   content: "tcl";
 }
-.markdown-rendered pre.language-tt2:before {
+.markdown-rendered pre.language-tt2:before, .style-settings-container pre.language-tt2:before {
   content: "tt2";
 }
-.markdown-rendered pre.language-textile:before {
+.markdown-rendered pre.language-textile:before, .style-settings-container pre.language-textile:before {
   content: "textile";
 }
-.markdown-rendered pre.language-toml:before {
+.markdown-rendered pre.language-toml:before, .style-settings-container pre.language-toml:before {
   content: "toml";
 }
-.markdown-rendered pre.language-tremor:before {
+.markdown-rendered pre.language-tremor:before, .style-settings-container pre.language-tremor:before {
   content: "tremor";
 }
-.markdown-rendered pre.language-trickle:before {
+.markdown-rendered pre.language-trickle:before, .style-settings-container pre.language-trickle:before {
   content: "trickle";
 }
-.markdown-rendered pre.language-troy:before {
+.markdown-rendered pre.language-troy:before, .style-settings-container pre.language-troy:before {
   content: "troy";
 }
-.markdown-rendered pre.language-turtle:before {
+.markdown-rendered pre.language-turtle:before, .style-settings-container pre.language-turtle:before {
   content: "turtle";
 }
-.markdown-rendered pre.language-trig:before {
+.markdown-rendered pre.language-trig:before, .style-settings-container pre.language-trig:before {
   content: "trig";
 }
-.markdown-rendered pre.language-twig:before {
+.markdown-rendered pre.language-twig:before, .style-settings-container pre.language-twig:before {
   content: "twig";
 }
-.markdown-rendered pre.language-typescript:before {
+.markdown-rendered pre.language-typescript:before, .style-settings-container pre.language-typescript:before {
   content: "typescript";
 }
-.markdown-rendered pre.language-ts:before {
+.markdown-rendered pre.language-ts:before, .style-settings-container pre.language-ts:before {
   content: "ts";
 }
-.markdown-rendered pre.language-typoscript:before {
+.markdown-rendered pre.language-typoscript:before, .style-settings-container pre.language-typoscript:before {
   content: "typoscript";
 }
-.markdown-rendered pre.language-tsconfig:before {
+.markdown-rendered pre.language-tsconfig:before, .style-settings-container pre.language-tsconfig:before {
   content: "tsconfig";
 }
-.markdown-rendered pre.language-unrealscript:before {
+.markdown-rendered pre.language-unrealscript:before, .style-settings-container pre.language-unrealscript:before {
   content: "unrealscript";
 }
-.markdown-rendered pre.language-uscript:before {
+.markdown-rendered pre.language-uscript:before, .style-settings-container pre.language-uscript:before {
   content: "uscript";
 }
-.markdown-rendered pre.language-uc:before {
+.markdown-rendered pre.language-uc:before, .style-settings-container pre.language-uc:before {
   content: "uc";
 }
-.markdown-rendered pre.language-uorazor:before {
+.markdown-rendered pre.language-uorazor:before, .style-settings-container pre.language-uorazor:before {
   content: "uorazor";
 }
-.markdown-rendered pre.language-uri:before {
+.markdown-rendered pre.language-uri:before, .style-settings-container pre.language-uri:before {
   content: "uri";
 }
-.markdown-rendered pre.language-url:before {
+.markdown-rendered pre.language-url:before, .style-settings-container pre.language-url:before {
   content: "url";
 }
-.markdown-rendered pre.language-v:before {
+.markdown-rendered pre.language-v:before, .style-settings-container pre.language-v:before {
   content: "v";
 }
-.markdown-rendered pre.language-vala:before {
+.markdown-rendered pre.language-vala:before, .style-settings-container pre.language-vala:before {
   content: "vala";
 }
-.markdown-rendered pre.language-vbnet:before {
+.markdown-rendered pre.language-vbnet:before, .style-settings-container pre.language-vbnet:before {
   content: "vbnet";
 }
-.markdown-rendered pre.language-velocity:before {
+.markdown-rendered pre.language-velocity:before, .style-settings-container pre.language-velocity:before {
   content: "velocity";
 }
-.markdown-rendered pre.language-verilog:before {
+.markdown-rendered pre.language-verilog:before, .style-settings-container pre.language-verilog:before {
   content: "verilog";
 }
-.markdown-rendered pre.language-vhdl:before {
+.markdown-rendered pre.language-vhdl:before, .style-settings-container pre.language-vhdl:before {
   content: "vhdl";
 }
-.markdown-rendered pre.language-vim:before {
+.markdown-rendered pre.language-vim:before, .style-settings-container pre.language-vim:before {
   content: "vim";
 }
-.markdown-rendered pre.language-visual-basic:before {
+.markdown-rendered pre.language-visual-basic:before, .style-settings-container pre.language-visual-basic:before {
   content: "visual-basic";
 }
-.markdown-rendered pre.language-vba:before {
+.markdown-rendered pre.language-vba:before, .style-settings-container pre.language-vba:before {
   content: "vba";
 }
-.markdown-rendered pre.language-vb:before {
+.markdown-rendered pre.language-vb:before, .style-settings-container pre.language-vb:before {
   content: "vb";
 }
-.markdown-rendered pre.language-warpscript:before {
+.markdown-rendered pre.language-warpscript:before, .style-settings-container pre.language-warpscript:before {
   content: "warpscript";
 }
-.markdown-rendered pre.language-wasm:before {
+.markdown-rendered pre.language-wasm:before, .style-settings-container pre.language-wasm:before {
   content: "wasm";
 }
-.markdown-rendered pre.language-web-idl:before {
+.markdown-rendered pre.language-web-idl:before, .style-settings-container pre.language-web-idl:before {
   content: "web-idl";
 }
-.markdown-rendered pre.language-webidl:before {
+.markdown-rendered pre.language-webidl:before, .style-settings-container pre.language-webidl:before {
   content: "webidl";
 }
-.markdown-rendered pre.language-wgsl:before {
+.markdown-rendered pre.language-wgsl:before, .style-settings-container pre.language-wgsl:before {
   content: "wgsl";
 }
-.markdown-rendered pre.language-wiki:before {
+.markdown-rendered pre.language-wiki:before, .style-settings-container pre.language-wiki:before {
   content: "wiki";
 }
-.markdown-rendered pre.language-wolfram:before {
+.markdown-rendered pre.language-wolfram:before, .style-settings-container pre.language-wolfram:before {
   content: "wolfram";
 }
-.markdown-rendered pre.language-mathematica:before {
+.markdown-rendered pre.language-mathematica:before, .style-settings-container pre.language-mathematica:before {
   content: "mathematica";
 }
-.markdown-rendered pre.language-nb:before {
+.markdown-rendered pre.language-nb:before, .style-settings-container pre.language-nb:before {
   content: "nb";
 }
-.markdown-rendered pre.language-wl:before {
+.markdown-rendered pre.language-wl:before, .style-settings-container pre.language-wl:before {
   content: "wl";
 }
-.markdown-rendered pre.language-wren:before {
+.markdown-rendered pre.language-wren:before, .style-settings-container pre.language-wren:before {
   content: "wren";
 }
-.markdown-rendered pre.language-xeora:before {
+.markdown-rendered pre.language-xeora:before, .style-settings-container pre.language-xeora:before {
   content: "xeora";
 }
-.markdown-rendered pre.language-xeoracube:before {
+.markdown-rendered pre.language-xeoracube:before, .style-settings-container pre.language-xeoracube:before {
   content: "xeoracube";
 }
-.markdown-rendered pre.language-xml-doc:before {
+.markdown-rendered pre.language-xml-doc:before, .style-settings-container pre.language-xml-doc:before {
   content: "xml-doc";
 }
-.markdown-rendered pre.language-xojo:before {
+.markdown-rendered pre.language-xojo:before, .style-settings-container pre.language-xojo:before {
   content: "xojo";
 }
-.markdown-rendered pre.language-xquery:before {
+.markdown-rendered pre.language-xquery:before, .style-settings-container pre.language-xquery:before {
   content: "xquery";
 }
-.markdown-rendered pre.language-yaml:before {
+.markdown-rendered pre.language-yaml:before, .style-settings-container pre.language-yaml:before {
   content: "yaml";
 }
-.markdown-rendered pre.language-yml:before {
+.markdown-rendered pre.language-yml:before, .style-settings-container pre.language-yml:before {
   content: "yml";
 }
-.markdown-rendered pre.language-yang:before {
+.markdown-rendered pre.language-yang:before, .style-settings-container pre.language-yang:before {
   content: "yang";
 }
-.markdown-rendered pre.language-zig:before {
+.markdown-rendered pre.language-zig:before, .style-settings-container pre.language-zig:before {
   content: "zig";
 }
-.markdown-rendered pre:hover button.copy-code-button {
+.markdown-rendered pre:hover button.copy-code-button, .style-settings-container pre:hover button.copy-code-button {
   opacity: 1;
 }
-.markdown-rendered pre button.copy-code-button {
+.markdown-rendered pre button.copy-code-button, .style-settings-container pre button.copy-code-button {
   position: absolute;
   top: 0;
   right: 0;
@@ -2012,11 +2027,11 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view.is-live-preview, .mark
   color: transparent;
   opacity: 0;
 }
-.markdown-rendered pre button.copy-code-button:hover {
+.markdown-rendered pre button.copy-code-button:hover, .style-settings-container pre button.copy-code-button:hover {
   background-color: var(--code-bg-color);
   border-color: var(--border-color);
 }
-.markdown-rendered pre button.copy-code-button::after {
+.markdown-rendered pre button.copy-code-button::after, .style-settings-container pre button.copy-code-button::after {
   content: "Copy";
   position: absolute;
   display: block;
@@ -2030,11 +2045,11 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view.is-live-preview, .mark
   align-items: center;
   transition: all 0.2s ease;
 }
-.markdown-rendered pre button.copy-code-button:hover {
+.markdown-rendered pre button.copy-code-button:hover, .style-settings-container pre button.copy-code-button:hover {
   background-color: var(--code-bg-color);
   border: 1px solid var(--text-muted);
 }
-.markdown-rendered pre button.copy-code-button:hover::after {
+.markdown-rendered pre button.copy-code-button:hover::after, .style-settings-container pre button.copy-code-button:hover::after {
   color: var(--text-strong);
 }
 
@@ -2078,29 +2093,31 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view.is-live-preview, .mark
 
 .markdown-source-view.is-live-preview div.math-block, .markdown-source-view.is-live-preview span.math,
 .markdown-rendered div.math-block,
-.markdown-rendered span.math {
+.style-settings-container div.math-block,
+.markdown-rendered span.math,
+.style-settings-container span.math {
   color: var(--text-strong);
 }
 
-:is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) {
+:is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container) div:has(> table) {
   width: 100% !important;
 }
-:is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) table {
+:is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container) div:has(> table) table {
   white-space: pre-wrap;
   width: 100%;
 }
-:is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) table .cm-s-obsidian .cm-line {
+:is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container) div:has(> table) table .cm-s-obsidian .cm-line {
   line-height: 1.3;
 }
-:is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) table .cm-gutters {
+:is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container) div:has(> table) table .cm-gutters {
   display: none;
 }
-:is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) table * {
+:is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container) div:has(> table) table * {
   border-color: var(--text-muted);
   border-left: none;
   border-right: none;
 }
-:is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) table thead th {
+:is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container) div:has(> table) table thead th {
   border-top: none;
   border-bottom: 1.5px solid var(--text-normal);
   padding: 10px 20px !important;
@@ -2108,21 +2125,21 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view.is-live-preview, .mark
   font-weight: inherit;
   color: var(--text-strong);
 }
-:is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) table thead th .cm-line.cm-active {
+:is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container) div:has(> table) table thead th .cm-line.cm-active {
   color: var(--text-strong);
 }
-:is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) table tbody tr {
+:is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container) div:has(> table) table tbody tr {
   border-top: 1px solid var(--divider-color);
   transition: all 0.2s ease-in-out;
 }
-:is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) table tbody tr:hover {
+:is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container) div:has(> table) table tbody tr:hover {
   background-color: var(--background-modifier-active-hover);
 }
-:is(.markdown-source-view.is-live-preview, .markdown-rendered) div:has(> table) table tbody td {
+:is(.markdown-source-view.is-live-preview, .markdown-rendered, .style-settings-container) div:has(> table) table tbody td {
   padding: 10px 10px !important;
 }
 
-.markdown-rendered a.tag,
+.markdown-rendered a.tag, .style-settings-container a.tag,
 .markdown-source-view.is-live-preview .cm-line .cm-hashtag,
 .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill {
   font-family: var(--font-tag);
@@ -2143,7 +2160,7 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view.is-live-preview, .mark
   color: var(--text-normal);
 }
 
-.markdown-rendered a.tag,
+.markdown-rendered a.tag, .style-settings-container a.tag,
 .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill {
   padding: 0 0.5em;
 }
@@ -2159,12 +2176,12 @@ body.embed-alt.embed-alt-middle :is(.markdown-source-view.is-live-preview, .mark
   padding-right: 0.5em;
 }
 
-body.tag-fill .markdown-rendered a.tag, body.tag-fill .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill {
+body.tag-fill .markdown-rendered a.tag, body.tag-fill .style-settings-container a.tag, body.tag-fill .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill {
   border-color: var(--color-accent-o40);
   background-color: var(--color-accent-o30);
   color: var(--text-strong);
 }
-body.tag-fill .markdown-rendered a.tag:hover, body.tag-fill .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill:hover {
+body.tag-fill .markdown-rendered a.tag:hover, body.tag-fill .style-settings-container a.tag:hover, body.tag-fill .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill:hover {
   border-color: var(--color-accent-o80);
   background-color: var(--color-accent-o60);
   color: var(--text-strong);
@@ -2175,12 +2192,12 @@ body.tag-fill .markdown-source-view.is-live-preview .cm-line .cm-hashtag:is(.cm-
   color: var(--text-strong);
 }
 
-body.tag-outline .markdown-rendered a.tag, body.tag-outline .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill {
+body.tag-outline .markdown-rendered a.tag, body.tag-outline .style-settings-container a.tag, body.tag-outline .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill {
   border-color: var(--color-accent-o50);
   background-color: transparent;
   color: var(--text-strong);
 }
-body.tag-outline .markdown-rendered a.tag:hover, body.tag-outline .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill:hover {
+body.tag-outline .markdown-rendered a.tag:hover, body.tag-outline .style-settings-container a.tag:hover, body.tag-outline .metadata-container .metadata-property[data-property-key=tags] .multi-select-pill:hover {
   border-color: var(--color-accent-o80);
   background-color: var(--color-accent-o30);
 }
@@ -2467,17 +2484,22 @@ body.opaque-expanded-folder .workspace .mod-left-split .nav-folder:not(.is-colla
   display: none;
 }
 
-body .vertical-tab-nav-item {
+body.use-default-color-picker {
+  --color-h: var(--accent-h) !important;
+  --color-s: var(--accent-s) !important;
+  --color-l: var(--accent-l) !important;
+}
+body:not(.use-default-color-picker) .vertical-tab-nav-item {
   transition: all 0.2s ease-in-out;
 }
-body .vertical-tab-nav-item:hover {
+body:not(.use-default-color-picker) .vertical-tab-nav-item:hover {
   background-color: var(--tab-bg-color);
 }
-body .vertical-tab-nav-item.is-active {
+body:not(.use-default-color-picker) .vertical-tab-nav-item.is-active {
   background-color: var(--text-muted);
-  color: var(--text-strong);
+  color: var(--background-primary);
 }
-body .vertical-tab-nav-item.is-active:hover {
+body:not(.use-default-color-picker) .vertical-tab-nav-item.is-active:hover {
   background-color: var(--text-muted);
 }
 body .setting-item.setting-item-heading .setting-item-info .setting-item-name, body .vertical-tab-header-group-title {
@@ -2511,6 +2533,7 @@ body button.mod-cta {
 }
 body button.mod-cta:hover {
   background-color: var(--interactive-hover);
+  color: var(--text-strong);
 }
 body input[type=range] {
   border: 1px solid var(--background-modifier-border-focus);
@@ -2829,29 +2852,20 @@ body.zen-mode .mod-root .workspace-tab-header-container:hover, body.zen-mode .mo
   box-shadow: 0 0 0 1px var(--text-strong);
 }
 
-.setting-item:is([data-id^=custom-accent-color-for-], [data-id^=custom-accent-color-]) {
+body:not(.custom-accent-color) .setting-item:is([data-id^=custom-accent-color-for-], [data-id^=custom-accent-color-]) {
   display: none;
 }
-.custom-accent-color .setting-item:is([data-id^=custom-accent-color-for-], [data-id^=custom-accent-color-]) {
-  display: flex;
-}
-.setting-item:is([data-id=header-color-gradient]) {
+body:not(.colorful-headers) .setting-item:is([data-id=header-color-gradient]) {
   display: none;
 }
-.colorful-headers .setting-item {
-  display: flex;
-}
-.setting-item:is([data-id=callout-dogs-ear-size]) {
+body:not(.callout-dogs-ear) .setting-item:is([data-id^=callout-dogs-ear-size]) {
   display: none;
 }
-.callout-dogs-ear .setting-item:is([data-id=callout-dogs-ear-size]) {
-  display: flex;
-}
-.setting-item:is([data-id=inactive-opacity], [data-id=inactive-hover-opacity], [data-id=focuse-transition-duration]) {
+body:not(.fade-out-inactive-lines) .setting-item:is([data-id=inactive-opacity], [data-id=inactive-hover-opacity], [data-id=focuse-transition-duration]) {
   display: none;
 }
-.fade-out-inactive-lines .setting-item:is([data-id=inactive-opacity], [data-id=inactive-hover-opacity], [data-id=focuse-transition-duration]) {
-  display: flex;
+body.use-default-color-picker .setting-item:is([data-id^=accent-color-for], [data-id^=custom-accent-color-for-], [data-id^=custom-accent-color-], [data-id=custom-accent-color]) {
+  display: none;
 }
 
 /* @settings
@@ -2863,8 +2877,19 @@ settings:
     title: To Know
     type: info-text
     description: |
-      - Since
+      - If you want to use the built-in color picker, you can turn on `Use Default Color Picker`.
+      - If `Use Default Color Picker` is off, please use the settings below to customize accent color.
+      - However the built-in color picker will still influence the text color in buttons with a accent color background even if `Use Default Color Picker` is off.
+    description.zh: |
+      - 如果想使用内置的颜色选择器，请打开“使用默认颜色选择器”。
+      - 如果“使用默认颜色选择器”关闭，请使用下面的设置来自定义强调色。
+      - **注意**：即使“使用默认颜色选择器”关闭，内置的颜色选择器仍然会影响带有强调色背景的按钮的文本颜色。
     markdown: true
+  -
+    id: use-default-color-picker
+    title: Use Default Color Picker
+    type: class-toggle
+    default: false
   -
     id: accent-color-for-light-theme
     title: Accent Color for Light Theme

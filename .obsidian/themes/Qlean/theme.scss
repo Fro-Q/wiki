@@ -703,8 +703,8 @@ body {
   --text-selection: hsla(var(--color-h), var(--color-s), var(--color-l), 0.15) !important;
 
   --interactive-hover: var(--background-primary) !important;
-  // --interactive-accent: hsl(var(--color-h), var(--color-s), 40%) !important;
-  // --interactive-accent-hover: hsl(var(--color-h), var(--color-s), 64%) !important;
+  --interactive-accent: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 10%)) !important;
+  --interactive-accent-hover: hsl(var(--color-h), var(--color-s), calc(var(--color-l) - 5%)) !important;
 
   // other
   --color-error: var(--background-modifier-error);
@@ -1888,14 +1888,16 @@ body.opaque-expanded-folder .workspace .mod-left-split .nav-folder:not(.is-colla
   }
 }
 
-button.mod-cta {
-  // mix-blend-mode: difference;
-}
-
 // setting panel
 body {
 
-  & .vertical-tab-nav-item {
+  &.use-default-color-picker {
+    --color-h: var(--accent-h) !important;
+    --color-s: var(--accent-s) !important;
+    --color-l: var(--accent-l) !important;
+  }
+
+  &:not(.use-default-color-picker) .vertical-tab-nav-item {
     transition: all 0.2s ease-in-out;
 
     &:hover {
@@ -1904,7 +1906,7 @@ body {
 
     &.is-active {
       background-color: var(--text-muted);
-      color: var(--text-strong);
+      color: var(--background-primary);
 
       &:hover {
         background-color: var(--text-muted);
@@ -1954,6 +1956,7 @@ body {
 
     &:hover {
       background-color: var(--interactive-hover);
+      color: var(--text-strong);
     }
   }
 
@@ -2399,37 +2402,37 @@ body.zen-mode {
 // style settings item
 
 .setting-item {
-  &:is([data-id^=custom-accent-color-for-], [data-id^=custom-accent-color-]) {
+  // &:is([data-id^=custom-accent-color-for-], [data-id^=custom-accent-color-]) {
+  //   display: none;
+
+  //   body.custom-accent-color & {
+  //     display: flex;
+  //   }
+  // }
+
+  body:not(.custom-accent-color) &:is([data-id^=custom-accent-color-for-], [data-id^=custom-accent-color-]) {
     display: none;
-
-    .custom-accent-color & {
-      display: flex;
-    }
   }
 
-  &:is([data-id=header-color-gradient]) {
+  body:not(.colorful-headers) &:is([data-id=header-color-gradient]) {
     display: none;
   }
 
-  .colorful-headers & {
-    display: flex;
-  }
-
-  &:is([data-id=callout-dogs-ear-size]) {
+  body:not(.callout-dogs-ear) &:is([data-id^=callout-dogs-ear-size]) {
     display: none;
-
-    .callout-dogs-ear & {
-      display: flex;
-    }
   }
 
-  &:is([data-id=inactive-opacity], [data-id=inactive-hover-opacity], [data-id=focuse-transition-duration]) {
+  body:not(.fade-out-inactive-lines) &:is([data-id=inactive-opacity], [data-id=inactive-hover-opacity], [data-id=focuse-transition-duration]) {
     display: none;
-
-    .fade-out-inactive-lines & {
-      display: flex;
-    }
   }
+
+  body.use-default-color-picker &:is([data-id^=accent-color-for], [data-id^=custom-accent-color-for-], [data-id^=custom-accent-color-], [data-id=custom-accent-color]) {
+    display: none;
+  }
+}
+
+.style-settings-container {
+  @extend .markdown-rendered;
 }
 
 /* @settings
@@ -2441,8 +2444,19 @@ settings:
     title: To Know
     type: info-text
     description: |
-      - Since
+      - If you want to use the built-in color picker, you can turn on `Use Default Color Picker`.
+      - If `Use Default Color Picker` is off, please use the settings below to customize accent color.
+      - However the built-in color picker will still influence the text color in buttons with a accent color background even if `Use Default Color Picker` is off.
+    description.zh: |
+      - 如果想使用内置的颜色选择器，请打开“使用默认颜色选择器”。
+      - 如果“使用默认颜色选择器”关闭，请使用下面的设置来自定义强调色。
+      - **注意**：即使“使用默认颜色选择器”关闭，内置的颜色选择器仍然会影响带有强调色背景的按钮的文本颜色。
     markdown: true
+  -
+    id: use-default-color-picker
+    title: Use Default Color Picker
+    type: class-toggle
+    default: false
   -
     id: accent-color-for-light-theme
     title: Accent Color for Light Theme

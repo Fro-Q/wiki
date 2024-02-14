@@ -182,7 +182,7 @@
   "focus-mode@@inactive-opacity": 0.3,
   "focus-mode@@zen-mode": false,
   "inline-elements@@callout-dogs-ear-size": 30,
-  "accent-color@@accent-color-for-light-theme": "accent-color-bw-light",
+  "accent-color@@accent-color-for-light-theme": "accent-color-blue-light",
   "font@@font-underlined-decoration-width": 2,
   "accent-color@@accent-color-for-dark-theme": "accent-color-bw-dark",
   "font@@font-highlight-size": 1,
@@ -202,5 +202,7 @@
   "accent-color@@accent-color-light-hue-default": 254,
   "accent-color@@accent-color-light-saturation-default": 80,
   "accent-color@@accent-color-light-lightness-default": 68,
-  "font@@font-text": "noteworthy, \"Helvetica Neue\", \"WenQuanYi Micro Hei\", \"Helvetica\", \"Arial\", sans-serif"
+  "font@@font-text": "noteworthy, \"Helvetica Neue\", \"WenQuanYi Micro Hei\", \"Helvetica\", \"Arial\", sans-serif",
+  "accent-color@@custom-accent-color": false,
+  "accent-color@@use-default-color-picker": false
 }

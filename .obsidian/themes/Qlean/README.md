@@ -29,6 +29,7 @@ An Obsidian theme offers a clean and clutter-free interface for enhanced focus a
 19. Removed underline of file name in editor.
 20. Changed all buttons' style.
 21. Redeisgned table.
+22. Offers the option to use built-in color picker.
 
 #### bug fix
 
