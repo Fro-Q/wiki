@@ -174,8 +174,6 @@
   "font@@header-indicator": true,
   "font@@font-strong-weight": 900,
   "font@@font-strong-size": 1,
-  "font@@font-strong-decoration-width": 1,
-  "font@@font-strong-decoration-offset": 2,
   "ui-style@@tab-style": "chrome-tab-style",
   "focus-mode@@focuse-transition-duration": 0.2,
   "focus-mode@@inactive-hover-opacity": 0.8,
@@ -202,7 +200,6 @@
   "accent-color@@accent-color-light-hue-default": 254,
   "accent-color@@accent-color-light-saturation-default": 80,
   "accent-color@@accent-color-light-lightness-default": 68,
-  "font@@font-text": "noteworthy, \"Helvetica Neue\", \"WenQuanYi Micro Hei\", \"Helvetica\", \"Arial\", sans-serif",
-  "accent-color@@custom-accent-color": false,
-  "accent-color@@use-default-color-picker": false
+  "accent-color@@custom-accent-color": true,
+  "font@@font-em-style": "italic"
 }

@@ -2484,22 +2484,22 @@ body.opaque-expanded-folder .workspace .mod-left-split .nav-folder:not(.is-colla
   display: none;
 }
 
-body.use-default-color-picker {
+body.use-builtin-color-picker {
   --color-h: var(--accent-h) !important;
   --color-s: var(--accent-s) !important;
   --color-l: var(--accent-l) !important;
 }
-body:not(.use-default-color-picker) .vertical-tab-nav-item {
+body:not(.use-builtin-color-picker) .vertical-tab-nav-item {
   transition: all 0.2s ease-in-out;
 }
-body:not(.use-default-color-picker) .vertical-tab-nav-item:hover {
+body:not(.use-builtin-color-picker) .vertical-tab-nav-item:hover {
   background-color: var(--tab-bg-color);
 }
-body:not(.use-default-color-picker) .vertical-tab-nav-item.is-active {
+body:not(.use-builtin-color-picker) .vertical-tab-nav-item.is-active {
   background-color: var(--text-muted);
   color: var(--background-primary);
 }
-body:not(.use-default-color-picker) .vertical-tab-nav-item.is-active:hover {
+body:not(.use-builtin-color-picker) .vertical-tab-nav-item.is-active:hover {
   background-color: var(--text-muted);
 }
 body .setting-item.setting-item-heading .setting-item-info .setting-item-name, body .vertical-tab-header-group-title {
@@ -2657,28 +2657,37 @@ body .checkbox-container:has(input[type=checkbox]).mod-small .style-settings-con
   border: 2px solid var(--background-modifier-border-hover);
   box-shadow: 0 1px 0.6px 1.5px var(--button-shadow-color);
 }
-body .checkbox-container:has(input[type=checkbox]).mod-small button[aria-label="Restore default"] {
+body button[aria-label="Restore default"] {
   height: 40px;
 }
-body .checkbox-container:has(input[type=checkbox]).mod-small .setting-item[data-id*=hue] .slider {
+body .setting-item[data-id*=hue] .slider {
   background: linear-gradient(to right, hsl(0, 100%, 50%) 0%, hsl(60, 100%, 50%) 17%, hsl(120, 100%, 50%) 33%, hsl(180, 100%, 50%) 50%, hsl(240, 100%, 50%) 67%, hsl(300, 100%, 50%) 83%, hsl(0, 100%, 50%) 100%);
 }
-body .checkbox-container:has(input[type=checkbox]).mod-small .setting-item.style-settings-heading[data-level="0"] + .style-settings-container {
+body .setting-item .themed-color-wrapper > div + div {
+  margin-top: 0;
+}
+body .setting-item .setting-item-info .setting-item-name {
+  font-family: --font-default;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-strong);
+}
+body .setting-item.style-settings-heading[data-level="0"] + .style-settings-container {
   border-radius: 10px;
 }
-body .checkbox-container:has(input[type=checkbox]).mod-small .setting-item.style-settings-heading[data-level]:not(.is-collapsed) {
+body .setting-item.style-settings-heading[data-level]:not(.is-collapsed) {
   margin-bottom: 10px;
 }
-body .checkbox-container:has(input[type=checkbox]).mod-small .setting-item.style-settings-heading:not([data-level="0"], [data-level="1"]), body .checkbox-container:has(input[type=checkbox]).mod-small .setting-item.style-settings-heading:not([data-level="0"], [data-level="1"]) + .style-settings-container {
+body .setting-item.style-settings-heading:not([data-level="0"], [data-level="1"]), body .setting-item.style-settings-heading:not([data-level="0"], [data-level="1"]) + .style-settings-container {
   padding-left: 15px;
 }
-:has(body .checkbox-container:has(input[type=checkbox]).mod-small .setting-item).style-settings-container {
+:has(body .setting-item).style-settings-container {
   padding-bottom: 0;
 }
-body .checkbox-container:has(input[type=checkbox]).mod-small .setting-item:nth-last-child(1) {
+body .setting-item:nth-last-child(1) {
   border-bottom: 1px solid var(--background-modifier-border);
 }
-body .checkbox-container:has(input[type=checkbox]).mod-small .setting-item + .setting-item-heading {
+body .setting-item + .setting-item-heading {
   margin-top: 0;
   border-top: 1px solid var(--background-modifier-border);
 }
@@ -2864,7 +2873,7 @@ body:not(.callout-dogs-ear) .setting-item:is([data-id^=callout-dogs-ear-size]) {
 body:not(.fade-out-inactive-lines) .setting-item:is([data-id=inactive-opacity], [data-id=inactive-hover-opacity], [data-id=focuse-transition-duration]) {
   display: none;
 }
-body.use-default-color-picker .setting-item:is([data-id^=accent-color-for], [data-id^=custom-accent-color-for-], [data-id^=custom-accent-color-], [data-id=custom-accent-color]) {
+body.use-builtin-color-picker .setting-item:is([data-id^=accent-color-for], [data-id^=custom-accent-color-for-], [data-id^=custom-accent-color-], [data-id=custom-accent-color]) {
   display: none;
 }
 
@@ -2874,28 +2883,30 @@ id: accent-color
 settings:
   -
     id: accent-color-info
-    title: To Know
+    title: 👀Look at this👀
+    title.zh: 👀看这👀
     type: info-text
     description: |
-      - If you want to use the built-in color picker, you can turn on `Use Default Color Picker`.
-      - If `Use Default Color Picker` is off, please use the settings below to customize accent color.
-      - However the built-in color picker will still influence the text color in buttons with a accent color background even if `Use Default Color Picker` is off.
+      - If you want to use the built-in color picker, you can turn on `Use Built-in Color Picker`.
+      - If `Use Built-in Color Picker` is off, please use the settings below to customize accent color.
+      - However the built-in color picker will still influence the text color in buttons with a accent color background even if `Use Built-in Color Picker` is off.
     description.zh: |
-      - 如果想使用内置的颜色选择器，请打开“使用默认颜色选择器”。
-      - 如果“使用默认颜色选择器”关闭，请使用下面的设置来自定义强调色。
-      - **注意**：即使“使用默认颜色选择器”关闭，内置的颜色选择器仍然会影响带有强调色背景的按钮的文本颜色。
+      - 如果想使用内置的颜色选择器，请打开“使用内建颜色选择器”。
+      - 如果“使用内建颜色选择器”关闭，请使用下面的设置来自定义强调色。
+      - **注意**：即使“使用内建颜色选择器”关闭，内置的颜色选择器仍然会影响带有强调色背景的按钮的文本颜色。
     markdown: true
   -
-    id: use-default-color-picker
-    title: Use Default Color Picker
+    id: use-builtin-color-picker
+    title: Use Built-in Color Picker
+    title.zh: 使用内建颜色选择器
     type: class-toggle
     default: false
   -
     id: accent-color-for-light-theme
     title: Accent Color for Light Theme
-    title.zh: 亮色主题强调色
-    description: Selections below will be ignored if custom accent color is on. (Using `Custom Accent Color` is recommended.)
-    description.zh: 如果自定义强调色开启，以下选择将被忽略。（建议使用“自定义强调色”）
+    title.zh: 亮色主题强调色☀️
+    description: Selection will be ignored if custom accent color is on. (Using `Custom Accent Color` is recommended.)
+    description.zh: 如果自定义强调色开启，该选择将被忽略。（建议使用“自定义强调色”）
     type: class-select
     allowEmpty: false
     default: accent-color-green-light
@@ -2927,6 +2938,9 @@ settings:
   -
     id: accent-color-for-dark-theme
     title: Accent Color for Dark Theme
+    title.zh: 暗色主题强调色🌙
+    description: Selection will be ignored if custom accent color is on. (Using `Custom Accent Color` is recommended.)
+    description.zh: 如果自定义强调色开启，该选择将被忽略。（建议使用“自定义强调色”）
     type: class-select
     allowEmpty: false
     default: accent-color-orange-dark
@@ -2958,19 +2972,24 @@ settings:
   -
     id: custom-accent-color
     title: Custom Accent Color
-    description: Selections above will be ignored if this toggle is on.
+    title.zh: 自定义强调色
+    description: Selections above will be ignored if this toggle is on. (I know it's annoying but please bear with me.)
+    description.zh: 如果开启，上面的选择将被忽略。（反复强调别嫌啰嗦）
     type: class-toggle
     default: false
   -
     id: custom-accent-color-for-light-theme
-    title: Custom Accent Color for Light Theme
+    title: Custom Accent Color for Light Theme☀️
+    title.zh: 亮色主题自定义强调色☀️
     type: heading
     level: 1
     collapsed: true
   -
     id: accent-color-light-hue-default
-    title: Hue
+    title: Hue🌈
+    title.zh: 色相🌈
     description: Hover to preview.
+    description.zh: 鼠标悬停进行预览。
     type: variable-number-slider
     min: 0
     max: 360
@@ -2978,7 +2997,10 @@ settings:
     default: 254
   -
     id: accent-color-light-saturation-default
-    title: Saturation(%)
+    title: Saturation(%)🌫️
+    title.zh: 饱和度(%)🌫️
+    description: The higher the value, the more vivid the color.
+    description.zh: 数值越高，颜色越鲜艳。
     type: variable-number-slider
     format: "%"
     min: 0
@@ -2987,7 +3009,10 @@ settings:
     default: 80
   -
     id: accent-color-light-lightness-default
-    title: Lightness(%)
+    title: Lightness(%)💡
+    title.zh: 亮度(%)💡
+    description: The higher the value, the lighter the color.
+    description.zh: 数值越高，颜色越亮。
     type: variable-number-slider
     format: "%"
     min: 0
@@ -2996,14 +3021,17 @@ settings:
     default: 68
   -
     id: custom-accent-color-for-dark-theme
-    title: Custom Accent Color for Dark Theme
+    title: Custom Accent Color for Dark Theme🌙
+    title.zh: 暗色主题自定义强调色🌙
     type: heading
     level: 1
     collapsed: true
   -
     id: accent-color-dark-hue-default
-    title: Hue
+    title: Hue🌈
+    title.zh: 色相🌈
     description: Hover to preview.
+    description.zh: 鼠标悬停进行预览。
     type: variable-number-slider
     min: 0
     max: 360
@@ -3011,7 +3039,10 @@ settings:
     default: 254
   -
     id: accent-color-dark-saturation-default
-    title: Saturation(%)
+    title: Saturation(%)🌫️
+    title.zh: 饱和度(%)🌫️
+    description: The higher the value, the more vivid the color.
+    description.zh: 数值越高，颜色越鲜艳。
     type: variable-number-slider
     format: "%"
     min: 0
@@ -3020,7 +3051,10 @@ settings:
     default: 80
   -
     id: accent-color-dark-lightness-default
-    title: Lightness(%)
+    title: Lightness(%)💡
+    title.zh: 亮度(%)💡
+    description: The higher the value, the lighter the color.
+    description.zh: 数值越高，颜色越亮。
     type: variable-number-slider
     format: "%"
     min: 0
@@ -3037,51 +3071,66 @@ settings:
   -
     id: font-family
     title: Font Family
+    title.zh: 字体
     type: heading
     level: 1
     collapsed: true
   -
     id: font-text
     title: Text Font
+    title.zh: 文本字体
+    description: This will be the default font for most of the text in editor except for math and code.
+    description.zh: 将会影响编辑器中除了数学公式和代码外的几乎所有文字。
     type: variable-text
     default: '"Hiragino Sans GB", "Segoe UI", "Microsoft YaHei", "Helvetica Neue", "WenQuanYi Micro Hei", "Helvetica", "Arial", sans-serif'
     allowEmpty: true
   -
     id: font-header
     title: Header Font
-    description: Will be text font if empty.
+    title.zh: 标题字体
+    description: Will be the same as text font if empty.
+    description.zh: 如果为空，将与文本字体相同。
     type: variable-text
     default: ''
     allowEmpty: true
   -
     id: font-monospace
     title: Monospace Font
+    title.zh: 等宽字体
+    description: This will be the default font for code and tags in editor.
+    description.zh: 将会影响编辑器中的代码和标签等。
     type: variable-text
     default: 'iawriter-mono, Nitti, Menlo, Courier, monospace'
     allowEmpty: true
   -
     id: font-interface-override
     title: UI Font
-    description: Will be text font if empty.
+    title.zh: 界面字体
+    description: Will be Obsidian's default font if empty.
+    description.zh: 如果为空，将使用 Obsidian 的默认字体。
     type: variable-text
     default: ''
     allowEmpty: true
   -
     id: font-source-view
     title: Source View Font
+    title.zh: 源代码视图字体
     description: Will be monospace font if empty.
+    description.zh: 如果为空，将使用等宽字体。
     type: variable-text
     default: ''
     allowEmpty: true
   -
     id: strong-style
     title: Strong Style
+    title.zh: 粗体样式
     type: heading
     level: 1
     collapsed: true
   -
     id: font-strong-color
     title: Color
+    title.zh: 颜色
     type: variable-themed-color
     format: hsl
     opacity: true
@@ -3090,7 +3139,9 @@ settings:
   -
     id: font-strong-weight
     title: Weight
+    title.zh: 粗细
     description: Uasually makes difference at 100, 400, 700, 900 though depends on the font.
+    description.zh: 通常在 100、400、700、900 时会有明显区别，但取决于字体。
     type: variable-number-slider
     default: 900
     min: 100
@@ -3099,7 +3150,9 @@ settings:
   -
     id: font-strong-size
     title: Size(em)
+    title.zh: 大小（em）
     description: Base on the font size inherited from its parent.
+    description.zh: 基于从父级继承的字体大小。
     type: variable-number-slider
     min: 0.5
     max: 2
@@ -3107,82 +3160,16 @@ settings:
     format: em
     default: 1
   -
-    id: font-strong-decoration-line
-    title: Decoration
-    type: variable-select
-    default: none
-    allowEmpty: false
-    options:
-    -
-      label: underline
-      value: underline
-    -
-      label: overline
-      value: overline
-    -
-      label: line-through
-      value: line-through
-    -
-      label: none
-      value: none
-  -
-    id: font-strong-decoration-style
-    title: Decoration Style
-    type: variable-select
-    default: solid
-    allowEmpty: false
-    options:
-    -
-      label: solid
-      value: solid
-    -
-      label: double
-      value: double
-    -
-      label: dotted
-      value: dotted
-    -
-      label: dashed
-      value: dashed
-    -
-      label: wavy
-      value: wavy
-  -
-    id: font-strong-decoration-color
-    title: Decoration Color
-    type: variable-themed-color
-    format: hsl
-    opacity: true
-    default-light: hsla(0, 0%, 0%, 1)
-    default-dark: hsla(0, 0%, 100%, 1)
-  -
-    id: font-strong-decoration-width
-    title: Decoration Width(px)
-    type: variable-number-slider
-    min: 1
-    max: 5
-    step: 0.1
-    format: px
-    default: 1
-  -
-    id: font-strong-decoration-offset
-    title: Decoration Offset(px)
-    description: Only available for underline.
-    type: variable-number-slider
-    min: -5
-    max: 5
-    step: 0.5
-    format: px
-    default: 2
-  -
     id: custom-em-style
     title: Emphasis Style
+    title.zh: 强调样式
     type: heading
     level: 1
     collapsed: true
   -
     id: font-em-color
     title: Color
+    title.zh: 颜色
     type: variable-themed-color
     format: hsl
     opacity: true
@@ -3191,6 +3178,9 @@ settings:
   -
     id: font-em-style
     title: Style
+    title.zh: 样式
+    description: In case you want to make the text not italic.
+    description.zh: 万一你不喜欢斜体……
     type: variable-select
     default: italic
     allowEmpty: false
@@ -3204,7 +3194,9 @@ settings:
   -
     id: font-em-weight
     title: Weight
+    title.zh: 粗细
     description: Uasually makes difference at 100, 400, 700, 900 though depends on the font.
+    description.zh: 通常在 100、400、700、900 时会有明显区别，但取决于字体。
     type: variable-number-slider
     default: 400
     min: 100
@@ -3213,7 +3205,9 @@ settings:
   -
     id: font-em-size
     title: Size(em)
+    title.zh: 大小（em）
     description: Base on the font size inherited from its parent.
+    description.zh: 基于从父级继承的字体大小。
     type: variable-number-slider
     min: 0.5
     max: 2
@@ -3221,91 +3215,27 @@ settings:
     format: em
     default: 1
   -
-    id: font-em-decoration-line
-    title: Decoration
-    type: variable-select
-    default: none
-    allowEmpty: false
-    options:
-    -
-      label: underline
-      value: underline
-    -
-      label: overline
-      value: overline
-    -
-      label: line-through
-      value: line-through
-    -
-      label: none
-      value: none
-  -
-    id: font-em-decoration-style
-    title: Decoration Style
-    type: variable-select
-    default: solid
-    allowEmpty: false
-    options:
-    -
-      label: solid
-      value: solid
-    -
-      label: double
-      value: double
-    -
-      label: dotted
-      value: dotted
-    -
-      label: dashed
-      value: dashed
-    -
-      label: wavy
-      value: wavy
-  -
-    id: font-em-decoration-color
-    title: Decoration Color
-    type: variable-themed-color
-    format: hsl
-    opacity: true
-    default-light: hsla(0, 0%, 0%, 1)
-    default-dark: hsla(0, 0%, 100%, 1)
-  -
-    id: font-em-decoration-width
-    title: Decoration Width(px)
-    type: variable-number-slider
-    min: 1
-    max: 5
-    step: 0.1
-    format: px
-    default: 1
-  -
-    id: font-em-decoration-offset
-    title: Decoration Offset(px)
-    description: Only available for underline.
-    type: variable-number-slider
-    min: -5
-    max: 5
-    step: 0.5
-    format: px
-    default: 2
-  -
     id: custom-highlight-style
     title: Highlight Style
+    title.zh: 高亮样式
     type: heading
     level: 1
     collapsed: true
   -
     id: font-highlight-color
     title: Color
+    title.zh: 颜色
     type: variable-themed-color
     format: hsl
     opacity: true
-    default-light: hsl(0, 0%, 15%)
+    default-light: hsl(0, 0%, 100%)
     default-dark: hsl(0, 0%, 85%)
   -
     id: font-highlight-weight
     title: Weight
+    title.zh: 粗细
     description: Uasually makes difference at 100, 400, 700, 900 though depends on the font.
+    description.zh: 通常在 100、400、700、900 时会有明显区别，但取决于字体。
     type: variable-number-slider
     default: 400
     min: 100
@@ -3314,7 +3244,9 @@ settings:
   -
     id: font-highlight-size
     title: Size(em)
+    title.zh: 大小（em）
     description: Base on the font size inherited from its parent.
+    description.zh: 基于从父级继承的字体大小。
     type: variable-number-slider
     min: 0.5
     max: 2
@@ -3324,6 +3256,7 @@ settings:
   -
     id: font-highlight-bg-color
     title: Background
+    title.zh: 背景色
     type: variable-themed-color
     format: hsl
     opacity: true
