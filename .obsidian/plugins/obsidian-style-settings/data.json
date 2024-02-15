@@ -192,13 +192,8 @@
   "font@@font-underlined-decoration-style": "solid",
   "font@@font-underlined-decoration-offset": 2,
   "font@@font-underlined-decoration-width": 1,
-  "font@@font-strikethrough-weight": 400,
-  "font@@font-strikethrough-size": 1,
-  "font@@font-strikethrough-decoration-width": 1,
   "inline-elements@@circle-checkbox": true,
   "inline-elements@@tag-radius": 1,
-  "ui-style@@hide-close-button-threshold": 700,
   "ui-style@@hide-close-button-when-window-narrow": false,
-  "accent-color@@use-builtin-color-picker": false,
   "accent-color@@custom-accent-color": false
 }

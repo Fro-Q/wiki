@@ -84,7 +84,7 @@ body {
   --font-highlight-size: 1em;
   --font-highlight-weight: normal;
   --font-highlight-style: normal;
-  --font-highlight-color: var(--background-primary);
+  --font-highlight-color: var(--text-reversed);
   --font-highlight-bg-color: var(--color-accent);
   --font-highlight-decoration-width: 2px;
   --font-highlight-decoration-style: solid;
@@ -211,15 +211,15 @@ body {
 }
 body.theme-light {
   color-scheme: light;
-  --color-h: var(--color-green-h);
-  --color-s: var(--color-green-s);
-  --color-l: var(--color-green-l);
-  --text-normal: #555555;
+  --color-h: var(--color-bw-h);
+  --color-s: var(--color-bw-s);
+  --color-l: 10% --text-normal: #555555;
   --text-strong: hsl(0, 0%, 0%);
   --text-muted: #888888 !important;
+  --text-reversed: #fff;
   --code-bg-color: #f7f7f7;
   --inline-code-bg-color: hsla(0, 0%, 90%, 1);
-  --background-primary: #fff;
+  --background-primary: #fff !important;
   --background-primary-alt: #e8e8e8;
   --background-secondary: #fafafa;
   --background-secondary-alt: #d6d6d6;
@@ -285,15 +285,16 @@ body.theme-light.custom-accent-color {
 }
 body.theme-dark {
   color-scheme: dark;
-  --color-h: var(--color-orange-h);
-  --color-s: var(--color-orange-s);
-  --color-l: var(--color-orange-l);
+  --color-h: var(--color-bw-h);
+  --color-s: var(--color-bw-s);
+  --color-l: 90%;
   --text-normal: #aaaaaa;
   --text-strong: hsl(0, 0%, 100%);
   --text-muted: #999999 !important;
+  --text-reversed: #111;
   --code-bg-color: #181818;
   --inline-code-bg-color: rgba(255, 255, 255, 0.1);
-  --background-primary: #111;
+  --background-primary: #111 !important;
   --background-primary-alt: #242424;
   --background-secondary: #151515;
   --background-secondary-alt: #363636;
@@ -581,7 +582,7 @@ body.header-level-indicator .markdown-source-view.is-live-preview .cm-line.Hyper
   font-family: var(--font-text);
   font-size: var(--font-highlight-size);
   font-weight: var(--font-highlight-weight);
-  color: var(--font-highlight-color);
+  color: var(--font-highlight-color) !important;
   -webkit-text-decoration: var(--font-highlight-decoration-line) var(--font-highlight-decoration-style) var(--font-highlight-decoration-color) var(--font-highlight-decoration-width);
           text-decoration: var(--font-highlight-decoration-line) var(--font-highlight-decoration-style) var(--font-highlight-decoration-color) var(--font-highlight-decoration-width);
   text-underline-offset: var(--font-highlight-decoration-offset);
