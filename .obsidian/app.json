@@ -20,5 +20,6 @@
   "tabSize": 4,
   "readableLineLength": true,
   "strictLineBreaks": false,
-  "foldHeading": true
+  "foldHeading": true,
+  "focusNewTab": true
 }

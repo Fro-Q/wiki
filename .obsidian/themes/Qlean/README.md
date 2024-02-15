@@ -6,6 +6,8 @@ An Obsidian theme offers a clean and clutter-free interface for enhanced focus a
 
 ### Version 1.0.0-beta(02/10/2024)
 
+Here comes the first beta version of Qlean 1.0.0. It's been a long time since the last update, and I'm sorry for the delay. I've been working on a lot of changes and improvements, and I hope you like them.
+
 #### new & change
 
 1. Smoothing header hovering.
@@ -31,6 +33,7 @@ An Obsidian theme offers a clean and clutter-free interface for enhanced focus a
 21. Redeisgned table.
 22. Offers the option to use built-in color picker.
 23. Removed decoration options for strong, em, and underline.
+24. ...
 
 #### bug fix
 

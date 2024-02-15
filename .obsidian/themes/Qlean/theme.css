@@ -11,6 +11,7 @@ body {
   --font-tag: var(--font-monospace);
   --font-file-tree: var(--font-default);
   --font-source-view: var(--font-monospace);
+  --font-vault-name: var(--font-file-tree);
   --font-interface-override: "";
   --font-tag-size: 0.9em;
   --font-latex-size: 1em;
@@ -240,7 +241,7 @@ body.theme-light {
 body.theme-light.accent-color-bw-dark {
   --color-h: var(--color-bw-h);
   --color-s: var(--color-bw-s);
-  --color-l: 30%;
+  --color-l: 10%;
 }
 body.theme-light.accent-color-green-light {
   --color-h: var(--color-green-h);
@@ -313,7 +314,7 @@ body.theme-dark {
 body.theme-dark.accent-color-bw-dark {
   --color-h: var(--color-bw-h);
   --color-s: var(--color-bw-s);
-  --color-l: 70%;
+  --color-l: 90%;
 }
 body.theme-dark.accent-color-green-dark {
   --color-h: var(--color-green-h);
@@ -2325,7 +2326,7 @@ body.color-expanded-folder-indicator .workspace .mod-left-split .tree-item-icon:
   stroke: hsl(var(--color-h), var(--color-s), var(--color-l));
 }
 .workspace .mod-left-split .nav-folder.mod-root > .nav-folder-title {
-  font-family: var(--font-file-tree);
+  font-family: var(--font-vault-name);
   font-size: var(--font-vault-name-size);
   font-weight: var(--font-vault-name-weight);
   color: var(--text-strong);
@@ -2363,7 +2364,7 @@ body.file-tree-icons .workspace .mod-left-split .nav-folder-title .nav-folder-ti
   height: 21.52px;
 }
 
-body.file-tree-icons .nav-file-title[data-path$=".md"] .nav-file-title-content:before {
+body.file-tree-icons .nav-file-title:is([data-path$=".md"], [data-path$=".markdown"]) .nav-file-title-content:before {
   content: "";
   position: relative;
   top: 0.15em;
@@ -2789,10 +2790,10 @@ body.fade-out-inactive-lines .cm-line.cm-active {
 body.zen-mode .side-dock-ribbon.is-collapsed {
   border-right: none;
   transition: all 0.3s ease-in-out;
-  transform: translateX(-40px);
+  opacity: 0;
 }
 body.zen-mode .side-dock-ribbon.is-collapsed:hover {
-  transform: translateX(0);
+  opacity: 1;
 }
 body.zen-mode .workspace-ribbon.is-collapsed.mod-left:before {
   display: none;
@@ -2829,11 +2830,6 @@ body.zen-mode .mod-root .workspace-tab-header-container:hover, body.zen-mode .mo
   margin-left: 0;
 }
 
-@media (max-width: 700px) {
-  .hide-close-button-when-window-narrow .workspace-tab-header:not(.is-active.mod-active) .workspace-tab-header-inner-close-button {
-    display: none;
-  }
-}
 #calendar-container .nav .arrow, #calendar-container .nav .reset-button, #calendar-container table.calendar .day {
   transition: all 0.3s ease-in-out;
 }
@@ -2881,8 +2877,8 @@ id: accent-color
 settings:
   -
     id: accent-color-info
-    title: 👀Look at this👀
-    title.zh: 👀看这👀
+    title: Look at this
+    title.zh: 看这
     type: info-text
     description: |
       - If you want to use the built-in color picker, you can turn on `Use Built-in Color Picker`.
@@ -2902,12 +2898,12 @@ settings:
   -
     id: accent-color-for-light-theme
     title: Accent Color for Light Theme
-    title.zh: 亮色主题强调色☀️
+    title.zh: 亮色主题强调色
     description: Selection will be ignored if custom accent color is on. (Using `Custom Accent Color` is recommended.)
     description.zh: 如果自定义强调色开启，该选择将被忽略。（建议使用“自定义强调色”）
     type: class-select
     allowEmpty: false
-    default: accent-color-green-light
+    default: accent-color-bw-light
     options:
     -
       label: Panda
@@ -2936,12 +2932,12 @@ settings:
   -
     id: accent-color-for-dark-theme
     title: Accent Color for Dark Theme
-    title.zh: 暗色主题强调色🌙
+    title.zh: 暗色主题强调色
     description: Selection will be ignored if custom accent color is on. (Using `Custom Accent Color` is recommended.)
     description.zh: 如果自定义强调色开启，该选择将被忽略。（建议使用“自定义强调色”）
     type: class-select
     allowEmpty: false
-    default: accent-color-orange-dark
+    default: accent-color-bw-dark
     options:
     -
       label: Panda
@@ -2977,15 +2973,15 @@ settings:
     default: false
   -
     id: custom-accent-color-for-light-theme
-    title: Custom Accent Color for Light Theme☀️
-    title.zh: 亮色主题自定义强调色☀️
+    title: Custom Accent Color for Light Theme
+    title.zh: 亮色主题自定义强调色
     type: heading
     level: 1
     collapsed: true
   -
     id: accent-color-light-hue-default
-    title: Hue🌈
-    title.zh: 色相🌈
+    title: Hue
+    title.zh: 色相
     description: Hover to preview.
     description.zh: 鼠标悬停进行预览。
     type: variable-number-slider
@@ -2995,8 +2991,8 @@ settings:
     default: 254
   -
     id: accent-color-light-saturation-default
-    title: Saturation(%)🌫️
-    title.zh: 饱和度(%)🌫️
+    title: Saturation(%)
+    title.zh: 饱和度（%）
     description: The higher the value, the more vivid the color.
     description.zh: 数值越高，颜色越鲜艳。
     type: variable-number-slider
@@ -3007,8 +3003,8 @@ settings:
     default: 80
   -
     id: accent-color-light-lightness-default
-    title: Lightness(%)💡
-    title.zh: 亮度(%)💡
+    title: Lightness(%)
+    title.zh: 亮度（%）
     description: The higher the value, the lighter the color.
     description.zh: 数值越高，颜色越亮。
     type: variable-number-slider
@@ -3019,15 +3015,15 @@ settings:
     default: 68
   -
     id: custom-accent-color-for-dark-theme
-    title: Custom Accent Color for Dark Theme🌙
-    title.zh: 暗色主题自定义强调色🌙
+    title: Custom Accent Color for Dark Theme
+    title.zh: 暗色主题自定义强调色
     type: heading
     level: 1
     collapsed: true
   -
     id: accent-color-dark-hue-default
-    title: Hue🌈
-    title.zh: 色相🌈
+    title: Hue
+    title.zh: 色相
     description: Hover to preview.
     description.zh: 鼠标悬停进行预览。
     type: variable-number-slider
@@ -3037,8 +3033,8 @@ settings:
     default: 254
   -
     id: accent-color-dark-saturation-default
-    title: Saturation(%)🌫️
-    title.zh: 饱和度(%)🌫️
+    title: Saturation(%)
+    title.zh: 饱和度（%）
     description: The higher the value, the more vivid the color.
     description.zh: 数值越高，颜色越鲜艳。
     type: variable-number-slider
@@ -3049,8 +3045,8 @@ settings:
     default: 80
   -
     id: accent-color-dark-lightness-default
-    title: Lightness(%)💡
-    title.zh: 亮度(%)💡
+    title: Lightness(%)
+    title.zh: 亮度（%）
     description: The higher the value, the lighter the color.
     description.zh: 数值越高，颜色越亮。
     type: variable-number-slider
@@ -3106,6 +3102,31 @@ settings:
     title.zh: 界面字体
     description: Will be Obsidian's default font if empty.
     description.zh: 如果为空，将使用 Obsidian 的默认字体。
+    type: variable-text
+    default: ''
+    allowEmpty: true
+  -
+    id: font-file-tree
+    title: File Tree Font
+    title.zh: 文件树字体
+    type: variable-text
+    default: ''
+    allowEmpty: true
+  -
+    id: font-vault-name
+    title: Vault Name Font
+    title.zh: 库名称字体
+    description: Will be the same as file tree font if empty.
+    description.zh: 如果为空，将与文件树字体相同。
+    type: variable-text
+    default: ''
+    allowEmpty: true
+  -
+    id: font-inline-title
+    title: Inline Title Font
+    title.zh: 行内标题字体
+    description: Will be the same as header font if empty.
+    description.zh: 如果为空，将与标题字体相同。
     type: variable-text
     default: ''
     allowEmpty: true
@@ -3594,18 +3615,22 @@ settings:
   -
     id: callout-style
     title: Callout Style
-
+    title.zh: 标注样式
     type: heading
     level: 1
     collapsed: true
   -
     id: callout-dogs-ear
     title: Dog's Ear
+    title.zh: 折角
+    description: It's kind of useless but we keeped this feature in case you like it.
+    description.zh: 这个功能有点没用，但万一你喜欢呢？
     type: class-toggle
     default: false
   -
     id: callout-dogs-ear-size
     title: Dog's Ear Size(em)
+    title.zh: 折角大小（em）
     type: variable-number-slider
     min: 20
     max: 60
@@ -3615,17 +3640,20 @@ settings:
   -
     id: embed-style
     title: Embed Style
+    title.zh: 嵌入样式
     type: heading
     level: 1
     collapsed: true
   -
     id: embed-alt
     title: Embed Alt
+    title.zh: 嵌入图片别名
     type: class-toggle
     default: true
   -
     id: embed-alt-position
     title: Embed Alt Position
+    title.zh: 别名位置
     type: class-select
     default: embed-alt-right
     options:
@@ -3641,67 +3669,59 @@ settings:
   -
 */
 /* @settings
-name: UI Style
-id: ui-style
-settings:
-  -
-    id: tab-style
-    title: Tab Style
-    type: heading
-    level: 1
-    collapsed: true
-  -
-    id: hide-close-button-when-window-narrow
-    title: Hide Close Button When Window Narrow
-    description: Close button on inactive tabs will be hidden when window width is less than 700px.
-    type: class-toggle
-    default: true
-  -
-*/
-/* @settings
 name: File Tree Style
 id: file-tree-style
 settings:
   -
     id: static-style
     title: Static Style
+    title.zh: 静态样式
     type: heading
     level: 1
     collapsed: true
   -
     id: file-tree-icons
     title: File Tree Icons
+    title.zh: 文件树图标
     type: class-toggle
     default: true
   -
     id: color-expanded-folder-indicator
     title: Expanded Folder Indicator Coloring
+    title.zh: 展开文件夹指示器颜色
     type: class-toggle
     default: true
   -
     id: active-file-border
     title: Active File Border
+    title.zh: 活动文件边框
     type: class-toggle
     default: true
   -
     id: Dynamic Style
     title: Dynamic Style
+    title.zh: 动态样式
     type: heading
     level: 1
     collapsed: true
   -
     id: indicate-child
     title: Indicate Child When Hovering
+    title.zh: 悬停时指示子文件
     type: class-toggle
     default: true
   -
     id: indicate-ascendant
     title: Indicate Ascendant When Hovering
+    title.zh: 悬停时指示父文件
     type: class-toggle
     default: true
   -
     id: opaque-expanded-folder
     title: Opaque Expanded Folder
+    title.zh: 不透明展开文件夹
+    description: If turned on, the expanded folder will be less transparent.
+    description.zh: 如果开启，展开的文件夹将会更不透明。
     type: class-toggle
     default: true
   -
@@ -3714,11 +3734,13 @@ settings:
   -
     id: fade-out-inactive-lines
     title: Fade Out Inactive Lines
+    title.zh: 淡化非活动行
     type: class-toggle
     default: true
   -
     id: inactive-opacity
     title: Inactive Opacity
+    title.zh: 淡化透明度
     type: variable-number-slider
     min: 0
     max: 1
@@ -3727,6 +3749,7 @@ settings:
   -
     id: inactive-hover-opacity
     title: Inactive Hover Opacity
+    title.zh: 悬停时透明度
     type: variable-number-slider
     min: 0
     max: 1
@@ -3735,6 +3758,7 @@ settings:
   -
     id: focuse-transition-duration
     title: Transition Duration(s)
+    title.zh: 过渡时长（秒）
     type: variable-number-slider
     format: s
     min: 0
@@ -3744,7 +3768,9 @@ settings:
   -
     id: zen-mode
     title: Zen Mode
+    title.zh: Zen 模式
     description: Hide all UI elements except the editor.
+    description.zh: 隐藏除编辑器外的所有界面元素。
     type: class-toggle
     default: false
 */
