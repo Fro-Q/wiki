@@ -257,12 +257,17 @@
   ],
   "linterLocale": "system-default",
   "logLevel": "ERROR",
-  "lintCommands": [],
+  "lintCommands": [
+    {
+      "id": "",
+      "name": ""
+    }
+  ],
   "customRegexes": [
     {
       "label": "Format Link Alias",
       "find": "\\[([^\\]]+)\\]\\((\\w+\\.\\w+)\\)",
-      "replace": "<< [U$1]($2) >>",
+      "replace": "$&",
       "flags": "gm"
     }
   ],
