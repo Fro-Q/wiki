@@ -261,8 +261,8 @@
   "customRegexes": [
     {
       "label": "Format Link Alias",
-      "find": "\\[(\\w+)\\_([\\w\\_]+)\\]\\((\\w+\\.\\w+)\\)",
-      "replace": "[\\U$1\\E \\U$2\\E]($3)",
+      "find": "\\[([^\\]]+)\\]\\((\\w+\\.\\w+)\\)",
+      "replace": "<< [U$1]($2) >>",
       "flags": "gm"
     }
   ],
