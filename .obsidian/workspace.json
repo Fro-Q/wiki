@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "homepage.md",
+                "file": "global_file_format_spec.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 332.5
+    "width": 235.5
   },
   "right": {
     "id": "b87e94253deaa70c",
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "homepage.md",
+                "file": "global_file_format_spec.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "homepage.md",
+                "file": "global_file_format_spec.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "homepage.md"
+                "file": "global_file_format_spec.md"
               }
             }
           },
@@ -164,7 +164,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "homepage.md"
+                "file": "global_file_format_spec.md"
               }
             }
           }
@@ -181,7 +181,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "homepage.md",
+                "file": "global_file_format_spec.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -243,10 +243,10 @@
   },
   "active": "7e72efbc4de930de",
   "lastOpenFiles": [
+    "homepage.md",
     "test_page_2.html",
     "test_page.md",
     "test_page_2.md",
-    "homepage.md",
     "timestamp/ts_2024_01_17_0956.md",
     "timestamp/ts_2024_01_17_0952.md",
     "template/timestamp.md",
@@ -280,7 +280,6 @@
     "file-name.png",
     "setting/js/daily_diary.js",
     "setting/js",
-    "setting",
     "project/drought/未命名.canvas",
     "Pasted image 20231229063614 1.png",
     "Pasted image 20231229063650 1.png",
