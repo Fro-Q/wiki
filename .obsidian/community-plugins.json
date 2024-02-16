@@ -1,12 +1,10 @@
 [
-  "obsidian-tidy-footnotes",
   "obsidian-footnotes",
   "obsidian-style-settings",
   "obsidian-pandoc",
   "calendar",
   "table-editor-obsidian",
   "obsidian-underline",
-  "easy-typing-obsidian",
   "tabout",
   "obsidian-link-converter",
   "dataview",
@@ -14,5 +12,6 @@
   "obsidian-git",
   "nldates-obsidian",
   "quickadd",
-  "various-complements"
+  "various-complements",
+  "obsidian-linter"
 ]

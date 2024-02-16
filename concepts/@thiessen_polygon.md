@@ -3,7 +3,7 @@ tags:
   - concept
 topic:
   - "[[@gis]]"
-  - "[[@spatialanalysis]]"
+  - "[[@spatial_analysis]]"
 ---
 
 # [title:: Thiessen Polygon]

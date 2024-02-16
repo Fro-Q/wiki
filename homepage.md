@@ -1,3 +1,9 @@
+---
+tags:
+  - doc
+  - note
+---
+
 ## Diary
 
 ```dataviewjs
@@ -81,9 +87,9 @@ dv.table(["Name", "Status"],
 var concepts = dv.pages(`"notes"`)
 	.flatMap(p => p.file.outlinks)
 
-function getPages(t) {
+function getPages(c) {
 	return dv.pages(`"notes"`)
-		.filter(p => p.file.outlinks.includes(t))
+		.filter(p => p.file.outlinks.includes(c))
 		.map(p => getTitle(p))
 }
 
@@ -92,6 +98,13 @@ function getTitle(p) {
 		return `[${p.title}](${p.file.name})`
 	}
 	return `[[${p.file.name}]]`
+}
+
+function getFile(pl) {
+	// regex to get the file name (`file_name in `[[path/to/file_name|title]]`)
+	const file_path = pl.toString().match(/\[\[(.*?)\|.*?\]\]/)[1]
+	const file = dv.page(`${file_path}`)
+	return `[${file.title}](${file_path})`
 }
 
 function unique(arr) {
@@ -113,10 +126,9 @@ function unique(arr) {
 concepts = unique(concepts)
 
 dv.table(["Concept", "Pages"],
-	concepts.map(t => [
-		t,
-		getPages(t),
+	concepts.map(c => [
+		getFile(c),
+		getPages(c),
 	])
 )
 ```
-

@@ -173,7 +173,7 @@
   "focus-mode@@focuse-transition-duration": 0.2,
   "focus-mode@@inactive-hover-opacity": 0.8,
   "focus-mode@@inactive-opacity": 0.3,
-  "focus-mode@@zen-mode": false,
+  "focus-mode@@zen-mode": true,
   "inline-elements@@callout-dogs-ear-size": 30,
   "inline-elements@@embed-alt-position": "embed-alt-right",
   "inline-elements@@custom-tag-color-fill": "tag-outline",

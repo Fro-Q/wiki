@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7e72efbc4de930de",
+            "id": "83d365dc37d68f74",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "config/_complements.md",
+                "file": "notes/create_thiessen_polygon.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -21,12 +21,25 @@
             }
           },
           {
-            "id": "83d365dc37d68f74",
+            "id": "67d3b3e71d453889",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "homepage.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2711202233758523",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/delaunay_tin_features.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -64,7 +77,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "的",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -100,7 +113,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235.5
+    "width": 235.5,
+    "collapsed": true
   },
   "right": {
     "id": "b87e94253deaa70c",
@@ -190,7 +204,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7481b78f420508ae",
+            "id": "65573fabf2fc60c8",
             "type": "leaf",
             "state": {
               "type": "localgraph",
@@ -199,7 +213,7 @@
                 "options": {
                   "collapse-filter": true,
                   "search": "",
-                  "localJumps": 3,
+                  "localJumps": 1,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": false,
@@ -218,7 +232,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.8008450962368846,
+                  "scale": 0.9158975427807607,
                   "close": true
                 }
               }
@@ -236,7 +250,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 311.5
+    "width": 327.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -254,11 +269,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "83d365dc37d68f74",
+  "active": "67d3b3e71d453889",
   "lastOpenFiles": [
-    "config/_complements.md",
+    "notes/create_thiessen_polygon.md",
     "homepage.md",
+    "notes/delaunay_tin_features.md",
+    "notes/delaunay_tin.md",
+    "concepts/@thiessen_polygon.md",
+    "notes/thiessen_polygon_features.md",
+    "concepts/@delaunay_tin.md",
     "global_file_format_spec.md",
+    "topics/@spatial_analysis.md",
+    "topics/@gis.md",
+    "config/_complements.md",
     "project/drought/d_2024_02_06_1041.md",
     "config/cedict_ts.u8",
     "config",
@@ -276,17 +299,9 @@
     "template/project-homepage.md",
     "template/project-doc.md",
     "project/drought/drought.md",
-    "notes/thiessen_polygon_features.md",
     "project/drought/r_2024_01_29_0913.md",
     "template/concept.md",
-    "template/diary.md",
-    "concepts/@thiessenpolygon.md",
-    "template/note.md",
     "Porsche.jpg",
-    "README.md",
-    "notes/create_thiessen_polygon.md",
-    "diary/d2024_01_17.md",
-    "diary/dd_2024_01_17.md",
     "topics",
     "concepts",
     "db/test",

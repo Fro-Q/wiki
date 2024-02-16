@@ -1,6 +1,6 @@
 {
   "autosuggestToggleLink": false,
-  "autocompleteTriggerPhrase": "@",
+  "autocompleteTriggerPhrase": "@@",
   "isAutosuggestEnabled": true,
   "format": "YYYY-MM-DD",
   "timeFormat": "HH:mm",

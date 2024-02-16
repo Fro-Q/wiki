@@ -1,12 +1,4 @@
 {
-  "editor:insert-wikilink": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "["
-    }
-  ],
   "obsidian-mind-map:app:markmap-preview": [
     {
       "modifiers": [
@@ -15,13 +7,10 @@
       "key": "M"
     }
   ],
-  "editor:save-file": [],
   "workspace:edit-file-title": [],
   "app:go-back": [],
   "graph:open": [],
   "switcher:open": [],
-  "app:go-forward": [],
-  "global-search:open": [],
   "workspace:new-tab": [],
   "editor:open-search": [],
   "editor:open-search-replace": [],
@@ -48,14 +37,6 @@
   "workspace:goto-tab-6": [],
   "workspace:goto-tab-7": [],
   "workspace:goto-tab-8": [],
-  "insert-template": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "M"
-    }
-  ],
   "app:reload": [
     {
       "modifiers": [],
@@ -63,25 +44,15 @@
     }
   ],
   "workspace:close-window": [],
-  "editor:delete-paragraph": [],
   "easy-typing-obsidian:easy-typing-delete-blank-line": [],
   "easy-typing-obsidian:easy-typing-format-article": [],
   "easy-typing-obsidian:easy-typing-format-selection": [],
   "easy-typing-obsidian:easy-typing-insert-codeblock": [],
   "easy-typing-obsidian:easy-typing-paste-without-format": [],
   "easy-typing-obsidian:easy-typing-format-switch": [],
-  "app:open-help": [],
   "editor:open-link-in-new-leaf": [],
   "editor:toggle-checklist-status": [],
   "editor:toggle-comments": [],
-  "editor:toggle-source": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "S"
-    }
-  ],
   "obsidian-footnotes:insert-autonumbered-footnote": [
     {
       "modifiers": [
@@ -96,6 +67,50 @@
         "Alt"
       ],
       "key": "K"
+    }
+  ],
+  "app:open-help": [],
+  "editor:follow-link": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Enter"
+    }
+  ],
+  "app:go-forward": [],
+  "editor:delete-paragraph": [],
+  "editor:toggle-source": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "S"
+    }
+  ],
+  "editor:swap-line-down": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowDown"
+    }
+  ],
+  "editor:swap-line-up": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowUp"
+    }
+  ],
+  "quickadd:runQuickAdd": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "A"
     }
   ]
 }
