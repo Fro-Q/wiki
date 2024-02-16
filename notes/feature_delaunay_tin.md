@@ -3,10 +3,10 @@ tags:
   - note
 date: 2024-02-16
 time: 16:23
-status: draft
+status: finished
 ---
 
-# [title:: Features of Delaunay TIN]
+# [title:: Delaunay TIN | Feature]
 
 - 每个点集的 [@Delaunay Tin](@delaunay_tin.md) 是唯一的；
 - [@Delaunay Tin](@delaunay_tin.md) 的外边界构成点集的凸多边形外壳；

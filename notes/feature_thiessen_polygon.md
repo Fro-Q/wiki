@@ -6,7 +6,7 @@ time: 12:22
 status: finished
 ---
 
-# [title:: Features of Thiessen Polygon]
+# [title:: Thiessen Polygon | Feature]
 
 - 每个 [@Thiessen Polygon](@thiessen_polygon.md) 内仅含有一个控制点数据；
 - Thiessen Polygon 内的点到相应控制点到距离最近；

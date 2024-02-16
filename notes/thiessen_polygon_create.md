@@ -6,7 +6,7 @@ time: 00:37
 status: finished
 ---
 
-# [title::Create Thiessen Polygon]
+# [title:: Thiessen Polygon | Creation]
 
 创建 [@Thiessen Polygon](@thiessen_polygon.md)：
 

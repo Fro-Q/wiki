@@ -90,7 +90,7 @@ var concepts = dv.pages(`"notes"`)
 function getPages(c) {
 	return dv.pages(`"notes"`)
 		.filter(p => p.file.outlinks.includes(c))
-		.map(p => getTitle(p))
+		.map(p => getTitle(p) + " | " + generateStatus(p))
 }
 
 function getTitle(p) {
@@ -105,6 +105,16 @@ function getFile(pl) {
 	const file_path = pl.toString().match(/\[\[(.*?)\|.*?\]\]/)[1]
 	const file = dv.page(`${file_path}`)
 	return `[${file.title}](${file_path})`
+}
+
+function generateStatus(p) {
+	if (p.status == "finished") {
+		return "✅"
+	} else if (p.status == "draft") {
+    	return "✏️"
+	} else if (p.status == "archived") {
+        return "📂"
+	}
 }
 
 function unique(arr) {

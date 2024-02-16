@@ -8,19 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "83d365dc37d68f74",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/create_thiessen_polygon.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "67d3b3e71d453889",
             "type": "leaf",
             "state": {
@@ -34,12 +21,12 @@
             }
           },
           {
-            "id": "2711202233758523",
+            "id": "aec1c9c7151d13ec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/delaunay_tin_features.md",
+                "file": "notes/concept_quantitative_geography.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -48,6 +35,25 @@
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "b14ec971aeb91778",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8e87e509f1d750db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "concepts/@quantitative_geography.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -113,8 +119,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235.5,
-    "collapsed": true
+    "width": 235.5
   },
   "right": {
     "id": "b87e94253deaa70c",
@@ -130,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "homepage.md",
+                "file": "notes/concept_quantitative_geography.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "homepage.md",
+                "file": "notes/concept_quantitative_geography.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -159,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "homepage.md"
+                "file": "notes/concept_quantitative_geography.md"
               }
             }
           },
@@ -192,7 +197,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "homepage.md"
+                "file": "notes/concept_quantitative_geography.md"
               }
             }
           }
@@ -209,7 +214,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "homepage.md",
+                "file": "notes/concept_quantitative_geography.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -269,15 +274,18 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "67d3b3e71d453889",
+  "active": "aec1c9c7151d13ec",
   "lastOpenFiles": [
-    "notes/create_thiessen_polygon.md",
+    "concepts/@quantitative_geography.md",
+    "notes/concept_quantitative_geography.md",
+    "@quantitative_geography.md",
     "homepage.md",
-    "notes/delaunay_tin_features.md",
-    "notes/delaunay_tin.md",
-    "concepts/@thiessen_polygon.md",
-    "notes/thiessen_polygon_features.md",
+    "notes/feature_delaunay_tin.md",
     "concepts/@delaunay_tin.md",
+    "notes/feature_thiessen_polygon.md",
+    "notes/thiessen_polygon_create.md",
+    "notes/concept_delaunay_tin.md",
+    "concepts/@thiessen_polygon.md",
     "global_file_format_spec.md",
     "topics/@spatial_analysis.md",
     "topics/@gis.md",
@@ -298,9 +306,6 @@
     "template/project-meeting.md",
     "template/project-homepage.md",
     "template/project-doc.md",
-    "project/drought/drought.md",
-    "project/drought/r_2024_01_29_0913.md",
-    "template/concept.md",
     "Porsche.jpg",
     "topics",
     "concepts",

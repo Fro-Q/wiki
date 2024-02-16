@@ -6,6 +6,6 @@ time: 15:40
 status: finished
 ---
 
-# [title:: Concept of Delaunay TIN]
+# [title:: Delaunay TIN | Concept]
 
 [@Delaunay Tin](@delaunay_tin.md)（D-TIN）：每个三角形形成的外接圆都不包含有其它参考点。
