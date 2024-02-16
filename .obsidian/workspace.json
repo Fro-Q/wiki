@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "global_file_format_spec.md",
+                "file": "config/_complements.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "global_file_format_spec.md",
+                "file": "config/_complements.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "global_file_format_spec.md",
+                "file": "config/_complements.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "global_file_format_spec.md"
+                "file": "config/_complements.md"
               }
             }
           },
@@ -164,7 +164,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "global_file_format_spec.md"
+                "file": "config/_complements.md"
               }
             }
           }
@@ -181,7 +181,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "global_file_format_spec.md",
+                "file": "config/_complements.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -222,8 +222,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 311.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -243,6 +242,12 @@
   },
   "active": "7e72efbc4de930de",
   "lastOpenFiles": [
+    "global_file_format_spec.md",
+    "config/_complements.md",
+    "project/drought/d_2024_02_06_1041.md",
+    "config/cedict_ts.u8",
+    "config",
+    "assets",
     "homepage.md",
     "test_page_2.html",
     "test_page.md",
@@ -258,13 +263,11 @@
     "template/project-doc.md",
     "project/drought/drought.md",
     "notes/thiessen_polygon_features.md",
-    "project/drought/d_2024_02_06_1041.md",
     "project/drought/r_2024_01_29_0913.md",
     "template/concept.md",
     "template/diary.md",
     "concepts/@thiessenpolygon.md",
     "template/note.md",
-    "global_file_format_spec.md",
     "Porsche.jpg",
     "README.md",
     "notes/create_thiessen_polygon.md",
@@ -276,10 +279,7 @@
     "notes",
     "project/test",
     "project/drought/未命名",
-    "d2024-01-17",
     "file-name.png",
-    "setting/js/daily_diary.js",
-    "setting/js",
     "project/drought/未命名.canvas",
     "Pasted image 20231229063614 1.png",
     "Pasted image 20231229063650 1.png",

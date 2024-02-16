@@ -21,5 +21,10 @@
   "readableLineLength": true,
   "strictLineBreaks": false,
   "foldHeading": true,
-  "focusNewTab": true
+  "focusNewTab": true,
+  "userIgnoreFilters": [
+    "template/"
+  ],
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "assets"
 }
