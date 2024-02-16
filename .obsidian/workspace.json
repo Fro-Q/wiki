@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "83d365dc37d68f74",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "homepage.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "config/_complements.md",
+                "file": "homepage.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "config/_complements.md",
+                "file": "homepage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -131,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "config/_complements.md"
+                "file": "homepage.md"
               }
             }
           },
@@ -164,7 +178,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "config/_complements.md"
+                "file": "homepage.md"
               }
             }
           }
@@ -181,7 +195,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "config/_complements.md",
+                "file": "homepage.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -240,15 +254,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "7e72efbc4de930de",
+  "active": "83d365dc37d68f74",
   "lastOpenFiles": [
-    "global_file_format_spec.md",
     "config/_complements.md",
+    "homepage.md",
+    "global_file_format_spec.md",
     "project/drought/d_2024_02_06_1041.md",
     "config/cedict_ts.u8",
     "config",
     "assets",
-    "homepage.md",
     "test_page_2.html",
     "test_page.md",
     "test_page_2.md",

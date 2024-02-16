@@ -23,7 +23,9 @@
   "foldHeading": true,
   "focusNewTab": true,
   "userIgnoreFilters": [
-    "template/"
+    "template/",
+    "config/",
+    "assets/"
   ],
   "showUnsupportedFiles": true,
   "attachmentFolderPath": "assets"

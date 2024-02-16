@@ -68,24 +68,24 @@
   "enableCurrentVaultComplement": true,
   "currentVaultMinNumberOfCharacters": 0,
   "includeCurrentVaultPathPrefixPatterns": "",
-  "excludeCurrentVaultPathPrefixPatterns": "",
+  "excludeCurrentVaultPathPrefixPatterns": "template/",
   "includeCurrentVaultOnlyFilesUnderCurrentDirectory": false,
   "enableCustomDictionaryComplement": true,
-  "customDictionaryPaths": "config/_complements.md\n",
-  "columnDelimiter": "Comma",
+  "customDictionaryPaths": "./config/_complements.md\n",
+  "columnDelimiter": "Pipe",
   "customDictionaryWordRegexPattern": "",
   "delimiterToHideSuggestion": "",
   "delimiterToDivideSuggestionsForDisplayFromInsertion": "",
-  "caretLocationSymbolAfterComplement": " | ",
+  "caretLocationSymbolAfterComplement": "#|#",
   "displayedTextSuffix": " => ...",
   "enableInternalLinkComplement": true,
   "suggestInternalLinkWithAlias": true,
-  "excludeInternalLinkPathPrefixPatterns": "",
+  "excludeInternalLinkPathPrefixPatterns": "template/",
   "updateInternalLinksOnSave": true,
   "insertAliasTransformedFromDisplayedInternalLink": {
-    "enabled": false,
-    "beforeRegExp": "",
-    "after": ""
+    "enabled": true,
+    "beforeRegExp": "(?<name>.+) \\(.+\\)$",
+    "after": "$<name>"
   },
   "frontMatterKeyForExclusionInternalLink": "",
   "enableFrontMatterComplement": true,
@@ -98,6 +98,6 @@
     "maxNumberOfHistoryToKeep": 0
   },
   "disableOnMobile": true,
-  "showLogAboutPerformanceInConsole": false,
+  "showLogAboutPerformanceInConsole": true,
   "selectionHistoryTree": {}
 }
