@@ -13,7 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/quantitative_geography_concept.md",
+                "file": "concepts/_quantitative_geography.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5b5cb14880e30f05",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "topics/_quantitative_geography_.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -26,33 +39,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/quantitative_geography_concept.md",
+                "file": "notes/quantitative_geography_2402161637.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
-      },
-      {
-        "id": "a9ff7e6068e83ac2",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "382f1c1b3bcd9d94",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "concepts/_quantitative_geography.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -118,7 +113,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 264.5,
+    "width": 200,
     "collapsed": true
   },
   "right": {
@@ -135,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "concepts/_quantitative_geography.md",
+                "file": "topics/_quantitative_geography_.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "concepts/_quantitative_geography.md",
+                "file": "topics/_quantitative_geography_.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -164,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "concepts/_quantitative_geography.md"
+                "file": "topics/_quantitative_geography_.md"
               }
             }
           },
@@ -197,7 +192,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "concepts/_quantitative_geography.md"
+                "file": "topics/_quantitative_geography_.md"
               }
             }
           }
@@ -214,7 +209,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "concepts/_quantitative_geography.md",
+                "file": "topics/_quantitative_geography_.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -274,15 +269,16 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "382f1c1b3bcd9d94",
+  "active": "5b5cb14880e30f05",
   "lastOpenFiles": [
-    "notes/quantitative_geography_concept.md",
-    "homepage.md",
     "concepts/_quantitative_geography.md",
-    "notes/thiessen_polygon_create.md",
-    "notes/thiessen_polygon_feature.md",
-    "notes/delaunay_tin_concept.md",
-    "notes/delaunay_tin_feature.md",
+    "topics/_quantitative_geography_.md",
+    "notes/quantitative_geography_2402161637.md",
+    "notes/thiessen_polygon_2402101222.md",
+    "notes/thiessen_polygon_2402100037.md",
+    "notes/delaunay_tin_2402161623.md",
+    "notes/delaunay_tin_2402161540.md",
+    "homepage.md",
     "concepts/@quantitative_geography.md",
     "@quantitative_geography.md",
     "concepts/_delaunay_tin.md",
@@ -305,7 +301,6 @@
     "template/project-tasks.md",
     "template/project-record.md",
     "template/project-meeting.md",
-    "template/project-homepage.md",
     "Porsche.jpg",
     "topics",
     "concepts",
