@@ -104,6 +104,9 @@ function getFile(pl) {
 	// regex to get the file name (`file_name in `[[path/to/file_name|title]]`)
 	const file_path = pl.toString().match(/\[\[(.*?)\|.*?\]\]/)[1]
 	const file = dv.page(`${file_path}`)
+	if (!file) {
+    	return `${file_path} ❌`
+	}
 	return `[${file.title}](${file_path})`
 }
 
@@ -135,7 +138,7 @@ function unique(arr) {
 
 concepts = unique(concepts)
 
-dv.table(["Concept", "Pages"],
+dv.table(["Concept or Topic", "Pages"],
 	concepts.map(c => [
 		getFile(c),
 		getPages(c),

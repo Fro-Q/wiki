@@ -33,26 +33,6 @@
               }
             }
           }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "b14ec971aeb91778",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "8e87e509f1d750db",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "concepts/@quantitative_geography.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          }
         ]
       }
     ],
@@ -135,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/concept_quantitative_geography.md",
+                "file": "homepage.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/concept_quantitative_geography.md",
+                "file": "homepage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -164,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/concept_quantitative_geography.md"
+                "file": "homepage.md"
               }
             }
           },
@@ -197,7 +177,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "notes/concept_quantitative_geography.md"
+                "file": "homepage.md"
               }
             }
           }
@@ -214,7 +194,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "notes/concept_quantitative_geography.md",
+                "file": "homepage.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -274,12 +254,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "aec1c9c7151d13ec",
+  "active": "67d3b3e71d453889",
   "lastOpenFiles": [
-    "concepts/@quantitative_geography.md",
     "notes/concept_quantitative_geography.md",
-    "@quantitative_geography.md",
     "homepage.md",
+    "concepts/@quantitative_geography.md",
+    "@quantitative_geography.md",
     "notes/feature_delaunay_tin.md",
     "concepts/@delaunay_tin.md",
     "notes/feature_thiessen_polygon.md",
