@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/concept_quantitative_geography.md",
+                "file": "notes/quantitative_geography_concept.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -99,7 +99,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 235.5
+    "width": 264.5
   },
   "right": {
     "id": "b87e94253deaa70c",
@@ -256,16 +256,16 @@
   },
   "active": "67d3b3e71d453889",
   "lastOpenFiles": [
-    "notes/concept_quantitative_geography.md",
+    "notes/delaunay_tin_concept.md",
+    "notes/delaunay_tin_feature.md",
+    "notes/quantitative_geography_concept.md",
+    "notes/thiessen_polygon_feature.md",
+    "notes/thiessen_polygon_create.md",
     "homepage.md",
     "concepts/@quantitative_geography.md",
     "@quantitative_geography.md",
-    "notes/feature_delaunay_tin.md",
-    "concepts/@delaunay_tin.md",
-    "notes/feature_thiessen_polygon.md",
-    "notes/thiessen_polygon_create.md",
-    "notes/concept_delaunay_tin.md",
-    "concepts/@thiessen_polygon.md",
+    "concepts/_delaunay_tin.md",
+    "concepts/_thiessen_polygon.md",
     "global_file_format_spec.md",
     "topics/@spatial_analysis.md",
     "topics/@gis.md",
