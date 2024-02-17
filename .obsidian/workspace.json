@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "homepage.md",
+                "file": "notes/quantitative_geography_concept.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -27,6 +27,25 @@
               "type": "markdown",
               "state": {
                 "file": "notes/quantitative_geography_concept.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "a9ff7e6068e83ac2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "382f1c1b3bcd9d94",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "concepts/_quantitative_geography.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -99,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 264.5
+    "width": 264.5,
+    "collapsed": true
   },
   "right": {
     "id": "b87e94253deaa70c",
@@ -115,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "homepage.md",
+                "file": "concepts/_quantitative_geography.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "homepage.md",
+                "file": "concepts/_quantitative_geography.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -144,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "homepage.md"
+                "file": "concepts/_quantitative_geography.md"
               }
             }
           },
@@ -177,7 +197,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "homepage.md"
+                "file": "concepts/_quantitative_geography.md"
               }
             }
           }
@@ -194,7 +214,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "homepage.md",
+                "file": "concepts/_quantitative_geography.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -254,22 +274,23 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "67d3b3e71d453889",
+  "active": "382f1c1b3bcd9d94",
   "lastOpenFiles": [
+    "notes/quantitative_geography_concept.md",
+    "homepage.md",
+    "concepts/_quantitative_geography.md",
+    "notes/thiessen_polygon_create.md",
+    "notes/thiessen_polygon_feature.md",
     "notes/delaunay_tin_concept.md",
     "notes/delaunay_tin_feature.md",
-    "notes/quantitative_geography_concept.md",
-    "notes/thiessen_polygon_feature.md",
-    "notes/thiessen_polygon_create.md",
-    "homepage.md",
     "concepts/@quantitative_geography.md",
     "@quantitative_geography.md",
     "concepts/_delaunay_tin.md",
     "concepts/_thiessen_polygon.md",
     "global_file_format_spec.md",
-    "topics/@spatial_analysis.md",
-    "topics/@gis.md",
-    "config/_complements.md",
+    "topics/_spatial_analysis_.md",
+    "topics/_gis_.md",
+    "config/__complements.md",
     "project/drought/d_2024_02_06_1041.md",
     "config/cedict_ts.u8",
     "config",
@@ -285,7 +306,6 @@
     "template/project-record.md",
     "template/project-meeting.md",
     "template/project-homepage.md",
-    "template/project-doc.md",
     "Porsche.jpg",
     "topics",
     "concepts",

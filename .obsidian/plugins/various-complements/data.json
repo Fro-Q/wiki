@@ -71,7 +71,7 @@
   "excludeCurrentVaultPathPrefixPatterns": "template/",
   "includeCurrentVaultOnlyFilesUnderCurrentDirectory": false,
   "enableCustomDictionaryComplement": true,
-  "customDictionaryPaths": "./config/_complements.md\n",
+  "customDictionaryPaths": "./config/__complements.md\n",
   "columnDelimiter": "Pipe",
   "customDictionaryWordRegexPattern": "",
   "delimiterToHideSuggestion": "",

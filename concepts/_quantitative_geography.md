@@ -1,12 +1,10 @@
 ---
 tags:
   - concept
-topic:
-  - "[[_gis_]]"
-  - "[[_spatial_analysis_]]"
+topic: "[[_quantitative_geography_]]"
 ---
 
-# [title:: Thiessen Polygon]
+# [title:: Quantitative Geography]
 
 ```dataviewjs
 var thisPage = dv.current()

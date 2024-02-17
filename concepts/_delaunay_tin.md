@@ -1,7 +1,7 @@
 ---
 tags:
   - concept
-topic: "[[@spatial_analysis]]"
+topic: "[[_spatial_analysis_]]"
 ---
 
 # [title:: Delaunay Tin]
