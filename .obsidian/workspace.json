@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "topics/_quantitative_geography_.md",
+                "file": "homepage.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -113,8 +113,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "b87e94253deaa70c",
@@ -130,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "topics/_quantitative_geography_.md",
+                "file": "homepage.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "topics/_quantitative_geography_.md",
+                "file": "homepage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -159,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "topics/_quantitative_geography_.md"
+                "file": "homepage.md"
               }
             }
           },
@@ -192,7 +191,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "topics/_quantitative_geography_.md"
+                "file": "homepage.md"
               }
             }
           }
@@ -209,7 +208,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "topics/_quantitative_geography_.md",
+                "file": "homepage.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -246,7 +245,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -271,14 +271,14 @@
   },
   "active": "5b5cb14880e30f05",
   "lastOpenFiles": [
-    "concepts/_quantitative_geography.md",
+    "homepage.md",
     "topics/_quantitative_geography_.md",
+    "concepts/_quantitative_geography.md",
     "notes/quantitative_geography_2402161637.md",
     "notes/thiessen_polygon_2402101222.md",
     "notes/thiessen_polygon_2402100037.md",
     "notes/delaunay_tin_2402161623.md",
     "notes/delaunay_tin_2402161540.md",
-    "homepage.md",
     "concepts/@quantitative_geography.md",
     "@quantitative_geography.md",
     "concepts/_delaunay_tin.md",
