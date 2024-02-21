@@ -4,23 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "50420a2934a2978a",
+        "id": "5000000057ca391a",
         "type": "tabs",
         "children": [
           {
-            "id": "8d25d34542c2bc68",
+            "id": "9d2ae430b661070d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/quantitative_geography_2402220110.md",
+                "file": "homepage.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "48e270fba412d60c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/geo_data_2402220212.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/quantitative_geography_2402220110.md",
+                "file": "notes/geo_data_2402220212.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/quantitative_geography_2402220110.md",
+                "file": "notes/geo_data_2402220212.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -131,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/quantitative_geography_2402220110.md"
+                "file": "notes/geo_data_2402220212.md"
               }
             }
           },
@@ -164,7 +178,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "notes/quantitative_geography_2402220110.md"
+                "file": "notes/geo_data_2402220212.md"
               }
             }
           }
@@ -181,7 +195,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "notes/quantitative_geography_2402220110.md",
+                "file": "notes/geo_data_2402220212.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -204,7 +218,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.47391297362104273,
+                  "scale": 0.10788610208292292,
                   "close": true
                 }
               }
@@ -222,8 +236,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 215.5,
-    "collapsed": true
+    "width": 236.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -241,9 +254,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "8d25d34542c2bc68",
+  "active": "48e270fba412d60c",
   "lastOpenFiles": [
     "homepage.md",
+    "notes/geo_data_2402220212.md",
+    "notes/chart_2402220204.md",
+    "notes/chart_2402220140.md",
+    "notes/quantitative_geography_2402220110.md",
     "template/topic.md",
     "template/concept.md",
     "template/note.md",
@@ -251,7 +268,6 @@
     "concepts/_quantitative_resolution.md",
     "concepts/_quantitative_geography.md",
     "concepts/_delaunay_tin.md",
-    "notes/quantitative_geography_2402220110.md",
     "topics/_quantitative_geography_.md",
     "notes/quantitative_geography_2402212007.md",
     "topics/_gis_.md",
@@ -269,9 +285,6 @@
     "template/project_homepage.md",
     "template/project_doc.md",
     "scripts",
-    "notes/thiessen_polygon_2402101222.md",
-    "notes/thiessen_polygon_2402100037.md",
-    "concepts/@quantitative_geography.md",
     "config/cedict_ts.u8",
     "config",
     "assets",
