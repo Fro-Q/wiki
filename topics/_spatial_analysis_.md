@@ -11,10 +11,10 @@ var concepts = dv.pages(`"concepts"`)
   .sort(c => -c.file.ctime);
 
 function getTitle(p) {
-	if (p.title) {
-		return `[${p.title}](${p.file.name})`
-	}
-	return `[[${p.file.name}]]`
+  if (p.title) {
+    return `[${p.title}](${p.file.name})`
+  }
+  return `[${p.file.name}](${p.file.name})`
 }
 
 function getPages(c) {

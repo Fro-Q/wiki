@@ -10,6 +10,7 @@
           {
             "id": "60df9467853e43e6",
             "type": "tabs",
+            "dimension": 17.1242774566474,
             "children": [
               {
                 "id": "aec1c9c7151d13ec",
@@ -29,6 +30,7 @@
           {
             "id": "294d70da0e740473",
             "type": "tabs",
+            "dimension": 82.87572254335261,
             "children": [
               {
                 "id": "1dd12c4a8b7fe353",
@@ -36,8 +38,8 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "topics/_spatial_analysis_.md",
-                    "mode": "source",
+                    "file": "project/drought/d_2024_02_06_1041.md",
+                    "mode": "preview",
                     "backlinks": true,
                     "source": false
                   }
@@ -136,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "topics/_spatial_analysis_.md",
+                "file": "project/drought/d_2024_02_06_1041.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "topics/_spatial_analysis_.md",
+                "file": "project/drought/d_2024_02_06_1041.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -165,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "topics/_spatial_analysis_.md"
+                "file": "project/drought/d_2024_02_06_1041.md"
               }
             }
           },
@@ -198,7 +200,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "topics/_spatial_analysis_.md"
+                "file": "project/drought/d_2024_02_06_1041.md"
               }
             }
           }
@@ -215,7 +217,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "topics/_spatial_analysis_.md",
+                "file": "project/drought/d_2024_02_06_1041.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -257,8 +259,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 327.5,
-    "collapsed": true
+    "width": 327.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -278,9 +279,16 @@
   },
   "active": "1dd12c4a8b7fe353",
   "lastOpenFiles": [
+    "template/concept.md",
     "homepage.md",
+    "concepts/_thiessen_polygon.md",
+    "concepts/_quantitative_geography.md",
+    "concepts/_delaunay_tin.md",
     "topics/_spatial_analysis_.md",
-    "scripts/get_title.js",
+    "topics/_quantitative_geography_.md",
+    "topics/_gis_.md",
+    "template/topic.md",
+    "scripts/database.js",
     "scripts/get_title.ts",
     "template/project_tasks.md",
     "template/project_record.md",
@@ -288,11 +296,6 @@
     "template/project_homepage.md",
     "template/project_doc.md",
     "scripts",
-    "topics/_quantitative_geography_.md",
-    "topics/_gis_.md",
-    "concepts/_delaunay_tin.md",
-    "concepts/_quantitative_geography.md",
-    "concepts/_thiessen_polygon.md",
     "notes/quantitative_geography_2402161637.md",
     "notes/thiessen_polygon_2402101222.md",
     "notes/thiessen_polygon_2402100037.md",
@@ -309,7 +312,6 @@
     "test_page_2.html",
     "test_page.md",
     "test_page_2.md",
-    "timestamp/ts_2024_01_17_0956.md",
     "Porsche.jpg",
     "topics",
     "concepts",

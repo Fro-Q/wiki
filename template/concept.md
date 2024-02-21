@@ -1,7 +1,6 @@
 ---
 tags:
   - concept
-topic:
 ---
 
 # [title:: ]
@@ -42,3 +41,7 @@ dv.table(["Notes Related", "Finished", "Concepts Related"],
   ])
 )
 ```
+
+## Topics
+
+- 
