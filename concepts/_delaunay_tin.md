@@ -1,7 +1,6 @@
 ---
 tags:
   - concept
-topic: "[[_spatial_analysis_]]"
 ---
 
 # [title:: Delaunay Tin]
@@ -42,3 +41,7 @@ dv.table(["Notes Related", "Finished", "Concepts Related"],
   ])
 )
 ```
+
+## Topics
+
+- [_spatial_analysis_](_spatial_analysis_.md)

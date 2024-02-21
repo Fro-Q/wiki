@@ -1,9 +1,6 @@
 ---
 tags:
   - concept
-topic:
-  - "[[_gis_]]"
-  - "[[_spatial_analysis_]]"
 ---
 
 # [title:: Thiessen Polygon]
@@ -44,3 +41,8 @@ dv.table(["Notes Related", "Finished", "Concepts Related"],
   ])
 )
 ```
+
+## Topics
+
+- [_spatial_analysis_](_spatial_analysis_.md)
+- [_gis_](_gis_.md)

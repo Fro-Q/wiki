@@ -5,7 +5,7 @@
       "name": "project_record",
       "type": "Template",
       "command": false,
-      "templatePath": "template/project-record.md",
+      "templatePath": "template/project_record.md",
       "fileNameFormat": {
         "enabled": true,
         "format": "r_{{DATE:YYYY_MM_DD_HHmm}}"
@@ -35,7 +35,7 @@
       "name": "project_meeting",
       "type": "Template",
       "command": false,
-      "templatePath": "template/project-meeting.md",
+      "templatePath": "template/project_meeting.md",
       "fileNameFormat": {
         "enabled": true,
         "format": "m_{{DATE:YYYY_MM_DD_HHmm}}"
@@ -65,7 +65,7 @@
       "name": "project_doc",
       "type": "Template",
       "command": false,
-      "templatePath": "template/project-doc.md",
+      "templatePath": "template/project_doc.md",
       "fileNameFormat": {
         "enabled": true,
         "format": "d_{{DATE:YYYY_MM_DD_HHmm}}"
@@ -95,7 +95,7 @@
       "name": "project_tasks",
       "type": "Template",
       "command": false,
-      "templatePath": "template/project-tasks.md",
+      "templatePath": "template/project_tasks.md",
       "fileNameFormat": {
         "enabled": true,
         "format": "t_{{DATE:YYYY_MM_DD_HHmm}}"

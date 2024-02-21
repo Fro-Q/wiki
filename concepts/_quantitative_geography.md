@@ -1,7 +1,6 @@
 ---
 tags:
   - concept
-topic: "[[_quantitative_geography_]]"
 ---
 
 # [title:: Quantitative Geography]
@@ -42,3 +41,7 @@ dv.table(["Notes Related", "Finished", "Concepts Related"],
   ])
 )
 ```
+
+## Topics
+
+- [_quantitative_geography_](_quantitative_geography_.md)

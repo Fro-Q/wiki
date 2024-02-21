@@ -1,6 +1,7 @@
 ---
 tags:
-  - homepage
+  - doc
+  - note
 ---
 
 ## Diary
