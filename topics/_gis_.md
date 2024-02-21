@@ -6,8 +6,7 @@ tags:
 # [title:: GIS]
 
 ```dataviewjs
-var concepts = dv.pages(`"concepts"`)
-  .filter(c => c.file.outlinks.includes(dv.current().file.link))
+var concepts = dv.current().file.inlinks.map(i => dv.page(i))
   .sort(c => -c.file.ctime);
 
 function getTitle(p) {
@@ -43,23 +42,23 @@ function getFile(pl) {
 	return `[${file.title}](${file_path})`
 }
 
-function unique(arr) {
-	// remove duplicate concepts
-	// new array to store the unique concepts
-	var newArr = [];
-	// store the appeared topics. if a topic has appeared, skip it.
-	var appearedTopicsTiel = [];
-	for (var i = 0; i < arr.length; i++) {
-		if (appearedTopicsTiel.includes(arr[i].toString())) {
-			continue;
-		}
-		appearedTopicsTiel.push(arr[i].toString());
-		newArr.push(arr[i]);
-	}
-	return newArr;
-}
+// function unique(arr) {
+// 	// remove duplicate concepts
+// 	// new array to store the unique concepts
+// 	var newArr = [];
+// 	// store the appeared topics. if a topic has appeared, skip it.
+// 	var appearedTopicsTiel = [];
+// 	for (var i = 0; i < arr.length; i++) {
+// 		if (appearedTopicsTiel.includes(arr[i].toString())) {
+// 			continue;
+// 		}
+// 		appearedTopicsTiel.push(arr[i].toString());
+// 		newArr.push(arr[i]);
+// 	}
+// 	return newArr;
+// }
 
-concepts = unique(concepts)
+// concepts = unique(concepts)
 
 dv.table(["Concepts Related", "Notes Related"],
   concepts.map(c => [

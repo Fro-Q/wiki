@@ -3,7 +3,7 @@ tags:
   - concept
 ---
 
-# [title:: ]
+# [title::  | ]
 
 ```dataviewjs
 var thisPage = dv.current()
@@ -36,7 +36,7 @@ function generateStatus(p) {
 dv.table(["Notes Related", "Concepts Related"],
   getInlinkNotes(thisPage.file.link).map(n => [
     getTitle(n) + " | " + generateStatus(n),
-    n.file.outlinks,
+    n.file.outlinks.map(l => dv.page(l) ? l : `${l.toString().match(/\[\[(.*?)\|.*?\]\]/)[1]} ❌`),
   ])
 )
 ```
