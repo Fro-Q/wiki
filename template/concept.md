@@ -33,10 +33,9 @@ function generateStatus(p) {
 }
 
 
-dv.table(["Notes Related", "Finished", "Concepts Related"],
+dv.table(["Notes Related", "Concepts Related"],
   getInlinkNotes(thisPage.file.link).map(n => [
-    getTitle(n),
-    generateStatus(n),
+    getTitle(n) + " | " + generateStatus(n),
     n.file.outlinks,
   ])
 )

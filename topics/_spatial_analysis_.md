@@ -7,7 +7,8 @@ tags:
 
 ```dataviewjs
 var concepts = dv.pages(`"concepts"`)
-  .filter(c => c.file.outlinks.includes(dv.current().file.link))
+  // .filter(c => c.file.outlinks.includes(dv.current().file.link))
+	.filter(c => c.file.outlinks.map(i => i.toString().match(/\[\[(.*?)\|.*?\]\]/)[1]).includes(dv.current().file.name))
   .sort(c => -c.file.ctime);
 
 function getTitle(p) {

@@ -33,10 +33,9 @@ function generateStatus(p) {
 }
 
 
-dv.table(["Notes Related", "Finished", "Concepts Related"],
+dv.table(["Notes Related", "Concepts Related"],
   getInlinkNotes(thisPage.file.link).map(n => [
-    getTitle(n),
-    generateStatus(n),
+    getTitle(n) + " | " + generateStatus(n),
     n.file.outlinks,
   ])
 )
@@ -45,4 +44,5 @@ dv.table(["Notes Related", "Finished", "Concepts Related"],
 ## Topics
 
 - [_spatial_analysis_](_spatial_analysis_.md)
+
 - [_gis_](_gis_.md)

@@ -3,7 +3,7 @@ tags:
   - concept
 ---
 
-# [title:: Delaunay Tin]
+# [title:: Quantitative Resolution]
 
 ```dataviewjs
 var thisPage = dv.current()
@@ -43,5 +43,4 @@ dv.table(["Notes Related", "Concepts Related"],
 
 ## Topics
 
-- [_spatial_analysis_](_spatial_analysis_.md)
-- [_gis_](_gis_.md)
+- [_quantitative_geography_](_quantitative_geography_.md)

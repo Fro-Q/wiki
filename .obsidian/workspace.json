@@ -38,41 +38,14 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "topics/_quantitative_geography_.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "8af329a3952392eb",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "notes/quantitative_geography_2402161637.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "837c4cd128e45ff1",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "notes/quantitative_geography_2402212007.md",
+                    "file": "topics/_spatial_analysis_.md",
                     "mode": "source",
                     "backlinks": true,
                     "source": false
                   }
                 }
               }
-            ],
-            "currentTab": 2
+            ]
           }
         ],
         "direction": "horizontal"
@@ -157,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/quantitative_geography_2402212007.md",
+                "file": "topics/_spatial_analysis_.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/quantitative_geography_2402212007.md",
+                "file": "topics/_spatial_analysis_.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -186,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/quantitative_geography_2402212007.md"
+                "file": "topics/_spatial_analysis_.md"
               }
             }
           },
@@ -219,7 +192,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "notes/quantitative_geography_2402212007.md"
+                "file": "topics/_spatial_analysis_.md"
               }
             }
           }
@@ -236,7 +209,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "notes/quantitative_geography_2402212007.md",
+                "file": "topics/_spatial_analysis_.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -296,19 +269,20 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "837c4cd128e45ff1",
+  "active": "f50677cab8dac1b9",
   "lastOpenFiles": [
-    "notes/quantitative_geography_2402161637.md",
-    "notes/quantitative_geography_2402212007.md",
-    "project/drought/d_2024_02_06_1041.md",
-    "concepts/_quantitative_geography.md",
     "topics/_quantitative_geography_.md",
-    "template/concept.md",
-    "homepage.md",
-    "concepts/_thiessen_polygon.md",
-    "concepts/_delaunay_tin.md",
     "topics/_spatial_analysis_.md",
     "topics/_gis_.md",
+    "concepts/_thiessen_polygon.md",
+    "concepts/_delaunay_tin.md",
+    "homepage.md",
+    "concepts/_quantitative_resolution.md",
+    "template/concept.md",
+    "concepts/_quantitative_geography.md",
+    "notes/quantitative_geography_2402212007.md",
+    "notes/quantitative_geography_2402161637.md",
+    "project/drought/d_2024_02_06_1041.md",
     "template/topic.md",
     "scripts/database.js",
     "scripts/get_title.ts",
@@ -330,7 +304,6 @@
     "config",
     "assets",
     "test_page_2.html",
-    "test_page.md",
     "Porsche.jpg",
     "topics",
     "concepts",

@@ -3,7 +3,7 @@ tags:
   - note
 date: 2024-02-16
 time: 16:37
-status: draft
+status: finished
 ---
 
 # [title:: Quantitative Geography | Concept]
