@@ -8,7 +8,7 @@ status: finished
 
 # [title:: Quantitative Geography | History ]
 
-[计量地理学](_quantitative_geography.md) 的发展
+[quantitative_geography](quantitative_geography.md) 的发展：
 
 ## 初期（20 世纪 50 年代 - 20 世纪 60 年代末）
 
@@ -21,10 +21,10 @@ status: finished
 
 ## 成熟（20 世纪 80 年代 - 20 世纪 90 年代初）
 
-- 更多数学方法如 [Operations Research](_operation_research.md)、[Fuzzy Mathematics](_fuzzy_mathematics.md)。
+- 更多数学方法如 [operations_research](operation_research.md)、[fuzzy_mathematics](fuzzy_mathematics.md)。
 - 系统科学。
 
 ## 新型发展（20 世纪 90 年代初至今）
 
-- [3S](_3s.md) 技术。
-- [Neural Network](_neural_network.md)、[Genetic Algorithm](_genetic_algorithm.md)、[Cellular Automaton](_cellular_automaton.md)、[Fuzzy Logic](_fuzzy_logic) 等。
+- [3s](3s.md) 技术。
+- [neural_network](neural_network.md)、[genetic_algorithm](genetic_algorithm.md)、[cellular_automaton](cellular_automaton.md)、[fuzzy_logic](fuzzy_logic) 等。

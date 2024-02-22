@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "18cde8f4a17634d1",
+        "id": "697699fa82bffc58",
         "type": "split",
         "children": [
           {
@@ -23,20 +23,34 @@
                     "source": false
                   }
                 }
-              }
-            ]
-          },
-          {
-            "id": "b1919082911d3383",
-            "type": "tabs",
-            "children": [
+              },
               {
                 "id": "1c0f982bf6fd6c21",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "concepts/_chart.md",
+                    "file": "project/drought/d_2024_02_06_1041.md",
+                    "mode": "preview",
+                    "backlinks": true,
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          },
+          {
+            "id": "52a75c2b78e0a8dd",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "ed2286280f9f7cc3",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "concepts/quantitative_geography.md",
                     "mode": "source",
                     "backlinks": true,
                     "source": false
@@ -128,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "concepts/_chart.md",
+                "file": "project/drought/d_2024_02_06_1041.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "concepts/_chart.md",
+                "file": "project/drought/d_2024_02_06_1041.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -157,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "concepts/_chart.md"
+                "file": "project/drought/d_2024_02_06_1041.md"
               }
             }
           },
@@ -190,7 +204,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "concepts/_chart.md"
+                "file": "project/drought/d_2024_02_06_1041.md"
               }
             }
           }
@@ -207,7 +221,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "concepts/_chart.md",
+                "file": "project/drought/d_2024_02_06_1041.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -266,30 +280,30 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1c0f982bf6fd6c21",
+  "active": "e8eaf42c93ae3034",
   "lastOpenFiles": [
-    "homepage.md",
+    "notes/quantitative_geography_2402161637.md",
+    "concepts/quantitative_geography.md",
     "notes/quantitative_resolution_2402220025.md",
-    "concepts/_chart.md",
-    "notes/chart_2402220204.md",
-    "concepts/_delaunay_tin.md",
+    "notes/quantitative_geography_2402220110.md",
+    "project/drought/d_2024_02_06_1041.md",
+    "notes/geo_data_2402220212.md",
+    "concepts/quantitative_resolution.md",
+    "concepts/thiessen_polygon.md",
+    "concepts/delaunay_tin.md",
+    "concepts/chart.md",
+    "homepage.md",
     "notes/chart_2402220140.md",
+    "notes/chart_2402220204.md",
     "template/topic.md",
     "template/concept.md",
     "topics/_quantitative_geography_.md",
-    "concepts/_quantitative_resolution.md",
-    "notes/quantitative_geography_2402220110.md",
     "notes/quantitative_geography_2402212007.md",
-    "notes/quantitative_geography_2402161637.md",
-    "concepts/_quantitative_geography.md",
-    "notes/geo_data_2402220212.md",
     "notes/delaunay_tin_2402161623.md",
     "notes/delaunay_tin_2402161540.md",
     "template/note.md",
-    "concepts/_thiessen_polygon.md",
     "topics/_gis_.md",
     "topics/_spatial_analysis_.md",
-    "project/drought/d_2024_02_06_1041.md",
     "scripts/database.js",
     "scripts/get_title.ts",
     "template/project_tasks.md",

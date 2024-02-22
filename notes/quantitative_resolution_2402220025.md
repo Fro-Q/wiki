@@ -8,7 +8,7 @@ status: finished
 
 # [title:: Quantitative Resolution | Process]
 
-[Quantitative Resolution](_quantitative_resolution.md) 的发展：
+[quantitative_resolution](quantitative_resolution.md) 的发展：
 
 ## 萌芽
 
@@ -19,9 +19,9 @@ status: finished
 
 ## 飞速发展
 
-- 第一本 [Quantitative Geography](_quantitative_geography.md) 教材——William Garrison.
+- 第一本 [quantitative_geography](quantitative_geography.md) 教材——William Garrison.
 - 美国区域科学协会组织大量学术活动。
 
 ## 结束
 
-到 20 世纪 60 年代中期，Quantitative Resolution 成功取代了 [Regional Geography](_regional_geography.md) 的主导地位，地理学术期刊和地理教科书上的大量出版物表明了范式的转变。新范式的采用使该学科能够为公共和私营部门提供更多服务。
+到 20 世纪 60 年代中期，Quantitative Resolution 成功取代了 [regional_geography](regional_geography.md) 的主导地位，地理学术期刊和地理教科书上的大量出版物表明了范式的转变。新范式的采用使该学科能够为公共和私营部门提供更多服务。
