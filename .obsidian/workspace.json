@@ -14,7 +14,20 @@
               "type": "markdown",
               "state": {
                 "file": "notes/geodata_2402220212.md",
-                "mode": "preview",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "99714409ed268f9f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/central_tendency_2402222134.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
@@ -33,7 +46,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -116,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/geodata_2402220212.md",
+                "file": "notes/central_tendency_2402222134.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/geodata_2402220212.md",
+                "file": "notes/central_tendency_2402222134.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -145,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/geodata_2402220212.md"
+                "file": "notes/central_tendency_2402222134.md"
               }
             }
           },
@@ -178,7 +192,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "notes/geodata_2402220212.md"
+                "file": "notes/central_tendency_2402222134.md"
               }
             }
           }
@@ -195,7 +209,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "notes/geodata_2402220212.md",
+                "file": "notes/central_tendency_2402222134.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -254,10 +268,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "52b90024b50b5a01",
+  "active": "99714409ed268f9f",
   "lastOpenFiles": [
-    "concepts/geographical_information.md",
     "notes/geodata_2402220212.md",
+    "notes/central_tendency_2402222134.md",
+    "concepts/geographical_information.md",
     "project/drought/d_2024_02_06_1041.md",
     "notes/quantitative_geography_2402220110.md",
     "homepage.md",
@@ -283,7 +298,6 @@
     "topics/_spatial_analysis_.md",
     "scripts/database.js",
     "scripts/get_title.ts",
-    "template/project_tasks.md",
     "scripts",
     "config/cedict_ts.u8",
     "config",
