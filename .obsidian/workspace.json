@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/geo_data_2402220212.md",
+                "file": "notes/geodata_2402220212.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "concepts/geographical_data.md",
+                "file": "concepts/geodata.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -115,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/geo_data_2402220212.md",
+                "file": "notes/geodata_2402220212.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/geo_data_2402220212.md",
+                "file": "notes/geodata_2402220212.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/geo_data_2402220212.md"
+                "file": "notes/geodata_2402220212.md"
               }
             }
           },
@@ -177,7 +177,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "notes/geo_data_2402220212.md"
+                "file": "notes/geodata_2402220212.md"
               }
             }
           }
@@ -194,7 +194,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "notes/geo_data_2402220212.md",
+                "file": "notes/geodata_2402220212.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -255,10 +255,10 @@
   },
   "active": "52b90024b50b5a01",
   "lastOpenFiles": [
+    "concepts/geodata.md",
+    "notes/geodata_2402220212.md",
     "project/drought/d_2024_02_06_1041.md",
     "notes/quantitative_geography_2402220110.md",
-    "notes/geo_data_2402220212.md",
-    "concepts/geographical_data.md",
     "homepage.md",
     "notes/chart_2402220140.md",
     "notes/thiessen_polygon_2402101222.md",
