@@ -211,8 +211,15 @@
       "setFileExistsBehavior": true
     }
   ],
-  "macros": [],
-  "inputPrompt": "multi-line",
+  "macros": [
+    {
+      "name": "deal_links",
+      "id": "e28a935e-ab7e-4830-a261-cbdd3d5680ce",
+      "commands": [],
+      "runOnStartup": false
+    }
+  ],
+  "inputPrompt": "single-line",
   "devMode": false,
   "templateFolderPath": "template",
   "announceUpdates": true,

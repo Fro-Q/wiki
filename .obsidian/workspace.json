@@ -8,19 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "52b90024b50b5a01",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/geodata_2402220212.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "99714409ed268f9f",
             "type": "leaf",
             "state": {
@@ -32,22 +19,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "9d1b0ba88fa6ec46",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "concepts/geographical_information.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -113,8 +86,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "b87e94253deaa70c",
