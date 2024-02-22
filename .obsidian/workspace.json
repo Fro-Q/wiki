@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "notes/geodata_2402220212.md",
-                "mode": "source",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
@@ -99,7 +99,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "b87e94253deaa70c",
