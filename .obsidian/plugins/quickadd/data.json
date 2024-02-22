@@ -211,14 +211,7 @@
       "setFileExistsBehavior": true
     }
   ],
-  "macros": [
-    {
-      "name": "deal_links",
-      "id": "e28a935e-ab7e-4830-a261-cbdd3d5680ce",
-      "commands": [],
-      "runOnStartup": false
-    }
-  ],
+  "macros": [],
   "inputPrompt": "single-line",
   "devMode": false,
   "templateFolderPath": "template",

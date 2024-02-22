@@ -222,7 +222,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 236.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -242,6 +243,8 @@
   },
   "active": "99714409ed268f9f",
   "lastOpenFiles": [
+    "scripts/deal_unresolved_links.js",
+    "scripts/deal_unresolved_links",
     "notes/geodata_2402220212.md",
     "notes/central_tendency_2402222134.md",
     "concepts/geographical_information.md",
@@ -267,7 +270,6 @@
     "topics/_quantitative_geography_.md",
     "template/note.md",
     "topics/_gis_.md",
-    "topics/_spatial_analysis_.md",
     "scripts/database.js",
     "scripts/get_title.ts",
     "scripts",
@@ -278,7 +280,6 @@
     "Porsche.jpg",
     "topics",
     "concepts",
-    "db/test",
     "file-name.png",
     "project/drought/未命名.canvas",
     "Pasted image 20231229063614 1.png",

@@ -38,4 +38,15 @@ $$\overline{x} = {\frac {\sum_ \limits {i=1}^{n} w_{i}x_{i}}{\sum_ \limits {i=1}
 
 也称 trimmed mean，即丢弃样本的高端或低端的给定部分（通常等量）后，剩下数据的 mean。
 
-特别地，
+特别地，当丢弃比例为 25% 时，称其为 [interquartile_mean](interquartile_mean)。
+
+## [interquartile_mean](interquartile_mean.md)（IQM 或 midmean）
+
+仅使用第一个和第三个四分位数之间的数据计算的 mean：  
+$$x_{IQM} = {\frac {2}{n}}\sum_{i={\frac {n}{4}}+1}^{\frac {3n}{4}}x_i$$  
+
+## [midrange](midrange)
+
+数据集的最大值和最小值的 [arithmetic_mean](arithmetic_mean.md)。
+
+## 
