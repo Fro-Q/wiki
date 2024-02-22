@@ -8,7 +8,7 @@ status: finished
 
 # [title:: Quantitative Geography | History ]
 
-[Quantitative Geography](_quantitative_geography.md) 的发展
+[计量地理学](_quantitative_geography.md) 的发展
 
 ## 初期（20 世纪 50 年代 - 20 世纪 60 年代末）
 

@@ -28,5 +28,6 @@
     "assets/"
   ],
   "showUnsupportedFiles": true,
-  "attachmentFolderPath": "assets"
+  "attachmentFolderPath": "assets",
+  "foldIndent": true
 }

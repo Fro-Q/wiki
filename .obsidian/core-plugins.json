@@ -13,6 +13,7 @@
   "templates",
   "command-palette",
   "slash-command",
+  "editor-status",
   "bookmarks",
   "zk-prefixer",
   "random-note",

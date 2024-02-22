@@ -3,7 +3,7 @@ tags:
   - topic
 ---
 
-# [title::  | ]
+# [title:: ]
 
 ```dataviewjs
 var concepts = dv.current().file.inlinks.map(i => dv.page(i))

@@ -4,37 +4,49 @@
     "type": "split",
     "children": [
       {
-        "id": "5000000057ca391a",
-        "type": "tabs",
+        "id": "18cde8f4a17634d1",
+        "type": "split",
         "children": [
           {
-            "id": "9d2ae430b661070d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "homepage.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+            "id": "5000000057ca391a",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "52b90024b50b5a01",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "homepage.md",
+                    "mode": "source",
+                    "backlinks": true,
+                    "source": false
+                  }
+                }
               }
-            }
+            ]
           },
           {
-            "id": "48e270fba412d60c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/geo_data_2402220212.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+            "id": "b1919082911d3383",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "1c0f982bf6fd6c21",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "concepts/_chart.md",
+                    "mode": "source",
+                    "backlinks": true,
+                    "source": false
+                  }
+                }
               }
-            }
+            ]
           }
         ],
-        "currentTab": 1
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -116,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/geo_data_2402220212.md",
+                "file": "concepts/_chart.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/geo_data_2402220212.md",
+                "file": "concepts/_chart.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -145,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/geo_data_2402220212.md"
+                "file": "concepts/_chart.md"
               }
             }
           },
@@ -178,7 +190,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "notes/geo_data_2402220212.md"
+                "file": "concepts/_chart.md"
               }
             }
           }
@@ -195,7 +207,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "notes/geo_data_2402220212.md",
+                "file": "concepts/_chart.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -254,28 +266,29 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "48e270fba412d60c",
+  "active": "1c0f982bf6fd6c21",
   "lastOpenFiles": [
     "homepage.md",
-    "notes/geo_data_2402220212.md",
+    "notes/quantitative_resolution_2402220025.md",
+    "concepts/_chart.md",
     "notes/chart_2402220204.md",
+    "concepts/_delaunay_tin.md",
     "notes/chart_2402220140.md",
-    "notes/quantitative_geography_2402220110.md",
     "template/topic.md",
     "template/concept.md",
+    "topics/_quantitative_geography_.md",
+    "concepts/_quantitative_resolution.md",
+    "notes/quantitative_geography_2402220110.md",
+    "notes/quantitative_geography_2402212007.md",
+    "notes/quantitative_geography_2402161637.md",
+    "concepts/_quantitative_geography.md",
+    "notes/geo_data_2402220212.md",
+    "notes/delaunay_tin_2402161623.md",
+    "notes/delaunay_tin_2402161540.md",
     "template/note.md",
     "concepts/_thiessen_polygon.md",
-    "concepts/_quantitative_resolution.md",
-    "concepts/_quantitative_geography.md",
-    "concepts/_delaunay_tin.md",
-    "topics/_quantitative_geography_.md",
-    "notes/quantitative_geography_2402212007.md",
     "topics/_gis_.md",
     "topics/_spatial_analysis_.md",
-    "notes/delaunay_tin_2402161540.md",
-    "notes/delaunay_tin_2402161623.md",
-    "notes/quantitative_geography_2402161637.md",
-    "notes/quantitative_resolution_2402220025.md",
     "project/drought/d_2024_02_06_1041.md",
     "scripts/database.js",
     "scripts/get_title.ts",
@@ -283,7 +296,6 @@
     "template/project_record.md",
     "template/project_meeting.md",
     "template/project_homepage.md",
-    "template/project_doc.md",
     "scripts",
     "config/cedict_ts.u8",
     "config",

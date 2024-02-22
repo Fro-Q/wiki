@@ -8,14 +8,16 @@ status: finished
 
 # [title:: Quantitative Resolution | Process]
 
-## [Quantitative Resolution](_quantitative_resolution.md) 萌芽
+[Quantitative Resolution](_quantitative_resolution.md) 的发展：
+
+## 萌芽
 
 - 区域传统认为地理学的目标是描述和解释地球表面的区域分异，这一传统主导着地理学的研究。
 - 大学中许多地理系和课程都被关闭。1948 年，Harvard University 废除地理课程。
 - 1953 年，Schaefer 发表论文《Exceptionalism in geography: A Methodological Examination》，向 Hartshorne 的区域学派理论提出挑战，标志 Quantitative Resolution 开始。
 - ……
 
-## Quantitative Resolution 的飞速发展
+## 飞速发展
 
 - 第一本 [Quantitative Geography](_quantitative_geography.md) 教材——William Garrison.
 - 美国区域科学协会组织大量学术活动。
