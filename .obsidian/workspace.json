@@ -50,7 +50,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "concepts/quantitative_geography.md",
+                    "file": "notes/quantitative_resolution_2402220025.md",
                     "mode": "source",
                     "backlinks": true,
                     "source": false
@@ -142,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "project/drought/d_2024_02_06_1041.md",
+                "file": "notes/quantitative_resolution_2402220025.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "project/drought/d_2024_02_06_1041.md",
+                "file": "notes/quantitative_resolution_2402220025.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -171,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/drought/d_2024_02_06_1041.md"
+                "file": "notes/quantitative_resolution_2402220025.md"
               }
             }
           },
@@ -204,7 +204,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "project/drought/d_2024_02_06_1041.md"
+                "file": "notes/quantitative_resolution_2402220025.md"
               }
             }
           }
@@ -221,7 +221,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "project/drought/d_2024_02_06_1041.md",
+                "file": "notes/quantitative_resolution_2402220025.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -280,27 +280,29 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "e8eaf42c93ae3034",
+  "active": "ed2286280f9f7cc3",
   "lastOpenFiles": [
-    "notes/quantitative_geography_2402161637.md",
-    "concepts/quantitative_geography.md",
-    "notes/quantitative_resolution_2402220025.md",
-    "notes/quantitative_geography_2402220110.md",
     "project/drought/d_2024_02_06_1041.md",
+    "notes/quantitative_resolution_2402220025.md",
+    "notes/thiessen_polygon_2402100037.md",
+    "notes/thiessen_polygon_2402101222.md",
+    "notes/quantitative_geography_2402220110.md",
+    "notes/quantitative_geography_2402212007.md",
+    "notes/quantitative_geography_2402161637.md",
     "notes/geo_data_2402220212.md",
+    "notes/delaunay_tin_2402161623.md",
+    "notes/delaunay_tin_2402161540.md",
+    "concepts/quantitative_geography.md",
+    "notes/chart_2402220140.md",
+    "homepage.md",
+    "notes/chart_2402220204.md",
     "concepts/quantitative_resolution.md",
     "concepts/thiessen_polygon.md",
     "concepts/delaunay_tin.md",
     "concepts/chart.md",
-    "homepage.md",
-    "notes/chart_2402220140.md",
-    "notes/chart_2402220204.md",
     "template/topic.md",
     "template/concept.md",
     "topics/_quantitative_geography_.md",
-    "notes/quantitative_geography_2402212007.md",
-    "notes/delaunay_tin_2402161623.md",
-    "notes/delaunay_tin_2402161540.md",
     "template/note.md",
     "topics/_gis_.md",
     "topics/_spatial_analysis_.md",
@@ -308,8 +310,6 @@
     "scripts/get_title.ts",
     "template/project_tasks.md",
     "template/project_record.md",
-    "template/project_meeting.md",
-    "template/project_homepage.md",
     "scripts",
     "config/cedict_ts.u8",
     "config",
