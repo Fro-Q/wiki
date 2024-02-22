@@ -3,7 +3,7 @@ tags:
   - concept
 ---
 
-# [title:: Geodata]
+# [title:: Geographical Information]
 
 ```dataviewjs
 var thisPage = dv.current()

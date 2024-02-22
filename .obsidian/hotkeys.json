@@ -112,5 +112,14 @@
       ],
       "key": "A"
     }
-  ]
+  ],
+  "templater-obsidian:insert-templater": [],
+  "templater-obsidian:replace-in-file-templater": [],
+  "templater-obsidian:jump-to-next-cursor-location": [],
+  "templater-obsidian:create-new-note-from-template": [],
+  "obsidian-underline:toggle-center-tag": [],
+  "obsidian-underline:toggle-link-heading": [],
+  "obsidian-underline:toggle-link-block": [],
+  "various-complements:reload-custom-dictionaries": [],
+  "various-complements:show-suggestions": []
 }

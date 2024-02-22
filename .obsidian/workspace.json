@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "concepts/geodata.md",
+                "file": "concepts/geographical_information.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -255,7 +255,7 @@
   },
   "active": "52b90024b50b5a01",
   "lastOpenFiles": [
-    "concepts/geodata.md",
+    "concepts/geographical_information.md",
     "notes/geodata_2402220212.md",
     "project/drought/d_2024_02_06_1041.md",
     "notes/quantitative_geography_2402220110.md",

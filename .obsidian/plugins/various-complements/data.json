@@ -32,18 +32,41 @@
         "modifiers": [],
         "key": "Tab",
         "hideHotkeyGuide": false
+      },
+      {
+        "modifiers": [],
+        "key": "Enter",
+        "hideHotkeyGuide": false
       }
     ],
     "up": [
       {
-        "modifiers": [],
+        "modifiers": [
+          "Mod"
+        ],
+        "key": "k",
+        "hideHotkeyGuide": false
+      },
+      {
+        "modifiers": [
+          "Mod"
+        ],
         "key": "[",
         "hideHotkeyGuide": false
       }
     ],
     "down": [
       {
-        "modifiers": [],
+        "modifiers": [
+          "Mod"
+        ],
+        "key": "j",
+        "hideHotkeyGuide": false
+      },
+      {
+        "modifiers": [
+          "Mod"
+        ],
         "key": "]",
         "hideHotkeyGuide": false
       }
@@ -61,7 +84,7 @@
     "completion": [],
     "insert as text": []
   },
-  "propagateEsc": false,
+  "propagateEsc": true,
   "enableCurrentFileComplement": true,
   "currentFileMinNumberOfCharacters": 0,
   "onlyComplementEnglishOnCurrentFileComplement": false,
