@@ -4,63 +4,36 @@
     "type": "split",
     "children": [
       {
-        "id": "697699fa82bffc58",
-        "type": "split",
+        "id": "5000000057ca391a",
+        "type": "tabs",
         "children": [
           {
-            "id": "5000000057ca391a",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "52b90024b50b5a01",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "homepage.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "1c0f982bf6fd6c21",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "project/drought/d_2024_02_06_1041.md",
-                    "mode": "preview",
-                    "backlinks": true,
-                    "source": false
-                  }
-                }
+            "id": "52b90024b50b5a01",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/geo_data_2402220212.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
-            ],
-            "currentTab": 1
+            }
           },
           {
-            "id": "52a75c2b78e0a8dd",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "ed2286280f9f7cc3",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "notes/quantitative_resolution_2402220025.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  }
-                }
+            "id": "9d1b0ba88fa6ec46",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "concepts/geographical_data.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
-            ]
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -142,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/quantitative_resolution_2402220025.md",
+                "file": "notes/geo_data_2402220212.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/quantitative_resolution_2402220025.md",
+                "file": "notes/geo_data_2402220212.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -171,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/quantitative_resolution_2402220025.md"
+                "file": "notes/geo_data_2402220212.md"
               }
             }
           },
@@ -204,7 +177,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "notes/quantitative_resolution_2402220025.md"
+                "file": "notes/geo_data_2402220212.md"
               }
             }
           }
@@ -221,7 +194,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "notes/quantitative_resolution_2402220025.md",
+                "file": "notes/geo_data_2402220212.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -280,21 +253,22 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "ed2286280f9f7cc3",
+  "active": "52b90024b50b5a01",
   "lastOpenFiles": [
     "project/drought/d_2024_02_06_1041.md",
+    "notes/quantitative_geography_2402220110.md",
+    "notes/geo_data_2402220212.md",
+    "concepts/geographical_data.md",
+    "homepage.md",
+    "notes/chart_2402220140.md",
+    "notes/thiessen_polygon_2402101222.md",
     "notes/quantitative_resolution_2402220025.md",
     "notes/thiessen_polygon_2402100037.md",
-    "notes/thiessen_polygon_2402101222.md",
-    "notes/quantitative_geography_2402220110.md",
     "notes/quantitative_geography_2402212007.md",
     "notes/quantitative_geography_2402161637.md",
-    "notes/geo_data_2402220212.md",
     "notes/delaunay_tin_2402161623.md",
     "notes/delaunay_tin_2402161540.md",
     "concepts/quantitative_geography.md",
-    "notes/chart_2402220140.md",
-    "homepage.md",
     "notes/chart_2402220204.md",
     "concepts/quantitative_resolution.md",
     "concepts/thiessen_polygon.md",
@@ -309,7 +283,6 @@
     "scripts/database.js",
     "scripts/get_title.ts",
     "template/project_tasks.md",
-    "template/project_record.md",
     "scripts",
     "config/cedict_ts.u8",
     "config",
