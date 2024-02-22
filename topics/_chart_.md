@@ -3,7 +3,7 @@ tags:
   - topic
 ---
 
-# [title:: Quantitative Geography]
+# [title:: Chart]
 
 ```dataviewjs
 var concepts = dv.current().file.inlinks.map(i => dv.page(i))

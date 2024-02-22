@@ -60,9 +60,10 @@ function getFile(pl) {
 
 // concepts = unique(concepts)
 
-dv.table(["Concepts Related", "Notes Related"],
+dv.table(["Concepts Involved", "Also under", "Notes Related"],
   concepts.map(c => [
     getTitle(c),
+    c.file.outlinks.map(pl => getFile(pl)),
     getPages(c.file.link),
   ])
 )

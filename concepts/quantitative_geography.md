@@ -42,7 +42,7 @@ function getFile(pl) {
 	return file.title ? `[${file.title}](${file_path})` : `[[${p.file.name}]]`
 }
 
-dv.table(["Notes Related", "Concepts Related"],
+dv.table(["Notes Related", "Concepts Mentioned"],
   getInlinkNotes(thisPage.file.link).map(n => [
     getTitle(n) + " | " + generateStatus(n),
     n.file.outlinks.map(l => getFile(l)),

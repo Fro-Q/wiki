@@ -32,11 +32,20 @@ function generateStatus(p) {
 	}
 }
 
+function getFile(pl) {
+	// regex to get the file name (`file_name in `[[path/to/file_name|title]]`)
+	const file_path = pl.toString().match(/\[\[(.*?)\|.*?\]\]/)[1]
+	const file = dv.page(`${file_path}`)
+	if (!file) {
+    	return `${file_path} ❌`
+	}
+	return file.title ? `[${file.title}](${file_path})` : `[[${p.file.name}]]`
+}
 
-dv.table(["Notes Related", "Concepts Related"],
+dv.table(["Notes Related", "Concepts Mentioned"],
   getInlinkNotes(thisPage.file.link).map(n => [
     getTitle(n) + " | " + generateStatus(n),
-    n.file.outlinks.map(l => dv.page(l) ? l : `${l.toString().match(/\[\[(.*?)\|.*?\]\]/)[1]} ❌`),
+    n.file.outlinks.map(l => getFile(l)),
   ])
 )
 ```
