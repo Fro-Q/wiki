@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e5a47657c20c0f61",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "project/drought/r_2024_02_23_2003.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/dispersion_2402230402.md",
+                "file": "project/drought/r_2024_02_23_2003.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/dispersion_2402230402.md",
+                "file": "project/drought/r_2024_02_23_2003.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -131,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/dispersion_2402230402.md"
+                "file": "project/drought/r_2024_02_23_2003.md"
               }
             }
           },
@@ -164,7 +178,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "notes/dispersion_2402230402.md"
+                "file": "project/drought/r_2024_02_23_2003.md"
               }
             }
           }
@@ -181,7 +195,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "notes/dispersion_2402230402.md",
+                "file": "project/drought/r_2024_02_23_2003.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -241,10 +255,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "db599fd89a91b3fb",
+  "active": "e5a47657c20c0f61",
   "lastOpenFiles": [
-    "notes/central_tendency_2402222134.md",
     "notes/dispersion_2402230402.md",
+    "project/drought/r_2024_02_23_2003.md",
+    "notes/central_tendency_2402222134.md",
     "notes/chart_2402220204.md",
     "concepts/chart.md",
     "project/drought/d_2024_02_06_1041.md",
@@ -270,7 +285,6 @@
     "notes/thiessen_polygon_2402100037.md",
     "notes/quantitative_geography_2402212007.md",
     "notes/quantitative_geography_2402161637.md",
-    "notes/delaunay_tin_2402161623.md",
     "scripts/database.js",
     "scripts/get_title.ts",
     "scripts",
