@@ -195,5 +195,7 @@
   "inline-elements@@circle-checkbox": true,
   "inline-elements@@tag-radius": 1,
   "ui-style@@hide-close-button-when-window-narrow": false,
-  "accent-color@@custom-accent-color": false
+  "accent-color@@custom-accent-color": false,
+  "accent-color@@use-builtin-color-picker": false,
+  "accent-color@@accent-color-for-dark-theme": "accent-color-bw-dark"
 }
