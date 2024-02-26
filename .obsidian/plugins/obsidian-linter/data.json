@@ -205,8 +205,8 @@
     },
     "remove-space-before-or-after-characters": {
       "enabled": false,
-      "characters-to-remove-space-before": ",!?;:).’”]",
-      "characters-to-remove-space-after": "¿¡‘“(["
+      "characters-to-remove-space-before": ",!?;:).’”]，。；：「」『』【】",
+      "characters-to-remove-space-after": "¿¡‘“([，。；：「」『』【】"
     },
     "space-after-list-markers": {
       "enabled": true
