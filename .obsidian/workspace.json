@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/dispersion_2402230402.md",
+                "file": "notes/central_tendency_2402222134.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/dispersion_2402230402.md",
+                "file": "notes/central_tendency_2402222134.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/dispersion_2402230402.md",
+                "file": "notes/central_tendency_2402222134.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/dispersion_2402230402.md"
+                "file": "notes/central_tendency_2402222134.md"
               }
             }
           },
@@ -164,7 +164,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "notes/dispersion_2402230402.md"
+                "file": "notes/central_tendency_2402222134.md"
               }
             }
           }
@@ -181,7 +181,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "notes/dispersion_2402230402.md",
+                "file": "notes/central_tendency_2402222134.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -244,10 +244,10 @@
   "active": "db599fd89a91b3fb",
   "lastOpenFiles": [
     "homepage.md",
+    "notes/central_tendency_2402222134.md",
     "notes/dispersion_2402230402.md",
     "notes/quantitative_geography_2402212007.md",
     "notes/chart_2402220140.md",
-    "notes/central_tendency_2402222134.md",
     "timestamp/ts2024_02_26_1645.md",
     "timestamp/ts2024_02_26_1402.md",
     "concepts/chart.md",
