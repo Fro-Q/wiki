@@ -30,5 +30,5 @@
   "showUnsupportedFiles": true,
   "attachmentFolderPath": "assets",
   "foldIndent": true,
-  "vimMode": true
+  "vimMode": false
 }
