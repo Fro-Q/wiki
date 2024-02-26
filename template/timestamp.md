@@ -1,10 +1,8 @@
 ---
 tags:
   - timestamp
-date:
-  "{ date }": 
-time:
-  "{ time }": 
+date: {{date}}
+time: {{time}}
 status: draft
 ---
 # [title:: ]
