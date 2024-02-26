@@ -222,8 +222,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -243,9 +242,9 @@
   },
   "active": "db599fd89a91b3fb",
   "lastOpenFiles": [
-    "homepage.md",
-    "timestamp/ts2024_02_26_1402.md",
     "timestamp/ts2024_02_26_1645.md",
+    "timestamp/ts2024_02_26_1402.md",
+    "homepage.md",
     "notes/dispersion_2402230402.md",
     "concepts/chart.md",
     "template/timestamp.md",
