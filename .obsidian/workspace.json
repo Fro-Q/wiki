@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "timestamp/ts2024_02_26_1645.md",
+                "file": "homepage.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -67,8 +67,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "9e87f895a36db30e",
@@ -87,8 +86,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "b87e94253deaa70c",
@@ -104,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "timestamp/ts2024_02_26_1645.md",
+                "file": "homepage.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "timestamp/ts2024_02_26_1645.md",
+                "file": "homepage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -133,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "timestamp/ts2024_02_26_1645.md"
+                "file": "homepage.md"
               }
             }
           },
@@ -166,7 +164,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "timestamp/ts2024_02_26_1645.md"
+                "file": "homepage.md"
               }
             }
           }
@@ -183,7 +181,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "timestamp/ts2024_02_26_1645.md",
+                "file": "homepage.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
