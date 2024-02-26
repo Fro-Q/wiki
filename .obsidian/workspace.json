@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "timestamp/ts2024_02_26_1402.md",
+                "file": "notes/dispersion_2402230402.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "timestamp/ts2024_02_26_1402.md",
+                "file": "notes/dispersion_2402230402.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "timestamp/ts2024_02_26_1402.md",
+                "file": "notes/dispersion_2402230402.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "timestamp/ts2024_02_26_1402.md"
+                "file": "notes/dispersion_2402230402.md"
               }
             }
           },
@@ -164,7 +164,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "timestamp/ts2024_02_26_1402.md"
+                "file": "notes/dispersion_2402230402.md"
               }
             }
           }
@@ -181,7 +181,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "timestamp/ts2024_02_26_1402.md",
+                "file": "notes/dispersion_2402230402.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -222,7 +222,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -242,17 +243,19 @@
   },
   "active": "db599fd89a91b3fb",
   "lastOpenFiles": [
-    "timestamp/ts2024_02_26_1645.md",
-    "timestamp/ts2024_02_26_1402.md",
     "homepage.md",
     "notes/dispersion_2402230402.md",
+    "notes/quantitative_geography_2402212007.md",
+    "notes/chart_2402220140.md",
+    "notes/central_tendency_2402222134.md",
+    "timestamp/ts2024_02_26_1645.md",
+    "timestamp/ts2024_02_26_1402.md",
     "concepts/chart.md",
     "template/timestamp.md",
     "timestamp/ts2024_02_26_1401.md",
     "template/diary.md",
     "project/drought/r_2024_02_23_2003.md",
     "timestamp/ts2024_02_25_2324.md",
-    "notes/central_tendency_2402222134.md",
     "notes/chart_2402220204.md",
     "project/drought/d_2024_02_06_1041.md",
     "topics/_chart_.md",
@@ -266,8 +269,6 @@
     "concepts/quantitative_resolution.md",
     "concepts/quantitative_geography.md",
     "concepts/geographical_information.md",
-    "notes/chart_2402220140.md",
-    "notes/quantitative_geography_2402220110.md",
     "scripts/deal_unresolved_links.js",
     "scripts/deal_unresolved_links",
     "scripts/database.js",
