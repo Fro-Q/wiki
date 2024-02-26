@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "homepage.md",
+                "file": "timestamp/ts2024_02_26_1402.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "homepage.md",
+                "file": "timestamp/ts2024_02_26_1402.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "homepage.md",
+                "file": "timestamp/ts2024_02_26_1402.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "homepage.md"
+                "file": "timestamp/ts2024_02_26_1402.md"
               }
             }
           },
@@ -164,7 +164,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "homepage.md"
+                "file": "timestamp/ts2024_02_26_1402.md"
               }
             }
           }
@@ -181,7 +181,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "homepage.md",
+                "file": "timestamp/ts2024_02_26_1402.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -243,9 +243,10 @@
   },
   "active": "db599fd89a91b3fb",
   "lastOpenFiles": [
-    "notes/dispersion_2402230402.md",
-    "timestamp/ts2024_02_26_1645.md",
+    "homepage.md",
     "timestamp/ts2024_02_26_1402.md",
+    "timestamp/ts2024_02_26_1645.md",
+    "notes/dispersion_2402230402.md",
     "concepts/chart.md",
     "template/timestamp.md",
     "timestamp/ts2024_02_26_1401.md",
@@ -267,7 +268,6 @@
     "concepts/quantitative_geography.md",
     "concepts/geographical_information.md",
     "notes/chart_2402220140.md",
-    "homepage.md",
     "notes/quantitative_geography_2402220110.md",
     "scripts/deal_unresolved_links.js",
     "scripts/deal_unresolved_links",
