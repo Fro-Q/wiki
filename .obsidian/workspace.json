@@ -258,8 +258,9 @@
   },
   "active": "e5a47657c20c0f61",
   "lastOpenFiles": [
-    "template/timestamp.md",
+    "concepts/chart.md",
     "timestamp/ts2024_02_26_1402.md",
+    "template/timestamp.md",
     "timestamp/ts2024_02_26_1401.md",
     "template/diary.md",
     "project/drought/r_2024_02_23_2003.md",
@@ -267,7 +268,6 @@
     "notes/dispersion_2402230402.md",
     "notes/central_tendency_2402222134.md",
     "notes/chart_2402220204.md",
-    "concepts/chart.md",
     "project/drought/d_2024_02_06_1041.md",
     "topics/_chart_.md",
     "topics/_gis_.md",
