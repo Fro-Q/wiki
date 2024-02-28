@@ -62,13 +62,14 @@ $$x_{IQM} = {\frac {2}{n}}\sum_{i={\frac {n}{4}}+1}^{\frac {3n}{4}}x_i$$
 
 $$M={\frac {\max (x)+\min (x)}{2}}$$
 
-## [midhinge](midhinge)
+## [midhinge](midhinge)（中轴数）
 
 第一个和第三个四分位数的 [arithmetic_mean](arithmetic_mean.md)。
 
-$$MH(X) = \overline {Q_{{1 \over i},3}(X)} = {\frac {Q_{1}(X) + Q_{3}(X)}{2}}$$
+$$MH(X) = \overline {Q_{{1 \over 4},{3 \over 4}}(X)} = {\frac {Q_{1 \over 4}(X) + Q_{3 \over 4}(X)}{2}}$$
 
-## [trimean](trimean)（TM）
+## [trimean](trimean)（三均值、图基三均值）
 
-[median](median.md) 和两个 [quartile](quartile) 的 [weighted_arithmetic_mean](weighted_arithmetic_mean.md)：  
-$$TM(X) = {\frac {Q_{1}(X) + 2Q_{2}(X) + Q_{3}(X)}{4}} = {\frac {1}{med(X) + MH(X)}}$$  
+[median](median.md) 和两个 [quartile](quartile) 的 [weighted_arithmetic_mean](weighted_arithmetic_mean.md)。
+
+$$TM(X) = {\frac {Q_{1 \over 4}(X) + 2 med(X) + Q_{3 \over 4}(X)}{4}} = {\frac {1}{2}\left ({med(X) + {\frac {1}{2}}MH(X)}\right)}$$
