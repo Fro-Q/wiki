@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/dispersion_2402230402.md",
+                "file": "homepage.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "707bbc7477c14308",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/skewness_2402281113.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/dispersion_2402230402.md",
+                "file": "notes/skewness_2402281113.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/dispersion_2402230402.md",
+                "file": "notes/skewness_2402281113.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -131,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/dispersion_2402230402.md"
+                "file": "notes/skewness_2402281113.md"
               }
             }
           },
@@ -164,7 +178,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "notes/dispersion_2402230402.md"
+                "file": "notes/skewness_2402281113.md"
               }
             }
           }
@@ -181,7 +195,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "notes/dispersion_2402230402.md",
+                "file": "notes/skewness_2402281113.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -240,13 +254,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "db599fd89a91b3fb",
+  "active": "707bbc7477c14308",
   "lastOpenFiles": [
     "homepage.md",
+    "notes/dispersion_2402230402.md",
+    "notes/skewness_2402281113.md",
     "notes/central_tendency_2402222134.md",
     "timestamp/ts2024_02_26_1645.md",
     "timestamp/ts2024_02_26_1402.md",
-    "notes/dispersion_2402230402.md",
     "notes/quantitative_geography_2402212007.md",
     "notes/chart_2402220140.md",
     "concepts/chart.md",
@@ -267,7 +282,6 @@
     "concepts/thiessen_polygon.md",
     "concepts/quantitative_resolution.md",
     "concepts/quantitative_geography.md",
-    "concepts/geographical_information.md",
     "scripts/deal_unresolved_links.js",
     "scripts/deal_unresolved_links",
     "scripts/database.js",
