@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/skewness_2402281113.md",
+                "file": "project/drought/drought.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/skewness_2402281113.md",
+                "file": "project/drought/r_2024_02_23_2003.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/skewness_2402281113.md",
+                "file": "project/drought/r_2024_02_23_2003.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/skewness_2402281113.md"
+                "file": "project/drought/r_2024_02_23_2003.md"
               }
             }
           },
@@ -178,7 +178,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "notes/skewness_2402281113.md"
+                "file": "project/drought/r_2024_02_23_2003.md"
               }
             }
           }
@@ -195,7 +195,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "notes/skewness_2402281113.md",
+                "file": "project/drought/r_2024_02_23_2003.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -232,7 +232,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -254,10 +255,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "707bbc7477c14308",
+  "active": "e8eaf42c93ae3034",
   "lastOpenFiles": [
-    "homepage.md",
+    "project/drought/drought.md",
+    "project/drought/d_2024_02_06_1041.md",
+    "project/drought/r_2024_01_29_0913.md",
     "notes/skewness_2402281113.md",
+    "homepage.md",
     "assets/CleanShot 2024-02-28 at 12.09.10@2x.png",
     "notes/dispersion_2402230402.md",
     "notes/central_tendency_2402222134.md",
@@ -272,7 +276,6 @@
     "project/drought/r_2024_02_23_2003.md",
     "timestamp/ts2024_02_25_2324.md",
     "notes/chart_2402220204.md",
-    "project/drought/d_2024_02_06_1041.md",
     "topics/_chart_.md",
     "topics/_gis_.md",
     "topics/_quantitative_geography_.md",
@@ -281,7 +284,6 @@
     "topics/_spatial_analysis_.md",
     "template/concept.md",
     "concepts/thiessen_polygon.md",
-    "concepts/quantitative_resolution.md",
     "scripts/deal_unresolved_links.js",
     "scripts/deal_unresolved_links",
     "scripts/database.js",

@@ -1,5 +1,7 @@
 ---
-tags: ["project", "homepage"]
+tags:
+  - "project"
+  - "homepage"
 project: "drought"
 status: "working"
 ---
@@ -23,6 +25,7 @@ dv.table(["Title", "Date"],
 	])
 )
 ```
+
 ## Docs
 
 ```dataviewjs
