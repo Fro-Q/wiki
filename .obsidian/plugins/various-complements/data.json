@@ -15,7 +15,7 @@
   "delayMilliSeconds": 20,
   "disableSuggestionsDuringImeOn": false,
   "insertAfterCompletion": false,
-  "firstCharactersDisableSuggestions": ":/^",
+  "firstCharactersDisableSuggestions": ":/^@",
   "patternsToSuppressTrigger": [
     "^~~~.*",
     "^```.*"
@@ -89,11 +89,11 @@
   "excludeCurrentVaultPathPrefixPatterns": "template/",
   "includeCurrentVaultOnlyFilesUnderCurrentDirectory": false,
   "enableCustomDictionaryComplement": true,
-  "customDictionaryPaths": "./config/__complements.md\n./config/ref.bib",
+  "customDictionaryPaths": "./config/__complements.md",
   "columnDelimiter": "Pipe",
   "customDictionaryWordRegexPattern": "",
-  "delimiterToHideSuggestion": "",
-  "delimiterToDivideSuggestionsForDisplayFromInsertion": "",
+  "delimiterToHideSuggestion": "&&",
+  "delimiterToDivideSuggestionsForDisplayFromInsertion": ">>",
   "caretLocationSymbolAfterComplement": "<caret>",
   "displayedTextSuffix": " => ...",
   "enableInternalLinkComplement": true,
