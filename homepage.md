@@ -88,13 +88,20 @@ function getTitle(p) {
 }
 
 function getFile(pl) {
-	// regex to get the file name (`file_name in `[[path/to/file_name|title]]`)
-	const file_name = pl.toString().match(/\[\[(.*?)\|.*?\]\]/)[1]
-	const file = dv.page(`${file_name}`)
-	if (!file) {
-    	return `[${file_name}](${file_name}) ❌`
-	}
-	return `[${file.title}](${file_name})`
+  // regex to get the file name (`file_name in `[[path/to/file_name|title]]`)
+  const file_path = pl.toString().match(/\[\[(.*?)\|.*?\]\]/)[1]
+  // strip suffix .md from file_path
+  const file_name = file_path.replace(/.md/g, '')
+  const file = dv.page(`${file_path}`)
+  if (!file) {
+    return `[${file_name}](concepts/${file_path}) ❌`
+  }
+  return file.title ? `[${file.title}](${file_path}) ${getAlias(file)}` : `[[${file.file.name}]]`
+
+}
+
+function getAlias(p) {
+  return p.alias ? `<br> ${p.alias}` : ""
 }
 
 function generateStatus(p) {
@@ -125,7 +132,7 @@ function unique(arr) {
 
 concepts = unique(concepts)
 
-dv.table(["Concept or Topic", "Pages"],
+dv.table(["Concept", "Notes"],
 	concepts.map(c => [
 		getFile(c),
 		getPages(c),

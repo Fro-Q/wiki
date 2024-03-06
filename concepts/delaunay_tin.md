@@ -1,6 +1,7 @@
 ---
 tags:
   - concept
+alias: []
 ---
 
 # [title:: Delaunay Tin]

@@ -1,6 +1,8 @@
 ---
 tags:
   - topic
+alias:
+  - 地理信息系统
 ---
 
 # [title:: GIS]

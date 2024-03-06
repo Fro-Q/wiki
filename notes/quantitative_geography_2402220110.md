@@ -27,4 +27,4 @@ status: finished
 ## 新型发展（20 世纪 90 年代初至今）
 
 - [3s](3s.md) 技术。
-- [neural_network](neural_network.md)、[genetic_algorithm](genetic_algorithm.md)、[cellular_automaton](cellular_automaton.md)、[fuzzy_logic](fuzzy_logic) 等。
+- [neural_network](neural_network.md)、[genetic_algorithm](genetic_algorithm.md)、[cellular_automaton](cellular_automaton.md)、[fuzzy_logic](fuzzy_logic.md) 等。

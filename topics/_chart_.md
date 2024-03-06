@@ -1,6 +1,9 @@
 ---
 tags:
   - topic
+alias:
+  - 表格
+  - 统计表
 ---
 
 # [title:: Chart]

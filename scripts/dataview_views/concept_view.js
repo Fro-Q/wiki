@@ -1,4 +1,5 @@
 var thisPage = dv.current()
+var concepts = getInlinkNotes(thisPage.file.link)
 
 function getTitle(p) {
   if (p.title) {
@@ -27,16 +28,39 @@ function generateStatus(p) {
 function getFile(pl) {
   // regex to get the file name (`file_name in `[[path/to/file_name|title]]`)
   const file_path = pl.toString().match(/\[\[(.*?)\|.*?\]\]/)[1]
+  // strip suffix .md from file_path
+  const file_name = file_path.replace(/.md/g, '')
   const file = dv.page(`${file_path}`)
   if (!file) {
-    return `${file_path} ❌`
+    return `[${file_name}](concepts/${file_path}) ❌`
   }
-  return file.title ? `[${file.title}](${file_path})` : `[[${p.file.name}]]`
+  return file.title ? `[${file.title}](${file_path}) ${getAlias(file)}` : `[[${file.file.name}]]`
+
+}
+
+function getAlias(p) {
+  return p.alias ? `<br> ${p.alias}` : ""
+}
+
+function unique(arr) {
+  // remove duplicate concepts
+  // new array to store the unique concepts
+  var newArr = [];
+  // store the appeared topics. if a topic has appeared, skip it.
+  var appearedTopicsTiel = [];
+  for (var i = 0; i < arr.length; i++) {
+    if (appearedTopicsTiel.includes(arr[i].toString())) {
+      continue;
+    }
+    appearedTopicsTiel.push(arr[i].toString());
+    newArr.push(arr[i]);
+  }
+  return newArr;
 }
 
 dv.table(["Notes Related", "Concepts Mentioned"],
-  getInlinkNotes(thisPage.file.link).map(n => [
+  concepts.map(n => [
     getTitle(n) + " | " + generateStatus(n),
-    n.file.outlinks.map(l => getFile(l)),
+    unique(n.file.outlinks).map(l => getFile(l)),
   ])
 )

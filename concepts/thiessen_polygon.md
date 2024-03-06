@@ -1,6 +1,8 @@
 ---
 tags:
   - concept
+alias:
+  - 泰森多边形
 ---
 
 # [title:: Thiessen Polygon]

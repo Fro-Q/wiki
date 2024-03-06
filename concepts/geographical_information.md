@@ -1,6 +1,8 @@
 ---
 tags:
   - concept
+alias:
+  - 地理信息
 ---
 
 # [title:: Geographical Information]

@@ -1,6 +1,8 @@
 ---
 tags:
   - topic
+alias:
+  - 空间分析
 ---
 
 # [title:: Spatial Analysis]

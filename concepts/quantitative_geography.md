@@ -1,6 +1,8 @@
 ---
 tags:
   - concept
+alias:
+  - 计量地理学
 ---
 
 # [title:: Quantitative Geography]

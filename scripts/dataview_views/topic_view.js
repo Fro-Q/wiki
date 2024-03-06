@@ -1,11 +1,12 @@
-var concepts = dv.current().file.inlinks.map(i => dv.page(i))
+var concepts = dv.current().file.inlinks
+  .map(i => dv.page(i))
   .sort(c => -c.file.ctime);
 
 function getTitle(p) {
   if (p.title) {
-    return `[${p.title}](${p.file.name})`
+    return `[${p.title}](${p.file.name}) ${getAlias(p)}`
   }
-  return `[${p.file.name}](${p.file.name})`
+  return `[${p.file.name}](${p.file.name}) ${getAlias(p)}`
 }
 
 function getPages(c) {
@@ -27,11 +28,18 @@ function generateStatus(p) {
 function getFile(pl) {
   // regex to get the file name (`file_name in `[[path/to/file_name|title]]`)
   const file_path = pl.toString().match(/\[\[(.*?)\|.*?\]\]/)[1]
+  // strip suffix .md from file_path
+  const file_name = file_path.replace(/.md/g, '')
   const file = dv.page(`${file_path}`)
   if (!file) {
-    return `${file_path} ❌`
+    return `[${file_name}](concepts/${file_path}) ❌`
   }
-  return `[${file.title}](${file_path})`
+  return file.title ? `[${file.title}](${file_path}) ${getAlias(file)}` : `[[${file.file.name}]]`
+
+}
+
+function getAlias(p) {
+  return p.alias ? `<br> ${p.alias}` : ""
 }
 
 // function unique(arr) {
@@ -55,7 +63,8 @@ function getFile(pl) {
 dv.table(["Concepts Involved", "Also under", "Notes Related"],
   concepts.map(c => [
     getTitle(c),
-    c.file.outlinks.map(pl => getFile(pl)),
+    c.file.outlinks
+      .map(pl => getFile(pl)),
     getPages(c.file.link),
   ])
 )

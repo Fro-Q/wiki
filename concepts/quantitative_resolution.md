@@ -1,6 +1,10 @@
 ---
 tags:
   - concept
+alias:
+  - 计量革命
+  - 数量革命
+  - 计量运动
 ---
 
 # [title:: Quantitative Resolution]

@@ -1,6 +1,7 @@
 ---
 tags:
   - topic
+alias: 
 ---
 
 # [title:: <% tp.file.cursor(1) %>]
