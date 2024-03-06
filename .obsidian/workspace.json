@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "homepage.md",
+                "file": "project/drought/d_2024_02_06_1041.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "homepage.md",
+                "file": "project/drought/d_2024_02_06_1041.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "homepage.md",
+                "file": "project/drought/d_2024_02_06_1041.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "homepage.md"
+                "file": "project/drought/d_2024_02_06_1041.md"
               }
             }
           },
@@ -178,7 +178,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "homepage.md"
+                "file": "project/drought/d_2024_02_06_1041.md"
               }
             }
           }
@@ -195,7 +195,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "homepage.md",
+                "file": "project/drought/d_2024_02_06_1041.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -255,7 +255,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "e8eaf42c93ae3034",
+  "active": "707bbc7477c14308",
   "lastOpenFiles": [
     "homepage.md",
     "config/__complements.md",
