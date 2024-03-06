@@ -10,7 +10,7 @@ status: finished
 
 最常见的 [central_tendency](central_tendency) 的指标是 [arithmetic_mean](arithmetic_mean)、[median](median) 和 [mode](mode)。
 
-## [arithmetic_mean](arithmetic_mean)（算术平均值）
+## [arithmetic_mean](concepts/arithmetic_mean)（算术平均值）
 
 所有测量值的总数除以数据集中的观测值数量。
 

@@ -115,7 +115,6 @@
   ],
   "templater-obsidian:insert-templater": [],
   "templater-obsidian:replace-in-file-templater": [],
-  "templater-obsidian:jump-to-next-cursor-location": [],
   "templater-obsidian:create-new-note-from-template": [],
   "obsidian-underline:toggle-center-tag": [],
   "obsidian-underline:toggle-link-heading": [],
@@ -136,14 +135,6 @@
         "Alt"
       ],
       "key": "2"
-    }
-  ],
-  "quickadd:testQuickAdd": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "3"
     }
   ],
   "zk-prefixer": [
@@ -176,6 +167,22 @@
         "Mod"
       ],
       "key": "S"
+    }
+  ],
+  "quickadd:choice:f8d46d6a-57ab-4bd5-8167-08c3a4336b41": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "3"
+    }
+  ],
+  "templater-obsidian:jump-to-next-cursor-location": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "Tab"
     }
   ]
 }

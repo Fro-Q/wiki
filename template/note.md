@@ -6,5 +6,5 @@ time: <% tp.file.creation_date("HH:mm") %>
 status: draft
 ---
 
-# [title:: <% tp.file.cursor %> | ]
+# [title:: <% tp.file.cursor(1) %> | ]
 

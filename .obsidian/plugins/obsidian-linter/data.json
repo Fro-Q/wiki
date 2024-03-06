@@ -252,7 +252,7 @@
   "foldersToIgnore": [
     "template",
     "assets",
-    "config",
+    "_config",
     ""
   ],
   "linterLocale": "system-default",

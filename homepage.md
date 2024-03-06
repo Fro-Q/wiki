@@ -89,12 +89,12 @@ function getTitle(p) {
 
 function getFile(pl) {
 	// regex to get the file name (`file_name in `[[path/to/file_name|title]]`)
-	const file_path = pl.toString().match(/\[\[(.*?)\|.*?\]\]/)[1]
-	const file = dv.page(`${file_path}`)
+	const file_name = pl.toString().match(/\[\[(.*?)\|.*?\]\]/)[1]
+	const file = dv.page(`${file_name}`)
 	if (!file) {
-    	return `${file_path} ❌`
+    	return `[${file_name}](${file_name}) ❌`
 	}
-	return `[${file.title}](${file_path})`
+	return `[${file.title}](${file_name})`
 }
 
 function generateStatus(p) {
