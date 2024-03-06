@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "template/project_doc.md",
+                "file": "template/topic.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "template/project_doc.md",
+                "file": "template/topic.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "template/project_doc.md",
+                "file": "template/topic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "template/project_doc.md"
+                "file": "template/topic.md"
               }
             }
           },
@@ -164,7 +164,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "template/project_doc.md"
+                "file": "template/topic.md"
               }
             }
           }
@@ -181,7 +181,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "template/project_doc.md",
+                "file": "template/topic.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -241,10 +241,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "400aa4924092117f",
+  "active": "db599fd89a91b3fb",
   "lastOpenFiles": [
-    "template/project_homepage.md",
+    "template/note.md",
+    "template/concept.md",
     "template/project_doc.md",
+    "template/project_homepage.md",
     "template/project_meeting.md",
     "template/project_record.md",
     "template/project_tasks.md",
@@ -269,8 +271,6 @@
     "notes/chart_2402220140.md",
     "concepts/chart.md",
     "template/timestamp.md",
-    "timestamp/ts2024_02_26_1401.md",
-    "template/diary.md",
     "scripts/deal_unresolved_links.js",
     "scripts/deal_unresolved_links",
     "scripts/database.js",

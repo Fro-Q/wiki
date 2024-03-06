@@ -8,15 +8,23 @@
     ]
   ],
   "trigger_on_file_creation": true,
-  "auto_jump_to_cursor": false,
+  "auto_jump_to_cursor": true,
   "enable_system_commands": false,
   "shell_path": "",
   "user_scripts_folder": "",
-  "enable_folder_templates": false,
+  "enable_folder_templates": true,
   "folder_templates": [
     {
-      "folder": "",
-      "template": ""
+      "folder": "notes",
+      "template": "template/note.md"
+    },
+    {
+      "folder": "concepts",
+      "template": "template/concept.md"
+    },
+    {
+      "folder": "topics",
+      "template": "template/topic.md"
     }
   ],
   "syntax_highlighting": true,

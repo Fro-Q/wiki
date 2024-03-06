@@ -8,4 +8,4 @@ project:
 status: draft
 ---
 
-# [title:: ]
+# [title:: <% tp.file.cursor %>]

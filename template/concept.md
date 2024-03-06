@@ -3,7 +3,7 @@ tags:
   - concept
 ---
 
-# [title:: ]
+# [title:: <% tp.file.cursor %>]
 
 ```dataviewjs
 var thisPage = dv.current()
