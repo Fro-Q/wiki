@@ -68,19 +68,6 @@ dv.table(["Title", "Time", "Topics Related", "Dealed"],
 )
 ```
 
-## Project
-
-```dataviewjs
-var pages = dv.pages(`"project" and #homepage`)
-
-dv.table(["Name", "Status"],
-	pages.map(p => [
-		p.file.link,
-		p.status,
-	])
-)
-```
-
 ## DB
 
 ```dataviewjs
