@@ -1,12 +1,34 @@
 {
   "collapse-filter": false,
   "search": "path: -template",
-  "showTags": true,
+  "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": true,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "tag:#note  ",
+      "color": {
+        "a": 1,
+        "rgb": 6073543
+      }
+    },
+    {
+      "query": "tag:#concept  ",
+      "color": {
+        "a": 1,
+        "rgb": 6120159
+      }
+    },
+    {
+      "query": "tag:#topic  ",
+      "color": {
+        "a": 1,
+        "rgb": 3686399
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
@@ -17,6 +39,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 100,
-  "scale": 0.13489338222404343,
+  "scale": 0.20371206790936905,
   "close": true
 }

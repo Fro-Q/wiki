@@ -61,14 +61,6 @@
       "key": "6"
     }
   ],
-  "obsidian-link-converter:convert-wikis-to-md-in-active-file": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "K"
-    }
-  ],
   "app:open-help": [],
   "editor:follow-link": [
     {
@@ -137,14 +129,6 @@
       "key": "2"
     }
   ],
-  "zk-prefixer": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "T"
-    }
-  ],
   "editor:toggle-bullet-list": [
     {
       "modifiers": [
@@ -184,5 +168,22 @@
       ],
       "key": "Tab"
     }
-  ]
+  ],
+  "quickadd:choice:35692548-6147-485e-b0e9-769b0b25034b": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "T"
+    }
+  ],
+  "quickadd:choice:b13c94fa-dd37-496d-8b74-3a70a98d209e": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "K"
+    }
+  ],
+  "editor:insert-link": []
 }

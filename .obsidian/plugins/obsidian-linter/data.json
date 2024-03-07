@@ -121,7 +121,7 @@
       "list-end-style": "."
     },
     "proper-ellipsis": {
-      "enabled": false
+      "enabled": true
     },
     "quote-style": {
       "enabled": false,
@@ -131,7 +131,7 @@
       "double-quote-style": "\"\""
     },
     "remove-consecutive-list-markers": {
-      "enabled": false
+      "enabled": true
     },
     "remove-empty-list-markers": {
       "enabled": true
