@@ -19,8 +19,48 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "659307dd1df06034",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/regression_2403090549.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5b643d661274171d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/stepwise_regression_2403090604.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d13560024a01c789",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/cluster_analysis_2403090611.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -86,8 +126,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "b87e94253deaa70c",
@@ -103,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "homepage.md",
+                "file": "notes/cluster_analysis_2403090611.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "homepage.md",
+                "file": "notes/cluster_analysis_2403090611.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -132,7 +171,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "homepage.md"
+                "file": "notes/cluster_analysis_2403090611.md"
               }
             }
           },
@@ -165,7 +204,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "homepage.md"
+                "file": "notes/cluster_analysis_2403090611.md"
               }
             }
           }
@@ -182,7 +221,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "homepage.md",
+                "file": "notes/cluster_analysis_2403090611.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -242,12 +281,22 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "400aa4924092117f",
+  "active": "d13560024a01c789",
   "lastOpenFiles": [
-    "diary/dd_2024_01_13.md",
+    "notes/stepwise_regression_2403090604.md",
+    "notes/cluster_analysis_2403090611.md",
+    "notes/regression_2403090549.md",
+    "template/note.md",
     "homepage.md",
-    "diary/dd_2024_01_17.md",
     "notes/correlation_2403080329.md",
+    "concepts/sampling_fraction.md",
+    "concepts/stratified_sampling.md",
+    "concepts/systematic_sampling.md",
+    "concepts/simple_random_sampling.md",
+    "concepts/sampling.md",
+    "concepts/population.md",
+    "diary/dd_2024_01_13.md",
+    "diary/dd_2024_01_17.md",
     "concepts/histogram.md",
     "concepts/line_chart.md",
     "concepts/pie_chart.md",
@@ -257,19 +306,9 @@
     "concepts/range.md",
     "template/concept.md",
     "template/diary.md",
-    "template/note.md",
     "template/topic.md",
     "concepts/deviation.md",
     "concepts/interquartile_range.md",
-    "concepts/interquartile_mean.md",
-    "concepts/midrange.md",
-    "concepts/quantitative_geography.md",
-    "concepts/geographical_information.md",
-    "concepts/arithmetic_mean.md",
-    "topics/_statistics_.md",
-    "topics/_chart_.md",
-    "concepts/weighted_arithmetic_mean.md",
-    "concepts/variance.md",
     "scripts/dataview_views/topic_view.js",
     "scripts/dataview_views/concept_view.js",
     "scripts/dataview_views",
