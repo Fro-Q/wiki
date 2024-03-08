@@ -14,5 +14,5 @@ await dv.view("scripts/dataview_views/concept_view", {})
 
 ## Topics
 
-- [_chart_](topics/_chart_.md)
-- [_statistics_](topics/_statistics_.md)
+- [_chart_](_chart_.md)
+- [_statistics_](_statistics_.md)

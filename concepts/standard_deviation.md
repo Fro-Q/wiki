@@ -2,10 +2,12 @@
 tags:
   - concept
 alias:
-  - 加权算术平均值
+  - 标准差
+  - 标准偏差
+  - 均方差
 ---
 
-# [title:: Weighted Arithmetic Mean]
+# [title:: Standard Deviation]
 
 ```dataviewjs
 await dv.view("scripts/dataview_views/concept_view", {})
@@ -14,4 +16,4 @@ await dv.view("scripts/dataview_views/concept_view", {})
 ## Topics
 
 - [_statistics_](_statistics_.md)
-- [_probability_theory_](_probability_theory_.md)
+- [_probability_theory_](_probability_theory_.md)_

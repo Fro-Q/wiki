@@ -2,12 +2,12 @@
 tags:
   - concept
 alias:
-  - 截尾平均值
-  - 修剪平均值
-  - 截断平均值
+  - 方差
+  - 变异数
+  - 变方
 ---
 
-# [title:: Truncated Mean]
+# [title:: Variance]
 
 ```dataviewjs
 await dv.view("scripts/dataview_views/concept_view", {})

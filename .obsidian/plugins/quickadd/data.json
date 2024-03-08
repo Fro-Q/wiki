@@ -211,41 +211,6 @@
       "setFileExistsBehavior": true
     },
     {
-      "id": "35692548-6147-485e-b0e9-769b0b25034b",
-      "name": "insert_topic",
-      "type": "Capture",
-      "command": true,
-      "appendLink": false,
-      "captureTo": "",
-      "captureToActiveFile": true,
-      "createFileIfItDoesntExist": {
-        "enabled": false,
-        "createWithTemplate": false,
-        "template": ""
-      },
-      "format": {
-        "enabled": true,
-        "format": "[_{{value}}_](topics/_{{value}}_.md)"
-      },
-      "insertAfter": {
-        "enabled": false,
-        "after": "",
-        "insertAtEnd": false,
-        "considerSubsections": false,
-        "createIfNotFound": false,
-        "createIfNotFoundLocation": "top"
-      },
-      "prepend": false,
-      "task": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": false,
-      "openFileInMode": "default"
-    },
-    {
       "id": "b13c94fa-dd37-496d-8b74-3a70a98d209e",
       "name": "convert_link",
       "type": "Capture",

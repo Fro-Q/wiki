@@ -15,7 +15,7 @@
   },
   "showLineNumber": true,
   "rightToLeft": false,
-  "autoPairMarkdown": true,
+  "autoPairMarkdown": false,
   "useTab": false,
   "tabSize": 4,
   "readableLineLength": true,

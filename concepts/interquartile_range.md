@@ -2,10 +2,10 @@
 tags:
   - concept
 alias:
-  - 加权算术平均值
+  - 四分位距
 ---
 
-# [title:: Weighted Arithmetic Mean]
+# [title:: Interquartile Range]
 
 ```dataviewjs
 await dv.view("scripts/dataview_views/concept_view", {})

@@ -1,11 +1,11 @@
 ---
 tags:
   - concept
-alias: 
-  - <% tp.file.cursor(2) %>
+alias:
+  - 直方图
 ---
 
-# [title:: <% tp.file.cursor(1) %>]
+# [title:: Histogram]
 
 ```dataviewjs
 await dv.view("scripts/dataview_views/concept_view", {})
@@ -13,4 +13,5 @@ await dv.view("scripts/dataview_views/concept_view", {})
 
 ## Topics
 
-- <% tp.file.cursor(3) %>
+- [_statistics_](_statistics_.md)
+- [_chart_](_chart_.md)s

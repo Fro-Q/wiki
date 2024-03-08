@@ -2,10 +2,10 @@
 tags:
   - concept
 alias:
-  - 加权算术平均值
+  - 四分位数
 ---
 
-# [title:: Weighted Arithmetic Mean]
+# [title:: Quartile]
 
 ```dataviewjs
 await dv.view("scripts/dataview_views/concept_view", {})

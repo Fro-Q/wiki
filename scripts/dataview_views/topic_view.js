@@ -32,7 +32,7 @@ function getFile(pl) {
   const file_name = file_path.replace(/.md/g, '')
   const file = dv.page(`${file_path}`)
   if (!file) {
-    return `[${file_name}](${file_path}) ❌`
+    return `[${file_name}](topics/${file_path}) ❌`
   }
   return file.title ? `[${file.title}](${file_path}) ${getAlias(file)}` : `[[${file.file.name}]]`
 

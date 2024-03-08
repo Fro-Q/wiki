@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "concepts/interquartile_mean.md",
+                "file": "homepage.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "b87e94253deaa70c",
@@ -102,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "concepts/interquartile_mean.md",
+                "file": "homepage.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "concepts/interquartile_mean.md",
+                "file": "homepage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -131,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "concepts/interquartile_mean.md"
+                "file": "homepage.md"
               }
             }
           },
@@ -164,7 +165,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "concepts/interquartile_mean.md"
+                "file": "homepage.md"
               }
             }
           }
@@ -181,7 +182,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "concepts/interquartile_mean.md",
+                "file": "homepage.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -204,7 +205,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.20501076325834758,
+                  "scale": 0.0078125,
                   "close": true
                 }
               }
@@ -222,7 +223,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 344.5
+    "width": 344.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -240,34 +242,34 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "65573fabf2fc60c8",
+  "active": "400aa4924092117f",
   "lastOpenFiles": [
-    "concepts/interquartile_mean.md",
-    "concepts/truncated_mean.md",
-    "concepts/weighted_arithmetic_mean.md",
-    "concepts/harmonic_mean.md",
+    "diary/dd_2024_01_13.md",
     "homepage.md",
-    "concepts/arithmetic_mean.md",
-    "concepts/thiessen_polygon.md",
-    "concepts/quantitative_resolution.md",
-    "concepts/quantitative_geography.md",
-    "concepts/mode.md",
-    "concepts/median.md",
-    "topics/_statistics_.md",
-    "topics/_spatial_analysis_.md",
-    "topics/_quantitative_geography_.md",
-    "topics/_probability_theory_.md",
-    "concepts/geometric_mean.md",
+    "diary/dd_2024_01_17.md",
     "notes/correlation_2403080329.md",
-    "concepts/geographical_information.md",
-    "concepts/delaunay_tin.md",
-    "concepts/chart.md",
-    "concepts/central_tendency.md",
+    "concepts/histogram.md",
+    "concepts/line_chart.md",
+    "concepts/pie_chart.md",
     "concepts/bar_chart.md",
+    "concepts/chart.md",
+    "concepts/coefficient_of_variation.md",
+    "concepts/range.md",
+    "template/concept.md",
+    "template/diary.md",
+    "template/note.md",
+    "template/topic.md",
+    "concepts/deviation.md",
+    "concepts/interquartile_range.md",
+    "concepts/interquartile_mean.md",
+    "concepts/midrange.md",
+    "concepts/quantitative_geography.md",
+    "concepts/geographical_information.md",
+    "concepts/arithmetic_mean.md",
+    "topics/_statistics_.md",
     "topics/_chart_.md",
-    "topics/_gis_.md",
-    "notes/central_tendency_2402222134.md",
-    "central_tendency.md",
+    "concepts/weighted_arithmetic_mean.md",
+    "concepts/variance.md",
     "scripts/dataview_views/topic_view.js",
     "scripts/dataview_views/concept_view.js",
     "scripts/dataview_views",

@@ -2,10 +2,12 @@
 tags:
   - concept
 alias:
-  - 加权算术平均值
+  - 离散程度
+  - 离散度
+  - 分散度
 ---
 
-# [title:: Weighted Arithmetic Mean]
+# [title:: Dispersion]
 
 ```dataviewjs
 await dv.view("scripts/dataview_views/concept_view", {})

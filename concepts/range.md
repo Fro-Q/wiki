@@ -2,10 +2,11 @@
 tags:
   - concept
 alias:
-  - 加权算术平均值
+  - 全距
+  - 极差
 ---
 
-# [title:: Weighted Arithmetic Mean]
+# [title:: Range | Statistics]
 
 ```dataviewjs
 await dv.view("scripts/dataview_views/concept_view", {})
