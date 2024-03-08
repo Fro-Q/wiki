@@ -1,0 +1,18 @@
+---
+tags:
+  - concept
+alias:
+  - 柱状图
+  - 条形图
+---
+
+# [title:: Bar Chart]
+
+```dataviewjs
+await dv.view("scripts/dataview_views/concept_view", {})
+```
+
+## Topics
+
+- [_statistics_](topics/_statistics_.md)
+- [_chart_](topics/_chart_.md)
