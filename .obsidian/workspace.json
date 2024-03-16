@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "11d27a858ad54eab",
+            "id": "8c6fa2f897d35713",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,22 +19,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "d13560024a01c789",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/cluster_analysis_2403090611.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -116,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/cluster_analysis_2403090611.md",
+                "file": "homepage.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/cluster_analysis_2403090611.md",
+                "file": "homepage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -145,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/cluster_analysis_2403090611.md"
+                "file": "homepage.md"
               }
             }
           },
@@ -178,7 +164,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "notes/cluster_analysis_2403090611.md"
+                "file": "homepage.md"
               }
             }
           }
@@ -195,7 +181,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "notes/cluster_analysis_2403090611.md",
+                "file": "homepage.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -255,12 +241,15 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "d13560024a01c789",
+  "active": "8c6fa2f897d35713",
   "lastOpenFiles": [
+    "global_file_format_spec.md",
     "homepage.md",
+    "notes/factor_analysis_2403170505.md",
+    "notes/principal_components_analysis_2403170459.md",
+    "notes/cluster_analysis_2403090611.md",
     "notes/regression_2403090549.md",
     "notes/stepwise_regression_2403090604.md",
-    "notes/cluster_analysis_2403090611.md",
     "template/note.md",
     "notes/correlation_2403080329.md",
     "concepts/sampling_fraction.md",
@@ -280,9 +269,6 @@
     "concepts/range.md",
     "template/concept.md",
     "template/diary.md",
-    "template/topic.md",
-    "concepts/deviation.md",
-    "concepts/interquartile_range.md",
     "scripts/dataview_views/topic_view.js",
     "scripts/dataview_views/concept_view.js",
     "scripts/dataview_views",
