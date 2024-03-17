@@ -218,7 +218,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -241,10 +242,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "8c6fa2f897d35713",
+  "active": "e8f86d33dd808783",
   "lastOpenFiles": [
-    "global_file_format_spec.md",
     "homepage.md",
+    "global_file_format_spec.md",
     "notes/factor_analysis_2403170505.md",
     "notes/principal_components_analysis_2403170459.md",
     "notes/cluster_analysis_2403090611.md",
