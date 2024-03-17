@@ -32,7 +32,6 @@
       {
         "id": "72decc94e5d0e06a",
         "type": "tabs",
-        "dimension": 50,
         "children": [
           {
             "id": "400aa4924092117f",
@@ -64,21 +63,6 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
-            }
-          }
-        ]
-      },
-      {
-        "id": "9e87f895a36db30e",
-        "type": "tabs",
-        "dimension": 50,
-        "children": [
-          {
-            "id": "033ea5ab02eedc2e",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
               "state": {}
             }
           }
@@ -167,9 +151,17 @@
                 "file": "homepage.md"
               }
             }
+          },
+          {
+            "id": "033ea5ab02eedc2e",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       },
       {
         "id": "24473a813a64069f",
@@ -242,9 +234,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "e8f86d33dd808783",
+  "active": "8c6fa2f897d35713",
   "lastOpenFiles": [
+    "diary/dd_2024_01_13.md",
     "homepage.md",
+    "diary/dd_2024_01_17.md",
     "global_file_format_spec.md",
     "notes/factor_analysis_2403170505.md",
     "notes/principal_components_analysis_2403170459.md",
@@ -259,8 +253,6 @@
     "concepts/simple_random_sampling.md",
     "concepts/sampling.md",
     "concepts/population.md",
-    "diary/dd_2024_01_13.md",
-    "diary/dd_2024_01_17.md",
     "concepts/histogram.md",
     "concepts/line_chart.md",
     "concepts/pie_chart.md",
