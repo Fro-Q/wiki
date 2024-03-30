@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "homepage.md",
+                "file": "notes/dispersion_2402230402.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "homepage.md",
+                "file": "notes/dispersion_2402230402.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "homepage.md",
+                "file": "notes/dispersion_2402230402.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -115,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "homepage.md"
+                "file": "notes/dispersion_2402230402.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "homepage.md"
+                "file": "notes/dispersion_2402230402.md"
               }
             }
           },
@@ -173,7 +173,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "homepage.md",
+                "file": "notes/dispersion_2402230402.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -236,8 +236,8 @@
   },
   "active": "8c6fa2f897d35713",
   "lastOpenFiles": [
-    "diary/dd_2024_01_13.md",
     "homepage.md",
+    "diary/dd_2024_01_13.md",
     "diary/dd_2024_01_17.md",
     "global_file_format_spec.md",
     "notes/factor_analysis_2403170505.md",
