@@ -17,7 +17,7 @@
   "rightToLeft": false,
   "autoPairMarkdown": false,
   "useTab": false,
-  "tabSize": 4,
+  "tabSize": 2,
   "readableLineLength": true,
   "strictLineBreaks": false,
   "foldHeading": true,
