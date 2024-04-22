@@ -32,9 +32,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c731f7fc6bbd674e",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.12"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -248,7 +258,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "dd776b4f7f6fc27e",
+  "active": "c731f7fc6bbd674e",
   "lastOpenFiles": [
     "timestamp/ts2024_04_11_0957.md",
     "notes/dispersion_2402230402.md",
