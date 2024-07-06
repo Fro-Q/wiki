@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "timestamp/ts2024_05_30_0411.md",
+                "file": "timestamp/ts2024_04_11_0957.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "timestamp/ts2024_05_30_0411.md",
+                "file": "timestamp/ts2024_04_11_0957.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "timestamp/ts2024_05_30_0411.md",
+                "file": "timestamp/ts2024_04_11_0957.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -115,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "timestamp/ts2024_05_30_0411.md"
+                "file": "timestamp/ts2024_04_11_0957.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "timestamp/ts2024_05_30_0411.md"
+                "file": "timestamp/ts2024_04_11_0957.md"
               }
             }
           },
@@ -173,7 +173,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "timestamp/ts2024_05_30_0411.md",
+                "file": "timestamp/ts2024_04_11_0957.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -236,19 +236,21 @@
   },
   "active": "9d8965cefe5698d7",
   "lastOpenFiles": [
-    "timestamp/ts2024_04_22_1646.md",
+    "notes/central_tendency_2402222134.md",
+    "concepts/arithmetic_mean.md",
+    "homepage.md",
+    "global_file_format_spec.md",
+    "diary/dd_2024_01_13.md",
+    "diary/dd_2024_01_17.md",
     "timestamp/ts2024_05_30_0411.md",
+    "使用说明.md",
+    "timestamp/ts2024_04_22_1646.md",
     "timestamp/ts2024_04_11_0957.md",
     "timestamp/ts2024_04_22_1604.md",
     "timestamp/ts2024_04_22_1558.md",
     "notes/dispersion_2402230402.md",
     "concepts/interquartile_range.md",
-    "使用说明.md",
     "使用说明.html",
-    "homepage.md",
-    "diary/dd_2024_01_13.md",
-    "diary/dd_2024_01_17.md",
-    "global_file_format_spec.md",
     "notes/factor_analysis_2403170505.md",
     "notes/principal_components_analysis_2403170459.md",
     "notes/cluster_analysis_2403090611.md",
@@ -261,8 +263,6 @@
     "concepts/systematic_sampling.md",
     "concepts/simple_random_sampling.md",
     "concepts/sampling.md",
-    "concepts/population.md",
-    "concepts/histogram.md",
     "scripts/dataview_views/topic_view.js",
     "scripts/dataview_views/concept_view.js",
     "scripts/dataview_views",
