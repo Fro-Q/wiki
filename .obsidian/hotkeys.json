@@ -8,10 +8,6 @@
     }
   ],
   "graph:open": [],
-  "editor:open-search": [],
-  "editor:open-search-replace": [],
-  "editor:open-link-in-new-window": [],
-  "editor:open-link-in-new-split": [],
   "workspace:undo-close-pane": [],
   "table-editor-obsidian:table-control-bar": [],
   "obsidian-footnotes:insert-footnote": [
@@ -22,7 +18,6 @@
       "key": "6"
     }
   ],
-  "workspace:goto-last-tab": [],
   "workspace:goto-tab-1": [],
   "workspace:goto-tab-2": [],
   "workspace:goto-tab-3": [],
@@ -37,9 +32,7 @@
   "easy-typing-obsidian:easy-typing-insert-codeblock": [],
   "easy-typing-obsidian:easy-typing-paste-without-format": [],
   "easy-typing-obsidian:easy-typing-format-switch": [],
-  "editor:open-link-in-new-leaf": [],
   "editor:toggle-checklist-status": [],
-  "editor:toggle-comments": [],
   "obsidian-footnotes:insert-autonumbered-footnote": [
     {
       "modifiers": [
@@ -49,14 +42,6 @@
     }
   ],
   "app:open-help": [],
-  "editor:follow-link": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "Enter"
-    }
-  ],
   "editor:toggle-source": [
     {
       "modifiers": [
@@ -138,14 +123,6 @@
       "key": "T"
     }
   ],
-  "quickadd:choice:b13c94fa-dd37-496d-8b74-3a70a98d209e": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "K"
-    }
-  ],
   "editor:insert-link": [],
   "app:go-back": [
     {
@@ -180,15 +157,6 @@
       "key": "]"
     }
   ],
-  "markdown:add-metadata-property": [],
-  "app:reload": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "R"
-    }
-  ],
   "workspace:next-tab": [
     {
       "modifiers": [
@@ -196,6 +164,79 @@
         "Shift"
       ],
       "key": "]"
+    },
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "]"
+    }
+  ],
+  "workspace:edit-file-title": [],
+  "window:zoom-in": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "="
+    }
+  ],
+  "editor:focus-top": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "K"
+    }
+  ],
+  "editor:focus-bottom": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "J"
+    }
+  ],
+  "editor:focus-right": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "L"
+    }
+  ],
+  "editor:focus-left": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "H"
+    }
+  ],
+  "editor:delete-paragraph": [],
+  "workspace:split-horizontal": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "H"
+    }
+  ],
+  "window:zoom-out": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "-"
+    }
+  ],
+  "app:reload": [
+    {
+      "modifiers": [],
+      "key": "F5"
     }
   ],
   "workspace:previous-tab": [
@@ -205,7 +246,31 @@
         "Shift"
       ],
       "key": "["
+    },
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "["
     }
   ],
-  "workspace:edit-file-title": []
+  "workspace:goto-last-tab": [],
+  "workspace:split-vertical": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "V"
+    }
+  ],
+  "quickadd:choice:b13c94fa-dd37-496d-8b74-3a70a98d209e": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "K"
+    }
+  ]
 }

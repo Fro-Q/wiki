@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "template",
+  "templates_folder": "_template",
   "templates_pairs": [
     [
       "",
@@ -16,15 +16,15 @@
   "folder_templates": [
     {
       "folder": "notes",
-      "template": "template/note.md"
+      "template": "_template/note.md"
     },
     {
       "folder": "concepts",
-      "template": "template/concept.md"
+      "template": "_template/concept.md"
     },
     {
       "folder": "topics",
-      "template": "template/topic.md"
+      "template": "_template/topic.md"
     }
   ],
   "syntax_highlighting": true,

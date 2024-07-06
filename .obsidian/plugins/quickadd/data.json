@@ -1,131 +1,11 @@
 {
   "choices": [
     {
-      "id": "4e634744-c703-4b40-bfa8-47dd653ff7fa",
-      "name": "project_record",
-      "type": "Template",
-      "command": false,
-      "templatePath": "template/project_record.md",
-      "fileNameFormat": {
-        "enabled": true,
-        "format": "r_{{DATE:YYYY_MM_DD_HHmm}}"
-      },
-      "folder": {
-        "enabled": true,
-        "folders": [
-          "project/"
-        ],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": true
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": true,
-      "openFileInMode": "default",
-      "fileExistsMode": "Nothing",
-      "setFileExistsBehavior": true
-    },
-    {
-      "id": "2fbcc1be-8df2-4d51-bb53-d71a59599a33",
-      "name": "project_meeting",
-      "type": "Template",
-      "command": false,
-      "templatePath": "template/project_meeting.md",
-      "fileNameFormat": {
-        "enabled": true,
-        "format": "m_{{DATE:YYYY_MM_DD_HHmm}}"
-      },
-      "folder": {
-        "enabled": true,
-        "folders": [
-          "project/"
-        ],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": true
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": true,
-      "openFileInMode": "default",
-      "fileExistsMode": "Nothing",
-      "setFileExistsBehavior": true
-    },
-    {
-      "id": "83453091-d36c-49ae-893d-a4d0dd708ea0",
-      "name": "project_doc",
-      "type": "Template",
-      "command": false,
-      "templatePath": "template/project_doc.md",
-      "fileNameFormat": {
-        "enabled": true,
-        "format": "d_{{DATE:YYYY_MM_DD_HHmm}}"
-      },
-      "folder": {
-        "enabled": true,
-        "folders": [
-          "project/"
-        ],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": true
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": true,
-      "openFileInMode": "default",
-      "fileExistsMode": "Nothing",
-      "setFileExistsBehavior": true
-    },
-    {
-      "id": "2850fe3c-6436-45e8-aa04-420dcff23e42",
-      "name": "project_tasks",
-      "type": "Template",
-      "command": false,
-      "templatePath": "template/project_tasks.md",
-      "fileNameFormat": {
-        "enabled": true,
-        "format": "t_{{DATE:YYYY_MM_DD_HHmm}}"
-      },
-      "folder": {
-        "enabled": true,
-        "folders": [
-          "project/"
-        ],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": true
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": true,
-      "openFileInMode": "default",
-      "fileExistsMode": "Nothing",
-      "setFileExistsBehavior": true
-    },
-    {
       "id": "afac96e3-9cf9-4c25-96c0-aa0a26664fca",
       "name": "note",
       "type": "Template",
       "command": true,
-      "templatePath": "template/note.md",
+      "templatePath": "_template/note.md",
       "fileNameFormat": {
         "enabled": true,
         "format": "{{value}}_{{DATE:YYMMDDHHmm}}"
@@ -155,7 +35,7 @@
       "name": "concept",
       "type": "Template",
       "command": true,
-      "templatePath": "template/concept.md",
+      "templatePath": "_template/concept.md",
       "fileNameFormat": {
         "enabled": true,
         "format": "{{value}}"
@@ -185,7 +65,7 @@
       "name": "topic",
       "type": "Template",
       "command": true,
-      "templatePath": "template/topic.md",
+      "templatePath": "_template/topic.md",
       "fileNameFormat": {
         "enabled": true,
         "format": "_{{value}}_"
@@ -249,7 +129,7 @@
   "macros": [],
   "inputPrompt": "single-line",
   "devMode": false,
-  "templateFolderPath": "template",
+  "templateFolderPath": "_template",
   "announceUpdates": true,
   "version": "1.8.1",
   "disableOnlineFeatures": true,

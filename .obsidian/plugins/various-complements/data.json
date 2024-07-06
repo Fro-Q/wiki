@@ -14,7 +14,8 @@
   "complementAutomatically": true,
   "delayMilliSeconds": 20,
   "disableSuggestionsDuringImeOn": false,
-  "insertAfterCompletion": false,
+  "disableSuggestionsInMathBlock": true,
+  "insertSpaceAfterCompletion": false,
   "firstCharactersDisableSuggestions": ":/^@",
   "patternsToSuppressTrigger": [
     "^~~~.*",
@@ -25,26 +26,29 @@
   "showMatchStrategy": true,
   "showComplementAutomatically": true,
   "showIndexingStatus": true,
-  "descriptionOnSuggestion": "Short",
+  "descriptionOnSuggestion": "Full",
   "hotkeys": {
     "select": [
       {
-        "modifiers": [],
-        "key": "Tab",
+        "modifiers": [
+          "Ctrl"
+        ],
+        "key": "Enter",
         "hideHotkeyGuide": false
       }
     ],
+    "select with custom alias": [],
     "up": [
       {
         "modifiers": [
-          "Mod"
+          "Ctrl"
         ],
         "key": "k",
         "hideHotkeyGuide": false
       },
       {
         "modifiers": [
-          "Mod"
+          "Ctrl"
         ],
         "key": "[",
         "hideHotkeyGuide": false
@@ -53,14 +57,14 @@
     "down": [
       {
         "modifiers": [
-          "Mod"
+          "Ctrl"
         ],
         "key": "j",
         "hideHotkeyGuide": false
       },
       {
         "modifiers": [
-          "Mod"
+          "Ctrl"
         ],
         "key": "]",
         "hideHotkeyGuide": false
@@ -83,22 +87,24 @@
   "enableCurrentFileComplement": true,
   "currentFileMinNumberOfCharacters": 0,
   "onlyComplementEnglishOnCurrentFileComplement": false,
+  "excludeCurrentFileWordPatterns": [],
   "enableCurrentVaultComplement": true,
   "currentVaultMinNumberOfCharacters": 0,
   "includeCurrentVaultPathPrefixPatterns": "",
-  "excludeCurrentVaultPathPrefixPatterns": "template/",
+  "excludeCurrentVaultPathPrefixPatterns": "",
   "includeCurrentVaultOnlyFilesUnderCurrentDirectory": false,
+  "excludeCurrentVaultWordPatterns": [],
   "enableCustomDictionaryComplement": true,
-  "customDictionaryPaths": "./_config/_complement_config/_complements.md",
+  "customDictionaryPaths": "_config/_complement_config/_dictionary.md",
   "columnDelimiter": "Pipe",
   "customDictionaryWordRegexPattern": "",
   "delimiterToHideSuggestion": "&&",
   "delimiterToDivideSuggestionsForDisplayFromInsertion": ">>",
-  "caretLocationSymbolAfterComplement": "<CARET>",
-  "displayedTextSuffix": " => ...",
+  "caretLocationSymbolAfterComplement": "<caret>",
+  "displayedTextSuffix": "……",
   "enableInternalLinkComplement": true,
   "suggestInternalLinkWithAlias": true,
-  "excludeInternalLinkPathPrefixPatterns": "template/",
+  "excludeInternalLinkPathPrefixPatterns": "_template/",
   "updateInternalLinksOnSave": true,
   "insertAliasTransformedFromDisplayedInternalLink": {
     "enabled": true,
@@ -117,5 +123,6 @@
   },
   "disableOnMobile": true,
   "showLogAboutPerformanceInConsole": true,
+  "insertAfterCompletion": false,
   "selectionHistoryTree": {}
 }
