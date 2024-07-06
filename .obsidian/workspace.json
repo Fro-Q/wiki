@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "timestamp/ts2024_04_11_0957.md",
+                "file": "homepage.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "timestamp/ts2024_04_11_0957.md",
+                "file": "homepage.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "timestamp/ts2024_04_11_0957.md",
+                "file": "homepage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -115,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "timestamp/ts2024_04_11_0957.md"
+                "file": "homepage.md"
               }
             }
           },
@@ -148,7 +148,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "timestamp/ts2024_04_11_0957.md"
+                "file": "homepage.md"
               }
             }
           },
@@ -173,7 +173,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "timestamp/ts2024_04_11_0957.md",
+                "file": "homepage.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -236,18 +236,18 @@
   },
   "active": "9d8965cefe5698d7",
   "lastOpenFiles": [
-    "notes/central_tendency_2402222134.md",
-    "concepts/arithmetic_mean.md",
-    "homepage.md",
     "global_file_format_spec.md",
+    "homepage.md",
+    "concepts/arithmetic_mean.md",
     "diary/dd_2024_01_13.md",
-    "diary/dd_2024_01_17.md",
-    "timestamp/ts2024_05_30_0411.md",
-    "使用说明.md",
-    "timestamp/ts2024_04_22_1646.md",
+    "notes/central_tendency_2402222134.md",
     "timestamp/ts2024_04_11_0957.md",
-    "timestamp/ts2024_04_22_1604.md",
     "timestamp/ts2024_04_22_1558.md",
+    "timestamp/ts2024_04_22_1604.md",
+    "timestamp/ts2024_04_22_1646.md",
+    "timestamp/ts2024_05_30_0411.md",
+    "diary/dd_2024_01_17.md",
+    "使用说明.md",
     "notes/dispersion_2402230402.md",
     "concepts/interquartile_range.md",
     "使用说明.html",
