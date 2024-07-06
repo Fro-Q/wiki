@@ -4,5 +4,10 @@
   "zoteroGroups": [],
   "renderCitations": true,
   "renderCitationsReadingMode": true,
-  "renderLinkCitations": true
+  "renderLinkCitations": true,
+  "pathToBibliography": "/Users/jayqing/Templates/zotero_ref/ref.bib",
+  "cslStylePath": "/Users/jayqing/Templates/ref_csl/elsevier-harvard.csl",
+  "cslLang": "en-GB",
+  "enableCiteKeyCompletion": true,
+  "showCitekeyTooltips": true
 }
