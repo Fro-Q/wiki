@@ -7,7 +7,6 @@
       "key": "M"
     }
   ],
-  "workspace:edit-file-title": [],
   "graph:open": [],
   "editor:open-search": [],
   "editor:open-search-replace": [],
@@ -207,5 +206,6 @@
       ],
       "key": "["
     }
-  ]
+  ],
+  "workspace:edit-file-title": []
 }

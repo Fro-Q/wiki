@@ -2,11 +2,7 @@
   "obsidian-footnotes",
   "obsidian-style-settings",
   "obsidian-pandoc",
-  "calendar",
-  "table-editor-obsidian",
   "obsidian-underline",
-  "tabout",
-  "obsidian-link-converter",
   "dataview",
   "templater-obsidian",
   "obsidian-git",
@@ -14,6 +10,9 @@
   "quickadd",
   "various-complements",
   "obsidian-linter",
-  "obsidian-zotero-desktop-connector",
-  "obsidian-smarter-md-hotkeys"
+  "attachment-management",
+  "obsidian-citation-plugin",
+  "obsidian-pandoc-reference-list",
+  "url-into-selection",
+  "supercharged-links-obsidian"
 ]

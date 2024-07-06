@@ -11,14 +11,16 @@
   "page-preview",
   "daily-notes",
   "templates",
+  "note-composer",
   "command-palette",
   "slash-command",
   "editor-status",
   "bookmarks",
+  "markdown-importer",
   "zk-prefixer",
-  "random-note",
   "outline",
   "word-count",
   "audio-recorder",
-  "workspaces"
+  "workspaces",
+  "file-recovery"
 ]

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "homepage.md",
+                "file": "diary/dd_2024_01_13.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "homepage.md",
+                "file": "diary/dd_2024_01_13.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "homepage.md",
+                "file": "diary/dd_2024_01_13.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -115,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "homepage.md"
+                "file": "diary/dd_2024_01_13.md"
               }
             }
           },
@@ -148,20 +148,12 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "homepage.md"
+                "file": "diary/dd_2024_01_13.md"
               }
-            }
-          },
-          {
-            "id": "033ea5ab02eedc2e",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       },
       {
         "id": "24473a813a64069f",
@@ -173,7 +165,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "homepage.md",
+                "file": "diary/dd_2024_01_13.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,23 +219,23 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "zk-prefixer:创建时间戳笔记": false,
-      "random-note:开始漫游笔记": false,
-      "audio-recorder:开始/结束录音": false,
       "workspaces:管理工作区布局": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "audio-recorder:开始/结束录音": false,
+      "markdown-importer:打开 Markdown 格式转换器": false,
       "templater-obsidian:Templater": false
     }
   },
-  "active": "400aa4924092117f",
+  "active": "9d8965cefe5698d7",
   "lastOpenFiles": [
+    "diary/d2024_07_07.md",
+    "diary/dd_2024_01_13.md",
+    "notes/central_tendency_2402222134.md",
+    "homepage.md",
     "未命名 1",
     "reading_notes",
     "format_ignore",
     "global_file_format_spec.md",
-    "homepage.md",
     "concepts/arithmetic_mean.md",
-    "diary/dd_2024_01_13.md",
-    "notes/central_tendency_2402222134.md",
     "timestamp/ts2024_04_11_0957.md",
     "timestamp/ts2024_04_22_1558.md",
     "timestamp/ts2024_04_22_1604.md",
@@ -271,7 +263,6 @@
     "_config/_complement_config/cedict_ts.u8",
     "_config/_complement_config",
     "_config/未命名文件夹",
-    "_config/cedict_ts.u8",
     "assets/CleanShot 2024-02-28 at 12.09.10@2x.png",
     "Porsche.jpg",
     "file-name.png",

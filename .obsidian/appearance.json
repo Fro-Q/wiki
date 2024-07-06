@@ -5,7 +5,7 @@
   "translucency": false,
   "baseFontSize": 16,
   "showViewHeader": true,
-  "nativeMenus": false,
+  "nativeMenus": true,
   "baseFontSizeAction": false,
   "interfaceFontFamily": ""
 }
