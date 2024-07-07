@@ -1,8 +1,10 @@
 ---
+aliases:
+  - 中轴数
 tags:
   - concept
-alias:
-  - 中轴数
+created: 星期五, 三月 8日 2024, 10:44:27 上午
+last_modified: 星期日, 七月 7日 2024, 7:54:33 早上
 ---
 
 # [title:: Midhinge]

@@ -1,8 +1,10 @@
 ---
+aliases:
+  - 分层抽样
 tags:
   - concept
-alias:
-  - 分层抽样
+created: 星期六, 三月 9日 2024, 5:46:26 凌晨
+last_modified: 星期日, 七月 7日 2024, 7:56:00 早上
 ---
 
 # [title:: Stratified Sampling]

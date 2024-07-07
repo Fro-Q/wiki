@@ -1,9 +1,11 @@
 ---
-tags:
-  - concept
-alias:
+aliases:
   - 表格
   - 统计表
+tags:
+  - concept
+created: 星期四, 二月 22日 2024, 4:49:20 下午
+last_modified: 星期日, 七月 7日 2024, 7:52:46 早上
 ---
 
 # [title:: Chart]

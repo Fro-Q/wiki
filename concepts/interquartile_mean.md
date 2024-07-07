@@ -1,8 +1,10 @@
 ---
+aliases:
+  - 四分位数平均值
 tags:
   - concept
-alias:
-  - 四分位数平均值
+created: 星期五, 三月 8日 2024, 10:23:05 上午
+last_modified: 星期日, 七月 7日 2024, 7:54:02 早上
 ---
 
 # [title:: Interquartile Mean]

@@ -1,9 +1,10 @@
 ---
+aliases: []
 tags:
   - note
-date: 2024-03-17
-time: 05:05
 status: finished
+created: 星期日, 三月 17日 2024, 5:05:52 凌晨
+last_modified: 星期日, 七月 7日 2024, 7:50:45 早上
 ---
 
 # [title:: Factor Analysis | Concept]

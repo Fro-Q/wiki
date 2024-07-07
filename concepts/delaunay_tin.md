@@ -1,7 +1,9 @@
 ---
+aliases: []
 tags:
   - concept
-alias: []
+created: 星期五, 二月 16日 2024, 3:41:00 下午
+last_modified: 星期日, 七月 7日 2024, 7:53:03 早上
 ---
 
 # [title:: Delaunay Tin]

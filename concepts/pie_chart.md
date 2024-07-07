@@ -1,8 +1,10 @@
 ---
+aliases:
+  - 饼图
 tags:
   - concept
-alias:
-  - 饼图
+created: 星期五, 三月 8日 2024, 11:13:20 上午
+last_modified: 星期日, 七月 7日 2024, 7:54:54 早上
 ---
 
 # [title:: Pie Chart]

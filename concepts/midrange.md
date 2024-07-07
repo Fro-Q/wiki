@@ -1,8 +1,10 @@
 ---
+aliases:
+  - 中程数
 tags:
   - concept
-alias:
-  - 中程数
+created: 星期五, 三月 8日 2024, 10:43:34 上午
+last_modified: 星期日, 七月 7日 2024, 7:54:39 早上
 ---
 
 # [title:: Midrange]

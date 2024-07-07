@@ -67,14 +67,6 @@
       "key": "ArrowUp"
     }
   ],
-  "quickadd:runQuickAdd": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "A"
-    }
-  ],
   "templater-obsidian:insert-templater": [],
   "templater-obsidian:replace-in-file-templater": [],
   "templater-obsidian:create-new-note-from-template": [],
@@ -83,30 +75,6 @@
   "obsidian-underline:toggle-link-block": [],
   "various-complements:reload-custom-dictionaries": [],
   "various-complements:show-suggestions": [],
-  "quickadd:choice:afac96e3-9cf9-4c25-96c0-aa0a26664fca": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "1"
-    }
-  ],
-  "quickadd:choice:e52f4b77-c2bf-4803-ada2-312e68488f53": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "2"
-    }
-  ],
-  "quickadd:choice:f8d46d6a-57ab-4bd5-8167-08c3a4336b41": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "3"
-    }
-  ],
   "templater-obsidian:jump-to-next-cursor-location": [
     {
       "modifiers": [
@@ -271,6 +239,38 @@
         "Shift"
       ],
       "key": "K"
+    }
+  ],
+  "quickadd:runQuickAdd": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "A"
+    }
+  ],
+  "quickadd:choice:e52f4b77-c2bf-4803-ada2-312e68488f53": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "2"
+    }
+  ],
+  "quickadd:choice:afac96e3-9cf9-4c25-96c0-aa0a26664fca": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "1"
+    }
+  ],
+  "quickadd:choice:f8d46d6a-57ab-4bd5-8167-08c3a4336b41": [
+    {
+      "modifiers": [
+        "Ctrl"
+      ],
+      "key": "3"
     }
   ]
 }

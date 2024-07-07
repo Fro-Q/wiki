@@ -1,6 +1,6 @@
 {
   "folder": "diary",
   "template": "_template/diary",
-  "format": "\\dYYYYMMDD",
+  "format": "\\d_YYYYMMDD",
   "autorun": false
 }

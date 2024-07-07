@@ -27,7 +27,8 @@ function generateStatus(p) {
 
 function getFile(pl) {
   // regex to get the file name (`file_name in `[[path/to/file_name|title]]`)
-  const file_path = pl.toString().match(/\[\[(.*?)\|.*?\]\]/)[1]
+  // const file_path = pl.toString().match(/\[\[(.*?)\|.*?\]\]/)[1]
+  const file_path = pl.toString().split("|")[0].replace("[[", "")
   // strip suffix .md from file_path
   const file_name = file_path.replace(/.md/g, '')
   const file = dv.page(`${file_path}`)
@@ -39,7 +40,7 @@ function getFile(pl) {
 }
 
 function getAlias(p) {
-  return p.alias ? `<br> ${p.alias}` : ""
+  return p.aliases ? `<br> ${p.aliases}` : ""
 }
 
 function unique(arr) {
@@ -61,6 +62,9 @@ function unique(arr) {
 dv.table(["Notes Related", "Concepts Mentioned"],
   concepts.map(n => [
     getTitle(n) + " | " + generateStatus(n),
-    unique(n.file.outlinks).map(l => getFile(l)),
+    unique(n.file.outlinks).map(l => {
+      console.log(l)
+      return getFile(l)
+    }),
   ])
 )

@@ -1,8 +1,10 @@
 ---
+aliases:
+  - 系统抽样
 tags:
   - concept
-alias:
-  - 系统抽样
+created: 星期六, 三月 9日 2024, 5:45:55 凌晨
+last_modified: 星期日, 七月 7日 2024, 7:56:08 早上
 ---
 
 # [title:: Systematic Sampling]

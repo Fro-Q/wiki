@@ -1,9 +1,10 @@
 ---
+aliases: []
 tags:
   - note
-date: 2024-03-08
-time: 03:30
 status: draft
+created: 星期五, 三月 8日 2024, 3:30:02 凌晨
+last_modified: 星期日, 七月 7日 2024, 8:37:10 早上
 ---
 
 # [title:: Correlation | Concept]
@@ -16,16 +17,23 @@ status: draft
 
 通常简称为**相关系数**（Correlation Coefficient），定义为两个变量的 [covariance](covariance.md) 除以其 [standard_deviation](standard_deviation.md) 的乘积：
 
-$$\rho_{X, Y} = {\frac {\operatorname{cov}(X, Y)}{\sigma_{X}\sigma_{Y}}}$$
+$$
+\rho_{X, Y} = {\frac {\operatorname{cov}(X, Y)}{\sigma_{X}\sigma_{Y}}}
+$$
 
 ### [spearmans_rank_correlation_coefficient](spearmans_rank_correlation_coefficient.md)（Spearman 等级相关系数）
 
-定义为等级变量之间的 Peason 相关系数。对于大小为 $n$ 的样本，$n$ 个原始数据 $X_{i}, Y{i}$ 转换为排名 $R(X_{i}), R(Y_{i})$，$r_{s}$ 计算为：
+定义 为等级变量之间的 Peason 相关系数。对于大小为 $n$ 的样本，$n$ 个原始数据 $X_{i},  Y{i}$ 转换为排名 $R(X_{i}), R(Y_{i})$，$r_{s}$ 计算为：
 
-$$r_{s} = \rho_{R(X), R(Y)} = {\frac {\operatorname{cov}(R(X), R(Y))}{\sigma_{R(X)}\sigma_{R(Y)}}}$$  
+$$
+r_{s} = \rho_{R(X), R(Y)} = {\frac {\operatorname{cov}(R(X), R(Y))}{\sigma_{R(X)}\sigma_{R(Y)}}}
+$$  
+
 当 $n$ 个等级都是不同的整数时，可以用下面的公式计算：
 
-$$r_{s} = 1 - {\frac {6 \sum d_{i}^{2}} {n(n^{2}-1)} }$$
+$$
+r_{s} = 1 - {\frac {6 \sum d_{i}^{2}} {n(n^{2}-1)} }
+$$
 
 其中 $d_{i} = R(X_{i}) - R(Y_{i})$ 是每个观察的两个等级之间的差。
 

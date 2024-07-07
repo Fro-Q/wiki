@@ -1,12 +1,13 @@
 ---
+aliases: []
 tags:
   - note
-date: 2024-02-22
-time: 01:10
 status: finished
+created: 星期四, 二月 22日 2024, 1:10:13 凌晨
+last_modified: 星期日, 七月 7日 2024, 7:51:06 早上
 ---
 
-# [title:: Quantitative Geography | History ]
+# [title:: Quantitative Geography | History]
 
 [quantitative_geography](quantitative_geography.md) 的发展：
 

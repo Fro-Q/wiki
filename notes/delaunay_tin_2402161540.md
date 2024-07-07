@@ -1,9 +1,10 @@
 ---
+aliases: []
 tags:
   - note
-date: 2024-02-16
-time: 15:40
 status: finished
+created: 星期五, 二月 16日 2024, 3:40:20 下午
+last_modified: 星期日, 七月 7日 2024, 8:37:13 早上
 ---
 
 # [title:: Delaunay TIN | Concept]

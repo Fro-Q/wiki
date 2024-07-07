@@ -1,8 +1,10 @@
 ---
+aliases:
+  - 四分位数
 tags:
   - concept
-alias:
-  - 四分位数
+created: 星期五, 三月 8日 2024, 10:46:01 上午
+last_modified: 星期日, 七月 7日 2024, 7:55:19 早上
 ---
 
 # [title:: Quartile]

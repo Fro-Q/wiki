@@ -1,7 +1,7 @@
 ---
+aliases: []
 tags:
   - diary
-date: {{date}}
 ---
 
 # [title:: ]

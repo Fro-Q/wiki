@@ -1,8 +1,10 @@
 ---
+aliases:
+  - 四分位距
 tags:
   - concept
-alias:
-  - 四分位距
+created: 星期五, 三月 8日 2024, 11:04:57 上午
+last_modified: 星期日, 七月 7日 2024, 7:54:11 早上
 ---
 
 # [title:: Interquartile Range]

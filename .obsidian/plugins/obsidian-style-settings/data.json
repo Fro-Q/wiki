@@ -197,5 +197,17 @@
   "accent-color@@custom-accent-color": false,
   "accent-color@@use-builtin-color-picker": false,
   "accent-color@@accent-color-for-dark-theme": "accent-color-bw-dark",
-  "inline-elements@@tag-radius": 0
+  "inline-elements@@tag-radius": 0,
+  "supercharged-links@@e683-d542-decoration": "initial",
+  "supercharged-links@@e683-d542-before": "📂",
+  "supercharged-links@@c-e683-d542-use-background": true,
+  "supercharged-links@@e683-d542-background-color": "#84C9FF",
+  "supercharged-links@@afa1-41da-color": "#118F11",
+  "supercharged-links@@afa1-41da-before": "📌",
+  "supercharged-links@@c-afa1-41da-use-background": true,
+  "supercharged-links@@afa1-41da-background-color": "#84E394",
+  "supercharged-links@@f73a-ed7c-color": "#9B9B9B",
+  "supercharged-links@@c-f73a-ed7c-use-background": true,
+  "supercharged-links@@f73a-ed7c-background-color": "#E3E3E3",
+  "supercharged-links@@f73a-ed7c-before": "📝"
 }

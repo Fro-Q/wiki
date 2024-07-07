@@ -1,8 +1,10 @@
 ---
+aliases:
+  - 调和平均值
 tags:
   - concept
-alias:
-  - 调和平均值
+created: 星期五, 三月 8日 2024, 10:19:19 上午
+last_modified: 星期日, 七月 7日 2024, 7:53:47 早上
 ---
 
 # [title:: Harmonic Mean]

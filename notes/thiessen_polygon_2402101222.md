@@ -1,9 +1,10 @@
 ---
+aliases: []
 tags:
   - note
-date: 2024-02-10
-time: 12:22
 status: finished
+created: 星期六, 二月 10日 2024, 12:22:07 中午
+last_modified: 星期日, 七月 7日 2024, 7:52:03 早上
 ---
 
 # [title:: Thiessen Polygon | Feature]

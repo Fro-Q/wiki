@@ -1,8 +1,10 @@
 ---
+aliases:
+  - （统计）总体
 tags:
   - concept
-alias:
-  - （统计）总体
+created: 星期六, 三月 9日 2024, 5:41:13 凌晨
+last_modified: 星期日, 七月 7日 2024, 7:55:01 早上
 ---
 
 # [title:: Population | Statistics]

@@ -1,9 +1,10 @@
 ---
+aliases: []
 tags:
   - note
-date: 2024-02-16
-time: 16:37
 status: finished
+created: 星期五, 二月 16日 2024, 4:37:42 下午
+last_modified: 星期日, 七月 7日 2024, 7:51:00 早上
 ---
 
 # [title:: Quantitative Geography | Concept]

@@ -1,9 +1,10 @@
 ---
+aliases: []
 tags:
   - note
-date: 2024-03-09
-time: 06:05
 status: finished
+created: 星期六, 三月 9日 2024, 6:05:16 早上
+last_modified: 星期日, 七月 7日 2024, 7:51:55 早上
 ---
 
 # [title:: Stepwise Regression | Concept]
@@ -12,6 +13,6 @@ status: finished
 
 逐步回归的主要方法有：
 
-1. Forward Selection（前向选择）；
-2. Backward Elimination（后向剔除）；
-3. Bidirectional Elimination（双向剔除）。
+1) Forward Selection（前向选择）；
+2) Backward Elimination（后向剔除）；
+3) Bidirectional Elimination（双向剔除）。

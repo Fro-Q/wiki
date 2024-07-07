@@ -1,9 +1,10 @@
 ---
+aliases: []
 tags:
   - note
-date: 2024-02-21
-time: 20:29
 status: finished
+created: 星期三, 二月 21日 2024, 8:29:39 晚上
+last_modified: 星期日, 七月 7日 2024, 7:51:03 早上
 ---
 
 # [title:: Quantitative Resolution | Concept]

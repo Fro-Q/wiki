@@ -1,8 +1,10 @@
 ---
+aliases:
+  - 泰森多边形
 tags:
   - concept
-alias:
-  - 泰森多边形
+created: 星期六, 二月 10日 2024, 12:27:12 凌晨
+last_modified: 星期日, 七月 7日 2024, 7:56:14 早上
 ---
 
 # [title:: Thiessen Polygon]
