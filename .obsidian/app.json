@@ -1,7 +1,7 @@
 {
   "useMarkdownLinks": true,
   "alwaysUpdateLinks": true,
-  "newFileLocation": "root",
+  "newFileLocation": "folder",
   "newFileFolderPath": "",
   "promptDelete": false,
   "showInlineTitle": true,

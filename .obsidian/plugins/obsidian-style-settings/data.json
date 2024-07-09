@@ -206,8 +206,8 @@
   "supercharged-links@@afa1-41da-before": "📌",
   "supercharged-links@@c-afa1-41da-use-background": true,
   "supercharged-links@@afa1-41da-background-color": "#84E394",
-  "supercharged-links@@f73a-ed7c-color": "#9B9B9B",
   "supercharged-links@@c-f73a-ed7c-use-background": true,
   "supercharged-links@@f73a-ed7c-background-color": "#E3E3E3",
-  "supercharged-links@@f73a-ed7c-before": "📝"
+  "supercharged-links@@f73a-ed7c-before": "📝",
+  "supercharged-links@@f73a-ed7c-color": "#919191"
 }

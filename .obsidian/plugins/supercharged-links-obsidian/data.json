@@ -1,5 +1,7 @@
 {
-  "targetAttributes": [],
+  "targetAttributes": [
+    "status"
+  ],
   "targetTags": true,
   "getFromInlineField": true,
   "enableTabHeader": true,
