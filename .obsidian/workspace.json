@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "homepage.md",
+                "file": "_config/_complement_config/_dictionary.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "homepage.md",
+                "file": "_config/_complement_config/_dictionary.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "homepage.md",
+                "file": "_config/_complement_config/_dictionary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -129,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "homepage.md"
+                "file": "_config/_complement_config/_dictionary.md"
               }
             }
           },
@@ -162,7 +162,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "homepage.md"
+                "file": "_config/_complement_config/_dictionary.md"
               }
             }
           }
@@ -179,7 +179,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "homepage.md",
+                "file": "_config/_complement_config/_dictionary.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -241,9 +241,12 @@
   },
   "active": "693e50a216a812fe",
   "lastOpenFiles": [
+    "未命名.canvas",
+    "_config/_complement_config/_dictionary.md",
+    "diary/d_20240113.md",
+    "homepage.md",
     "README.md",
     "README_assets",
-    "homepage.md",
     "notes/cluster_analysis_2403090611.md",
     "cluster_analysis.md",
     "notes/chart_2402220204.md",
@@ -265,8 +268,6 @@
     "notes/delaunay_tin_2402161623.md",
     "concepts/arithmetic_mean.md",
     "notes/thiessen_polygon_2402101222.md",
-    "notes/thiessen_polygon_2402100037.md",
-    "notes/stepwise_regression_2403090604.md",
     "timestamp/ts_202404110957_assets",
     "diary/d_20240117_assets",
     "diary/d_20240113_assets",
