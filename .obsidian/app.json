@@ -26,6 +26,6 @@
   "showUnsupportedFiles": true,
   "attachmentFolderPath": "./",
   "foldIndent": true,
-  "vimMode": false,
+  "vimMode": true,
   "newLinkFormat": "relative"
 }

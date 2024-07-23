@@ -4,7 +4,7 @@ tags:
   - note
 status: finished
 created: 星期四, 二月 22日 2024, 9:40:10 晚上
-last_modified: 星期日, 七月 7日 2024, 8:47:01 早上
+last_modified: 星期二, 七月 23日 2024, 11:19:45 上午
 ---
 
 # [title:: Central Tendency | Measure]
@@ -13,8 +13,7 @@ last_modified: 星期日, 七月 7日 2024, 8:47:01 早上
 
 ## [arithmetic_mean](arithmetic_mean.md)（算术平均值）
 
-所有测量值的总数  
-除以数据集中的观测值数量。
+所有测量值的总数除以数据集中的观测值数量。
 
 $$
 \bar{x} = {1 \over n} \left(\sum_{i=1}^{n} x_{i}\right)
