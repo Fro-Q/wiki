@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/cluster_analysis_2403090611.md",
+                "file": "homepage.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -100,7 +100,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/cluster_analysis_2403090611.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +116,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/cluster_analysis_2403090611.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -129,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/cluster_analysis_2403090611.md"
+                "file": "excalidraw/Drawing 2024-07-27 12.18.26.excalidraw.md"
               }
             }
           },
@@ -162,7 +160,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "notes/cluster_analysis_2403090611.md"
+                "file": "excalidraw/Drawing 2024-07-27 12.18.26.excalidraw.md"
               }
             }
           }
@@ -179,7 +177,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "notes/cluster_analysis_2403090611.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -240,18 +237,20 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "693e50a216a812fe",
+  "active": "400aa4924092117f",
   "lastOpenFiles": [
-    "未命名.md",
+    "homepage.md",
+    "excalidraw/Drawing 2024-07-27 12.18.26.excalidraw.md",
+    "excalidraw",
+    "kendall_rank_correlation_coefficient.md",
     "notes/cluster_analysis_2403090611.md",
+    "未命名.md",
     "notes/correlation_2403080329.md",
     "notes/chart_2402220204.md",
     "notes/chart_2402220140.md",
     "notes/central_tendency_2402222134.md",
     "_config/_complement_config/_dictionary.md",
-    "homepage.md",
     "excalidraw/Drawing 2024-07-17 07.12.58.excalidraw.md",
-    "excalidraw",
     "未命名.canvas",
     "diary/d_20240113.md",
     "README.md",
@@ -269,8 +268,6 @@
     "notes/factor_analysis_2403170505.md",
     "notes/delaunay_tin_2402161540.md",
     "notes/dispersion_2402230402.md",
-    "notes/delaunay_tin_2402161623.md",
-    "concepts/arithmetic_mean.md",
     "timestamp/ts_202404110957_assets",
     "diary/d_20240117_assets",
     "diary/d_20240113_assets",
