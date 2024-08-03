@@ -100,6 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "homepage.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,6 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "homepage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -127,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "excalidraw/Drawing 2024-07-27 12.18.26.excalidraw.md"
+                "file": "homepage.md"
               }
             }
           },
@@ -160,7 +162,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "excalidraw/Drawing 2024-07-27 12.18.26.excalidraw.md"
+                "file": "homepage.md"
               }
             }
           }
@@ -177,6 +179,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "homepage.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -237,14 +240,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "400aa4924092117f",
+  "active": "693e50a216a812fe",
   "lastOpenFiles": [
+    "excalidraw/Drawing 2024-07-27 12.18.26.excalidraw.md",
     "_config/_complement_config/cedict_ts.u8",
     "_config/_complement_config/_dictionary.md",
     "_config/_complement_config",
     "_config",
     "homepage.md",
-    "excalidraw/Drawing 2024-07-27 12.18.26.excalidraw.md",
     "excalidraw",
     "kendall_rank_correlation_coefficient.md",
     "notes/cluster_analysis_2403090611.md",
@@ -275,7 +278,6 @@
     "diary/d_20240113_assets",
     "未命名 1",
     "reading_notes",
-    "format_ignore",
     "assets/CleanShot 2024-02-28 at 12.09.10@2x.png",
     "Porsche.jpg",
     "file-name.png",
