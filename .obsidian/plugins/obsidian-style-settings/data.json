@@ -169,8 +169,6 @@
   "focus-mode@@fade-out-inactive-lines": false,
   "font@@font-strong-weight": 900,
   "font@@font-strong-size": 1,
-  "ui-style@@tab-style": "chrome-tab-style",
-  "focus-mode@@focuse-transition-duration": 0.2,
   "focus-mode@@inactive-hover-opacity": 0.8,
   "focus-mode@@inactive-opacity": 0.3,
   "focus-mode@@zen-mode": true,
@@ -193,10 +191,7 @@
   "font@@font-underlined-decoration-offset": 2,
   "font@@font-underlined-decoration-width": 1,
   "inline-elements@@circle-checkbox": true,
-  "ui-style@@hide-close-button-when-window-narrow": false,
   "accent-color@@custom-accent-color": false,
-  "accent-color@@use-builtin-color-picker": false,
-  "accent-color@@accent-color-for-dark-theme": "accent-color-bw-dark",
   "inline-elements@@tag-radius": 0,
   "supercharged-links@@e683-d542-decoration": "initial",
   "supercharged-links@@e683-d542-before": "📂",
@@ -209,5 +204,7 @@
   "supercharged-links@@c-f73a-ed7c-use-background": true,
   "supercharged-links@@f73a-ed7c-background-color": "#E3E3E3",
   "supercharged-links@@f73a-ed7c-before": "📝",
-  "supercharged-links@@f73a-ed7c-color": "#919191"
+  "supercharged-links@@f73a-ed7c-color": "#919191",
+  "accent-color@@accent-color-for-dark-theme": "accent-color-blue-dark",
+  "accent-color@@accent-color-for-light-theme": "accent-color-sage-light"
 }
