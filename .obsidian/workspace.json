@@ -58,13 +58,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "topics/_statistics_.md",
+                "file": "homepage.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_statistics_"
+              "title": "homepage"
             }
           }
         ],
@@ -298,9 +298,10 @@
   },
   "active": "c784e6e4096391b4",
   "lastOpenFiles": [
-    "concepts/weighted_arithmetic_mean.md",
-    "topics/_statistics_.md",
     "timestamp/ts_20250109044625.md",
+    "homepage.md",
+    "topics/_statistics_.md",
+    "concepts/weighted_arithmetic_mean.md",
     "scripts/dataview_views/utils/get_alias.js",
     "scripts/dataview_views/utils",
     "scripts/utils/get_alias.js",
@@ -328,7 +329,6 @@
     "concepts/pie_chart.md",
     "concepts/pearson_correlation_coefficient.md",
     "concepts/mode.md",
-    "concepts/midrange.md",
     "_config/_complement_config/cedict_ts.u8",
     "_config/_complement_config",
     "_config",

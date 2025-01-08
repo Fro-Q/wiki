@@ -1,5 +1,3 @@
-import { getAlias } from "./utils/get_alias.js"
-
 var concepts = dv.current().file.inlinks
   .map(i => dv.page(i))
   .sort(c => -c.file.ctime);
@@ -44,23 +42,14 @@ function getFile(pl) {
 
 }
 
-// function unique(arr) {
-// 	// remove duplicate concepts
-// 	// new array to store the unique concepts
-// 	var newArr = [];
-// 	// store the appeared topics. if a topic has appeared, skip it.
-// 	var appearedTopicsTiel = [];
-// 	for (var i = 0; i < arr.length; i++) {
-// 		if (appearedTopicsTiel.includes(arr[i].toString())) {
-// 			continue;
-// 		}
-// 		appearedTopicsTiel.push(arr[i].toString());
-// 		newArr.push(arr[i]);
-// 	}
-// 	return newArr;
-// }
+function getAlias(p) {
+  const originalAliases = p.aliases ? p.aliases : ""
+  const filteredAliases = originalAliases.filter(a => a.length <= 10)
+  const filteredLength = filteredAliases.length
+  const aliases = (filteredAliases.length != originalAliases.length) + (filteredLength > 2) ? filteredAliases.slice(0, 2).concat("...") : filteredAliases
 
-// concepts = unique(concepts)
+  return aliases.length > 0 ? `<br>  ${aliases.join("<br>  ")}` : ""
+}
 
 dv.table(["Concepts", "Also under", "Notes Related"],
   concepts.map(c => [

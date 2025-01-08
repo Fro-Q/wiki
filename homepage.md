@@ -3,7 +3,7 @@ aliases: []
 tags:
   - doc
 created: 2024-01-13 07:07
-last_modified: 2025-01-08 10:25
+last_modified: 2025-01-09 05:32
 ---
 
 ## Diary
@@ -22,7 +22,7 @@ function getTitle(p) {
 dv.table(["Title", "Time", "Mentioned"],
 	pages.map(p => [
 		getTitle(p),
-		`${p.file.ctime.year}-${p.file.ctime.month}-${p.file.ctime.day} ${p.file.ctime.hour}:${p.file.ctime.minute}`,
+		`${p.file.ctime.year}-${String(p.file.ctime.month).padStart(2, 0)}-${String(p.file.ctime.day).padStart(2, 0)} ${String(p.file.ctime.hour).padStart(2, 0)}:${String(p.file.ctime.minute).padStart(2, 0)}`,
 		p.file.outlinks[0]?p.file.outlinks:"None",
 	])
 )
@@ -63,8 +63,8 @@ function generateStatus(p) {
 dv.table(["Title", "Time", "Topics Related", "Dealed"],
 	pages.map(p => [
 		getTitle(p),
-		`${p.file.ctime.year}-${p.file.ctime.month}-${p.file.ctime.day} ${p.file.ctime.hour}:${p.file.ctime.minute}`,
-		getTopic(p),
+		`${p.file.ctime.year}-${String(p.file.ctime.month).padStart(2, 0)}-${String(p.file.ctime.day).padStart(2, 0)} ${String(p.file.ctime.hour).padStart(2, 0)}:${String(p.file.ctime.minute).padStart(2, 0)}`,
+		getTopic(p).join("<br>"),
 		generateStatus(p),
 	])
 )
