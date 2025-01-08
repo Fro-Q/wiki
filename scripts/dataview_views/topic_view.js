@@ -12,7 +12,7 @@ function getTitle(p) {
 function getPages(c) {
   return dv.pages(`"notes"`)
     .filter(p => p.file.outlinks.includes(c))
-    .map(p => getTitle(p) + " | " + generateStatus(p))
+    .map(p => getTitle(p) + "<br>" + generateStatus(p))
 }
 
 function generateStatus(p) {

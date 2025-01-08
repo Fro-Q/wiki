@@ -61,7 +61,7 @@ function unique(arr) {
 
 dv.table(["Notes Related", "Concepts Mentioned"],
   concepts.map(n => [
-    getTitle(n) + " | " + generateStatus(n),
+    getTitle(n) + "<br>" + generateStatus(n),
     unique(n.file.outlinks).map(l => {
       console.log(l)
       return getFile(l)

@@ -1,14 +1,14 @@
 ---
 aliases:
+  - Range
   - 全距
-  - 极差
 tags:
   - concept
-created: 星期五, 三月 8日 2024, 11:09:26 上午
-last_modified: 星期日, 七月 7日 2024, 7:55:26 早上
+created: 2024-03-08 11:09
+last_modified: 2025-01-08 10:02
 ---
 
-# [title:: Range | Statistics]
+# [title:: 极差（统计学）]
 
 ```dataviewjs
 await dv.view("scripts/dataview_views/concept_view", {})

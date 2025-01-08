@@ -7,7 +7,7 @@ created: 2024-02-22 21:40
 last_modified: 2025-01-08 08:58
 ---
 
-# [title:: Central Tendency | Measure]
+# [title:: Central Tendency 度量]
 
 最常见的 [central_tendency](central_tendency.md) 的指标是 [arithmetic_mean](arithmetic_mean.md)、[median](median.md) 和 [mode](mode.md)。
 

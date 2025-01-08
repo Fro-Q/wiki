@@ -205,9 +205,10 @@
   "supercharged-links@@f73a-ed7c-before": "📝",
   "supercharged-links@@f73a-ed7c-color": "#919191",
   "accent-color@@accent-color-for-dark-theme": "accent-color-blue-dark",
-  "accent-color@@accent-color-for-light-theme": "accent-color-bw-light",
+  "accent-color@@accent-color-for-light-theme": "accent-color-blue-light",
   "supercharged-links@@e683-d542-color": "#1B6299",
   "supercharged-links@@afa1-41da-color": "#158E25",
   "supercharged-links@@afa1-41da-decoration": "underline",
-  "supercharged-links@@f73a-ed7c-decoration": "underline"
+  "supercharged-links@@f73a-ed7c-decoration": "underline",
+  "elements@@top-bottom-table-border": true
 }
