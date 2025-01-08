@@ -5,11 +5,11 @@ aliases:
   - 变方
 tags:
   - concept
-created: 星期五, 三月 8日 2024, 10:49:14 上午
-last_modified: 星期日, 七月 7日 2024, 7:56:32 早上
+created: 2024-03-08 10:49
+last_modified: 2025-01-08 11:16
 ---
 
-# [title:: Variance]
+# [title:: 方差]
 
 ```dataviewjs
 await dv.view("scripts/dataview_views/concept_view", {})
@@ -17,5 +17,5 @@ await dv.view("scripts/dataview_views/concept_view", {})
 
 ## Topics
 
-- [_statistics_](_statistics_.md)_
-- [_probability_theory_](_probability_theory_.md)_
+- [统计学](_statistics_.md)
+- [概率论](_probability_theory_.md)

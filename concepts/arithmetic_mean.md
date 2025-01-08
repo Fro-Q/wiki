@@ -6,10 +6,10 @@ aliases:
 tags:
   - concept
 created: 2024-03-08 09:58
-last_modified: 2025-01-08 09:33
+last_modified: 2025-01-08 11:10
 ---
 
-# [title:: Arithmetic Mean]
+# [title:: 算数平均值]
 
 ```dataviewjs
 await dv.view("scripts/dataview_views/concept_view", {})
@@ -17,5 +17,5 @@ await dv.view("scripts/dataview_views/concept_view", {})
 
 ## Topics
 
-- [_statistics_](_statistics_.md)
-- [_probability_theory_](_probability_theory_.md)
+- [统计学](_statistics_.md)
+- [概率论](_probability_theory_.md)

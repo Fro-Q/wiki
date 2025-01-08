@@ -8,7 +8,7 @@
       "templatePath": "_template/note.md",
       "fileNameFormat": {
         "enabled": true,
-        "format": "{{value}}_{{DATE:YYMMDDHHmm}}"
+        "format": "{{DATE:YYMMDDHHmm}}"
       },
       "folder": {
         "enabled": true,
@@ -27,7 +27,7 @@
       },
       "openFile": true,
       "openFileInMode": "default",
-      "fileExistsMode": "Nothing",
+      "fileExistsMode": "Increment the file name",
       "setFileExistsBehavior": true
     },
     {

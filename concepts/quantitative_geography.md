@@ -3,11 +3,11 @@ aliases:
   - 计量地理学
 tags:
   - concept
-created: 星期六, 二月 17日 2024, 11:40:20 晚上
-last_modified: 星期日, 七月 7日 2024, 7:55:07 早上
+created: 2024-02-17 23:40
+last_modified: 2025-01-08 11:14
 ---
 
-# [title:: Quantitative Geography]
+# [title:: 计量地理学]
 
 ```dataviewjs
 await dv.view("scripts/dataview_views/concept_view", {})
@@ -15,4 +15,4 @@ await dv.view("scripts/dataview_views/concept_view", {})
 
 ## Topics
 
-- [_quantitative_geography_](_quantitative_geography_.md)
+- [计量地理学](_quantitative_geography_.md)

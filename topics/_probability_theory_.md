@@ -3,11 +3,11 @@ aliases:
   - 概率论
 tags:
   - topic
-created: 星期五, 三月 8日 2024, 10:16:55 上午
-last_modified: 星期日, 七月 7日 2024, 7:49:24 早上
+created: 2024-03-08 10:16
+last_modified: 2025-01-08 11:08
 ---
 
-# [title:: Probability Theory]
+# [title:: 概率论]
 
 ```dataviewjs
 await dv.view("scripts/dataview_views/topic_view", {})

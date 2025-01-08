@@ -1,14 +1,14 @@
 ---
 aliases:
   - 表格
-  - 统计表
+  - 统计图
 tags:
   - topic
-created: 星期五, 二月 23日 2024, 4:00:14 凌晨
-last_modified: 星期日, 七月 7日 2024, 7:49:45 早上
+created: 2024-02-23 04:00
+last_modified: 2025-01-08 11:08
 ---
 
-# [title:: Chart]
+# [title:: 统计图]
 
 ```dataviewjs
 await dv.view("scripts/dataview_views/topic_view", {})

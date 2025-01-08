@@ -5,11 +5,11 @@ aliases:
   - 距平
 tags:
   - concept
-created: 星期五, 三月 8日 2024, 11:06:41 上午
-last_modified: 星期日, 七月 7日 2024, 7:53:19 早上
+created: 2024-03-08 11:06
+last_modified: 2025-01-08 11:13
 ---
 
-# [title:: Deviation]
+# [title:: 离差]
 
 ```dataviewjs
 await dv.view("scripts/dataview_views/concept_view", {})
@@ -17,5 +17,5 @@ await dv.view("scripts/dataview_views/concept_view", {})
 
 ## Topics
 
-- [_statistics_](_statistics_.md)
-- [_probability_theory_](_probability_theory_.md)
+- [统计学](_statistics_.md)
+- [概率论](_probability_theory_.md)

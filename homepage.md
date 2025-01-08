@@ -3,7 +3,7 @@ aliases: []
 tags:
   - doc
 created: 2024-01-13 07:07
-last_modified: 2025-01-08 07:50
+last_modified: 2025-01-08 10:25
 ---
 
 ## Diary
@@ -54,9 +54,9 @@ function generateStatus(p) {
 	if (p.status == "finished") {
 		return "✅"
 	} else if (p.status == "draft") {
-    	return "✏️"
+		return "✏️"
 	} else if (p.status == "archived") {
-        return "📂"
+		return "📂"
 	}
 }
 
@@ -79,7 +79,7 @@ var concepts = dv.pages(`"notes"`)
 function getPages(c) {
 	return dv.pages(`"notes"`)
 		.filter(p => p.file.outlinks.includes(c))
-		.map(p => getTitle(p) + " | " + generateStatus(p))
+		.map(p => generateStatus(p) + "｜" +  getTitle(p))
 }
 
 function getTitle(p) {
@@ -98,21 +98,21 @@ function getFile(pl) {
   if (!file) {
     return `[${file_name}](concepts/${file_path}) ❌`
   }
-  return file.title ? `[${file.title}](${file_path}) ${getAlias(file)}` : `[[${file.file.name}]]`
+  return file.title ? `[${file.title}](${file_path})` : `[[${file.file.name}]]`
 
 }
 
 function getAlias(p) {
-  return p.aliases ? `<br> ${p.aliases}` : ""
+  return p.aliases ? `${p.aliases}` : ""
 }
 
 function generateStatus(p) {
 	if (p.status == "finished") {
 		return "✅"
 	} else if (p.status == "draft") {
-    	return "✏️"
+		return "✏️"
 	} else if (p.status == "archived") {
-        return "📂"
+		return "📂"
 	}
 }
 
@@ -137,7 +137,7 @@ concepts = unique(concepts)
 dv.table(["Concept", "Notes"],
 	concepts.map(c => [
 		getFile(c),
-		getPages(c),
+		getPages(c).join("<br>"),
 	])
 )
 ```

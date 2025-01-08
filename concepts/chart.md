@@ -1,14 +1,13 @@
 ---
 aliases:
-  - 表格
-  - 统计表
+  - 统计图
 tags:
   - concept
-created: 星期四, 二月 22日 2024, 4:49:20 下午
-last_modified: 星期日, 七月 7日 2024, 7:52:46 早上
+created: 2024-02-22 16:49
+last_modified: 2025-01-08 11:10
 ---
 
-# [title:: Chart]
+# [title:: 统计图]
 
 ```dataviewjs
 await dv.view("scripts/dataview_views/concept_view", {})
@@ -16,5 +15,5 @@ await dv.view("scripts/dataview_views/concept_view", {})
 
 ## Topics
 
-- [_chart_](_chart_.md)
-- [_statistics_](_statistics_.md)
+- [统计图](_chart_.md)
+- [统计学](_statistics_.md)

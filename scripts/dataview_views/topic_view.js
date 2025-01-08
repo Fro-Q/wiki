@@ -12,7 +12,7 @@ function getTitle(p) {
 function getPages(c) {
   return dv.pages(`"notes"`)
     .filter(p => p.file.outlinks.includes(c))
-    .map(p => getTitle(p) + "<br>" + generateStatus(p))
+    .map(p => generateStatus(p) + "｜" + getTitle(p))
 }
 
 function generateStatus(p) {
@@ -63,8 +63,9 @@ function getAlias(p) {
 dv.table(["Concepts Involved", "Also under", "Notes Related"],
   concepts.map(c => [
     getTitle(c),
-    c.file.outlinks
-      .map(pl => getFile(pl)),
-    getPages(c.file.link),
+    // c.file.outlinks
+      // .map(pl => getFile(pl)),
+    c.file.outlinks.map(pl => getFile(pl)).join("<br>"),
+    getPages(c.file.link).join("<br>")
   ])
 )

@@ -1,16 +1,15 @@
 ---
 aliases:
-  - 变异系数
-  - 变差系数
-  - 离差系数
-  - 离散系数
+  - Spearman 相关系数
+  - Spearman 等级相关系数
+  - Spearmans rank correlation coefficient
 tags:
   - concept
-created: 2024-03-08 11:11
-last_modified: 2025-01-08 11:12
+created: 2025-01-08 10:31
+last_modified: 2025-01-08 11:15
 ---
 
-# [title:: 变异系数]
+# [title:: Spearman 相关系数]
 
 ```dataviewjs
 await dv.view("scripts/dataview_views/concept_view", {})

@@ -40,7 +40,7 @@ function getFile(pl) {
 }
 
 function getAlias(p) {
-  return p.aliases ? `<br> ${p.aliases}` : ""
+  return p.aliases ? `${p.aliases}` : ""
 }
 
 function unique(arr) {
@@ -61,10 +61,11 @@ function unique(arr) {
 
 dv.table(["Notes Related", "Concepts Mentioned"],
   concepts.map(n => [
-    getTitle(n) + "<br>" + generateStatus(n),
-    unique(n.file.outlinks).map(l => {
-      console.log(l)
-      return getFile(l)
-    }),
+    generateStatus(n) + "｜" + getTitle(n),
+    // unique(n.file.outlinks).map(l => {
+    //   console.log(l)
+    //   return getFile(l)
+    // }),
+    unique(n.file.outlinks).map(l => getFile(l)).join("<br>")
   ])
 )

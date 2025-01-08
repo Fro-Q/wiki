@@ -3,11 +3,11 @@ aliases:
   - 简单随机抽样
 tags:
   - concept
-created: 星期六, 三月 9日 2024, 5:45:07 凌晨
-last_modified: 星期日, 七月 7日 2024, 7:55:47 早上
+created: 2024-03-09 05:45
+last_modified: 2025-01-08 11:15
 ---
 
-# [title:: Simple Random Sampling]
+# [title:: 简单随机抽样]
 
 ```dataviewjs
 await dv.view("scripts/dataview_views/concept_view", {})
@@ -15,5 +15,5 @@ await dv.view("scripts/dataview_views/concept_view", {})
 
 ## Topics
 
-- [_statistics_](_statistics_.md)
-- [_probability_theory_](_probability_theory_.md)
+- [统计学](_statistics_.md)
+- [概率论](_probability_theory_.md)
