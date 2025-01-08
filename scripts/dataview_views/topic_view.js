@@ -1,3 +1,5 @@
+import { getAlias } from "./utils/get_alias.js"
+
 var concepts = dv.current().file.inlinks
   .map(i => dv.page(i))
   .sort(c => -c.file.ctime);
@@ -31,15 +33,15 @@ function getFile(pl) {
   // strip suffix .md from file_path
   const file_name = file_path.replace(/.md/g, '')
   const file = dv.page(`${file_path}`)
+  // exclude current file
+  if (file.file.name == dv.current().file.name) {
+    return ""
+  }
   if (!file) {
     return `[${file_name}](topics/${file_path}) ❌`
   }
   return file.title ? `[${file.title}](${file_path}) ${getAlias(file)}` : `[[${file.file.name}]]`
 
-}
-
-function getAlias(p) {
-  return p.alias ? `<br> ${p.alias}` : ""
 }
 
 // function unique(arr) {
@@ -60,12 +62,12 @@ function getAlias(p) {
 
 // concepts = unique(concepts)
 
-dv.table(["Concepts Involved", "Also under", "Notes Related"],
+dv.table(["Concepts", "Also under", "Notes Related"],
   concepts.map(c => [
     getTitle(c),
     // c.file.outlinks
-      // .map(pl => getFile(pl)),
-    c.file.outlinks.map(pl => getFile(pl)).join("<br>"),
+    //   .map(pl => getFile(pl)),
+    c.file.outlinks.map(pl => getFile(pl)).filter(Boolean).join("<br>"),
     getPages(c.file.link).join("<br>")
   ])
 )

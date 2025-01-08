@@ -35,7 +35,7 @@ function getFile(pl) {
   if (!file) {
     return `[${file_name}](concepts/${file_path}) ❌`
   }
-  return file.title ? `[${file.title}](${file_path}) ${getAlias(file)}` : `[[${file.file.name}]]`
+  return file.title ? `[${file.title}](${file_path})` : `[[${file.file.name}]]`
 
 }
 

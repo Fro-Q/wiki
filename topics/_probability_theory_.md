@@ -4,7 +4,7 @@ aliases:
 tags:
   - topic
 created: 2024-03-08 10:16
-last_modified: 2025-01-08 11:08
+last_modified: 2025-01-09 04:00
 ---
 
 # [title:: 概率论]

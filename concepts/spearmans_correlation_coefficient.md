@@ -2,11 +2,11 @@
 aliases:
   - Spearman 相关系数
   - Spearman 等级相关系数
-  - Spearmans rank correlation coefficient
+  - "Spearman's rank correlation coefficient"
 tags:
   - concept
 created: 2025-01-08 10:31
-last_modified: 2025-01-08 11:15
+last_modified: 2025-01-09 04:08
 ---
 
 # [title:: Spearman 相关系数]

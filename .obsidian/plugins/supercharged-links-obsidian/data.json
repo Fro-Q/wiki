@@ -14,7 +14,7 @@
   "selectors": [
     {
       "type": "tag",
-      "name": "",
+      "name": "status",
       "value": "topic",
       "matchCaseSensitive": false,
       "match": "exact",

@@ -210,5 +210,6 @@
   "supercharged-links@@afa1-41da-color": "#158E25",
   "supercharged-links@@afa1-41da-decoration": "underline",
   "supercharged-links@@f73a-ed7c-decoration": "underline",
-  "elements@@top-bottom-table-border": true
+  "elements@@top-bottom-table-border": true,
+  "font@@font-monospace": "\"FiraCode Nerd Font Mono\", Nitti, Menlo, Courier, monospace"
 }
