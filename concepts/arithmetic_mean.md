@@ -5,8 +5,8 @@ aliases:
   - 均值
 tags:
   - concept
-created: 星期五, 三月 8日 2024, 9:58:32 上午
-last_modified: 星期日, 七月 7日 2024, 7:52:18 早上
+created: 2024-03-08 09:58
+last_modified: 2025-01-08 09:33
 ---
 
 # [title:: Arithmetic Mean]
