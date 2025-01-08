@@ -3,8 +3,8 @@ aliases: []
 tags:
   - note
 status: finished
-created: 星期四, 二月 22日 2024, 9:40:10 晚上
-last_modified: 星期二, 七月 23日 2024, 11:19:45 上午
+created: 2024-02-22 21:40
+last_modified: 2025-01-08 08:58
 ---
 
 # [title:: Central Tendency | Measure]
