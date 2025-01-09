@@ -1,10 +1,13 @@
 ---
 aliases:
   - 四分位数平均值
+  - IQM
+  - interquartile mean
+  - midmean
 tags:
   - concept
 created: 2024-03-08 10:23
-last_modified: 2025-01-08 11:14
+last_modified: 2025-01-09 07:35
 ---
 
 # [title:: 四分位数平均值]

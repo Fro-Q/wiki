@@ -1,6 +1,8 @@
 ---
 aliases:
   - 泰森多边形
+  - Thiessen 多边形
+  - Thiessen polygon
 tags:
   - concept
 created: 2024-02-10 00:27

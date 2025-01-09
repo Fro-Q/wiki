@@ -2,10 +2,12 @@
 aliases:
   - 三均值
   - 图基三均值
+  - trimean
+  - "tukey's mean"
 tags:
   - concept
 created: 2024-03-08 10:45
-last_modified: 2025-01-08 11:16
+last_modified: 2025-01-09 07:39
 ---
 
 # [title:: 图基三均值]

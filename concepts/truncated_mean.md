@@ -3,10 +3,12 @@ aliases:
   - 截尾平均值
   - 修剪平均值
   - 截断平均值
+  - truncated mean
+  - trimmed mean
 tags:
   - concept
 created: 2024-03-08 10:21
-last_modified: 2025-01-08 11:16
+last_modified: 2025-01-09 07:35
 ---
 
 # [title:: 截尾平均值]

@@ -1,14 +1,13 @@
 ---
 aliases:
-  - 相关性
-  - 依赖性
+  - 统计样本
 tags:
   - concept
-created: 2025-01-08 11:04
-last_modified: 2025-01-09 07:54
+created: 2025-01-09 06:46
+last_modified: 2025-01-09 06:46
 ---
 
-# [title:: 相关性]
+# [title:: 统计样本]
 
 ```dataviewjs
 await dv.view("scripts/dataview_views/concept_view", {})

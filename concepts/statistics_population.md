@@ -1,10 +1,10 @@
 ---
 aliases:
-  - （统计）总体
+  - 统计总体
 tags:
   - concept
 created: 2024-03-09 05:41
-last_modified: 2025-01-08 11:14
+last_modified: 2025-01-09 06:38
 ---
 
 # [title:: 统计总体]

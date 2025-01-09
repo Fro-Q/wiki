@@ -1,10 +1,11 @@
 ---
 aliases:
   - 调和平均值
+  - harmonic mean
 tags:
   - concept
 created: 2024-03-08 10:19
-last_modified: 2025-01-08 11:13
+last_modified: 2025-01-09 07:36
 ---
 
 # [title:: 调和平均值]

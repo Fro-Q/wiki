@@ -39,10 +39,6 @@ function getFile(pl) {
 
 }
 
-function getAlias(p) {
-  return p.aliases ? `${p.aliases}` : ""
-}
-
 function unique(arr) {
   // remove duplicate concepts
   // new array to store the unique concepts

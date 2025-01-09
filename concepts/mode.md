@@ -1,10 +1,11 @@
 ---
 aliases:
   - 众数
+  - mode
 tags:
   - concept
 created: 2024-03-08 09:59
-last_modified: 2025-01-08 11:14
+last_modified: 2025-01-09 07:36
 ---
 
 # [title:: 众数（统计学）]

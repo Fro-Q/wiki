@@ -1,10 +1,11 @@
 ---
 aliases:
   - 中程数
+  - midrange
 tags:
   - concept
 created: 2024-03-08 10:43
-last_modified: 2025-01-08 11:14
+last_modified: 2025-01-09 07:37
 ---
 
 # [title:: 中程数]

@@ -3,7 +3,7 @@ aliases: []
 tags:
   - doc
 created: 2024-01-13 07:07
-last_modified: 2025-01-09 05:32
+last_modified: 2025-01-09 06:19
 ---
 
 ## Diary
@@ -98,12 +98,17 @@ function getFile(pl) {
   if (!file) {
     return `[${file_name}](concepts/${file_path}) ❌`
   }
-  return file.title ? `[${file.title}](${file_path})` : `[[${file.file.name}]]`
+  return file.title ? `[${file.title}](${file_path})` + getAlias(file) : `[[${file.file.name}]]`
 
 }
 
 function getAlias(p) {
-  return p.aliases ? `${p.aliases}` : ""
+  const originalAliases = p.aliases ? p.aliases : ""
+  const filteredAliases = originalAliases.filter(a => a.length <= 10)
+  const filteredLength = filteredAliases.length
+  const aliases = (filteredAliases.length != originalAliases.length) + (filteredLength > 2) ? filteredAliases.slice(0, 2).concat("...") : filteredAliases
+
+  return aliases.length > 0 ? `<br>  ${aliases.join("<br>  ")}` : ""
 }
 
 function generateStatus(p) {

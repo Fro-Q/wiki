@@ -1,10 +1,11 @@
 ---
 aliases:
   - 中轴数
+  - midhinge
 tags:
   - concept
 created: 2024-03-08 10:44
-last_modified: 2025-01-08 11:14
+last_modified: 2025-01-09 07:33
 ---
 
 # [title:: 中轴数]

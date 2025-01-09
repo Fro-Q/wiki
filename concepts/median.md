@@ -3,10 +3,11 @@ aliases:
   - 中位数
   - 中央值
   - 中值
+  - median
 tags:
   - concept
 created: 2024-03-08 10:14
-last_modified: 2025-01-08 11:14
+last_modified: 2025-01-09 07:36
 ---
 
 # [title:: 中位数]

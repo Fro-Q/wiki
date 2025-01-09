@@ -1,10 +1,11 @@
 ---
 aliases:
   - 加权算术平均值
+  - weighted arithmetic mean
 tags:
   - concept
 created: 2024-03-08 10:20
-last_modified: 2025-01-08 11:16
+last_modified: 2025-01-09 07:37
 ---
 
 # [title:: 加权算数平均值]
