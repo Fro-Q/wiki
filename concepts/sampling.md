@@ -3,10 +3,11 @@ aliases:
   - 采样
   - 取样
   - 抽样
+  - sampling
 tags:
   - concept
 created: 2024-03-09 05:44
-last_modified: 2025-01-08 11:15
+last_modified: 2025-01-09 10:02
 ---
 
 # [title:: 抽样]

@@ -137,12 +137,12 @@ function unique(arr) {
 	return newArr;
 }
 
-concepts = unique(concepts)
+// concepts = unique(concepts)
 
 dv.table(["Concept", "Notes"],
-	concepts.map(c => [
+	unique(concepts.map(c => [
 		getFile(c),
 		getPages(c).join("<br>"),
-	])
+	]))
 )
 ```

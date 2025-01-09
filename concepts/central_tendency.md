@@ -2,10 +2,11 @@
 aliases:
   - 集中趋势
   - 中央趋势
+  - central tendency
 tags:
   - concept
 created: 2024-03-08 10:03
-last_modified: 2025-01-08 11:12
+last_modified: 2025-01-09 10:02
 ---
 
 # [title:: 集中趋势]

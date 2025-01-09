@@ -1,10 +1,11 @@
 ---
 aliases:
   - 简单随机抽样
+  - simple random sampling
 tags:
   - concept
 created: 2024-03-09 05:45
-last_modified: 2025-01-08 11:15
+last_modified: 2025-01-09 10:02
 ---
 
 # [title:: 简单随机抽样]
